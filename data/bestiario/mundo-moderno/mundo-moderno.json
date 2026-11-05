@@ -1,0 +1,34 @@
+{
+  "genero": "mundo-moderno",
+  "categorias": [
+    {
+      "nome": "Anomalias",
+      "cards": [
+        {
+          "nome": "Garotinha perdida",
+          "imagem": "img/bestiario/terror/garota-monstro.webp",
+          "descricao": "Uma gartoinha perdida, ou melhor, um monstro disfarçado.",
+          "atributos": {
+            "Vida": 60,
+            "Defesa": 12,
+            "Força": 16,
+            "Agilidade": 12,
+            "Inteligência": 8,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Transforma sua boca em uma boca enorme, cheia de dentes afiados. 1d4+2 de dano + 1d4 de sangramento por turno."
+            },
+            {
+              "nome": "Garras afiadas",
+              "descricao": "Rasga seu alvo com suas garras, 1d8 cortante."
+            }
+          ],
+          "destaque": true
+        }
+      ]
+    }
+  ]
+}

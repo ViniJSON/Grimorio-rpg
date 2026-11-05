@@ -1,0 +1,3785 @@
+{
+  "genero": "Fantasia",
+  "categorias": [
+    {
+      "nome": "Inimigos",
+      "cards": [
+        {
+          "nome": "Goblins",
+          "imagem": "img/bestiario/fantasia/goblin.webp",
+          "descricao": "Pequenas criaturas verdes, que atacam em bando, role 1d4+1 para saber a quantidade. São malandros e astutos, mas também medosos. Os goblins sempre usram apenas um estilo de arma em seu grupo, adaga ou arco",
+          "atributos": {
+            "Vida": 10,
+            "Defesa": 10,
+            "Força": 2,
+            "Agilidade": 4,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe de adaga",
+              "descricao": "Golepia com sua adaga, causando 1d4+2 de dano"
+            },
+            {
+              "nome": "tiro de arco e flecha",
+              "descricao": "Dispara com seu arco e flecha, causando 1d6 de dano"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Adagas, algumas moedas"
+          ],
+          "personalidade": "Covardes sozinhos, cruéis em bando."
+        },
+        {
+          "nome": "esqueleto",
+          "imagem": "img/bestiario/fantasia/esqueleto.webp",
+          "descricao": "Esqueletos de pessoas que já se foram possuídos por magia negra, sempre com armaduras",
+          "atributos": {
+            "Vida": 15,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 1,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe da espada",
+              "descricao": "Golepia com sua espada, causando 1d6 de dano"
+            },
+            {
+              "nome": "Perfuração certeira",
+              "descricao": "caso tirar um 20 natural, sua espada penetra o oponente, causando 2d6 de dano +  1d4 sangramento por turno"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Fracos contra fogo, +2 de dano"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "SUa espada velha"
+          ],
+          "personalidade": "Adoram uma batalha, derramar sangue do inimigo"
+        },
+        {
+          "nome": "Mago viajante",
+          "imagem": "img/bestiario/fantasia/mago-viajante.webp",
+          "descricao": "Um mago que viaja por terras desconhecidas.",
+          "atributos": {
+            "Vida": 20,
+            "Defesa": 8,
+            "Força": 0,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Rajada de fogo",
+              "descricao": "Dano de fogo, causa 1d6 de dano, pode deixar queimaduras."
+            },
+            {
+              "nome": "Eletrocutar",
+              "descricao": "Dano elétrico, causa 1d6 de dano, pode deixar paralisia, teste de resistência DF:13."
+            },
+            {
+              "nome": "Congelar",
+              "descricao": "Dano de gelo, causa 1d4 de dano, pode limitar movimento, teste de resistência DF:13."
+            },
+            {
+              "nome": "Rajada cromática",
+              "descricao": "Dano cromático, causa 1d8 + 2 de dano, "
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Desvantagem corpo a corpo"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Talvez um grimório, pergaminho, ou algo magíco"
+          ],
+          "personalidade": "Amantes do cconhecimento, talvez vocẽ seja uma otíma cobaia"
+        },
+        {
+          "nome": "Bandido comum",
+          "imagem": "img/bestiario/fantasia/bandido.webp",
+          "descricao": "Vagabundos que andam em grupo, role 1d4+1 para saber a quantidade, buscam qualquer coisa de valor",
+          "atributos": {
+            "Vida": 12,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 1,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe da espada",
+              "descricao": "Golepia com sua espada, causando 1d6 de dano"
+            },
+            {
+              "nome": "Perfuração certeira",
+              "descricao": "caso tirar um 20 natural, sua espada penetra o oponente, causando 2d6 de dano +  1d4 sangramento por turno"
+            },
+            {
+              "nome": "Covardia",
+              "descricao": "Quando todos são derrotados e sobra apenas um, ele se acovarda e implora para sobreviver, podendo extrair informações"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Pode conter algum item valioso, moedinhas"
+          ],
+          "personalidade": "Covardes sozinhos, cruéis em bando."
+        },
+        {
+          "nome": "Cavaleiros guardas",
+          "imagem": "img/bestiario/fantasia/guarda-cavaleiro.webp",
+          "descricao": "Homens capacitados que lutam pelo seu povo, podendo ser corruptos ou não, contém informações sigilosas",
+          "atributos": {
+            "Vida": 20,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe da espada",
+              "descricao": "Golepia com sua espada, causando 1d6 de dano"
+            },
+            {
+              "nome": "Tentar captura",
+              "descricao": "Caso o oponente fique vulnerável, o guarda tenta o capturar com correntes para levá-ló ao calabouço"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "- 2 de dano em golpes físicos por sua armadura"
+          ],
+          "recompensas": [
+            "pode conte rpergaminhos sigilosos, algumas moedas"
+          ],
+          "personalidade": "Pode ser corruputo, ou seguir a risca as leis do reino"
+        },
+        {
+          "nome": "Mercenários",
+          "imagem": "img/bestiario/fantasia/mercenario.webp",
+          "descricao": "Homens malditos que tentam sequestrar pessoas, ou vender seus orgãos para nobres miseráveis",
+          "atributos": {
+            "Vida": 15,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe da espada",
+              "descricao": "Golepia com sua espada, causando 1d6 de dano"
+            },
+            {
+              "nome": "Tentar captura",
+              "descricao": "Caso o oponente fique vulnerável, o merccenário tenta o capturar com correntes para levá-ló ao lugar isolado, para extrair informações, roubar seus itens, ou te entregar"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Pode conter algum item valioso, moedinhas"
+          ],
+          "personalidade": "Covardes sozinhos, cruéis em bando. É melhor tomar cuidado"
+        },
+        {
+          "nome": "Orc",
+          "imagem": "img/bestiario/fantasia/orc.webp",
+          "descricao": "Um humanóide verde musculoso, muito violento e maldoso, adora torturar e matar suas vítimas",
+          "atributos": {
+            "Vida": 30,
+            "Defesa": 14,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "golpe do machado de guerra",
+              "descricao": "Golepia com sua espada, causando 1d8 de dano"
+            },
+            {
+              "nome": "Decepar",
+              "descricao": "Caso tire um 20 natural, decepa um dos membros que não seja a cabeça do oponente"
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Seu machado, talvez algum artesanato"
+          ],
+          "personalidade": "Extremamente cruel, violento e sanguinário."
+        },
+        {
+          "nome": "Lobo",
+          "imagem": "img/bestiario/fantasia/lobo.webp",
+          "descricao": "Animais selvagens que andam em matilha e são agressivos contra o que lhes ameaçam, role 1d4+ para ver a quantidade",
+          "atributos": {
+            "Vida": 15,
+            "Defesa": 8,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Morde o seu oponente causando 1d4+2 de dano, caso seja mordido, deve fazer um teste de força para jogar ele longe, df:14"
+            },
+            {
+              "nome": "Arranhar",
+              "descricao": "Usa suas garras para arranhar o opontente, 1d6 de dano"
+            },
+            {
+              "nome": "Ataque em grupo",
+              "descricao": "Uma vez que um lobo do grupo morde o inimgo e elle não consegue se soltar os outros mordem também, causando 1d4+2 para cada lobo"
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Magias os assustam, talvez eles fujam"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Nada em especial"
+          ],
+          "personalidade": "Extremamente hóstil"
+        },
+        {
+          "nome": "Cultista",
+          "imagem": "img/bestiario/fantasia/cultista.webp",
+          "descricao": "Pessoas devotas a um deus maligno. Buscam sequestrar pessoas para realizar rituais, roubar artefatos, entre outras atividades.",
+          "atributos": {
+            "Vida": 20,
+            "Defesa": 14,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Golpe de espada",
+              "descricao": "Ataca seu oponente com uma lâmina afiada, causando 1d8 de dano."
+            },
+            {
+              "nome": "Raio maligno",
+              "descricao": "Dispara um raio negro que lembra lodo, causando 1d4+2 de dano e queimando a pele do oponente."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "pode conte rpergaminhos sigilosos. artefatos mágicos, algumas moedas"
+          ],
+          "personalidade": "Extremamente cruel, violento e sanguinário."
+        },
+        {
+          "nome": "Carniçal",
+          "imagem": "img/bestiario/fantasia/carnical.webp",
+          "descricao": "Criaturas vermelhas de carne viva, que só pensam em devorar humanos e tudo que aparecer pelo caminho.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Morde seu oponente causando 1d4+2 de dano. Caso seja mordido, o alvo deve fazer um teste de Força para jogá-lo longe. DF: 14."
+            },
+            {
+              "nome": "Arranhar",
+              "descricao": "Usa suas garras para arranhar o oponente, causando 1d6 de dano."
+            },
+            {
+              "nome": "Ataque em grupo",
+              "descricao": "Quando um carniçal do grupo morde um inimigo e ele não consegue se soltar, os outros carniçais também o mordem, causando 1d4+2 de dano para cada carniçal."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Nada em especial"
+          ],
+          "personalidade": "Criatura arrogante, certamente vc é a presa"
+        },
+        {
+          "nome": "Draconatos",
+          "imagem": "img/bestiario/fantasia/draconato.webp",
+          "descricao": "Dragões humanoides com corpos fortes e poderes de fogo. São astutos e imprevisíveis. Tome cuidado ao confiar neles.",
+          "atributos": {
+            "Vida": 35,
+            "Defesa": 13,
+            "Força": 2,
+            "Agilidade": 0,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Morde seu oponente causando 1d4+2 de dano. Caso seja mordido, o alvo deve fazer um teste de Força para jogá-lo longe. DF: 14."
+            },
+            {
+              "nome": "Arranhar",
+              "descricao": "Usa suas garras para arranhar o oponente, causando 1d6 de dano."
+            },
+            {
+              "nome": "Canalizar chama",
+              "descricao": "Dispara chamas contra seus inimigos, causando 1d8 de dano e deixando queimaduras."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Contra fogo, - 5 de dano"
+          ],
+          "recompensas": [
+            "Pergaminhos de rituais, moedas, armas"
+          ],
+          "personalidade": "Extremamente cruel, violento e sanguinário."
+        },
+        {
+          "nome": "zumbi",
+          "imagem": "img/bestiario/fantasia/zumbi-podre.webp",
+          "descricao": "Um zumbi de carne podre, adora carne humana.",
+          "atributos": {
+            "Vida": 15,
+            "Defesa": 10,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Ataca com seus dentes, 1d6 de dano perfurante."
+            },
+            {
+              "nome": "Arranhadas",
+              "descricao": "Ataca com suas garras, 1d4 de dano cortante."
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Fracos contra fogo, +2 de dano"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Nada em especial"
+          ],
+          "personalidade": "é um zumbi, apenas quer devorar"
+        },
+        {
+          "nome": "bruxo(a)",
+          "imagem": "img/bestiario/fantasia/bruxa.webp",
+          "descricao": "Uma bruxa que serve a um deus maligno, conhecida por seus feitiços sombrios e torturas.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 15,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Raio negro",
+              "descricao": "Dispara um raio negro, 1d6 de dano necrótico."
+            },
+            {
+              "nome": "Feitiço de controle",
+              "descricao": "Controla a mente de um jogador por um turno, deve fazer um teste de resistencia DF:15."
+            },
+            {
+              "nome": "Coleta forçada",
+              "descricao": "Enfia a ceringa no jogador para coletar sangue, causa 1d4 de dano"
+            },
+            {
+              "nome": "Boneco de vodô",
+              "descricao": "Após coletar o sangue, o injeta em um boneco amaldiçoado, prendendo a alma do jogador, deixando o corpo dele uma casca vazia, porém ainda sente dores, mas não morre enquanto tiver no boneco, ela usa para torturar"
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "pode conte pergaminhos sigilosos. artefatos mágicos, algumas moedas"
+          ],
+          "personalidade": "Extremamente sádica, talvez você vire cobaia"
+        },
+        {
+          "nome": "Mimic",
+          "imagem": "img/bestiario/fantasia/mimic.webp",
+          "descricao": "Um mimic que se disfarça de baú, normalmente encontrado em ambientes fechados.",
+          "atributos": {
+            "Vida": 15,
+            "Defesa": 10,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "devorar",
+              "descricao": "quando algúem tenta o abrir, ele o devora. Teste de esquiva DF:15, se não escapar, ele devora e começa a comer o jogador vivo, a cada turno o jogado deve fazer um teste de resistência DF:15, ele causa 1d8 de dano perfurante + 1d4 de sangramento. Quando a vida zera o mimic termina de comer"
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Nada em especial"
+          ],
+          "personalidade": "Extremamente faminto"
+        },
+        {
+          "nome": "Samurai corrompido",
+          "imagem": "img/bestiario/fantasia/samurai-corrompido.webp",
+          "descricao": "Um samurai corrompido, muito perigoso com sede de sangue",
+          "atributos": {
+            "Vida": 45,
+            "Defesa": 15,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "katana corrompida",
+              "descricao": "Ataca com uma katana corrompida, causando 1d8 de dano perfurante + 1d4 de queimaduras"
+            },
+            {
+              "nome": "Raio negro",
+              "descricao": "Dispara um raio negro de seu chifre, 1d6 de dano necrótico."
+            },
+            {
+              "nome": "Corte negro",
+              "descricao": "Dispara 3 cortes negros de sua katana, 1d4 de dano cada um"
+            },
+            {
+              "nome": "Olhar da morte",
+              "descricao": "Lança um olhar que paralisa o jogador, deve fazer um teste de resistência DF:15. Se falhar fica paralisado, cada turno deve repitir o teste até passar"
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Sua katana pode ter um poder único"
+          ],
+          "personalidade": "Criatura arrogante, certamente vc é a presa"
+        },
+  
+        {
+          "nome": "Necromante",
+          "imagem": "img/bestiario/fantasia/necromante.webp",
+          "descricao": "Mago capaz de trazer de volta a vida esqueletos para lutarem ao seu lado, perigoso",
+          "atributos": {
+            "Vida": 35,
+            "Defesa": 10,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+              {
+                "nome": "Levantar os Mortos",
+                "descricao": "Ergue até 1d4 esqueletos do chão para lutarem ao seu lado. Os esqueletos possuem 8 de Vida, 8 de Defesa e causam 1d6 de dano."
+              },
+              {
+                "nome": "Drenar Vitalidade",
+                "descricao": "Estende a mão em direção ao jogador e suga parte de sua força vital. Causa 1d8 de dano e recupera metade do dano causado em Vida."
+              },
+              {
+                "nome": "Explosão Cadavérica",
+                "descricao": "Faz um esqueleto próximo explodir violentamente, espalhando ossos e fragmentos pelo campo de batalha. Causa 1d10 de dano em quem estiver próximo."
+              },
+              {
+                "nome": "Maldição da Carne Podre",
+                "descricao": "Lança uma maldição sobre o jogador, fazendo sua carne apodrecer lentamente. Causa 1d4 de dano por turno durante 3 turnos."
+              },
+              {
+                "nome": "Mãos dos Condenados",
+                "descricao": "Diversas mãos esqueléticas emergem do solo e agarram as pernas do jogador, impedindo sua movimentação por 1 turno. O jogador pode realizar um teste de Força para escapar."
+              }
+            ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Nada em especial"
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "pode conter pergaminhos sigilosos. artefatos mágicos, algumas moedas"
+          ],
+          "personalidade": "Cruel e sádico"
+        },
+
+        {
+          "nome": "Hobgoblin",
+          "imagem": "img/bestiario/fantasia/hobgoblin.webp",
+          "descricao": "Criatura humanoide de pele avermelhada, maior e mais forte que um goblin comum. São guerreiros disciplinados, cruéis e organizados, frequentemente encontrados liderando grupos de goblins. Não demonstram piedade durante combates.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 13,
+            "Força": 4,
+            "Agilidade": 3,
+            "Inteligência": 2,
+            "Carisma": 4
+          },
+          "habilidades": [
+             {
+              "nome": "golpe da espada",
+              "descricao": "Golepia com sua espada, causando 1d6 de dano"
+            },
+            {
+              "nome": "Golpe Brutal",
+              "descricao": "Desfere um golpe violento com sua arma, usando toda sua força para esmagar o adversário. Causa 1d10 de dano."
+            },
+            {
+              "nome": "Corte Profundo",
+              "descricao": "Realiza um corte profundo em uma região vulnerável do adversário. Causa 1d8 de dano + 1d4 de sangramento."
+            },
+            {
+              "nome": "Investida Selvagem",
+              "descricao": "Avança violentamente contra o jogador, atingindo-o com o ombro ou com sua arma. Causa 1d8 de dano e derruba o alvo."
+            },
+            {
+              "nome": "Execução",
+              "descricao": "Ao encontrar um adversário enfraquecido, desfere um ataque brutal mirando sua cabeça ou pescoço. Causa 2d8 de dano. Só pode ser utilizada contra alvos com menos de 3 da Vida."
+            },
+            {
+              "nome": "Grito de Guerra",
+              "descricao": "Solta um grito intimidador que encoraja seus aliados próximos. Outros hobgoblins e goblins recebem +2 de dano em seus próximos ataques."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Sua arrogância pode fazê-lo subestimar adversários menores."
+          ],
+          "resistencias": [
+            "Resistente a intimidação de criaturas menores."
+          ],
+          "recompensas": [
+            "1d10 moedas de ouro",
+            "Arma de qualidade militar",
+            "Armadura de couro reforçado",
+            "Chance de encontrar um mapa ou ordem militar."
+          ],
+          "personalidade": "Orgulhoso, disciplinado, agressivo e extremamente leal à sua tribo. Respeita a força e despreza covardes."
+        },
+
+                {
+          "nome": "Gnoll",
+          "imagem": "img/bestiario/fantasia/gnoll.webp",
+          "descricao": "Criatura humanoide com características de hiena, corpo robusto, mandíbula poderosa e comportamento animalesco. São caçadores cruéis que vivem em bandos e sentem prazer em perseguir e devorar suas presas. Costumam atacar adversários enfraquecidos.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 11,
+            "Força": 4,
+            "Agilidade": 3,
+            "Inteligência": 2,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Selvagem",
+              "descricao": "Avança contra o jogador e crava seus dentes em sua carne. Causa 1d8 de dano."
+            },
+            {
+              "nome": "Dilacerar",
+              "descricao": "Ataca violentamente com suas garras e dentes, tentando abrir feridas profundas. Causa 1d6 de dano cortante + 1d4 de sangramento."
+            },
+            {
+              "nome": "Abocanhar",
+              "descricao": "Morde uma região do corpo do jogador e tenta arrastá-lo para o chão. Causa 1d6 de dano e exige um teste de Força DF:13 para escapar."
+            },
+            {
+              "nome": "Caçada em Bando",
+              "descricao": "O Gnoll recebe +2 de dano em seus ataques enquanto houver outro Gnoll aliado próximo ao jogador."
+            },
+            {
+              "nome": "Frenesi Carniceiro",
+              "descricao": "Ao perceber um adversário ferido, entra em um estado de frenesi, atacando sem hesitação. Causa 2d6 de dano, mas deixa sua Defesa reduzida em 2 até seu próximo turno."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Pouco inteligente e facilmente provocado.",
+            "Pode agir impulsivamente quando está faminto."
+          ],
+          "resistencias": [
+            "Nenhuma"
+          ],
+          "recompensas": [
+            "Nada em especial"
+          ],
+          "personalidade": "Cruel, agressivo e animalesco. Enxerga outras criaturas como presas."
+        },
+
+        {
+        "nome": "Urso-Coruja",
+        "imagem": "img/bestiario/fantasia/urso-coruja.webp",
+        "descricao": "Uma monstruosidade híbrida entre um urso e uma coruja. Possui corpo gigantesco, garras capazes de rasgar carne e um bico curvo e poderoso. É extremamente territorialista e ataca qualquer criatura que invada seu território. Mesmo ferido, continua lutando com uma ferocidade assustadora.",
+        "atributos": {
+          "Vida": 40,
+          "Defesa": 12,
+          "Força": 7,
+          "Agilidade": 3,
+          "Inteligência": 2,
+          "Carisma": 1
+        },
+        "habilidades": [
+          {
+            "nome": "Garras Dilacerantes",
+            "descricao": "Ataca com suas enormes garras, rasgando profundamente a carne do adversário. Causa 1d10 de dano cortante."
+          },
+          {
+            "nome": "Mordida Esmagadora",
+            "descricao": "Abre seu enorme bico e prende o jogador em uma mordida brutal. Causa 1d8 de dano e deixa o alvo sangrando, recebendo 1d4 de dano por turno durante 2 turnos."
+          },
+          {
+            "nome": "Investida Selvagem",
+            "descricao": "Avança contra o jogador com todo o peso de seu corpo, atingindo-o violentamente. Causa 1d10 de dano e derruba o alvo."
+          },
+          {
+            "nome": "Abraço Mortal",
+            "descricao": "Agarra o jogador com suas enormes patas e aperta seu corpo com força esmagadora. Causa 1d8 de dano por turno enquanto o mantém agarrado. O jogador pode realizar um teste de Força DF:15 para escapar."
+          },
+          {
+            "nome": "Fúria Territorial",
+            "descricao": "Ao ficar com menos de 50% da Vida, torna-se ainda mais agressivo, recebendo +2 de dano em seus ataques físicos até o fim do combate."
+          }
+        ],
+        "ameaca": "Alta (3)",
+        "fraquezas": [
+          "Pouco inteligente e facilmente provocado.",
+          "Seus movimentos são relativamente lentos."
+        ],
+        "resistencias": [
+          "Resistente a ataques físicos leves devido à sua musculatura e pelagem espessa."
+        ],
+        "recompensas": [
+          "Pele espessa de Urso-Coruja",
+          "Garras enormes",
+          "Bico curvo e resistente"
+        ],
+        "personalidade": "Territorialista, brutal e extremamente agressivo. Não caça por prazer, mas elimina qualquer ameaça ao seu território."
+      },
+
+      {
+        "nome": "Gosma Cinzenta",
+        "imagem": "img/bestiario/fantasia/gosma-cinzenta.webp",
+        "descricao": "Uma massa viscosa e amorfa de coloração cinzenta, capaz de se camuflar em superfícies rochosas. Move-se lentamente e ataca criaturas que passam por perto, envolvendo seus corpos e dissolvendo carne, couro e equipamentos com seu ácido corrosivo.",
+        "atributos": {
+          "Vida": 20,
+          "Defesa": 8,
+          "Força": 3,
+          "Agilidade": 1,
+          "Inteligência": 1,
+          "Carisma": 0
+        },
+        "habilidades": [
+          {
+            "nome": "Pseudópode Ácido",
+            "descricao": "Estende uma parte de seu corpo e golpeia o jogador com uma massa corrosiva. Causa 1d6 de dano ácido."
+          },
+          {
+            "nome": "Envolver",
+            "descricao": "Lança parte de seu corpo viscoso sobre o jogador, tentando envolvê-lo completamente. Causa 1d4 de dano por turno enquanto estiver preso. O jogador pode realizar um teste de Força DF:13 para escapar."
+          },
+          {
+            "nome": "Dissolver Equipamento",
+            "descricao": "Ao entrar em contato com uma arma ou armadura, libera um ácido extremamente corrosivo. O equipamento atingido sofre danos e perde eficácia. O jogador precisa se afastar ou remover o equipamento para evitar a corrosão contínua."
+          },
+          {
+            "nome": "Corpo Corrosivo",
+            "descricao": "Qualquer criatura que atacar a gosma com as mãos ou armas de combate corpo a corpo desprotegidas sofre 1d4 de dano ácido."
+          },
+          {
+            "nome": "Camuflagem Rochosa",
+            "descricao": "Permanece imóvel e assume uma aparência semelhante à pedra úmida, tornando-se difícil de detectar. O jogador precisa passar em um teste de Inteligência DF:14 para percebê-la antes de se aproximar."
+          }
+        ],
+        "ameaca": "Baixa (1)",
+        "fraquezas": [
+          "Movimenta-se lentamente.",
+          "Pode ser facilmente evitada por criaturas atentas.",
+          "Vulnerável ao frio extremo."
+        ],
+        "resistencias": [
+          "Resistente a ataques cortantes.",
+          "Imune a sangramento e efeitos que afetam criaturas vivas."
+        ],
+        "recompensas": [
+          "1d4 porções de secreção ácida",
+          "Núcleo gelatinoso",
+          "Pequena chance de encontrar moedas ou objetos dissolvidos em seu interior."
+        ],
+        "personalidade": "Não possui inteligência ou personalidade reconhecível. Age por instinto, dissolvendo qualquer criatura que entre em seu alcance."
+        },
+
+        {
+          "nome": "Ghoul",
+          "imagem": "img/bestiario/fantasia/ghoul.webp",
+          "descricao": "Um morto-vivo de aparência humanoide, pele pálida e apodrecida, unhas compridas e dentes semelhantes aos de um animal selvagem. Alimenta-se de carne humana e costuma habitar cemitérios, catacumbas e ruínas. É um caçador sorrateiro que prefere atacar vítimas desprevenidas.",
+          "atributos": {
+            "Vida": 22,
+            "Defesa": 11,
+            "Força": 3,
+            "Agilidade": 5,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Garras Putrefatas",
+              "descricao": "Ataca o jogador com suas unhas compridas e sujas, causando 1d6 de dano cortante + 1d4 de sangramento."
+            },
+            {
+              "nome": "Mordida Necrótica",
+              "descricao": "Crava seus dentes na carne do jogador, causando 1d8 de dano. A ferida começa a necrosar, causando mais 1d4 de dano no próximo turno."
+            },
+            {
+              "nome": "Toque Paralisante",
+              "descricao": "Toca o jogador com suas mãos apodrecidas e transmite uma energia necrótica. O jogador deve realizar um teste de resistência DF:14. Se falhar, fica paralisado por 1 turno."
+            },
+            {
+              "nome": "Salto Predatório",
+              "descricao": "Salta violentamente sobre o jogador, derrubando-o no chão e causando 1d6 de dano. Se o alvo estiver caído, o Ghoul recebe vantagem no próximo ataque."
+            },
+            {
+              "nome": "Devorar Carne",
+              "descricao": "Se estiver próximo de um jogador caído, começa a devorar sua carne, causando 1d8 de dano e recuperando 1d6 de Vida."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Vulnerável a ataques de fogo.",
+            "Movimentos previsíveis quando está faminto."
+          ],
+          "resistencias": [
+            "Imune a sangramento.",
+            "Resistente a venenos e doenças comuns."
+          ],
+          "recompensas": [
+            "Dentes e garras de Ghoul",
+            "Fragmentos de tecido necrótico"
+          ],
+          "personalidade": "Faminto, cruel e animalesco. Demonstra uma inteligência rudimentar, sendo capaz de perseguir vítimas, preparar emboscadas e atacar adversários caídos."
+        },
+
+        {
+        "nome": "Minotauro",
+        "imagem": "img/bestiario/fantasia/minotauro.webp",
+        "descricao": "Uma criatura monstruosa com corpo humanoide musculoso e cabeça de touro. Possui chifres enormes, força descomunal e costuma empunhar machados de batalha gigantescos. Habita labirintos, cavernas e ruínas, atacando brutalmente qualquer invasor que encontre.",
+        "atributos": {
+          "Vida": 45,
+          "Defesa": 13,
+          "Força": 8,
+          "Agilidade": 3,
+          "Inteligência": 3,
+          "Carisma": 2
+        },
+        "habilidades": [
+          {
+            "nome": "Machadada Brutal",
+            "descricao": "Desfere um golpe devastador com seu machado, tentando partir o adversário ao meio. Causa 1d10 de dano cortante."
+          },
+          {
+            "nome": "Chifrada",
+            "descricao": "Inclina a cabeça e ataca com seus enormes chifres, perfurando o corpo do jogador. Causa 1d8 de dano perfurante e empurra o alvo para trás."
+          },
+          {
+            "nome": "Investida Devastadora",
+            "descricao": "Recua alguns passos e dispara em direção ao jogador, atingindo-o com todo o peso de seu corpo. Causa 2d8 de dano e derruba o alvo. Se atingir uma parede, causa mais 1d4 de dano."
+          },
+          {
+            "nome": "Pisoteamento",
+            "descricao": "Ao encontrar um adversário caído, ergue uma de suas patas e pisa violentamente sobre seu corpo. Causa 1d10 de dano."
+          },
+          {
+            "nome": "Fúria do Touro",
+            "descricao": "Ao ficar com menos de 50% da Vida, entra em um estado de fúria, recebendo +2 de dano em seus ataques físicos até o fim do combate."
+          }
+        ],
+        "ameaca": "Alta (3)",
+        "fraquezas": [
+          "Pouca agilidade para realizar movimentos rápidos.",
+          "Pode ser enganado por adversários inteligentes e armadilhas."
+        ],
+        "resistencias": [
+          "Resistente a ataques físicos leves devido à sua musculatura robusta."
+        ],
+        "recompensas": [
+          "Chifres de Minotauro",
+          "Couro resistente",
+          "Machado de batalha pesado"
+        ],
+        "personalidade": "Brutal, territorialista e extremamente agressivo. Possui inteligência suficiente para perseguir invasores e utilizar o ambiente a seu favor, mas prefere resolver conflitos com força."
+      },
+
+      {
+        "nome": "Sapo Gigante",
+        "imagem": "img/bestiario/fantasia/sapo-gigante.webp",
+        "descricao": "Um anfíbio enorme que habita pântanos, brejos e florestas úmidas. Possui uma língua comprida e pegajosa, capaz de agarrar e puxar criaturas menores. Apesar de sua aparência desajeitada, é um predador paciente que costuma permanecer imóvel esperando suas presas se aproximarem.",
+        "atributos": {
+          "Vida": 20,
+          "Defesa": 10,
+          "Força": 3,
+          "Agilidade": 4,
+          "Inteligência": 1,
+          "Carisma": 0
+        },
+        "habilidades": [
+          {
+            "nome": "Língua Pegajosa",
+            "descricao": "Dispara sua língua contra o jogador, tentando agarrá-lo e puxá-lo em sua direção. O alvo deve realizar um teste de Agilidade DF:13 para evitar ser agarrado."
+          },
+          {
+            "nome": "Mordida Voraz",
+            "descricao": "Abre sua enorme boca e morde o jogador com suas mandíbulas. Causa 1d8 de dano."
+          },
+          {
+            "nome": "Engolir",
+            "descricao": "Se conseguir agarrar um jogador com sua língua, tenta engoli-lo inteiro. O alvo deve realizar um teste de Força DF:15 para escapar. Se falhar, fica preso dentro de sua boca e recebe 1d6 de dano por turno até conseguir escapar."
+          },
+          {
+            "nome": "Salto Esmagador",
+            "descricao": "Dobra suas patas traseiras e salta sobre o jogador, esmagando-o contra o chão. Causa 1d8 de dano e derruba o alvo."
+          }
+        ],
+        "ameaca": "Média (2)",
+        "fraquezas": [
+          "Movimenta-se com dificuldade fora de ambientes úmidos.",
+          "Possui pouca inteligência e pode ser facilmente distraído."
+        ],
+        "resistencias": [
+          "Resistente a venenos naturais."
+        ],
+        "recompensas": [
+          "Pele de Sapo Gigante",
+          "Língua pegajosa",
+          "Glândulas venenosas (chance de encontrar)",
+          "1d6 moedas de ouro"
+        ],
+        "personalidade": "Instintivo, paciente e territorialista. Permanece escondido esperando o momento certo para capturar suas presas."
+      },
+
+      {
+        "nome": "Elemental Menor",
+        "imagem": "img/bestiario/fantasia/elemental-menor.webp",
+        "descricao": "Uma pequena criatura formada por energia elemental condensada. Seu corpo parece estar em constante transformação, emitindo brilhos e movimentos sobrenaturais. Apesar de ser uma manifestação menor, é capaz de lançar ataques mágicos e defender seu território com ferocidade.",
+        "atributos": {
+          "Vida": 18,
+          "Defesa": 13,
+          "Força": 2,
+          "Agilidade": 4,
+          "Inteligência": 3,
+          "Carisma": 0
+        },
+        "habilidades": [
+          {
+            "nome": "Rajada Elemental",
+            "descricao": "Dispara uma pequena concentração de energia elemental contra o jogador. Causa 1d8 de dano elemental."
+          },
+          {
+            "nome": "Punho Elemental",
+            "descricao": "Concentra sua energia em um dos braços e desfere um golpe contra o adversário. Causa 1d6 de dano elemental."
+          },
+          {
+            "nome": "Explosão Instável",
+            "descricao": "Libera toda a energia acumulada em seu corpo, provocando uma explosão ao seu redor. Causa 1d10 de dano elemental em criaturas próximas."
+          },
+          {
+            "nome": "Corpo Energizado",
+            "descricao": "Seu corpo se torna instável e libera energia ao ser atingido. Criaturas que o atacarem corpo a corpo recebem 1d4 de dano elemental."
+          }
+        ],
+        "ameaca": "Baixa (1)",
+        "fraquezas": [
+          "Sua estrutura mágica é instável.",
+          "Pode ser enfraquecido por energias elementais opostas."
+        ],
+        "resistencias": [
+          "Resistente ao elemento que compõe seu corpo.",
+          "Imune a sangramento e venenos."
+        ],
+        "recompensas": [
+          "Fragmento elemental",
+          "Núcleo de energia instável"
+        ],
+        "personalidade": "Instintivo e territorialista. Não demonstra emoções humanas, reagindo agressivamente à presença de criaturas em seu território."
+      },
+
+      {
+          "nome": "Elemental de Fogo",
+          "imagem": "img/bestiario/fantasia/elemental-fogo.webp",
+          "descricao": "Uma criatura formada por chamas vivas, com um corpo humanoide que parece queimar constantemente. Sua presença aumenta a temperatura ao redor e suas chamas consomem tudo que tocam.",
+          "atributos": {
+            "Vida": 22,
+            "Defesa": 13,
+            "Força": 3,
+            "Agilidade": 4,
+            "Inteligência": 3,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Punho Flamejante",
+              "descricao": "Concentra chamas em seu braço e desfere um golpe contra o jogador. Causa 1d8 de dano de fogo + 1d4 de queimadura."
+            },
+            {
+              "nome": "Rajada de Chamas",
+              "descricao": "Dispara uma onda de fogo contra o jogador. Causa 1d10 de dano de fogo."
+            },
+            {
+              "nome": "Explosão Incandescente",
+              "descricao": "Libera uma explosão de fogo ao seu redor, atingindo todas as criaturas próximas. Causa 1d8 de dano de fogo."
+            },
+            {
+              "nome": "Corpo Flamejante",
+              "descricao": "Sua superfície é coberta por chamas intensas. Criaturas que o atacarem corpo a corpo recebem 1d4 de dano de fogo."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Vulnerável a ataques de água e gelo."
+          ],
+          "resistencias": [
+            "Imune a fogo e queimaduras.",
+            "Imune a sangramento e venenos."
+          ],
+          "recompensas": [
+            "Núcleo de fogo",
+            "Cinzas mágicas",
+            "Fragmento elemental"
+          ],
+          "personalidade": "Impulsivo, destrutivo e agressivo. Ataca qualquer criatura que se aproxime."
+        },
+
+        {
+          "nome": "Elemental de Gelo",
+          "imagem": "img/bestiario/fantasia/elemental-gelo.webp",
+          "descricao": "Uma criatura humanoide formada por gelo compacto e energia congelante. Seu corpo possui espinhos cristalinos e uma aura extremamente fria, capaz de congelar a água e reduzir a temperatura ao seu redor.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 12,
+            "Força": 3,
+            "Agilidade": 2,
+            "Inteligência": 4,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Lança de Gelo",
+              "descricao": "Cria uma lança de gelo e a arremessa contra o jogador. Causa 1d8 de dano perfurante + 1d4 de dano congelante."
+            },
+            {
+              "nome": "Toque Congelante",
+              "descricao": "Toca o jogador com suas mãos congelantes. Causa 1d6 de dano e reduz sua Agilidade em 2 durante 2 turnos."
+            },
+            {
+              "nome": "Prisão de Gelo",
+              "descricao": "Cria uma camada de gelo ao redor das pernas do jogador, prendendo-o no lugar. O alvo deve realizar um teste de Força DF:14 para escapar."
+            },
+            {
+              "nome": "Espinhos Glaciais",
+              "descricao": "Faz diversos espinhos de gelo emergirem do chão ao seu redor. Causa 1d8 de dano perfurante em criaturas próximas."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Vulnerável a ataques de fogo."
+          ],
+          "resistencias": [
+            "Imune a frio e congelamento.",
+            "Imune a sangramento e venenos."
+          ],
+          "recompensas": [
+            "Núcleo de gelo",
+            "Cristais congelados",
+            "Fragmento elemental"
+          ],
+          "personalidade": "Frio, silencioso e calculista. Costuma congelar suas vítimas antes de destruí-las."
+        },
+
+        {
+          "nome": "Elemental de Raio",
+          "imagem": "img/bestiario/fantasia/elemental-raio.webp",
+          "descricao": "Uma manifestação de energia elétrica com forma humanoide. Seu corpo é composto por descargas luminosas que se movimentam constantemente. É extremamente veloz e ataca antes que seus adversários consigam reagir.",
+          "atributos": {
+            "Vida": 18,
+            "Defesa": 9,
+            "Força": 2,
+            "Agilidade": 8,
+            "Inteligência": 3,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Descarga Elétrica",
+              "descricao": "Dispara uma descarga de eletricidade contra o jogador. Causa 1d8 de dano elétrico."
+            },
+            {
+              "nome": "Investida Relâmpago",
+              "descricao": "Transforma seu corpo em uma descarga elétrica e atravessa rapidamente o campo de batalha, atingindo o jogador. Causa 1d10 de dano elétrico."
+            },
+            {
+              "nome": "Choque Paralisante",
+              "descricao": "Dispara uma corrente elétrica diretamente contra o jogador. Causa 1d6 de dano e exige um teste de resistência DF:14. Se falhar, o alvo fica paralisado por 1 turno."
+            },
+            {
+              "nome": "Sobrecarga",
+              "descricao": "Acumula eletricidade em seu corpo e libera uma descarga em todas as criaturas próximas. Causa 1d8 de dano elétrico."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Defesa física baixa.",
+            "Vulnerável a ataques de terra."
+          ],
+          "resistencias": [
+            "Imune a eletricidade.",
+            "Imune a sangramento e venenos."
+          ],
+          "recompensas": [
+            "Núcleo elétrico",
+            "Fragmento de energia",
+            "Fragmento elemental"
+          ],
+          "personalidade": "Agitado, imprevisível e extremamente agressivo. Ataca rapidamente e raramente permanece no mesmo lugar."
+        },
+
+        {
+          "nome": "Elemental de Terra",
+          "imagem": "img/bestiario/fantasia/elemental-terra.webp",
+          "descricao": "Uma criatura gigantesca formada por pedras, rochas e minerais compactados. Seu corpo é extremamente resistente e seus movimentos provocam pequenos tremores no solo. Apesar de lento, possui uma força esmagadora.",
+          "atributos": {
+            "Vida": 38,
+            "Defesa": 14,
+            "Força": 7,
+            "Agilidade": 1,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Punho de Pedra",
+              "descricao": "Desfere um soco devastador com seu braço rochoso. Causa 1d10 de dano contundente."
+            },
+            {
+              "nome": "Abalo Sísmico",
+              "descricao": "Golpeia o chão com força, provocando um tremor que derruba criaturas próximas. Causa 1d8 de dano contundente."
+            },
+            {
+              "nome": "Estacas Rochosas",
+              "descricao": "Faz grandes estacas de pedra emergirem do solo em direção ao jogador. Causa 1d10 de dano perfurante."
+            },
+            {
+              "nome": "Couraça Mineral",
+              "descricao": "Reforça seu corpo com uma camada adicional de rochas, reduzindo em 1d6 o próximo dano recebido."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Extremamente lento.",
+            "Vulnerável a ataques que desestabilizam sua estrutura rochosa."
+          ],
+          "resistencias": [
+            "Resistente a ataques cortantes e perfurantes.",
+            "Imune a sangramento e venenos."
+          ],
+          "recompensas": [
+            "Núcleo de terra",
+            "Minérios raros",
+            "Fragmentos de pedra mágica"
+          ],
+          "personalidade": "Lento, silencioso e territorialista. Não costuma perseguir inimigos, mas destrói brutalmente qualquer criatura que invada seu território."
+        },
+
+        {
+          "nome": "Elemental de Ácido",
+          "imagem": "img/bestiario/fantasia/elemental-acido.webp",
+          "descricao": "Uma criatura disforme composta por uma substância corrosiva de coloração esverdeada. Seu corpo borbulha constantemente e libera vapores tóxicos. Tudo que toca começa a ser corroído lentamente.",
+          "atributos": {
+            "Vida": 24,
+            "Defesa": 9,
+            "Força": 3,
+            "Agilidade": 3,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Chicote Corrosivo",
+              "descricao": "Estende um tentáculo ácido e golpeia o jogador. Causa 1d6 de dano ácido + 1d4 de corrosão."
+            },
+            {
+              "nome": "Cuspe Ácido",
+              "descricao": "Lança uma grande quantidade de ácido contra o jogador. Causa 1d8 de dano ácido."
+            },
+            {
+              "nome": "Poça Corrosiva",
+              "descricao": "Espalha uma poça de ácido pelo chão. Quem permanecer sobre ela recebe 1d6 de dano ácido por turno."
+            },
+            {
+              "nome": "Explosão Cáustica",
+              "descricao": "Seu corpo se contrai e libera uma explosão de substância corrosiva ao redor. Causa 1d10 de dano ácido em criaturas próximas."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Movimenta-se lentamente.",
+            "Vulnerável a ataques de frio extremo."
+          ],
+          "resistencias": [
+            "Imune a ácido e corrosão.",
+            "Imune a sangramento e venenos."
+          ],
+          "recompensas": [
+            "Núcleo ácido",
+            "Glândula corrosiva",
+            "Fragmento elemental"
+          ],
+          "personalidade": "Hostil, instintivo e destrutivo. Corrói tudo que encontra em seu caminho, sem distinguir criaturas ou objetos."
+        },
+
+        {
+          "nome": "Troll",
+          "imagem": "img/bestiario/fantasia/troll.webp",
+          "descricao": "Uma criatura humanoide enorme, de pele grossa, braços compridos e aparência grotesca. Possui uma capacidade assustadora de regeneração, conseguindo fechar feridas e reconstruir partes do corpo. É extremamente agressivo e costuma habitar cavernas, pântanos e regiões isoladas.",
+          "atributos": {
+            "Vida": 40,
+            "Defesa": 12,
+            "Força": 7,
+            "Agilidade": 3,
+            "Inteligência": 2,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Esmagamento",
+              "descricao": "Desfere um golpe brutal com seus enormes punhos, esmagando o adversário. Causa 1d10 de dano contundente."
+            },
+            {
+              "nome": "Dilacerar",
+              "descricao": "Ataca com suas garras enormes, rasgando a carne do jogador. Causa 1d8 de dano cortante + 1d4 de sangramento."
+            },
+            {
+              "nome": "Arremesso Brutal",
+              "descricao": "Agarra o jogador e o arremessa violentamente contra o chão ou uma parede. Causa 1d8 de dano e derruba o alvo. O jogador pode realizar um teste de Força DF:15 para evitar ser agarrado."
+            },
+            {
+              "nome": "Fúria Selvagem",
+              "descricao": "Ao ficar com menos de 30% da Vida, entra em um estado de fúria, recebendo +2 de dano em seus ataques físicos até o fim do combate."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Pouca inteligência, podendo cair em armadilhas."
+          ],
+          "resistencias": [
+            "Resistente a ataques físicos leves.",
+            "Resistente a ferimentos comuns devido à sua capacidade regenerativa."
+          ],
+          "recompensas": [
+            "Sangue usado para fazer poções",
+            "Garras de Troll",
+            "Pele grossa de Troll"
+          ],
+          "personalidade": "Brutal, territorialista e extremamente agressivo. Possui inteligência limitada, mas demonstra astúcia suficiente para perseguir presas e proteger seu território."
+        },
+
+        {
+          "nome": "Gigante da Colina",
+          "imagem": "img/bestiario/fantasia/gigante-colina.webp",
+          "descricao": "Um humanoide gigantesco, de corpo desproporcional, barriga volumosa e força monstruosa. Vive em colinas, montanhas e cavernas, onde costuma roubar alimentos e atacar viajantes. Apesar de sua força absurda, possui pouca inteligência e costuma utilizar troncos, pedras e qualquer objeto pesado como armas.",
+          "atributos": {
+            "Vida": 55,
+            "Defesa": 11,
+            "Força": 10,
+            "Agilidade": 2,
+            "Inteligência": 1,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Clava Esmagadora",
+              "descricao": "Ergue sua enorme clava e desfere uma pancada devastadora contra o jogador. Causa 2d8 de dano contundente."
+            },
+            {
+              "nome": "Arremessar Pedra",
+              "descricao": "Arranca uma grande pedra do chão e a arremessa contra o jogador. Causa 1d12 de dano contundente."
+            },
+            {
+              "nome": "Pisoteamento",
+              "descricao": "Ergue uma de suas enormes pernas e pisa violentamente sobre o jogador. Causa 1d10 de dano e derruba o alvo."
+            },
+            {
+              "nome": "Soco Esmagador",
+              "descricao": "Desfere um soco com força brutal, lançando o jogador para longe. Causa 1d10 de dano e empurra o alvo para trás."
+            },
+            {
+              "nome": "Fúria Descontrolada",
+              "descricao": "Ao ficar com menos de 50% da Vida, começa a atacar descontroladamente, recebendo +2 de dano em seus ataques físicos, mas perdendo 2 pontos de Defesa."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Extremamente lento.",
+            "Pouca inteligência, podendo ser enganado ou atraído para armadilhas.",
+            "Possui dificuldade para atingir adversários muito ágeis."
+          ],
+          "resistencias": [
+            "Resistente a ataques físicos leves devido ao seu tamanho e musculatura."
+          ],
+          "recompensas": [
+            "Clava gigante",
+            "Pele de Gigante",
+            "2d12 moedas de ouro",
+            "Objetos roubados de viajantes."
+          ],
+          "personalidade": "Bruto, guloso, ganancioso e territorialista. Gosta de intimidar criaturas menores e costuma atacar qualquer um que tente roubar sua comida ou pertences."
+        },
+
+        {
+            "nome": "Gárgula",
+            "imagem": "img/bestiario/fantasia/gargula.webp",
+            "descricao": "Criatura monstruosa feita de pedra, com asas semelhantes às de um morcego, garras afiadas e rosto demoníaco. Costuma permanecer imóvel em construções antigas, castelos e ruínas, fingindo ser uma estátua. Quando uma criatura se aproxima, desperta e ataca violentamente.",
+            "atributos": {
+              "Vida": 30,
+              "Defesa": 14,
+              "Força": 5,
+              "Agilidade": 5,
+              "Inteligência": 2,
+              "Carisma": 1
+            },
+            "habilidades": [
+              {
+                "nome": "Garras de Pedra",
+                "descricao": "Ataca com suas enormes garras, rasgando o adversário. Causa 1d8 de dano cortante."
+              },
+              {
+                "nome": "Mergulho Predatório",
+                "descricao": "Levanta voo e mergulha violentamente contra o jogador, atingindo-o com suas garras. Causa 1d10 de dano e derruba o alvo."
+              },
+              {
+                "nome": "Mordida Pétrea",
+                "descricao": "Abre sua mandíbula rochosa e crava os dentes no jogador. Causa 1d8 de dano perfurante."
+              },
+              {
+                "nome": "Asas Protetoras",
+                "descricao": "Envolve seu corpo com as asas resistentes, reduzindo em 1d8 o próximo dano recebido."
+              },
+              {
+                "nome": "Falsa Estátua",
+                "descricao": "Permanece imóvel, assumindo completamente a aparência de uma estátua de pedra. Pode surpreender criaturas que não perceberem sua presença, realizando o primeiro ataque sem dar oportunidade de reação."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Vulnerável a impactos extremamente fortes que podem rachar sua estrutura.",
+              "Possui movimentos mais limitados quando está no chão."
+            ],
+            "resistencias": [
+              "Resistente a ataques cortantes e perfurantes.",
+              "Imune a sangramento e venenos."
+            ],
+            "recompensas": [
+              "Fragmentos de pedra encantada",
+              "Garras de Gárgula",
+              "Núcleo mágico"
+            ],
+            "personalidade": "Silenciosa, territorialista e cruel. Costuma observar suas vítimas por longos períodos antes de atacar, aproveitando-se de sua aparência de estátua."
+          },
+
+          {
+            "nome": "Basilisco",
+            "imagem": "img/bestiario/fantasia/basilisco.webp",
+            "descricao": "Um réptil monstruoso de corpo robusto, escamas resistentes, garras afiadas e olhos amarelados de aparência sobrenatural. Habita cavernas, ruínas e florestas isoladas. Seu olhar carrega uma maldição capaz de petrificar lentamente suas vítimas. Costuma caçar sozinho e proteger ferozmente seu território.",
+            "atributos": {
+              "Vida": 32,
+              "Defesa": 13,
+              "Força": 5,
+              "Agilidade": 3,
+              "Inteligência": 2,
+              "Carisma": 0
+            },
+            "habilidades": [
+              {
+                "nome": "Olhar Petrificante",
+                "descricao": "Encarar diretamente seus olhos pode ser fatal. O jogador deve realizar um teste de resistência DF:15. Se falhar, começa a petrificar, ficando com sua Agilidade reduzida em 2. Se falhar novamente ao ser atingido pelo olhar em outro turno, fica completamente petrificado por 2 turnos."
+              },
+              {
+                "nome": "Mordida Venenosa",
+                "descricao": "Avança e crava suas presas no jogador, injetando um veneno poderoso. Causa 1d8 de dano perfurante + 1d4 de dano venenoso por 2 turnos."
+              },
+              {
+                "nome": "Cauda Esmagadora",
+                "descricao": "Gira seu corpo e golpeia o jogador com sua enorme cauda. Causa 1d8 de dano contundente e derruba o alvo."
+              },
+              {
+                "nome": "Garras Dilacerantes",
+                "descricao": "Ataca com suas patas dianteiras, rasgando profundamente a carne do adversário. Causa 1d6 de dano cortante + 1d4 de sangramento."
+              },
+              {
+                "nome": "Escamas Rochosas",
+                "descricao": "Enrijece suas escamas, reduzindo em 1d8 o próximo dano recebido, por 1 turno"
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Movimenta-se lentamente.",
+              "Pode ter seu olhar petrificante evitado ao lutar sem encará-lo diretamente."
+            ],
+            "resistencias": [
+              "Resistente a venenos.",
+              "Resistente a ataques cortantes leves."
+            ],
+            "recompensas": [
+              "Olhos petrificantes",
+              "Escamas de Basilisco",
+              "Presas venenosas"
+            ],
+            "personalidade": "Territorialista, paciente e extremamente agressivo. Costuma permanecer escondido observando suas presas antes de atacá-las."
+          },
+
+          {
+            "nome": "Lobisomem",
+            "imagem": "img/bestiario/fantasia/lobisomen.webp",
+            "descricao": "Uma criatura humanoide de aparência lupina, resultado de uma maldição antiga. Extremamente agressiva durante a noite, caça utilizando seus sentidos aguçados, força brutal e velocidade assustadora. Suas feridas se fecham rapidamente, tornando-o um inimigo difícil de derrubar.",
+            "atributos": {
+              "Vida": 38,
+              "Defesa": 13,
+              "Força": 7,
+              "Agilidade": 6,
+              "Inteligência": 2,
+              "Carisma": 1
+            },
+            "habilidades": [
+              {
+                "nome": "Garras Dilacerantes",
+                "descricao": "Ataca com suas garras afiadas, causando 1d8 de dano. Se o resultado do dado for 7 ou 8, o alvo sofre um sangramento de 1d4 de dano no início de cada turno, durante 2 turnos."
+              },
+              {
+                "nome": "Mordida Selvagem",
+                "descricao": "Avança contra o alvo e crava suas presas, causando 1d10 de dano. O alvo deve passar em um teste de Força DF:14 ou fica agarrado pelas mandíbulas, sem conseguir se afastar até se libertar."
+              },
+              {
+                "nome": "Regeneração Bestial",
+                "descricao": "No início de seu turno, recupera 1d6 de Vida. Essa regeneração é interrompida até o início do próximo turno quando recebe dano de prata ou fogo."
+              },
+              {
+                "nome": "Salto Predatório",
+                "descricao": "Salta sobre um inimigo, derrubando-o e causando 1d6 + Força de dano. O alvo deve passar em um teste de Agilidade DF:14 para não cair no chão."
+              },
+              {
+                "nome": "Uivo Aterrorizante",
+                "descricao": "Solta um uivo monstruoso. Todos os inimigos próximos devem passar em um teste de Carisma DF:13 ou sofrem -2 no próximo teste de ataque devido ao medo."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Prata",
+              "Fogo",
+              "Pode perder o controle ao sofrer ferimentos graves"
+            ],
+            "resistencias": [
+              "Armas comuns causam dificuldade para cicatrizar suas feridas",
+              "Frio",
+              "Medo"
+            ],
+            "recompensas": [
+              "Presa de lobisomem",
+              "Pele resistente",
+              "Garras afiadas",
+              "Sangue amaldiçoado"
+            ],
+            "personalidade": "Instintivo, territorialista e extremamente agressivo. Costuma perseguir suas presas antes de atacar, observando seus movimentos e esperando o momento de maior vulnerabilidade. Apesar de sua aparência animalesca, ainda pode demonstrar fragmentos de inteligência humana."
+          },
+
+          {
+          "nome": "Manticora",
+          "imagem": "img/bestiario/fantasia/manticora.webp",
+          "descricao": "Uma criatura monstruosa com corpo de leão, rosto humanoide e uma cauda semelhante à de um escorpião, repleta de espinhos venenosos. Inteligente e cruel, prefere enfraquecer suas presas à distância antes de avançar para finalizá-las com suas garras e presas.",
+          "atributos": {
+            "Vida": 42,
+            "Defesa": 13,
+            "Força": 7,
+            "Agilidade": 5,
+            "Inteligência": 4,
+            "Carisma": 3
+          },
+          "habilidades": [
+            {
+              "nome": "Rajada de Espinhos",
+              "descricao": "Dispara 1d4 espinhos venenosos de sua cauda contra um ou mais alvos. Cada espinho causa 1d6 de dano. O alvo atingido deve passar em um teste de Força DF:13 ou sofre 1d4 de dano venenoso no início de seus próximos 2 turnos."
+            },
+            {
+              "nome": "Garras do Predador",
+              "descricao": "Ataca violentamente com suas patas dianteiras, causando 1d10 de dano."
+            },
+            {
+              "nome": "Ferrão Venenoso",
+              "descricao": "Ataca com o ferrão da cauda, causando 1d8 de dano. O alvo deve passar em um teste de Força DF:15 ou fica envenenado, sofrendo -2 em seus ataques durante 2 turnos."
+            },
+            {
+              "nome": "Rugido Aterrorizante",
+              "descricao": "Libera um rugido que mistura o grito de um leão com uma voz humana distorcida. Os inimigos próximos devem passar em um teste de Carisma DF:14 ou sofrem -2 no próximo teste de ataque."
+            },
+            {
+              "nome": "Caçadora Astuta",
+              "descricao": "A Manticora observa seus inimigos e procura atacar aqueles que demonstram fraqueza. Quando um alvo estiver com menos da metade da Vida, seus ataques contra ele causam +1d4 de dano."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Ventre menos protegido",
+            "Movimentos limitados em espaços apertados",
+            "Vulnerável a ataques que atinjam sua cauda"
+          ],
+          "resistencias": [
+            "Veneno",
+            "Medo",
+            "Intimidação"
+          ],
+          "recompensas": [
+            "Espinhos venenosos",
+            "Ferrão de Manticora",
+            "Pele resistente",
+            "Presas monstruosas"
+          ],
+          "personalidade": "Cruel, calculista e territorialista. Gosta de brincar com suas presas, ferindo-as à distância antes de se aproximar. Diferente de animais comuns, consegue compreender estratégias simples, reconhecer armadilhas e escolher quando recuar."
+        },
+
+        {
+          "nome": "Lich",
+          "imagem": "img/bestiario/fantasia/lich.webp",
+          "descricao": "Um antigo feiticeiro que abandonou a própria humanidade em busca da imortalidade. Seu corpo ressequido é sustentado por magia necromântica, enquanto sua alma permanece presa a um objeto conhecido como filactério. Extremamente inteligente e poderoso, utiliza maldições e feitiços devastadores para eliminar invasores.",
+          "atributos": {
+            "Vida": 45,
+            "Defesa": 14,
+            "Força": 2,
+            "Agilidade": 3,
+            "Inteligência": 10,
+            "Carisma": 5
+          },
+          "habilidades": [
+            {
+              "nome": "Raio da Morte",
+              "descricao": "Dispara um feixe de energia necromântica contra um alvo, causando 2d8 de dano mágico."
+            },
+            {
+              "nome": "Prisão de Ossos",
+              "descricao": "Faz ossos emergirem do chão e envolverem um inimigo. O alvo deve passar em um teste de Força DF:15 ou fica preso por 2 turnos. Enquanto estiver preso, não pode se movimentar."
+            },
+            {
+              "nome": "Drenar Vitalidade",
+              "descricao": "Absorve a energia vital de um inimigo próximo, causando 1d10 de dano mágico e recuperando metade do dano causado como Vida."
+            },
+            {
+              "nome": "Explosão Necrótica",
+              "descricao": "Libera uma onda de energia sombria ao seu redor, causando 2d6 de dano mágico a todos os inimigos próximos."
+            },
+            {
+              "nome": "Maldição da Fraqueza",
+              "descricao": "Amaldiçoa um alvo, que deve passar em um teste de Inteligência DF:15 ou sofre -2 em Força e Agilidade durante 3 turnos."
+            },
+            {
+              "nome": "Filactério",
+              "descricao": "Enquanto seu filactério permanecer intacto, o Lich não pode ser destruído permanentemente. Caso sua Vida chegue a zero, seu corpo é destruído, mas ele retorna após 1d4 dias, desde que o filactério não tenha sido encontrado e destruído."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Energia sagrada",
+            "Magia de luz",
+            "Destruição do filactério"
+          ],
+          "resistencias": [
+            "Veneno",
+            "Doenças",
+            "Medo",
+            "Dano necrótico"
+          ],
+          "recompensas": [
+            "Cajado necromântico",
+            "Fragmento de filactério",
+            "Livro de feitiços proibidos",
+            "Ossos encantados",
+            "Gemas arcanas"
+          ],
+          "personalidade": "Arrogante, paciente e extremamente calculista. Considera os seres vivos criaturas inferiores, mas demonstra curiosidade por indivíduos com grande potencial mágico. Raramente luta sem um plano e prefere manipular seus inimigos antes de enfrentá-los diretamente."
+        },
+
+        {
+          "nome": "Dragão Adulto",
+          "imagem": "img/bestiario/fantasia/dragao-adulto.webp",
+          "descricao": "Uma criatura colossal e ancestral, coberta por escamas resistentes e dotada de asas poderosas. Inteligente, territorialista e extremamente orgulhoso, domina os céus e protege seu território com ferocidade. Seu sopro elemental é capaz de devastar grupos inteiros de aventureiros. ROle um D6 para saber qual elemento (fogo(1), gelo(2), raio(3), acido(4), vento(5), luz(6))",
+          "atributos": {
+            "Vida": 75,
+            "Defesa": 16,
+            "Força": 10,
+            "Agilidade": 6,
+            "Inteligência": 7,
+            "Carisma": 6
+          },
+          "habilidades": [
+            {
+              "nome": "Sopro Dracônico",
+              "descricao": "Libera uma rajada elemental em uma área à sua frente, causando 3d8 de dano. Os alvos atingidos devem passar em um teste de Agilidade DF:15 para reduzir o dano pela metade. O elemento pode ser fogo, gelo, raio ou ácido, dependendo do dragão. Pode ser utilizado novamente após 2 turnos."
+            },
+            {
+              "nome": "Mordida Devastadora",
+              "descricao": "Avança com suas enormes mandíbulas, causando 2d8 de dano."
+            },
+            {
+              "nome": "Garras Colossais",
+              "descricao": "Ataca com suas garras, causando 1d12 de dano."
+            },
+            {
+              "nome": "Varredura de Cauda",
+              "descricao": "Golpeia violentamente com sua cauda, atingindo todos os inimigos próximos. Causa 1d10 de dano. Os alvos devem passar em um teste de Agilidade DF:15 ou são derrubados."
+            },
+            {
+              "nome": "Asas da Devastação",
+              "descricao": "Bate suas enormes asas, criando uma rajada de vento que atinge os inimigos próximos. Causa 1d8 de dano e exige um teste de Força DF:14 para evitar ser arremessado para trás."
+            },
+            {
+              "nome": "Voo Dracônico",
+              "descricao": "Alça voo e pode atacar inimigos de posições elevadas. Enquanto estiver voando, ataques corpo a corpo não conseguem alcançá-lo, a menos que o atacante também consiga voar ou tenha algum meio de atingir grandes alturas."
+            },
+            {
+              "nome": "Presença Aterrorizante",
+              "descricao": "Sua presença monstruosa intimida qualquer criatura. Inimigos que o enfrentam devem passar em um teste de Carisma DF:15 ou sofrem -2 em seus testes de ataque durante 2 turnos."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "O elemento oposto ao seu sopro",
+            "Articulações das asas",
+            "Ferimentos nas asas podem impedir seu voo"
+          ],
+          "resistencias": [
+            "Elemento de seu próprio sopro",
+            "Armas comuns",
+            "Intimidação"
+          ],
+          "recompensas": [
+            "Escamas dracônicas",
+            "Dentes de dragão",
+            "Garras colossais",
+            "Sangue dracônico",
+            "Núcleo elemental",
+            "Tesouro acumulado em seu covil"
+          ],
+          "personalidade": "Orgulhoso, inteligente e extremamente territorialista. Considera a maioria das criaturas inferiores e raramente aceita provocações. Pode negociar com aventureiros quando existe alguma vantagem, mas jamais esquece uma afronta. Acumula tesouros não apenas por ganância, mas também como demonstração de poder."
+        },
+
+        {
+          "nome": "Kobold",
+          "imagem": "img/bestiario/fantasia/kobold.webp",
+          "descricao": "Pequenas criaturas humanoides de aparência reptiliana, com escamas, focinho alongado e cauda. Frágeis fisicamente, compensam sua fraqueza com astúcia, armadilhas e ataques em grupo. Costumam viver em túneis e cavernas, onde conhecem cada passagem e esconderijo.",
+          "atributos": {
+            "Vida": 9,
+            "Defesa": 10,
+            "Força": 2,
+            "Agilidade": 5,
+            "Inteligência": 3,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Ataque Traiçoeiro",
+              "descricao": "Ataca um inimigo distraído com uma adaga, causando 1d6 de dano. Se estiver escondido ou acompanhado por outro kobold adjacente ao alvo, causa +1d4 de dano."
+            },
+            {
+              "nome": "Armadilha Improvisada",
+              "descricao": "Prepara uma armadilha simples em um espaço próximo. O primeiro inimigo que passar pelo local deve realizar um teste de Agilidade DF:13 ou sofre 1d8 de dano e fica preso por 1 turno."
+            },
+            {
+              "nome": "Covardia Estratégica",
+              "descricao": "Quando fica com menos da metade da Vida, tenta se esconder ou fugir para uma posição segura. Se houver outros kobolds, procura deixá-los entre ele e seus perseguidores."
+            },
+            {
+              "nome": "Ataque Coordenado",
+              "descricao": "Dois ou mais kobolds atacam o mesmo alvo simultaneamente. O ataque causa 1d8  dano. Só pode ser utilizado quando outro kobold estiver próximo do alvo."
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Baixa resistência física",
+            "Pouca coragem quando estão sozinhos",
+            "Vulneráveis a ataques em área"
+          ],
+          "resistencias": [
+            "Conhecimento de túneis e cavernas",
+            "Facilidade para se esconder em ambientes estreitos"
+          ],
+          "recompensas": [
+            "Adaga enferrujada",
+            "Armadura improvisada",
+            "Pequena bolsa de moedas",
+            "Componentes para armadilhas"
+          ],
+          "personalidade": "Desconfiado, ganancioso e oportunista. Prefere atacar em vantagem numérica e fugir quando percebe que o combate está perdido. Apesar de sua covardia, pode demonstrar lealdade ao seu bando ou a um líder que considere poderoso."
+        },
+
+        {
+          "nome": "Stirge",
+          "imagem": "img/bestiario/fantasia/stirge.webp",
+          "descricao": "Uma criatura voadora semelhante a uma mistura de morcego e mosquito gigante. Possui asas finas, patas com garras e um longo probóscide usado para perfurar a pele de suas vítimas e sugar seu sangue. Costuma atacar em bandos, surpreendendo viajantes e criaturas distraídas.",
+          "atributos": {
+            "Vida": 8,
+            "Defesa": 11,
+            "Força": 1,
+            "Agilidade": 6,
+            "Inteligência": 1,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Picada Sugadora",
+              "descricao": "Ataca com seu probóscide, causando 1d4 de dano e recuperando a mesma quantidade de Vida."
+            },
+            {
+              "nome": "Agarrar-se à Vítima",
+              "descricao": "Após acertar a Picada Sugadora, prende suas patas ao corpo do alvo. Enquanto estiver agarrado, não precisa realizar novos testes de ataque para sugar sangue: causa 1d4 de dano automático no início de cada turno e recupera a mesma quantidade de Vida. O alvo pode gastar sua ação para removê-lo com um teste de Força DF:12."
+            },
+            {
+              "nome": "Mergulho Repentino",
+              "descricao": "Voa rapidamente em direção a um alvo, realizando um ataque surpresa com a Picada Sugadora. Se acertar, causa +1d4 de dano."
+            },
+            {
+              "nome": "Voo Ágil",
+              "descricao": "Sua capacidade de voo dificulta ataques corpo a corpo. Ataques de inimigos sem alcance ou capacidade de atingir criaturas voadoras sofrem -2 para acertá-lo."
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Pouca Vida",
+            "Vulnerável a ataques em área",
+            "Asas frágeis"
+          ],
+          "resistencias": [
+            "Facilidade para escapar de inimigos terrestres",
+            "Capacidade de voar por espaços estreitos"
+          ],
+          "recompensas": [
+            "Probóscide afiado",
+            "Asas membranosas",
+            "Sangue contaminado",
+            "Glândula sugadora"
+          ],
+          "personalidade": "Parasita, agressivo e guiado pelo instinto de alimentação. Costuma se esconder em cavernas, ruínas e árvores ocas, esperando a passagem de criaturas vivas. Ataca preferencialmente em bandos e abandona uma vítima quando encontra uma oportunidade mais fácil."
+        },
+
+        {
+          "nome": "Gremlin",
+          "imagem": "img/bestiario/fantasia/gremlin.webp",
+          "descricao": "Pequena criatura humanoide de aparência grotesca, dedos compridos, olhos brilhantes e sorriso malicioso. Adora destruir equipamentos, sabotar mecanismos e provocar confusão. Evita confrontos diretos, preferindo atacar quando suas vítimas estão distraídas.",
+          "atributos": {
+            "Vida": 12,
+            "Defesa": 12,
+            "Força": 2,
+            "Agilidade": 6,
+            "Inteligência": 5,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Sabotagem",
+              "descricao": "Tenta danificar um equipamento carregado pelo alvo. O alvo deve passar em um teste de Inteligência DF:13 para perceber a sabotagem. Caso falhe, o equipamento apresenta defeito e não pode ser utilizado até ser consertado."
+            },
+            {
+              "nome": "Bomba Improvisada",
+              "descricao": "Arremessa um pequeno explosivo feito de materiais roubados, causando 1d8 de dano a todos os inimigos próximos do impacto."
+            },
+            {
+              "nome": "Gambiarra Mortal",
+              "descricao": "Manipula rapidamente um mecanismo ou objeto próximo, criando uma armadilha improvisada. O primeiro inimigo que ativá-la deve passar em um teste de Agilidade DF:13 ou sofre 1d6 de dano e cai no chão."
+            },
+            {
+              "nome": "Fuga Covarde",
+              "descricao": "Quando recebe um ataque, pode tentar escapar utilizando sua agilidade. O atacante deve passar em um teste de Agilidade DF:14 para impedir sua fuga."
+            },
+            {
+              "nome": "Rato de Engrenagem",
+              "descricao": "Consegue atravessar pequenas aberturas, esconder-se em mecanismos e se infiltrar em equipamentos. Recebe vantagem narrativa ao se esconder ou sabotar objetos em ambientes apertados."
+            }
+          ],
+          "ameaca": "Baixa (1)",
+          "fraquezas": [
+            "Baixa resistência física",
+            "Pouca força em combate direto",
+            "Tende a fugir quando encurralado"
+          ],
+          "resistencias": [
+            "Facilidade para se esconder",
+            "Conhecimento de mecanismos e armadilhas",
+            "Agilidade em espaços apertados"
+          ],
+          "recompensas": [
+            "Ferramentas improvisadas",
+            "Peças metálicas",
+            "Pequenas bombas",
+            "Engrenagens raras"
+          ],
+          "personalidade": "Travesso, malicioso e extremamente irritante. Adora roubar objetos, destruir equipamentos e observar suas vítimas passando dificuldades. Costuma rir de suas próprias sabotagens e fugir antes de sofrer as consequências."
+        },
+
+        {
+          "nome": "Diabrete",
+          "imagem": "img/bestiario/fantasia/diabrete.webp",
+          "descricao": "Pequeno demônio de pele avermelhada, chifres curtos, asas de morcego e uma cauda fina com ponta venenosa. Costuma servir a demônios mais poderosos, atuando como espião, sabotador e mensageiro. Adora enganar mortais e explorar suas fraquezas.",
+          "atributos": {
+            "Vida": 14,
+            "Defesa": 12,
+            "Força": 2,
+            "Agilidade": 6,
+            "Inteligência": 5,
+            "Carisma": 4
+          },
+          "habilidades": [
+            {
+              "nome": "Ferrão Venenoso",
+              "descricao": "Ataca com a ponta de sua cauda, causando 1d6 de dano. O alvo deve passar em um teste de Força DF:13 ou sofre 1d4 de dano venenoso no início dos próximos 2 turnos."
+            },
+            {
+              "nome": "Rajada Infernal",
+              "descricao": "Dispara uma pequena esfera de fogo infernal contra um alvo, causando 1d8 de dano mágico."
+            },
+            {
+              "nome": "Ilusão Maliciosa",
+              "descricao": "Cria uma cópia ilusória de si mesmo para confundir os inimigos. O próximo ataque direcionado ao diabrete tem 50% de chance de atingir a ilusão, que desaparece ao ser atingida."
+            },
+            {
+              "nome": "Voo Demoníaco",
+              "descricao": "Pode voar e se movimentar livremente pelo campo de batalha, dificultando ataques corpo a corpo de inimigos sem meios de alcançar criaturas voadoras."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Energia sagrada",
+            "Luz intensa",
+            "Baixa resistência física"
+          ],
+          "resistencias": [
+            "Fogo",
+            "Veneno",
+            "Medo"
+          ],
+          "recompensas": [
+            "Ferrão venenoso",
+            "Asas demoníacas",
+            "Cinzas infernais",
+            "Pequeno fragmento demoníaco"
+          ],
+          "personalidade": "Ardiloso, debochado e traiçoeiro. Prefere vencer por meio de mentiras, ilusões e emboscadas. Adora provocar seus adversários e costuma fugir quando percebe que está em desvantagem."
+        },
+
+        {
+          "nome": "Homem-Chacal",
+          "imagem": "img/bestiario/fantasia/homen-chacal.webp",
+          "descricao": "Criatura humanoide com características de um chacal, focinho alongado, orelhas pontudas, garras afiadas e corpo coberto por pelos escuros. Costuma viver em regiões áridas, ruínas e territórios abandonados. É um caçador oportunista que persegue suas vítimas até encontrar uma abertura para atacar.",
+          "atributos": {
+            "Vida": 22,
+            "Defesa": 12,
+            "Força": 4,
+            "Agilidade": 5,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Cruel",
+              "descricao": "Avança contra o alvo e morde violentamente, causando 1d8 + Força de dano."
+            },
+            {
+              "nome": "Garras Rasgadoras",
+              "descricao": "Ataca com suas garras, causando 1d6 de dano. Se acertar, o alvo deve passar em um teste de Força DF:12 ou sofre -2 em seu próximo ataque devido à dor."
+            },
+            {
+              "nome": "Caçada em Bando",
+              "descricao": "Quando outro Homem-Chacal estiver próximo do mesmo alvo, recebe +2 em seus testes de ataque"
+            },
+            {
+              "nome": "Perseguidor Incansável",
+              "descricao": "Escolhe uma criatura que consiga enxergar e passa a persegui-la. Recebe +2 em testes de Agilidade para acompanhar seus movimentos e impedir sua fuga."
+            },
+            {
+              "nome": "Uivo da Matilha",
+              "descricao": "Solta um uivo agudo para chamar seus companheiros. Outros Homens-Chacais próximos que ouvirem o chamado podem se aproximar do combate."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Fica menos eficiente quando está sozinho",
+            "Vulnerável a ataques em área",
+            "Pode abandonar o combate quando seu bando é derrotado"
+          ],
+          "resistencias": [
+            "Resistência ao calor",
+            "Olfato aguçado",
+            "Facilidade para rastrear criaturas"
+          ],
+          "recompensas": [
+            "Presa de chacal",
+            "Garras afiadas",
+            "Pele resistente",
+            "Pequena bolsa de pertences roubados"
+          ],
+          "personalidade": "Cruel, oportunista e territorialista. Demonstra comportamento semelhante ao de animais selvagens, mas possui inteligência suficiente para preparar emboscadas, cercar vítimas e recuar quando percebe que está em desvantagem."
+        },
+
+        {
+        "nome": "Rato Gigante",
+        "imagem": "img/bestiario/fantasia/rato-gigante.webp",
+        "descricao": "Um roedor monstruoso que habita esgotos, catacumbas e construções abandonadas. Seu corpo é coberto por pelos sujos e cicatrizes, enquanto seus dentes amarelados são capazes de rasgar carne e ossos. Costuma atacar em bandos e espalhar doenças por onde passa.",
+        "atributos": {
+          "Vida": 16,
+          "Defesa": 10,
+          "Força": 3,
+          "Agilidade": 5,
+          "Inteligência": 1,
+          "Carisma": 0
+        },
+        "habilidades": [
+          {
+            "nome": "Mordida Infecciosa",
+            "descricao": "Morde violentamente um alvo, causando 1d6 de dano. O alvo deve passar em um teste de Força DF:12 ou contrai uma infecção, sofrendo 1d4 de dano no início de cada turno durante 2 turnos."
+          },
+          {
+            "nome": "Investida Rasante",
+            "descricao": "Avança rapidamente contra um inimigo, causando 1d8 de dano. O alvo deve passar em um teste de Agilidade DF:12 ou cai no chão."
+          },
+          {
+            "nome": "Enxame de Roedores",
+            "descricao": "Quando outros ratos gigantes estão próximos, recebe +2 em seus testes de ataque contra inimigos cercados por dois ou mais ratos."
+          },
+          {
+            "nome": "Escapista",
+            "descricao": "Consegue atravessar buracos, tubulações e passagens estreitas. Recebe vantagem narrativa ao fugir ou se esconder em ambientes apertados."
+          }
+        ],
+        "ameaca": "Baixa (1)",
+        "fraquezas": [
+          "Fogo",
+          "Ataques em área",
+          "Baixa resistência física"
+        ],
+        "resistencias": [
+          "Ambientes contaminados",
+          "Doenças comuns",
+          "Facilidade para se esconder em espaços estreitos"
+        ],
+        "recompensas": [
+          "Dentes de roedor",
+          "Pele grosseira",
+          "Glândula contaminada",
+          "Objetos engolidos ou encontrados em seu esconderijo"
+        ],
+        "personalidade": "Agressivo, faminto e territorialista. Ataca qualquer criatura que considere uma ameaça ou fonte de alimento. Apesar de pouco inteligente, demonstra comportamento coordenado quando está acompanhado por outros ratos."
+      },
+
+      {
+        "nome": "Harpia",
+        "imagem": "img/bestiario/fantasia/harpia.webp",
+        "descricao": "Criatura monstruosa com torso e rosto de mulher, asas e pernas de ave de rapina. Habita montanhas, penhascos e ruínas elevadas. Utiliza seu canto hipnotizante para atrair viajantes, desorientá-los e lançá-los de grandes alturas. Costuma atacar em bandos.",
+        "atributos": {
+          "Vida": 24,
+          "Defesa": 12,
+          "Força": 4,
+          "Agilidade": 6,
+          "Inteligência": 3,
+          "Carisma": 5
+        },
+        "habilidades": [
+          {
+            "nome": "Garras Rasgadoras",
+            "descricao": "Ataca com suas garras afiadas, causando 1d8 de dano."
+          },
+          {
+            "nome": "Canto Hipnotizante",
+            "descricao": "Entoa uma melodia sobrenatural que afeta todos os inimigos próximos que possam ouvi-la. Cada alvo deve passar em um teste de Carisma DF:14 ou fica enfeitiçado por 2 turnos, sendo incapaz de atacar a Harpia e sentindo uma forte vontade de se aproximar dela. Um alvo atacado por outra criatura desperta imediatamente."
+          },
+          {
+            "nome": "Mergulho Predatório",
+            "descricao": "Sobe aos céus e mergulha contra um inimigo, causando 1d10 de dano. O alvo deve passar em um teste de Agilidade DF:14 ou cai no chão."
+          },
+          {
+            "nome": "Rajada de Asas",
+            "descricao": "Bate suas asas violentamente, criando uma corrente de vento que atinge inimigos próximos. Causa 1d6 de dano e empurra os alvos para trás."
+          },
+          {
+            "nome": "Voo Ágil",
+            "descricao": "Pode voar e atacar de posições elevadas. Enquanto estiver no ar, ataques corpo a corpo não conseguem alcançá-la, a menos que o atacante possua algum meio de atingir criaturas voadoras."
+          }
+        ],
+        "ameaca": "Média (2)",
+        "fraquezas": [
+          "Vulnerável quando está no chão",
+          "Asas podem ser feridas, impedindo seu voo",
+          "Sensível a ruídos extremamente altos"
+        ],
+        "resistencias": [
+          "Vantagem em combates aéreos",
+          "Facilidade para atacar de grandes alturas",
+          "Resistência a quedas"
+        ],
+        "recompensas": [
+          "Penas de Harpia",
+          "Garras afiadas",
+          "Bico resistente",
+          "Plumas encantadas"
+        ],
+        "personalidade": "Vaidosa, cruel e territorialista. Gosta de brincar com suas vítimas, atraindo-as para lugares perigosos antes de atacar. Costuma disputar território com outras criaturas voadoras e proteger ferozmente seu ninho."
+      },
+
+      {
+          "nome": "Cão Infernal (Hellhound)",
+          "imagem": "img/bestiario/fantasia/hellhound.webp",
+          "descricao": "Uma criatura monstruosa semelhante a um enorme cão de caça, com pele escura, olhos incandescentes e chamas que escapam de sua boca e narinas. Seu corpo emite calor intenso e seus uivos anunciam a chegada de algo terrível. Costuma servir a demônios poderosos ou proteger passagens para o mundo infernal.",
+          "atributos": {
+            "Vida": 32,
+            "Defesa": 13,
+            "Força": 6,
+            "Agilidade": 5,
+            "Inteligência": 2,
+            "Carisma": 3
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Flamejante",
+              "descricao": "Morde o alvo com suas mandíbulas em chamas, causando 1d10 de dano. O alvo sofre mais 1d4 de dano de fogo no início do próximo turno."
+            },
+            {
+              "nome": "Sopro Infernal",
+              "descricao": "Expulsa uma rajada de fogo pela boca, atingindo todos os inimigos em uma área à sua frente e causando 2d8 de dano de fogo. Os alvos podem realizar um teste de Agilidade DF:14 para reduzir o dano pela metade. Pode ser utilizado novamente após 2 turnos."
+            },
+            {
+              "nome": "Investida Abrasadora",
+              "descricao": "Corre em direção ao inimigo envolto em chamas, causando 1d8 de dano. O alvo deve passar em um teste de Agilidade DF:13 ou cai no chão."
+            },
+            {
+              "nome": "Uivo do Submundo",
+              "descricao": "Solta um uivo sobrenatural que provoca medo nos inimigos próximos. Cada alvo deve passar em um teste de Carisma DF:13 ou sofre -2 em seu próximo teste de ataque."
+            },
+            {
+              "nome": "Rastreador Infernal",
+              "descricao": "Consegue identificar e perseguir criaturas pelo cheiro, mesmo através de longas distâncias. Ilusões visuais e esconderijos comuns não são suficientes para despistá-lo."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Água em grandes quantidades",
+            "Magia de gelo",
+            "Energia sagrada"
+          ],
+          "resistencias": [
+            "Fogo",
+            "Calor extremo",
+            "Medo",
+            "Veneno"
+          ],
+          "recompensas": [
+            "Presas infernais",
+            "Cinzas flamejantes",
+            "Coração incandescente",
+            "Pele resistente ao fogo"
+          ],
+          "personalidade": "Violento, territorialista e extremamente leal ao seu mestre. Caça suas presas com persistência assustadora, raramente abandonando uma perseguição. Não demonstra piedade e costuma atacar primeiro os inimigos mais feridos."
+        },
+
+        {
+          "nome": "Bruxa do Pântano",
+          "imagem": "img/bestiario/fantasia/bruxa-do-pantano.webp",
+          "descricao": "Uma criatura horrenda que habita pântanos, florestas apodrecidas e regiões esquecidas. Sua aparência lembra a de uma velha deformada, com pele esverdeada, unhas compridas e dentes pontiagudos. Especialista em magia sombria, ilusões e manipulação, prefere enlouquecer suas vítimas antes de devorá-las.",
+          "atributos": {
+            "Vida": 34,
+            "Defesa": 13,
+            "Força": 5,
+            "Agilidade": 4,
+            "Inteligência": 7,
+            "Carisma": 6
+          },
+          "habilidades": [
+            {
+              "nome": "Garras Devoradoras",
+              "descricao": "Ataca com suas enormes unhas, causando 1d10 de dano."
+            },
+            {
+              "nome": "Aparência Ilusória",
+              "descricao": "Altera sua aparência para assumir a forma de uma pessoa aparentemente inofensiva. A ilusão permanece até que ela ataque, seja ferida ou decida encerrá-la."
+            },
+            {
+              "nome": "Névoa Alucinógena",
+              "descricao": "Libera uma névoa esverdeada em uma área próxima. Todos os inimigos que respirarem a névoa devem passar em um teste de Inteligência DF:14 ou começam a enxergar criaturas e perigos inexistentes, sofrendo -2 em seus ataques durante 2 turnos."
+            },
+            {
+              "nome": "Maldição do Pântano",
+              "descricao": "Escolhe um alvo e lança uma maldição que deve ser resistida com um teste de Carisma DF:15. Em caso de falha, o alvo sofre -2 em Agilidade durante 3 turnos."
+            },
+            {
+              "nome": "Raízes Aprisionadoras",
+              "descricao": "Faz raízes e cipós emergirem do solo para prender um inimigo. O alvo deve passar em um teste de Força DF:14 ou fica imobilizado por 2 turnos."
+            },
+            {
+              "nome": "Bruxaria Cruel",
+              "descricao": "Dispara uma esfera de energia sombria contra um alvo, causando 2d6 de dano mágico."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Fogo",
+            "Luz sagrada",
+            "Ambientes secos e sem vegetação"
+          ],
+          "resistencias": [
+            "Magia de ilusão",
+            "Veneno",
+            "Doenças",
+            "Magia de encantamento"
+          ],
+          "recompensas": [
+            "Unhas amaldiçoadas",
+            "Olho de bruxa",
+            "Ervas raras",
+            "Frascos de poções desconhecidas",
+            "Livro de feitiços sombrios"
+          ],
+          "personalidade": "Manipuladora, sádica e extremamente astuta. Gosta de brincar com suas vítimas, assumir identidades falsas e explorar seus medos. Raramente enfrenta inimigos diretamente quando pode atraí-los para armadilhas ou fazê-los lutar entre si."
+        },
+
+        {
+          "nome": "Homem-Lagarto",
+          "imagem": "img/bestiario/fantasia/homem-lagarto.webp",
+          "descricao": "Criatura humanoide reptiliana de corpo robusto, escamas resistentes, cauda musculosa e mandíbulas repletas de dentes afiados. Habita pântanos, rios e regiões alagadas, vivendo em tribos organizadas. É um guerreiro primitivo, mas inteligente, que utiliza lanças, escudos e táticas de emboscada para defender seu território.",
+          "atributos": {
+            "Vida": 25,
+            "Defesa": 13,
+            "Força": 5,
+            "Agilidade": 3,
+            "Inteligência": 3,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Lança Tribal",
+              "descricao": "Ataca com uma lança rudimentar, causando 1d8 de dano. Também pode arremessá-la contra inimigos próximos, causando 1d8 de dano."
+            },
+            {
+              "nome": "Mordida Selvagem",
+              "descricao": "Morde violentamente um alvo, causando 1d8 de dano."
+            },
+            {
+              "nome": "Caudada",
+              "descricao": "Golpeia um inimigo próximo com sua cauda, causando 1d6 de dano. O alvo deve passar em um teste de Agilidade DF:12 ou cai no chão."
+            },
+            {
+              "nome": "Predador Aquático",
+              "descricao": "Move-se sem dificuldade dentro da água e consegue permanecer submerso por longos períodos. Recebe vantagem narrativa em emboscadas realizadas em rios, lagos e pântanos."
+            },
+            {
+              "nome": "Escamas Protetoras",
+              "descricao": "Suas escamas grossas reduzem em 2 o dano recebido de ataques físicos comuns."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Movimentação prejudicada em terrenos muito secos e frios",
+            "Inteligência limitada para lidar com magia complexa",
+            "Vulnerável a ataques que explorem suas articulações"
+          ],
+          "resistencias": [
+            "Água e ambientes alagados",
+            "Doenças comuns",
+            "Escamas resistentes a cortes superficiais"
+          ],
+          "recompensas": [
+            "Escamas resistentes",
+            "Dentes reptilianos",
+            "Lança tribal",
+            "Componentes de armadura rudimentar"
+          ],
+          "personalidade": "Territorialista, disciplinado e desconfiado de estrangeiros. Valoriza a força, a caça e a lealdade à própria tribo. Embora pareça brutal, é capaz de negociar e planejar ataques coordenados quando liderado por um guerreiro experiente."
+        },
+
+        {
+            "nome": "Urso Pardo",
+            "imagem": "img/bestiario/fantasia/urso-pardo.webp",
+            "descricao": "Um enorme animal selvagem de pelagem marrom, patas musculosas e garras capazes de rasgar carne com facilidade. Habita florestas, montanhas e cavernas. Apesar de geralmente evitar humanos, torna-se extremamente agressivo quando ameaçado, protegendo seu território e suas crias.",
+            "atributos": {
+              "Vida": 35,
+              "Defesa": 12,
+              "Força": 7,
+              "Agilidade": 3,
+              "Inteligência": 1,
+              "Carisma": 0
+            },
+            "habilidades": [
+              {
+                "nome": "Patada Brutal",
+                "descricao": "Desfere uma poderosa patada contra o alvo, causando 1d12 de dano."
+              },
+              {
+                "nome": "Mordida Poderosa",
+                "descricao": "Morde violentamente o inimigo, causando 1d10 de dano."
+              },
+              {
+                "nome": "Investida Selvagem",
+                "descricao": "Corre em direção ao alvo e o atinge com todo o peso do corpo, causando 1d8 de dano. O alvo deve passar em um teste de Agilidade DF:13 ou cai no chão."
+              },
+              {
+                "nome": "Abraço Esmagador",
+                "descricao": "Agarra um inimigo com suas patas dianteiras e o esmaga, causando 1d8 de dano no início de cada turno. O alvo pode tentar escapar com um teste de Força DF:15."
+              },
+              {
+                "nome": "Fúria Animal",
+                "descricao": "Quando fica com menos da metade da Vida, torna-se ainda mais agressivo e recebe +2 de dano em seus ataques físicos."
+              }
+            ],
+            "ameaca": "Média (2)",
+            "fraquezas": [
+              "Fogo",
+              "Movimentação limitada em espaços estreitos",
+              "Pode ser distraído por alimento"
+            ],
+            "resistencias": [
+              "Frio",
+              "Dor física",
+              "Grande resistência corporal"
+            ],
+            "recompensas": [
+              "Pele de urso",
+              "Garras enormes",
+              "Presas",
+              "Gordura animal",
+              "Carne"
+            ],
+            "personalidade": "Territorialista, instintivo e imprevisível. Normalmente evita confrontos desnecessários, mas ataca ferozmente quando provocado, faminto ou protegendo suas crias. Não costuma perseguir inimigos por longas distâncias."
+          },
+
+          {
+            "nome": "Javali Selvagem",
+            "imagem": "img/bestiario/fantasia/javali-selvagem.webp",
+            "descricao": "Um animal robusto e agressivo, com presas curvas e uma camada espessa de pelos escuros. Habita florestas e campos, alimentando-se de raízes, frutos e pequenos animais. Quando ameaçado, abaixa a cabeça e avança violentamente contra qualquer criatura em seu caminho.",
+            "atributos": {
+              "Vida": 22,
+              "Defesa": 11,
+              "Força": 5,
+              "Agilidade": 4,
+              "Inteligência": 1,
+              "Carisma": 0
+            },
+            "habilidades": [
+              {
+                "nome": "Investida Selvagem",
+                "descricao": "Avança contra um inimigo com suas presas, causando 1d10 de dano. O alvo deve passar em um teste de Agilidade DF:13 ou cai no chão."
+              },
+              {
+                "nome": "Presas Afiadas",
+                "descricao": "Ataca com uma violenta cabeçada seguida de uma mordida, causando 1d8 de dano."
+              },
+              {
+                "nome": "Fúria Animal",
+                "descricao": "Quando fica com menos da metade da Vida, torna-se extremamente agressivo e recebe +2 de dano em suas investidas."
+              },
+              {
+                "nome": "Couro Espesso",
+                "descricao": "Sua pele resistente reduz em 1 o dano recebido de ataques físicos."
+              }
+            ],
+            "ameaca": "Baixa (1)",
+            "fraquezas": [
+              "Pouca capacidade de mudar de direção durante uma investida",
+              "Pode ser atraído por alimentos",
+              "Vulnerável a ataques pelas laterais"
+            ],
+            "resistencias": [
+              "Dor física",
+              "Terrenos acidentados",
+              "Ferimentos superficiais"
+            ],
+            "recompensas": [
+              "Presas de javali",
+              "Couro resistente",
+              "Carne selvagem",
+              "Gordura animal"
+            ],
+            "personalidade": "Agressivo, territorialista e imprevisível. Geralmente evita criaturas maiores, mas não hesita em atacar quando se sente ameaçado. Pode perseguir invasores por uma curta distância antes de retornar ao seu território."
+          },
+
+          {
+          "nome": "Tigre-dentes-de-sabre",
+          "imagem": "img/bestiario/fantasia/tigre-dente-de-sabre.webp",
+          "descricao": "Um felino pré-histórico de corpo musculoso, patas poderosas e enormes presas curvas que se projetam para fora da mandíbula. É um predador silencioso e extremamente perigoso, capaz de abater criaturas maiores que ele utilizando emboscadas e ataques precisos.",
+          "atributos": {
+            "Vida": 32,
+            "Defesa": 13,
+            "Força": 6,
+            "Agilidade": 7,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Presas Dilacerantes",
+              "descricao": "Crava suas enormes presas no alvo, causando 1d12 de dano."
+            },
+            {
+              "nome": "Emboscada Predatória",
+              "descricao": "Ataca um inimigo desprevenido com um salto repentino, causando 2d8 de dano. Só pode utilizar esta habilidade quando estiver escondido ou atacar de surpresa."
+            },
+            {
+              "nome": "Salto Esmagador",
+              "descricao": "Salta sobre um inimigo, derrubando-o e causando 1d8 + Força de dano. O alvo deve passar em um teste de Agilidade DF:14 para evitar cair."
+            },
+            {
+              "nome": "Garras Rasgadoras",
+              "descricao": "Ataca violentamente com suas patas dianteiras, causando 1d8 de dano."
+            },
+            {
+              "nome": "Predador Implacável",
+              "descricao": "Quando ataca um alvo que esteja caído, recebe +1d4 de dano em seus ataques físicos."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Pouca resistência a ataques prolongados",
+            "Depende de emboscadas para aproveitar seu potencial",
+            "Pode ser distraído por presas ou alimentos"
+          ],
+          "resistencias": [
+            "Furtividade em ambientes naturais",
+            "Agilidade em terrenos acidentados",
+            "Sentidos aguçados"
+          ],
+          "recompensas": [
+            "Presas de sabre",
+            "Pele de tigre",
+            "Garras afiadas",
+            "Carne selvagem",
+            "Ossos resistentes"
+          ],
+          "personalidade": "Silencioso, territorialista e extremamente paciente. Observa suas presas à distância, esperando o momento ideal para atacar. Prefere eliminar rapidamente um alvo isolado em vez de enfrentar um grupo inteiro."
+        },
+
+        {
+          "nome": "Pantera Negra",
+          "imagem": "img/bestiario/fantasia/pantera-negra.webp",
+          "descricao": "Um felino monstruoso de pelagem negra como a noite e olhos que brilham em meio à escuridão. Seu corpo parece se misturar às sombras, tornando-a quase impossível de detectar em ambientes escuros. É uma predadora silenciosa que persegue suas vítimas antes de atacar com velocidade e precisão.",
+          "atributos": {
+            "Vida": 28,
+            "Defesa": 14,
+            "Força": 5,
+            "Agilidade": 8,
+            "Inteligência": 3,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Garras Sombrias",
+              "descricao": "Ataca com suas garras envoltas em energia escura, causando 1d8 de dano."
+            },
+            {
+              "nome": "Mordida Predatória",
+              "descricao": "Crava suas presas no alvo, causando 1d10 de dano."
+            },
+            {
+              "nome": "Manto das Sombras",
+              "descricao": "Mistura seu corpo à escuridão e torna-se extremamente difícil de enxergar durante 2 turnos. Enquanto estiver camuflada, recebe +2 em testes para evitar ataques. Atacar encerra o efeito."
+            },
+            {
+              "nome": "Salto Mortal",
+              "descricao": "Salta sobre um inimigo, causando 1d10 de dano. O alvo deve passar em um teste de Agilidade DF:14 ou cai no chão."
+            },
+            {
+              "nome": "Caçadora Noturna",
+              "descricao": "Em ambientes escuros, recebe +2 em seus testes de ataque e em testes relacionados à furtividade."
+            },
+            {
+              "nome": "Rasgo na Escuridão",
+              "descricao": "Quando ataca um alvo que ainda não percebeu sua presença, causa +1d8 de dano adicional."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Luz intensa",
+            "Fogo",
+            "Ambientes abertos e sem esconderijos"
+          ],
+          "resistencias": [
+            "Energia sombria",
+            "Medo",
+            "Furtividade sobrenatural"
+          ],
+          "recompensas": [
+            "Pele de pantera sombria",
+            "Garras negras",
+            "Presas sombrias",
+            "Olhos brilhantes",
+            "Essência das sombras"
+          ],
+          "personalidade": "Silenciosa, paciente e extremamente territorialista. Observa suas presas durante longos períodos antes de atacar. Prefere caçar isolados e raramente enfrenta grupos diretamente, utilizando a escuridão para desaparecer e atacar novamente de surpresa."
+        },
+
+        {
+          "nome": "Aranha Gigante",
+          "imagem": "img/bestiario/fantasia/aranha-gigante.webp",
+          "descricao": "Uma aranha monstruosa do tamanho de um cavalo, com oito patas revestidas por pelos escuros, presas venenosas e um abdômen enorme. Habita florestas densas, cavernas e ruínas abandonadas, onde constrói teias resistentes para capturar suas presas. Costuma permanecer escondida no teto ou entre as árvores, esperando o momento ideal para atacar.",
+          "atributos": {
+            "Vida": 26,
+            "Defesa": 12,
+            "Força": 5,
+            "Agilidade": 5,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Venenosa",
+              "descricao": "Morde um inimigo com suas presas, causando 1d8 de dano. O alvo deve passar em um teste de Força DF:13 ou fica envenenado, sofrendo 1d4 de dano no início dos próximos 2 turnos."
+            },
+            {
+              "nome": "Disparo de Teia",
+              "descricao": "Dispara uma grande quantidade de teia contra um inimigo. O alvo deve passar em um teste de Agilidade DF:14 ou fica imobilizado por 2 turnos. Pode tentar se libertar com um teste de Força DF:14."
+            },
+            {
+              "nome": "Emboscada Aracnídea",
+              "descricao": "Ataca um inimigo desprevenido a partir de uma superfície elevada, causando 1d10 de dano. Se acertar, o alvo deve passar em um teste de Agilidade DF:13 ou cai no chão."
+            },
+            {
+              "nome": "Patas Perfurantes",
+              "descricao": "Ataca com suas patas pontiagudas, causando 1d8 de dano."
+            },
+            {
+              "nome": "Escaladora Natural",
+              "descricao": "Consegue caminhar por paredes, tetos e superfícies inclinadas sem dificuldade. Recebe vantagem narrativa para realizar emboscadas e escapar de inimigos em terrenos verticais."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Fogo",
+            "Vulnerável quando está de barriga para cima",
+            "Dificuldade para se movimentar em superfícies muito lisas"
+          ],
+          "resistencias": [
+            "Veneno próprio",
+            "Teias e armadilhas naturais",
+            "Facilidade para escalar superfícies"
+          ],
+          "recompensas": [
+            "Presas venenosas",
+            "Glândula de veneno",
+            "Seda de aranha resistente",
+            "Carapaça quitinosa",
+            "Olhos aracnídeos"
+          ],
+          "personalidade": "Predadora paciente e territorialista. Evita confrontos desnecessários, preferindo capturar suas vítimas em teias e consumi-las quando estão indefesas. Costuma permanecer imóvel durante horas, aguardando qualquer sinal de movimento em seu território."
+        },
+
+        {
+          "nome": "Escorpião Gigante",
+          "imagem": "img/bestiario/fantasia/escorpiao-gigante.webp",
+          "descricao": "Um aracnídeo monstruoso de carapaça resistente, pinças capazes de esmagar ossos e uma cauda curva que termina em um ferrão venenoso. Costuma se esconder sob a areia ou entre rochas, esperando o momento certo para atacar.",
+          "atributos": {
+            "Vida": 28,
+            "Defesa": 14,
+            "Força": 6,
+            "Agilidade": 4,
+            "Inteligência": 1,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Pinças Esmagadoras",
+              "descricao": "O escorpião ataca com suas enormes pinças, causando 1d8 de dano. Se acertar, pode agarrar o alvo, que fica preso. Para escapar, precisa vencer um teste de Força com DF 14."
+            },
+            {
+              "nome": "Ferrão Venenoso",
+              "descricao": "Ataca com a cauda, causando 1d8 de dano. O alvo deve realizar um teste de Força com DF 13 ou sofrer 1d6 de dano adicional por veneno no início de cada turno, durante 3 turnos. Um novo teste de Força com DF 13 encerra o efeito."
+            },
+            {
+              "nome": "Cauda Perfurante",
+              "descricao": "O escorpião ergue a cauda e desfere um golpe brutal contra um inimigo próximo, causando 1d10 de dano. Não pode usar o Ferrão Venenoso no mesmo turno."
+            },
+            {
+              "nome": "Enterrado na Areia",
+              "descricao": "Quando estiver em terreno arenoso, pode se enterrar e ficar oculto. Seu próximo ataque recebe vantagem, mas ele perde essa proteção após atacar."
+            },
+            {
+              "nome": "Carapaça Blindada",
+              "descricao": "Sua couraça reduz em 2 todo dano físico recebido."
+            },
+            {
+              "nome": "Pinças Dilacerantes",
+              "descricao": "Se atacar um alvo agarrado pelas pinças, causa 1d10 de dano em vez do dano normal das pinças."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Ataques contra suas articulações podem ignorar a proteção da carapaça.",
+            "Sua barriga é vulnerável quando fica de costas.",
+            "Possui pouca inteligência e pode ser enganado por armadilhas."
+          ],
+          "resistencias": [
+            "Dano físico: reduz 2 de dano recebido.",
+            "Veneno: imune."
+          ],
+          "recompensas": [
+            "Carapaça resistente",
+            "Ferrão venenoso",
+            "Veneno concentrado",
+            "Pinças gigantes"
+          ],
+          "personalidade": "Territorial, agressivo e extremamente paciente. Prefere emboscar suas presas e imobilizá-las antes de matá-las. Não costuma fugir de combates, a menos que esteja gravemente ferido."
+        },
+
+        {
+          "nome": "Serpente Gigante",
+          "imagem": "img/bestiario/fantasia/serpente-gigante.webp",
+          "descricao": "Uma serpente colossal, capaz de esmagar homens com suas espirais e engolir animais inteiros. Costuma habitar florestas densas, cavernas e ruínas abandonadas, atacando suas presas de surpresa.",
+          "atributos": {
+            "Vida": 32,
+            "Defesa": 13,
+            "Força": 6,
+            "Agilidade": 6,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Devastadora",
+              "descricao": "Abre suas enormes mandíbulas e ataca com as presas, causando 1d8 de dano."
+            },
+            {
+              "nome": "Espiral Esmagadora",
+              "descricao": "Enrola seu corpo ao redor de um alvo próximo, causando 1d6 de dano e deixando-o preso. Enquanto estiver agarrado, o alvo sofre 1d6 de dano no início de cada turno. Para escapar, precisa vencer um teste de Força com DF 14."
+            },
+            {
+              "nome": "Constrição Brutal",
+              "descricao": "Se já estiver agarrando um alvo, aperta seu corpo com violência, causando 2d8 de dano. O alvo pode tentar escapar antes de sofrer o golpe."
+            },
+            {
+              "nome": "Bote Repentino",
+              "descricao": "Avança rapidamente contra um inimigo, causando 1d10 de dano. Se atacar a partir de uma emboscada, recebe vantagem no ataque."
+            },
+            {
+              "nome": "Veneno Paralisante",
+              "descricao": "Algumas serpentes gigantes possuem presas venenosas. Ao acertar uma mordida, o alvo deve realizar um teste de Força com DF 13 ou terá sua Agilidade reduzida em 2 durante 2 turnos."
+            },
+            {
+              "nome": "Camuflagem Natural",
+              "descricao": "Sua coloração permite que se esconda entre vegetação, pedras e folhagens. Recebe vantagem em testes para permanecer oculto nesses ambientes."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Possui dificuldade para se movimentar em espaços muito estreitos.",
+            "Sua cabeça é vulnerável a ataques precisos.",
+            "Após uma constrição brutal, precisa de um turno para recuperar sua posição de combate."
+          ],
+          "resistencias": [
+            "Veneno: resistente, reduz pela metade o dano causado por venenos.",
+            "Dano físico: sua musculatura espessa reduz 1 de dano recebido."
+          ],
+          "recompensas": [
+            "Pele escamosa resistente",
+            "Presas venenosas",
+            "Glândula de veneno",
+            "Carne de serpente"
+          ],
+          "personalidade": "Predadora paciente e territorial. Prefere atacar quando a presa está distraída, imobilizando-a antes de devorá-la. Não costuma perseguir inimigos que conseguem escapar de seu território."
+        },
+
+        {
+          "nome": "Crocodilo Gigante",
+          "imagem": "img/bestiario/fantasia/crocodilo-gigante.webp",
+          "descricao": "Um réptil colossal de escamas grossas e mandíbulas capazes de esmagar ossos. Costuma permanecer quase completamente submerso, deixando apenas os olhos e as narinas à mostra. Ataca com violência, arrastando suas vítimas para dentro da água.",
+          "atributos": {
+            "Vida": 38,
+            "Defesa": 14,
+            "Força": 8,
+            "Agilidade": 4,
+            "Inteligência": 2,
+            "Carisma": 0
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Esmagadora",
+              "descricao": "Ataca com suas mandíbulas poderosas, causando 1d10 de dano. Se acertar, pode prender o alvo entre os dentes."
+            },
+            {
+              "nome": "Rolamento da Morte",
+              "descricao": "Se estiver segurando um alvo com a mordida, gira violentamente o próprio corpo, causando 2d8 de dano. O alvo pode tentar escapar com um teste de Força com DF 15 antes do golpe."
+            },
+            {
+              "nome": "Arrastar para as Profundezas",
+              "descricao": "Enquanto estiver na água, pode arrastar um alvo preso pela mordida para uma área mais profunda. O alvo precisa vencer um teste de Força com DF 15 para impedir o movimento."
+            },
+            {
+              "nome": "Investida Aquática",
+              "descricao": "Dispara de dentro da água contra uma criatura próxima, causando 1d8 de dano. Se atacar uma vítima desatenta, recebe vantagem no ataque."
+            },
+            {
+              "nome": "Cauda Devastadora",
+              "descricao": "Desfere uma pancada lateral com sua cauda, causando 1d8 de dano e podendo derrubar o alvo. O alvo deve vencer um teste de Agilidade com DF 13 para não cair."
+            },
+            {
+              "nome": "Couraça Escamosa",
+              "descricao": "Suas escamas grossas reduzem em 2 todo dano físico recebido."
+            },
+            {
+              "nome": "Predador de Emboscada",
+              "descricao": "Quando permanece escondido na água ou na lama, recebe vantagem no primeiro ataque contra uma criatura que não percebeu sua presença."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "É consideravelmente mais lento quando está fora da água.",
+            "Possui pouca resistência a ataques direcionados aos olhos e à parte inferior do corpo.",
+            "Tem dificuldade para perseguir presas em terrenos secos e acidentados."
+          ],
+          "resistencias": [
+            "Dano físico: reduz 2 de dano recebido.",
+            "Veneno: resistente, reduz pela metade o dano causado por venenos."
+          ],
+          "recompensas": [
+            "Couro de crocodilo gigante",
+            "Dentes enormes",
+            "Garras afiadas",
+            "Carne de réptil",
+            "Glândulas e órgãos raros"
+          ],
+          "personalidade": "Territorial, paciente e extremamente agressivo quando caça. Não desperdiça energia perseguindo suas presas: prefere esperar imóvel até que estejam ao alcance de suas mandíbulas. Uma vez que captura uma vítima, dificilmente a solta."
+        },
+
+        {
+          "nome": "Quimera",
+          "imagem": "img/bestiario/fantasia/quimera.webp",
+          "descricao": "Uma monstruosidade nascida da união de três criaturas: possui a cabeça de um leão, a cabeça de um bode e uma cauda terminada em serpente. Seu corpo combina força brutal, ferocidade e poderes sobrenaturais. É uma criatura extremamente territorial e capaz de devastar grupos inteiros.",
+          "atributos": {
+            "Vida": 48,
+            "Defesa": 15,
+            "Força": 8,
+            "Agilidade": 6,
+            "Inteligência": 4,
+            "Carisma": 3
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida do Leão",
+              "descricao": "A cabeça de leão avança contra o alvo, causando 1d10 de dano."
+            },
+            {
+              "nome": "Chifrada Selvagem",
+              "descricao": "A cabeça de bode desfere uma cabeçada brutal, causando 1d8 de dano e podendo derrubar o alvo. O alvo deve vencer um teste de Agilidade com DF 14 para permanecer de pé."
+            },
+            {
+              "nome": "Ferrão Serpentino",
+              "descricao": "A cauda ataca com seu ferrão, causando 1d8 de dano. O alvo deve realizar um teste de Força com DF 14 ou sofrer 1d6 de dano por veneno no início de cada turno, durante 2 turnos."
+            },
+            {
+              "nome": "Sopro Flamejante",
+              "descricao": "A cabeça de leão libera uma rajada de fogo em uma área à sua frente, causando 2d8 de dano. Os alvos podem realizar um teste de Agilidade com DF 15 para reduzir o dano pela metade. Só pode ser utilizada novamente após 2 turnos."
+            },
+            {
+              "nome": "Garras Dilacerantes",
+              "descricao": "Ataca com as patas dianteiras, causando 1d8 de dano. Se o alvo estiver caído, causa 1d10 de dano."
+            },
+            {
+              "nome": "Três Instintos",
+              "descricao": "As três cabeças vigiam os arredores independentemente. A quimera recebe vantagem em testes para perceber emboscadas, criaturas escondidas ou aproximações sorrateiras."
+            },
+            {
+              "nome": "Fúria das Três Cabeças",
+              "descricao": "Quando sua Vida chega a 15 ou menos, a quimera entra em frenesi. Seus ataques físicos causam +1d4 de dano, mas sua Defesa é reduzida em 2 até o fim do combate."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Suas três cabeças possuem instintos diferentes e podem ser distraídas por estímulos distintos.",
+            "O pescoço da cabeça de bode é menos protegido que o restante do corpo.",
+            "É vulnerável a efeitos que exploram sua natureza bestial."
+          ],
+          "resistencias": [
+            "Fogo: reduz pela metade o dano recebido.",
+            "Medo: vantagem em testes para resistir a efeitos de medo.",
+            "Dano físico: sua musculatura robusta reduz 1 de dano recebido."
+          ],
+          "recompensas": [
+            "Couro resistente de quimera",
+            "Chifres de bode",
+            "Presas de leão",
+            "Ferrão venenoso",
+            "Glândula de fogo"
+          ],
+          "personalidade": "Violenta, territorial e cruel. A cabeça de leão é dominante e agressiva, a de bode é inquieta e desconfiada, enquanto a serpente é traiçoeira e paciente. As três cabeças cooperam durante a caça, tornando a criatura extremamente imprevisível."
+        },
+
+        {
+          "nome": "Grifo",
+          "imagem": "img/bestiario/fantasia/grifo.webp",
+          "descricao": "Uma majestosa criatura com corpo de leão, cabeça e asas de águia. Possui garras poderosas, visão extremamente aguçada e força suficiente para carregar presas com suas patas. Habita montanhas e penhascos, construindo ninhos em locais de difícil acesso.",
+          "atributos": {
+            "Vida": 36,
+            "Defesa": 14,
+            "Força": 7,
+            "Agilidade": 8,
+            "Inteligência": 4,
+            "Carisma": 4
+          },
+          "habilidades": [
+            {
+              "nome": "Garras da Águia",
+              "descricao": "Ataca com suas enormes garras, causando 1d8 de dano. Se estiver voando, pode agarrar um alvo e carregá-lo por uma curta distância."
+            },
+            {
+              "nome": "Bico Dilacerante",
+              "descricao": "Desfere uma bicada violenta contra o inimigo, causando 1d10 de dano."
+            },
+            {
+              "nome": "Mergulho Predatório",
+              "descricao": "Eleva-se e mergulha contra um alvo, atingindo-o com as garras. Causa 2d8 de dano. Após o ataque, precisa de espaço para recuperar altitude e não pode repetir essa habilidade no turno seguinte."
+            },
+            {
+              "nome": "Rajada de Asas",
+              "descricao": "Bate suas enormes asas com força, criando uma rajada de vento. Inimigos próximos devem vencer um teste de Força com DF 14 ou serão empurrados e derrubados."
+            },
+            {
+              "nome": "Visão Aguçada",
+              "descricao": "Sua visão permite identificar criaturas escondidas, movimentos distantes e presas camufladas. Recebe vantagem em testes de percepção visual."
+            },
+            {
+              "nome": "Voo Majestoso",
+              "descricao": "Pode voar livremente, ignorando obstáculos terrestres e atacando de posições elevadas. Enquanto estiver no ar, inimigos sem ataques à distância terão dificuldade para alcançá-lo."
+            },
+            {
+              "nome": "Instinto Protetor",
+              "descricao": "Quando um inimigo ameaça seu ninho ou filhotes, o grifo entra em fúria. Seus ataques físicos causam +1d4 de dano enquanto estiver defendendo seu território."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Possui dificuldade para voar em ambientes fechados ou espaços muito estreitos.",
+            "Suas asas são vulneráveis a ataques precisos.",
+            "É extremamente protetor com seu ninho e pode ser provocado a abandonar posições vantajosas."
+          ],
+          "resistencias": [
+            "Quedas: sofre apenas metade do dano causado por quedas.",
+            "Medo: vantagem em testes para resistir a efeitos de medo."
+          ],
+          "recompensas": [
+            "Penas de grifo",
+            "Garras afiadas",
+            "Bico resistente",
+            "Penas de voo raras",
+            "Ovo de grifo"
+          ],
+          "personalidade": "Orgulhoso, territorial e extremamente leal ao próprio ninho. Não costuma atacar sem motivo, mas reage com ferocidade contra invasores. Grifos podem desenvolver vínculos com indivíduos que conquistam sua confiança, embora jamais aceitem facilmente serem domesticados."
+        },
+
+        {
+          "nome": "Wyvern",
+          "imagem": "img/bestiario/fantasia/wyvern.webp",
+          "descricao": "Um réptil alado monstruoso, semelhante a um dragão, mas com apenas duas patas traseiras e enormes asas membranosas. Sua cauda termina em um ferrão venenoso capaz de derrubar criaturas muito maiores que ele. Diferente dos dragões, não possui sopro elemental nem grande inteligência, mas compensa isso com ferocidade e instintos predatórios.",
+          "atributos": {
+            "Vida": 62,
+            "Defesa": 14,
+            "Força": 8,
+            "Agilidade": 7,
+            "Inteligência": 2,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Ferrão Venenoso",
+              "descricao": "Ataca com sua cauda, causando 1d10 de dano. O alvo deve realizar um teste de Força com DF 15 ou sofrer 1d6 de dano por veneno no início de cada turno, durante 3 turnos."
+            },
+            {
+              "nome": "Mordida Brutal",
+              "descricao": "Abre suas mandíbulas repletas de dentes e arranca um pedaço da vítima, causando 1d10 de dano."
+            },
+            {
+              "nome": "Garras Predatórias",
+              "descricao": "Ataca com suas patas traseiras, causando 1d8 de dano. Se estiver voando, pode agarrar um alvo e erguê-lo do chão."
+            },
+            {
+              "nome": "Mergulho Mortal",
+              "descricao": "Ganha altitude e despenca contra um inimigo com as garras expostas, causando 2d8 de dano. Após o ataque, precisa recuperar altitude e não pode repetir a habilidade no turno seguinte."
+            },
+            {
+              "nome": "Arrastar para o Céu",
+              "descricao": "Se estiver agarrando um alvo com as garras, pode voar e carregá-lo para cima. O alvo pode tentar escapar vencendo um teste de Força com DF 15. Se conseguir, se solta e cai."
+            },
+            {
+              "nome": "Batida de Asas",
+              "descricao": "Bate suas asas violentamente, criando uma rajada de vento. Inimigos próximos devem vencer um teste de Força com DF 14 ou serão empurrados e derrubados."
+            },
+            {
+              "nome": "Predador dos Céus",
+              "descricao": "Recebe vantagem em testes de percepção visual e rastreamento de criaturas em áreas abertas. Enquanto estiver voando, possui grande mobilidade e pode atacar alvos terrestres de posições elevadas."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Suas asas são vulneráveis a ataques precisos.",
+            "Possui dificuldade para voar em ambientes fechados.",
+            "É menos perigoso quando forçado a combater no solo."
+          ],
+          "resistencias": [
+            "Veneno: resistente, reduz pela metade o dano causado por venenos.",
+            "Quedas: sofre apenas metade do dano causado por quedas."
+          ],
+          "recompensas": [
+            "Ferrão venenoso",
+            "Glândula de veneno",
+            "Escamas resistentes",
+            "Garras de wyvern",
+            "Membranas das asas"
+          ],
+          "personalidade": "Territorial, agressivo e extremamente predatório. Costuma sobrevoar seu território em busca de presas, atacando primeiro com o ferrão e depois tentando carregar a vítima para um local isolado. Não é inteligente o bastante para planejar estratégias complexas, mas seus instintos de caça são letais."
+        },
+
+        {
+          "nome": "Hidra",
+          "imagem": "img/bestiario/fantasia/hidra.webp",
+          "descricao": "Uma monstruosidade reptiliana de corpo colossal e múltiplas cabeças serpentinas. Cada cabeça possui mandíbulas repletas de dentes afiados e um pescoço capaz de atacar de diferentes direções. Sua característica mais aterrorizante é a capacidade de regenerar cabeças destruídas, tornando-a uma criatura extremamente difícil de matar.",
+          "atributos": {
+            "Vida": 60,
+            "Defesa": 15,
+            "Força": 8,
+            "Agilidade": 5,
+            "Inteligência": 3,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida Múltipla",
+              "descricao": "A hidra ataca com duas de suas cabeças, causando 1d8 de dano por mordida. Pode atingir o mesmo alvo ou dois alvos diferentes."
+            },
+            {
+              "nome": "Dilaceramento",
+              "descricao": "Todas as cabeças se lançam contra uma única vítima, causando 3d8 de dano. Só pode ser utilizada novamente após 2 turnos."
+            },
+            {
+              "nome": "Regeneração de Cabeças",
+              "descricao": "Quando uma cabeça é destruída, duas novas começam a crescer em seu lugar após 2 turnos. Cada cabeça possui 12 pontos de Vida. A hidra pode ter no máximo 7 cabeças. Fogo aplicado ao ferimento impede a regeneração."
+            },
+            {
+              "nome": "Pescoços Esmagadores",
+              "descricao": "A hidra utiliza seus pescoços para envolver e imobilizar um inimigo, causando 1d8 de dano. O alvo fica preso e precisa vencer um teste de Força com DF 15 para escapar."
+            },
+            {
+              "nome": "Sangue Regenerativo",
+              "descricao": "Recupera 1d8 de Vida no início de cada turno. Se sofrer dano de fogo, perde essa regeneração até o início de seu próximo turno."
+            },
+            {
+              "nome": "Vigilância de Múltiplas Cabeças",
+              "descricao": "Suas diversas cabeças observam diferentes direções. A hidra recebe vantagem em testes para perceber emboscadas e não pode ser surpreendida facilmente."
+            },
+            {
+              "nome": "Fúria da Hidra",
+              "descricao": "Quando sua Vida chega a 20 ou menos, todas as cabeças restantes entram em frenesi. Seus ataques de mordida causam +1d4 de dano até o fim do combate."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Fogo impede a regeneração de cabeças e interrompe sua regeneração de Vida.",
+            "Possui dificuldade para alcançar inimigos em locais muito estreitos.",
+            "A destruição simultânea de todas as cabeças impede que novas cresçam."
+          ],
+          "resistencias": [
+            "Veneno: imune.",
+            "Dano físico: reduz 1 de dano recebido.",
+            "Medo: imune."
+          ],
+          "recompensas": [
+            "Couro de hidra",
+            "Dentes de múltiplas cabeças",
+            "Sangue regenerativo",
+            "Glândulas de veneno",
+            "Coração monstruoso"
+          ],
+          "personalidade": "Extremamente agressiva, territorial e voraz. Suas cabeças possuem instintos próprios, mas todas compartilham o mesmo desejo de devorar suas presas. Ataca sem hesitação e raramente abandona um combate enquanto ainda possui cabeças para lutar."
+        },
+
+        {
+          "nome": "Vampiro",
+          "imagem": "img/bestiario/fantasia/vampiro.webp",
+          "descricao": "Uma criatura ancestral que abandonou a mortalidade em troca de poderes profanos. Possui aparência humanoide, força sobrenatural e uma sede insaciável por sangue. Costuma se esconder entre os vivos, manipulando suas vítimas antes de revelar sua verdadeira natureza.",
+          "atributos": {
+            "Vida": 48,
+            "Defesa": 15,
+            "Força": 7,
+            "Agilidade": 8,
+            "Inteligência": 7,
+            "Carisma": 8
+          },
+          "habilidades": [
+            {
+              "nome": "Presas Vampíricas",
+              "descricao": "Morde uma criatura próxima, causando 1d8 de dano e recuperando Vida equivalente à metade do dano causado."
+            },
+            {
+              "nome": "Garras Profanas",
+              "descricao": "Ataca com suas unhas alongadas, causando 1d10 de dano."
+            },
+            {
+              "nome": "Drenar vitalidade",
+              "descricao": "Morde o pescoço do alvo e chupa seu sangue causando 2d8 de dano e recuperando metade do dano causado como Vida. Só pode ser utilizada novamente após 2 turnos."
+            },
+            {
+              "nome": "Passo das Sombras",
+              "descricao": "Desaparece em uma nuvem de névoa escura e reaparece em outro ponto próximo. Não pode ser atingido durante o deslocamento."
+            },
+            {
+              "nome": "Hipnose Vampírica",
+              "descricao": "Fixa os olhos em uma criatura e tenta dominar sua mente. O alvo deve vencer um teste de Inteligência com DF 15 ou ficará hipnotizado por 1 turno, sem poder atacar o vampiro. Sofrer dano encerra o efeito imediatamente."
+            },
+            {
+              "nome": "Raio sanguinário",
+              "descricao": "Disapra um raio de sagngue no oponente causando 2d6 de dano."
+            },
+            {
+              "nome": "Transformação em Morcegos",
+              "descricao": "Transforma-se em um enxame de morcegos e se desloca rapidamente. Enquanto transformado, não pode atacar, mas recebe vantagem para escapar de ataques e atravessar espaços estreitos."
+            },
+            {
+              "nome": "Frenesi Sanguinário",
+              "descricao": "Quando sua Vida chega a 15 ou menos, perde parte de sua racionalidade e ataca com ferocidade. Seus ataques físicos causam +1d4 de dano, mas sua Defesa é reduzida em 2."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Luz solar: impede sua regeneração e causa 1d8 de dano no início de cada turno de exposição.",
+            "Fogo: impede sua regeneração até o início do próximo turno.",
+            "Madeira no coração: se estiver com 10 ou menos de Vida, um golpe de madeira direcionado ao coração pode destruí-lo. O ataque exige um teste com DF 18.",
+            "Luz sagrada: causa dano adicional de 1d8."
+          ],
+          "resistencias": [
+            "Dano físico comum: reduz 2 de dano recebido.",
+            "Veneno: imune.",
+            "Medo: imune."
+          ],
+          "recompensas": [
+            "Presas vampíricas",
+            "Sangue corrompido",
+            "Manto das sombras",
+            "Anel antigo",
+            "Relíquias de sua antiga vida"
+          ],
+          "personalidade": "Calculista, arrogante e manipulador. Prefere seduzir, intimidar ou controlar suas vítimas antes de recorrer à violência. Considera os humanos criaturas inferiores, mas reconhece aqueles que representam uma ameaça real."
+        },
+
+        {
+          "nome": "Aparição",
+          "imagem": "img/bestiario/fantasia/aparicao.webp",
+          "descricao": "Um espírito maligno preso entre o mundo dos vivos e dos mortos. Sua forma humanoide parece feita de fumaça escura e energia espectral, com olhos brilhantes e uma presença capaz de congelar o sangue dos mais corajosos. Atravessa paredes, desaparece nas sombras e drena a vitalidade daqueles que ousam enfrentá-la.",
+          "atributos": {
+            "Vida": 34,
+            "Defesa": 15,
+            "Força": 3,
+            "Agilidade": 7,
+            "Inteligência": 6,
+            "Carisma": 5
+          },
+          "habilidades": [
+            {
+              "nome": "Toque Espectral",
+              "descricao": "Atravessa parcialmente o corpo do alvo com uma mão fantasmagórica, causando 1d8 de dano e drenando sua energia vital. O alvo perde 2 pontos de Energia."
+            },
+            {
+              "nome": "Drenar Essência",
+              "descricao": "Libera uma descarga de energia necrótica contra uma criatura próxima, causando 2d8 de dano e recuperando metade do dano causado como Vida. Só pode ser utilizada novamente após 2 turnos."
+            },
+            {
+              "nome": "Lamento dos Mortos",
+              "descricao": "Emite um grito sobrenatural que atinge todos os inimigos próximos. Cada alvo deve vencer um teste de Inteligência com DF 14 ou ficará apavorado por 1 turno, sem poder se aproximar da aparição."
+            },
+            {
+              "nome": "Forma Incorpórea",
+              "descricao": "Torna seu corpo intangível até o início do próximo turno. Durante esse período, ataques físicos comuns não conseguem atingi-la, mas ataques mágicos e de energia ainda funcionam."
+            },
+            {
+              "nome": "Passagem Fantasmagórica",
+              "descricao": "Atravessa paredes, portas e obstáculos sólidos. Não pode atacar durante a passagem."
+            },
+            {
+              "nome": "Correntes do Além",
+              "descricao": "Invoca correntes espectrais que prendem um inimigo, causando 1d6 de dano e impedindo sua movimentação. O alvo pode escapar vencendo um teste de Força com DF 14. As correntes desaparecem após 2 turnos."
+            },
+            {
+              "nome": "Presença Aterrorizante",
+              "descricao": "Sua proximidade provoca uma sensação esmagadora de morte. Criaturas que se aproximam devem vencer um teste de Inteligência com DF 13 ou terão desvantagem no próximo ataque."
+            }
+          ],
+          "ameaca": "Alta (3)",
+          "fraquezas": [
+            "Luz sagrada: causa 1d8 de dano adicional.",
+            "Armas e ataques mágicos são capazes de feri-la mesmo durante sua forma incorpórea.",
+            "Possui dificuldade para manifestar sua forma física em locais consagrados."
+          ],
+          "resistencias": [
+            "Dano físico comum: reduz 2 de dano recebido.",
+            "Veneno: imune.",
+            "Sangramento: imune.",
+            "Medo: imune."
+          ],
+          "recompensas": [
+            "Essência espectral",
+            "Fragmentos de energia necrótica",
+            "Correntes amaldiçoadas",
+            "Relíquia pertencente à sua vida passada"
+          ],
+          "personalidade": "Rancorosa, silenciosa e vingativa. Costuma perseguir criaturas vivas que invadem seu território ou perturbam seu descanso. Algumas aparições conservam fragmentos de suas antigas memórias, enquanto outras são movidas apenas pelo ódio e pela necessidade de consumir energia vital."
+        },
+
+        {
+          "nome": "Espectro",
+          "imagem": "img/bestiario/fantasia/espectro.webp",
+          "descricao": "Uma entidade sobrenatural formada por energia negativa e ressentimento. Sua silhueta humanoide flutua envolta em um manto de névoa escura, com um rosto quase inexistente e olhos que brilham como brasas. Diferente de espíritos comuns, o espectro caça ativamente os vivos, alimentando-se do calor e da força vital de suas vítimas.",
+          "atributos": {
+            "Vida": 28,
+            "Defesa": 14,
+            "Força": 3,
+            "Agilidade": 7,
+            "Inteligência": 4,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Toque Gélido",
+              "descricao": "Atravessa parcialmente o corpo da vítima com uma mão espectral, causando 1d8 de dano e drenando 2 pontos de Energia."
+            },
+            {
+              "nome": "Garras Fantasmagóricas",
+              "descricao": "Materializa garras de energia sombria e golpeia um inimigo, causando 1d10 de dano."
+            },
+            {
+              "nome": "Drenagem Vital",
+              "descricao": "Agarra o peito de uma criatura e absorve parte de sua essência, causando 2d6 de dano e recuperando metade do dano causado como Vida. Só pode ser utilizada novamente após 2 turnos."
+            },
+            {
+              "nome": "Névoa Sombria",
+              "descricao": "Dissolve seu corpo em uma nuvem escura, tornando-se difícil de enxergar. Recebe vantagem no próximo ataque e pode atravessar pequenas aberturas."
+            },
+            {
+              "nome": "Mãos dos Mortos",
+              "descricao": "Invoca mãos espectrais que agarram os pés de um inimigo, causando 1d6 de dano e impedindo sua movimentação. O alvo pode escapar vencendo um teste de Força com DF 13."
+            },
+            {
+              "nome": "Sussurros da Sepultura",
+              "descricao": "Sussurra vozes perturbadoras diretamente na mente dos inimigos próximos. Cada alvo deve vencer um teste de Inteligência com DF 13 ou sofrerá desvantagem no próximo teste ou ataque."
+            },
+            {
+              "nome": "Incorporeidade",
+              "descricao": "Pode atravessar objetos sólidos e paredes. Ataques físicos comuns causam apenas metade do dano, enquanto ataques mágicos e de energia causam dano normal."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Luz sagrada causa 1d8 de dano adicional.",
+            "Energia positiva enfraquece sua forma espiritual.",
+            "Não consegue atravessar barreiras consagradas."
+          ],
+          "resistencias": [
+            "Dano físico comum: reduz pela metade o dano recebido.",
+            "Veneno: imune.",
+            "Sangramento: imune.",
+            "Medo: imune."
+          ],
+          "recompensas": [
+            "Essência espectral",
+            "Fragmentos de energia sombria",
+            "Cinzas sobrenaturais",
+            "Objeto amaldiçoado"
+          ],
+          "personalidade": "Hostil, inquieto e predatório. Persegue criaturas vivas sem demonstrar piedade, aproximando-se silenciosamente antes de atacar. Alguns espectros repetem eternamente os últimos momentos de suas vidas, enquanto outros parecem possuir uma inteligência cruel."
+        },
+
+        {
+          "nome": "Fantasma",
+          "imagem": "img/bestiario/fantasia/fantasma.webp",
+          "descricao": "O espírito de uma pessoa falecida que, por algum motivo, não conseguiu abandonar o mundo dos vivos. Sua aparência varia entre uma figura translúcida e uma silhueta deformada, frequentemente usando vestimentas de sua antiga vida. Alguns apenas vagam repetindo seus últimos momentos, enquanto outros atacam qualquer criatura que considerem uma ameaça.",
+          "atributos": {
+            "Vida": 22,
+            "Defesa": 12,
+            "Força": 2,
+            "Agilidade": 5,
+            "Inteligência": 5,
+            "Carisma": 6
+          },
+          "habilidades": [
+            {
+              "nome": "Toque Gelado",
+              "descricao": "Toca o corpo de uma criatura com suas mãos espectrais, causando 1d6 de dano e drenando 1 ponto de Energia."
+            },
+            {
+              "nome": "Manifestação Assustadora",
+              "descricao": "Revela sua verdadeira aparência diante de uma criatura. O alvo deve vencer um teste de Inteligência com DF 13 ou ficará amedrontado por 1 turno, sofrendo desvantagem em seu próximo ataque."
+            },
+            {
+              "nome": "Aparição Repentina",
+              "descricao": "Desaparece e reaparece próximo de um inimigo, realizando imediatamente um ataque de Toque Gelado."
+            },
+            {
+              "nome": "Lamento do Além",
+              "descricao": "Emite um grito perturbador que atinge todos os inimigos próximos. Os alvos devem vencer um teste de Inteligência com DF 12 ou perderão sua próxima reação."
+            },
+            {
+              "nome": "Incorporeidade",
+              "descricao": "Pode atravessar paredes, portas e objetos sólidos. Ataques físicos comuns causam apenas metade do dano, enquanto ataques mágicos causam dano normal."
+            },
+            {
+              "nome": "Ilusão Fantasmagórica",
+              "descricao": "Cria uma imagem ilusória de si mesmo em outro ponto próximo. O primeiro ataque direcionado à ilusão não causa dano e revela que ela é falsa."
+            },
+            {
+              "nome": "Possessão Breve",
+              "descricao": "Tenta invadir o corpo de uma criatura próxima. O alvo deve vencer um teste de Inteligência com DF 15 ou perderá o controle de seus movimentos por 1 turno. Durante esse período, o fantasma não pode realizar outros ataques. Só pode ser utilizada novamente após 3 turnos."
+            }
+          ],
+          "ameaca": "Média (2)",
+          "fraquezas": [
+            "Luz sagrada causa 1d8 de dano adicional.",
+            "Objetos ou locais consagrados impedem sua passagem.",
+            "Pode ser enfraquecido ao descobrir e resolver assuntos inacabados de sua vida passada."
+          ],
+          "resistencias": [
+            "Dano físico comum: reduz pela metade o dano recebido.",
+            "Veneno: imune.",
+            "Sangramento: imune.",
+            "Medo: imune."
+          ],
+          "recompensas": [
+            "Essência espiritual",
+            "Relíquia de sua antiga vida",
+            "Fragmentos de energia sobrenatural",
+            "Objeto assombrado"
+          ],
+          "personalidade": "Nostálgico, inquieto e imprevisível. Pode demonstrar tristeza, confusão ou profunda hostilidade. Alguns fantasmas ainda reconhecem pessoas e lugares de sua vida passada, enquanto outros perderam completamente suas memórias."
+        },
+
+        {
+            "nome": "Múmia",
+            "imagem": "img/bestiario/fantasia/mumia.webp",
+            "descricao": "Um cadáver ancestral preservado por rituais sombrios e envolto em faixas apodrecidas. Desperta de tumbas esquecidas para proteger tesouros, punir saqueadores e espalhar maldições. Seu corpo ressecado esconde uma força sobrenatural e uma resistência assustadora.",
+            "atributos": {
+              "Vida": 32,
+              "Defesa": 12,
+              "Força": 6,
+              "Agilidade": 2,
+              "Inteligência": 4,
+              "Carisma": 3
+            },
+            "habilidades": [
+              {
+                "nome": "Punhos Sepulcrais",
+                "descricao": "Desfere um golpe brutal com seus punhos ressecados, causando 1d8 de dano."
+              },
+              {
+                "nome": "Faixas Sufocantes",
+                "descricao": "Arremessa suas bandagens contra um inimigo, causando 1d6 de dano e prendendo seus braços ou pernas. O alvo não pode se movimentar livremente e precisa vencer um teste de Força com DF 14 para se libertar."
+              },
+              {
+                "nome": "Maldição da Mumificação",
+                "descricao": "Ao tocar uma criatura, transmite uma maldição que resseca sua carne e enfraquece seu corpo. O alvo deve vencer um teste de Força com DF 14 ou perderá 2 pontos de Força durante 3 turnos."
+              },
+              {
+                "nome": "Poeira da Tumba",
+                "descricao": "Libera uma nuvem de poeira e restos antigos em uma área próxima. Os inimigos atingidos devem vencer um teste de Agilidade com DF 13 ou sofrerão 1d6 de dano e ficarão com desvantagem no próximo ataque."
+              },
+              {
+                "nome": "Despertar Ancestral",
+                "descricao": "Quando sua Vida chega a 10 ou menos, libera a energia de seu antigo ritual. Recupera 1d8 de Vida e seus ataques causam +1d4 de dano até o fim do combate. Só pode ser ativada uma vez."
+              },
+              {
+                "nome": "Corpo Mumificado",
+                "descricao": "Suas bandagens e carne ressecada absorvem impactos, reduzindo em 2 todo dano físico recebido."
+              },
+              {
+                "nome": "Maldição da Tumba",
+                "descricao": "Uma vez por combate, amaldiçoa um inimigo que esteja próximo. O alvo deve vencer um teste de Inteligência com DF 14 ou sofrerá 1d8 de dano e não poderá recuperar Vida durante 2 turnos."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Fogo: recebe 1d8 de dano adicional.",
+              "Luz sagrada: causa 1d8 de dano adicional.",
+              "Sua baixa agilidade dificulta perseguir inimigos rápidos."
+            ],
+            "resistencias": [
+              "Dano físico: reduz 2 de dano recebido.",
+              "Veneno: imune.",
+              "Sangramento: imune.",
+              "Medo: imune."
+            ],
+            "recompensas": [
+              "Faixas amaldiçoadas",
+              "Amuleto funerário",
+              "Pó de múmia",
+              "Relíquia ancestral",
+              "Fragmento de um antigo ritual"
+            ],
+            "personalidade": "Silenciosa, implacável e obcecada por proteger sua tumba. Não demonstra medo, dor ou piedade. Algumas múmias preservam fragmentos da personalidade que possuíam em vida, podendo reconhecer invasores e até pronunciar antigas maldições."
+          },
+
+          {
+            "nome": "Banshee",
+            "imagem": "img/bestiario/fantasia/banshee.webp",
+            "descricao": "Um espírito feminino de aparência cadavérica, envolto em vestes rasgadas e cabelos desgrenhados. Sua existência é marcada por sofrimento, ódio e desespero. Seu grito sobrenatural é capaz de despedaçar a coragem dos mais bravos e ferir mortalmente aqueles que o escutam de perto.",
+            "atributos": {
+              "Vida": 30,
+              "Defesa": 14,
+              "Força": 2,
+              "Agilidade": 7,
+              "Inteligência": 6,
+              "Carisma": 8
+            },
+            "habilidades": [
+              {
+                "nome": "Grito da Agonia",
+                "descricao": "Libera um grito sobrenatural que atinge todos os inimigos próximos, causando 2d8 de dano. Os alvos devem vencer um teste de Inteligência com DF 15 para reduzir o dano pela metade. Só pode ser utilizado novamente após 3 turnos."
+              },
+              {
+                "nome": "Lamento Mortal",
+                "descricao": "Emite um lamento direcionado a uma criatura, causando 1d10 de dano e obrigando o alvo a realizar um teste de Inteligência com DF 14. Em caso de falha, ficará apavorado por 2 turnos."
+              },
+              {
+                "nome": "Toque da Morte",
+                "descricao": "Toca uma criatura com suas mãos espectrais, causando 1d8 de dano e drenando 2 pontos de Energia."
+              },
+              {
+                "nome": "Forma Incorpórea",
+                "descricao": "Torna-se intangível até o início do próximo turno. Ataques físicos comuns não conseguem atingi-la, mas ataques mágicos e de energia ainda causam dano."
+              },
+              {
+                "nome": "Aparição Aterrorizante",
+                "descricao": "Surge repentinamente diante de seus inimigos, revelando sua face deformada. Todos os alvos próximos devem vencer um teste de Inteligência com DF 14 ou sofrerão desvantagem em seus próximos ataques."
+              },
+              {
+                "nome": "Vozes dos Condenados",
+                "descricao": "Sussurra vozes de sofrimento diretamente na mente de uma criatura. O alvo deve vencer um teste de Inteligência com DF 13 ou perderá sua próxima ação."
+              },
+              {
+                "nome": "Vingança Sobrenatural",
+                "descricao": "Quando sua Vida chega a 10 ou menos, a banshee libera um grito desesperado. Todos os inimigos próximos sofrem 1d8 de dano e devem vencer um teste de Inteligência com DF 15 ou ficarão apavorados por 1 turno. Só pode ser ativada uma vez."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Luz sagrada causa 1d8 de dano adicional.",
+              "Locais consagrados enfraquecem sua manifestação.",
+              "Sua forma espiritual pode ser ferida por armas mágicas e encantadas."
+            ],
+            "resistencias": [
+              "Dano físico comum: reduz pela metade o dano recebido.",
+              "Veneno: imune.",
+              "Sangramento: imune.",
+              "Medo: imune."
+            ],
+            "recompensas": [
+              "Essência espectral",
+              "Lágrima de banshee",
+              "Fragmento de energia necrótica",
+              "Joia amaldiçoada",
+              "Relíquia de sua vida passada"
+            ],
+            "personalidade": "Melancólica, vingativa e profundamente hostil. Seu lamento anuncia a morte e sua presença costuma provocar desespero. Algumas banshees permanecem presas a lugares ou pessoas que marcaram suas vidas, enquanto outras vagam procurando vítimas para descarregar seu sofrimento."
+          },
+
+          {
+            "nome": "Cavaleiro da Morte",
+            "imagem": "img/bestiario/fantasia/cavaleiro-da-morte.webp",
+            "descricao": "Um guerreiro ancestral que retornou da morte envolto em uma armadura negra e amaldiçoada. Sua presença faz o ar esfriar e sua espada carrega energia necrótica capaz de ferir corpo e espírito. Diferente de mortos-vivos comuns, conserva sua inteligência, técnicas de combate e memórias de sua antiga vida.",
+            "atributos": {
+              "Vida": 55,
+              "Defesa": 15,
+              "Força": 9,
+              "Agilidade": 5,
+              "Inteligência": 6,
+              "Carisma": 7
+            },
+            "habilidades": [
+              {
+                "nome": "Espada da Ruína",
+                "descricao": "Desfere um golpe pesado com sua espada amaldiçoada, causando 1d12 de dano. O ferimento também causa 1d4 de dano necrótico adicional."
+              },
+              {
+                "nome": "Corte Devastador",
+                "descricao": "Concentra sua força em um golpe brutal capaz de atravessar armaduras, causando 2d10 de dano. O ataque possui menor precisão e só pode ser utilizado novamente após 2 turnos."
+              },
+              {
+                "nome": "Correntes dos Condenados",
+                "descricao": "Invoca correntes espectrais que prendem até dois inimigos próximos, causando 1d6 de dano. Os alvos ficam impossibilitados de se movimentar e precisam vencer um teste de Força com DF 15 para escapar."
+              },
+              {
+                "nome": "Explosão Necrótica",
+                "descricao": "Libera uma onda de energia sombria ao seu redor, causando 2d8 de dano a todos os inimigos próximos. Os alvos podem realizar um teste de Agilidade com DF 15 para reduzir o dano pela metade. Só pode ser utilizada novamente após 3 turnos."
+              },
+              {
+                "nome": "Drenar Vitalidade",
+                "descricao": "Ao acertar um golpe com sua espada, absorve a energia vital da vítima, recuperando 1d8 de Vida. Só pode ser utilizado novamente após 2 turnos."
+              },
+              {
+                "nome": "Comandar os Mortos",
+                "descricao": "Invoca 1d4 esqueletos para lutar ao seu lado. Os esqueletos possuem 8 de Vida, Defesa 10 e causam 1d6 de dano por ataque. Só pode ser utilizada uma vez por combate."
+              },
+              {
+                "nome": "Aura de Terror",
+                "descricao": "Sua presença sobrenatural enfraquece a coragem dos inimigos próximos. Cada alvo deve vencer um teste de Inteligência com DF 15 ou sofrerá desvantagem em seu próximo ataque."
+              },
+              {
+                "nome": "Último Juramento",
+                "descricao": "Quando sua Vida chega a 15 ou menos, o cavaleiro libera todo o poder de sua maldição. Seus ataques causam +1d6 de dano necrótico até o fim do combate, mas sua Defesa é reduzida em 2."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Luz sagrada causa 1d8 de dano adicional.",
+              "Armas consagradas ignoram a redução de dano de sua armadura.",
+              "Sua armadura amaldiçoada possui uma runa central que pode ser destruída com um ataque preciso.",
+              "Sua obsessão por antigos juramentos pode ser explorada por inimigos inteligentes."
+            ],
+            "resistencias": [
+              "Dano físico: reduz 2 de dano recebido.",
+              "Veneno: imune.",
+              "Sangramento: imune.",
+              "Medo: imune.",
+              "Energia necrótica: resistente, reduz pela metade o dano recebido."
+            ],
+            "recompensas": [
+              "Espada amaldiçoada",
+              "Armadura negra",
+              "Fragmento de alma",
+              "Núcleo necrótico",
+              "Insígnia de um antigo reino"
+            ],
+            "personalidade": "Implacável, disciplinado e extremamente orgulhoso. Enxerga o combate como um dever sagrado e despreza guerreiros que abandonam seus companheiros. Ainda conserva a honra de sua antiga vida, embora esteja completamente corrompido pela maldição que o mantém de pé."
+          },
+
+          {
+            "nome": "Revenant",
+            "imagem": "img/bestiario/fantasia/revenant.webp",
+            "descricao": "Um morto-vivo que retornou da sepultura movido por um desejo absoluto de vingança. Seu corpo apodrecido permanece de pé graças a uma força sobrenatural que se recusa a morrer. Diferente de outros mortos-vivos, o revenant conserva suas memórias e persegue incansavelmente aqueles que o mataram.",
+            "atributos": {
+              "Vida": 42,
+              "Defesa": 14,
+              "Força": 7,
+              "Agilidade": 4,
+              "Inteligência": 5,
+              "Carisma": 4
+            },
+            "habilidades": [
+              {
+                "nome": "Golpe da Vingança",
+                "descricao": "Ataca com uma arma enferrujada ou suas próprias mãos, causando 1d10 de dano. Causa +1d4 de dano contra seu alvo de vingança."
+              },
+              {
+                "nome": "Agarrão Cadavérico",
+                "descricao": "Agarra uma criatura próxima com força sobrenatural, causando 1d6 de dano e prendendo-a. O alvo precisa vencer um teste de Força com DF 14 para escapar."
+              },
+              {
+                "nome": "Fúria dos Ressentidos",
+                "descricao": "Libera toda sua raiva em uma sequência brutal de golpes, realizando dois ataques consecutivos de 1d8 de dano. Só pode ser utilizada novamente após 2 turnos."
+              },
+              {
+                "nome": "Perseguidor Implacável",
+                "descricao": "Sempre sabe a direção aproximada de seu alvo de vingança, desde que estejam no mesmo plano de existência. Não pode ser facilmente despistado por esconderijos ou disfarces."
+              },
+              {
+                "nome": "Regeneração Profana",
+                "descricao": "Recupera 1d6 de Vida no início de cada turno. Se sua Vida chegar a zero, seu corpo permanece imóvel, mas pode retornar após 1d4 dias, a menos que sua maldição seja quebrada."
+              },
+              {
+                "nome": "Olhar do Túmulo",
+                "descricao": "Fixa seus olhos mortos em uma criatura, transmitindo uma visão aterrorizante de sua própria morte. O alvo deve vencer um teste de Inteligência com DF 14 ou sofrerá desvantagem no próximo ataque."
+              },
+              {
+                "nome": "Desespero Final",
+                "descricao": "Quando sua Vida chega a 10 ou menos, o revenant entra em um estado de fúria. Seus ataques causam +1d6 de dano, mas sua Defesa é reduzida em 2 até o fim do combate."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Luz sagrada causa 1d8 de dano adicional.",
+              "Sua maldição pode ser quebrada ao cumprir sua vingança ou realizar um ritual de purificação.",
+              "Ataques de fogo impedem sua regeneração até o início do próximo turno."
+            ],
+            "resistencias": [
+              "Dano físico: reduz 1 de dano recebido.",
+              "Veneno: imune.",
+              "Sangramento: imune.",
+              "Medo: imune."
+            ],
+            "recompensas": [
+              "Arma enferrujada e amaldiçoada",
+              "Fragmento de alma vingativa",
+              "Amuleto funerário",
+              "Restos de sua antiga armadura",
+              "Essência necrótica"
+            ],
+            "personalidade": "Obstinado, rancoroso e incapaz de abandonar sua vingança. Não sente medo, piedade ou cansaço. Pode ignorar outros inimigos para perseguir seu verdadeiro alvo, mesmo que isso signifique atravessar um exército inteiro."
+          },
+
+          {
+              "nome": "Fada Sombria",
+              "imagem": "img/bestiario/fantasia/fada-sombria.webp",
+              "descricao": "Uma pequena criatura feérica corrompida por magia obscura. Possui asas negras semelhantes às de uma mariposa, olhos brilhantes e uma aparência delicada que esconde intenções cruéis. Manipula ilusões, lança maldições e se diverte conduzindo viajantes para armadilhas mortais.",
+              "atributos": {
+                "Vida": 18,
+                "Defesa": 14,
+                "Força": 2,
+                "Agilidade": 8,
+                "Inteligência": 6,
+                "Carisma": 7
+              },
+              "habilidades": [
+                {
+                  "nome": "Pólen Amaldiçoado",
+                  "descricao": "Espalha um pó mágico escuro contra uma criatura próxima, causando 1d6 de dano. O alvo deve vencer um teste de Inteligência com DF 13 ou sofrerá desvantagem em seu próximo ataque."
+                },
+                {
+                  "nome": "Espinhos das Sombras",
+                  "descricao": "Dispara espinhos negros contra um inimigo, causando 1d8 de dano. Os espinhos ignoram proteções mágicas simples."
+                },
+                {
+                  "nome": "Ilusão Feérica",
+                  "descricao": "Cria até duas cópias ilusórias de si mesma. Os inimigos precisam identificar a fada verdadeira antes de atacá-la. As ilusões desaparecem ao receber qualquer dano."
+                },
+                {
+                  "nome": "Maldição do Azar",
+                  "descricao": "Amaldiçoa uma criatura que possa enxergar. O alvo deve vencer um teste de Inteligência com DF 14 ou terá desvantagem em seu próximo teste de atributo. Só pode ser utilizada novamente após 2 turnos."
+                },
+                {
+                  "nome": "Voo Sombrio",
+                  "descricao": "Voa rapidamente e pode atravessar obstáculos terrestres. Recebe vantagem em testes para escapar de agarrões e evitar ataques de criaturas que não conseguem alcançá-la no ar."
+                },
+                {
+                  "nome": "Encanto Hipnótico",
+                  "descricao": "Canta uma melodia sobrenatural que atrai a atenção de uma criatura. O alvo deve vencer um teste de Inteligência com DF 14 ou ficará encantado por 1 turno, sem poder atacar a fada. Sofrer dano encerra o efeito."
+                },
+                {
+                  "nome": "Desaparecimento Feérico",
+                  "descricao": "Dissolve seu corpo em pequenas partículas escuras e reaparece em outro ponto próximo. O próximo ataque contra ela sofre desvantagem."
+                }
+              ],
+              "ameaca": "Média (2)",
+              "fraquezas": [
+                "Possui pouca resistência física e pode ser derrotada com poucos golpes certeiros.",
+                "Ferro frio enfraquece sua magia e causa 1d6 de dano adicional.",
+                "Luz intensa dificulta a criação de ilusões."
+              ],
+              "resistencias": [
+                "Magia de ilusão: vantagem para resistir.",
+                "Veneno: resistente, reduz pela metade o dano recebido.",
+                "Efeitos de encantamento: vantagem para resistir."
+              ],
+              "recompensas": [
+                "Pó de fada sombrio",
+                "Asas feéricas",
+                "Essência mágica",
+                "Fragmento de cristal encantado",
+                "Semente de planta feérica"
+              ],
+              "personalidade": "Travessa, manipuladora e maliciosa. Adora confundir viajantes, roubar objetos e brincar com o medo de suas vítimas. Raramente enfrenta inimigos diretamente, preferindo enfraquecê-los com truques e desaparecer antes de ser atingida."
+            },
+
+            {
+              "nome": "Dríade Corrompida",
+              "imagem": "img/bestiario/fantasia/driade-corrompida.webp",
+              "descricao": "Uma antiga guardiã da floresta, agora deformada por uma corrupção sombria. Sua pele parece casca apodrecida, seus cabelos se confundem com raízes retorcidas e seus olhos brilham com uma luz doentia. Atrai viajantes para dentro da mata e os transforma em adubo para suas raízes.",
+              "atributos": {
+                "Vida": 32,
+                "Defesa": 13,
+                "Força": 5,
+                "Agilidade": 5,
+                "Inteligência": 6,
+                "Carisma": 5
+              },
+              "habilidades": [
+                {
+                  "nome": "Garras de Espinhos",
+                  "descricao": "Ataca com braços cobertos de espinhos, causando 1d8 de dano."
+                },
+                {
+                  "nome": "Raízes Famintas",
+                  "descricao": "Faz raízes brotarem do solo e prenderem um alvo próximo. A vítima fica imobilizada até vencer um teste de Força com DF 14. Enquanto estiver presa, sofre 1d4 de dano no início de cada turno."
+                },
+                {
+                  "nome": "Seiva Corrompida",
+                  "descricao": "Dispara uma rajada de seiva negra que causa 1d6 de dano e deixa o alvo envenenado por 2 turnos, causando 1d4 de dano no início de cada turno."
+                },
+                {
+                  "nome": "Flores do Pesadelo",
+                  "descricao": "Libera um pólen escuro em uma pequena área. Criaturas atingidas devem passar em um teste de Inteligência com DF 14 ou ficarão confusas por 1 turno, tendo dificuldade para distinguir aliados de inimigos."
+                },
+                {
+                  "nome": "Regeneração Vegetal",
+                  "descricao": "Recupera 1d6 de Vida no início do turno se estiver em contato com vegetação ou raízes. Fogo interrompe essa regeneração por 2 turnos."
+                },
+                {
+                  "nome": "Corpo de Madeira Podre",
+                  "descricao": "Sua pele endurecida reduz em 2 pontos o dano recebido de ataques físicos."
+                }
+              ],
+              "ameaca": "Alta (3)",
+              "fraquezas": [
+                "Fogo causa dano adicional de 1d6.",
+                "Luz solar direta impede o uso de Flores do Pesadelo.",
+                "Não consegue utilizar Raízes Famintas em terrenos sem solo natural."
+              ],
+              "resistencias": [
+                "Resistente a venenos comuns.",
+                "Resistente a ataques físicos leves."
+              ],
+              "recompensas": [
+                "Coração de madeira corrompida",
+                "Seiva negra alquímica",
+                "Espinhos venenosos",
+                "Pólen de pesadelo"
+              ],
+              "personalidade": "Cruel, manipuladora e territorial. Ainda conserva fragmentos da antiga consciência de guardiã, mas eles são sufocados pela corrupção. Costuma brincar com suas vítimas antes de atacá-las, usando vozes familiares e ilusões para atraí-las."
+            },
+
+            {
+              "nome": "Centauro",
+              "imagem": "img/bestiario/fantasia/centauro.webp",
+              "descricao": "Criatura metade homem, metade cavalo, conhecida por sua força, velocidade e habilidade com armas. Centauros costumam viver em florestas, planícies e regiões montanhosas, formando comunidades guerreiras. São excelentes arqueiros e combatentes, capazes de atropelar inimigos antes que consigam reagir.",
+              "atributos": {
+                "Vida": 32,
+                "Defesa": 13,
+                "Força": 6,
+                "Agilidade": 7,
+                "Inteligência": 4,
+                "Carisma": 4
+              },
+              "habilidades": [
+                {
+                  "nome": "Lança de Guerra",
+                  "descricao": "Ataca com uma lança pesada, causando 1d8 dano."
+                },
+                {
+                  "nome": "Chuva de Flechas",
+                  "descricao": "Dispara uma flecha contra um inimigo à distância, causando 1d8 de dano. Pode utilizar esta habilidade mesmo enquanto se movimenta."
+                },
+                {
+                  "nome": "Investida Brutal",
+                  "descricao": "Avança em linha reta contra um alvo, causando 2d8 de dano. O alvo deve passar em um teste de Força com DF 14 ou será derrubado."
+                },
+                {
+                  "nome": "Coice Devastador",
+                  "descricao": "Ataca com as patas traseiras, causando 1d10 de dano. Se o alvo estiver próximo e desprevenido, sofre -2 na tentativa de defesa."
+                },
+                {
+                  "nome": "Galope de Guerra",
+                  "descricao": "Percorre uma grande distância em um único movimento, podendo atravessar o campo de batalha e escapar de cercos. Não pode utilizar esta habilidade se estiver imobilizado."
+                },
+                {
+                  "nome": "Arqueiro Experiente",
+                  "descricao": "Seus disparos são precisos. Recebe +2 em testes de ataque com arcos."
+                }
+              ],
+              "ameaca": "Alta (3)",
+              "fraquezas": [
+                "Possui dificuldade para se movimentar em espaços estreitos.",
+                "Terrenos extremamente acidentados prejudicam seu galope.",
+                "Armadilhas que prendem suas patas podem impedir sua movimentação."
+              ],
+              "resistencias": [
+                "Resistente a empurrões e tentativas de derrubá-lo.",
+                "Grande resistência física e fôlego acima do humano."
+              ],
+              "recompensas": [
+                "Lança de guerra",
+                "Arco reforçado",
+                "Flechas artesanais",
+                "Amuleto tribal",
+                "Couro resistente"
+              ],
+              "personalidade": "Orgulhoso, disciplinado e territorial. Valoriza coragem e honra, mas não demonstra misericórdia contra invasores que ameaçam seu povo. Alguns centauros são sábios e diplomáticos, enquanto outros vivem exclusivamente para a caça e a guerra."
+            },
+
+            {
+              "nome": "Sátiro",
+              "imagem": "img/bestiario/fantasia/satiro.webp",
+              "descricao": "Criatura humanoide com pernas e chifres de bode, conhecida por sua natureza travessa, aparência selvagem e talento musical. Habita florestas, clareiras e ruínas esquecidas. Apesar de parecer inofensivo, um sátiro pode ser um adversário perigoso, usando ilusões, encantamentos e truques para confundir suas vítimas antes de atacá-las.",
+              "atributos": {
+                "Vida": 20,
+                "Defesa": 12,
+                "Força": 3,
+                "Agilidade": 6,
+                "Inteligência": 5,
+                "Carisma": 7
+              },
+              "habilidades": [
+                {
+                  "nome": "Chifrada",
+                  "descricao": "Avança contra um inimigo e o golpeia com seus chifres, causando 1d6 de dano."
+                },
+                 {
+                  "nome": "Coice",
+                  "descricao": "Avança contra um inimigo e o golpeia com suas patas, causando 1d8 de dano."
+                },
+                {
+                  "nome": "Flauta Enfeitiçada",
+                  "descricao": "Toca uma melodia sobrenatural. Um alvo que falhar em um teste de Inteligência com DF 14 fica encantado por 1 turno, perdendo sua próxima ação. O efeito termina imediatamente se sofrer dano."
+                },
+                {
+                  "nome": "Dança Hipnótica",
+                  "descricao": "Executa uma dança sobrenatural que distrai os inimigos próximos. Todos em uma pequena área devem passar em um teste de Inteligência com DF 13 ou sofrerão -2 em seus ataques por 2 turnos."
+                },
+                {
+                  "nome": "Ilusão Silvestre",
+                  "descricao": "Cria uma imagem ilusória de si mesmo ou de uma criatura próxima. O primeiro ataque direcionado à ilusão erra automaticamente, revelando o truque."
+                },
+                {
+                  "nome": "Passos Ligeiros",
+                  "descricao": "Sua agilidade sobrenatural permite atravessar vegetação densa e terrenos naturais sem perder velocidade. Recebe +2 em testes para escapar de perseguições em florestas."
+                },
+                {
+                  "nome": "Risada Perturbadora",
+                  "descricao": "Solta uma gargalhada sobrenatural que desorienta os inimigos próximos. Alvos devem passar em um teste de Carisma com DF 13 ou não poderão realizar reações até o início do próximo turno."
+                }
+              ],
+              "ameaca": "Média (2)",
+              "fraquezas": [
+                "Vulnerável a efeitos de silêncio, que impedem o uso de suas habilidades musicais.",
+                "Possui pouca resistência física em combates prolongados.",
+                "Suas ilusões desaparecem quando atingidas."
+              ],
+              "resistencias": [
+                "Resistente a encantamentos e efeitos de sedução.",
+                "Ágil em terrenos naturais e florestais."
+              ],
+              "recompensas": [
+                "Flauta encantada",
+                "Chifres de sátiro",
+                "Pólen feérico",
+                "Ervas raras",
+                "Amuleto silvestre"
+              ],
+              "personalidade": "Brincalhão, provocador e imprevisível. Adora música, festas e pregar peças em viajantes. Pode ajudar aqueles que considera interessantes, mas não hesita em humilhar ou atormentar quem invade seu território."
+            },
+
+            {
+            "nome": "Unicórnio Corrompido",
+            "imagem": "img/bestiario/fantasia/unicornio-corrompido.webp",
+            "descricao": "Uma criatura outrora pura e majestosa, agora consumida por uma corrupção sombria. Seu pelo está manchado por veios negros, seus olhos emanam uma luz avermelhada e seu chifre foi transformado em uma arma retorcida. Onde pisa, a vegetação apodrece e a terra perde sua vitalidade. Ataca qualquer criatura que se aproxime, sem distinguir aliados de inimigos.",
+            "atributos": {
+              "Vida": 42,
+              "Defesa": 15,
+              "Força": 7,
+              "Agilidade": 8,
+              "Inteligência": 5,
+              "Carisma": 6
+            },
+            "habilidades": [
+              {
+                "nome": "Chifre Profanado",
+                "descricao": "Perfura um inimigo com seu chifre corrompido, causando 1d10 de dano."
+              },
+              {
+                "nome": "Investida Sombria",
+                "descricao": "Dispara em alta velocidade contra um alvo, causando 2d8 de dano. O alvo deve passar em um teste de Agilidade com DF 15 ou será derrubado."
+              },
+              {
+                "nome": "Explosão de Corrupção",
+                "descricao": "Libera uma onda de energia negra ao seu redor, causando 2d8 de dano a todos os inimigos próximos."
+              },
+              {
+                "nome": "Maldição do Chifre",
+                "descricao": "Ao acertar um ataque com o chifre, pode amaldiçoar a vítima. Por 3 turnos, ela recebe 2 pontos a menos em testes de Força e Agilidade. Um teste de Inteligência com DF 15 encerra a maldição."
+              },
+              {
+                "nome": "Casco Devastador",
+                "descricao": "Golpeia brutalmente um inimigo caído com os cascos, causando 1d10 de dano. Causa 1d6 adicional se o alvo estiver derrubado."
+              },
+              {
+                "nome": "Regeneração Profanada",
+                "descricao": "Recupera 1d6 de Vida no início de seu turno. Dano causado por armas ou magia sagrada interrompe a regeneração por 2 turnos."
+              },
+              {
+                "nome": "Aura de Decomposição",
+                "descricao": "A corrupção ao seu redor enfraquece a vegetação e causa desconforto nas criaturas próximas. Inimigos que permanecerem adjacentes sofrem 1d4 de dano no início de seus turnos."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Magia sagrada causa 1d6 de dano adicional.",
+              "Luz purificadora impede sua regeneração por 2 turnos.",
+              "É incapaz de atravessar barreiras mágicas de proteção natural."
+            ],
+            "resistencias": [
+              "Resistente a venenos comuns.",
+              "Resistente a efeitos de medo.",
+              "Sua pele endurecida reduz em 2 pontos o dano de ataques físicos."
+            ],
+            "recompensas": [
+              "Chifre corrompido",
+              "Sangue profanado",
+              "Crina sombria",
+              "Fragmento de essência mágica",
+              "Casco negro"
+            ],
+            "personalidade": "Violento, territorial e tomado por uma fúria constante. Ainda possui fragmentos de sua antiga natureza, demonstrados por breves momentos de hesitação antes de atacar. A corrupção, porém, quase sempre retoma o controle."
+          },
+
+          {
+            "nome": "Demônio Abissal",
+            "imagem": "img/bestiario/fantasia/demonio-abissal.webp",
+            "descricao": "Uma monstruosidade vinda das profundezas do abismo, com corpo colossal, chifres retorcidos e uma pele semelhante a rocha queimada. Sua presença distorce o ambiente, espalhando calor sufocante e uma sensação de desespero. Não serve a reis ou divindades: existe apenas para destruir, corromper e consumir tudo que encontra.",
+            "atributos": {
+              "Vida": 58,
+              "Defesa": 16,
+              "Força": 10,
+              "Agilidade": 5,
+              "Inteligência": 6,
+              "Carisma": 7
+            },
+            "habilidades": [
+              {
+                "nome": "Garras do Abismo",
+                "descricao": "Desfere um golpe brutal com suas garras, causando 2d8 de dano."
+              },
+              {
+                "nome": "Esmagamento Demoníaco",
+                "descricao": "Agarra um inimigo e o esmaga com força monstruosa, causando 2d10 de dano. A vítima deve passar em um teste de Força com DF 16 ou ficará agarrada. Pode tentar escapar com um novo teste de Força no próprio turno."
+              },
+              {
+                "nome": "Chamas Abissais",
+                "descricao": "Cospe uma torrente de fogo negro em linha reta, causando 3d8 de dano. A habilidade possui recarga de 2 turnos."
+              },
+              {
+                "nome": "Ruptura Infernal",
+                "descricao": "Golpeia o chão com violência, provocando uma onda de energia que atinge todos os inimigos próximos, causando 2d8 de dano e derrubando aqueles que falharem em um teste de Agilidade com DF 15."
+              },
+              {
+                "nome": "Correntes do Abismo",
+                "descricao": "Invoca correntes sombrias que tentam prender um alvo à distância. A vítima deve passar em um teste de Força com DF 15 ou ficará imobilizada por 1 turno. Pode tentar romper as correntes com um novo teste de Força."
+              },
+              {
+                "nome": "Aura de Terror",
+                "descricao": "Sua presença desperta um medo primitivo. Inimigos próximos devem passar em um teste de Carisma com DF 15 ou sofrerão -2 em seus ataques por 2 turnos."
+              },
+              {
+                "nome": "Carne Demoníaca",
+                "descricao": "Sua constituição sobrenatural reduz em 3 pontos o dano recebido de ataques físicos comuns."
+              },
+              {
+                "nome": "Fúria Abissal",
+                "descricao": "Ao ficar com menos de 20 pontos de Vida, entra em frenesi. Seus ataques físicos causam 1d6 de dano adicional, mas sua Defesa é reduzida em 2 pontos."
+              }
+            ],
+            "ameaca": "Alta (3)",
+            "fraquezas": [
+              "Armas sagradas causam 1d6 de dano adicional.",
+              "Símbolos de proteção consagrados impedem o uso de Correntes do Abismo contra criaturas protegidas.",
+              "Sua fúria o torna previsível quando está gravemente ferido."
+            ],
+            "resistencias": [
+              "Resistente a fogo comum.",
+              "Resistente a venenos e doenças.",
+              "Imune a efeitos comuns de medo.",
+              "Sua carne demoníaca reduz dano físico."
+            ],
+            "recompensas": [
+              "Chifre abissal",
+              "Coração demoníaco",
+              "Essência infernal",
+              "Fragmentos de carapaça negra",
+              "Garras abissais"
+            ],
+            "personalidade": "Cruel, arrogante e extremamente violento. Enxerga outras criaturas como seres inferiores e gosta de prolongar combates para demonstrar sua superioridade. Não recua diante de ferimentos e costuma destruir o ambiente ao redor quando provocado."
+          }
+
+      ]
+    }
+  ]
+}

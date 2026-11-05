@@ -1,0 +1,20 @@
+{
+  "oraculos": [
+    "fantasia",
+    "terror",
+    "mundo-moderno"
+  ],
+  "bestiario": [
+    "fantasia",
+    "terror",
+    "mundo-moderno"
+  ],
+  "itens": [
+    "fantasia",
+    "mundo-moderno"
+  ],
+  "npcs": [
+    "fantasia",
+    "mundo-moderno"
+  ]
+}

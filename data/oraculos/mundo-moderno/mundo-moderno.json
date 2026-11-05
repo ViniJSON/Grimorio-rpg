@@ -1,0 +1,92 @@
+{
+  "genero": "mundo-moderno",
+  "geradores": [
+    {
+      "nome": "Gerador de NPC",
+      "descricao": "Role tudo de uma vez ou tabela por tabela.",
+      "tabelas": [
+        {
+          "nome": "Nome",
+          "linhas": [
+            "Aldric",
+            "Mirela",
+            "Tobias Pé-Leve",
+            "Syra",
+            "Grom",
+            "Elowen"
+          ]
+        },
+        {
+          "nome": "Ocupação",
+          "linhas": [
+            "Ferreiro",
+            "Taverneira",
+            "Ladrão de beco",
+            "Sacerdote",
+            "Mercador",
+            "Guarda"
+          ]
+        },
+        {
+          "nome": "Traço",
+          "linhas": [
+            "Desconfiado",
+            "Falante demais",
+            "Medroso",
+            "Ganancioso",
+            "Gentil demais",
+            "Misterioso"
+          ]
+        },
+        {
+          "nome": "Segredo",
+          "linhas": [
+            "Deve dinheiro a uma guilda",
+            "É nobre disfarçado",
+            "Serve a um culto",
+            "Viu algo que não devia"
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Gerador de Masmorra",
+      "descricao": "Para improvisar salas rapidamente.",
+      "tabelas": [
+        {
+          "nome": "Sala",
+          "linhas": [
+            "Corredor estreito",
+            "Câmara circular",
+            "Biblioteca em ruínas",
+            "Cripta",
+            "Poço fundo",
+            "Altar profanado"
+          ]
+        },
+        {
+          "nome": "Perigo",
+          "linhas": [
+            "Armadilha de dardos",
+            "Gás tóxico",
+            "Piso falso",
+            "Monstro adormecido",
+            "Nenhum",
+            "Maldição"
+          ]
+        },
+        {
+          "nome": "Tesouro",
+          "linhas": [
+            "Moedas",
+            "Poção",
+            "Arma velha",
+            "Mapa",
+            "Nada",
+            "Item mágico"
+          ]
+        }
+      ]
+    }
+  ]
+}

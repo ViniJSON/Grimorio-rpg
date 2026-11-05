@@ -1,0 +1,39 @@
+{
+  "genero": "Terror",
+  "geradores": [
+    {
+      "nome": "Gerador de Anomalia",
+      "descricao": "Aparência, comportamento e fraqueza.",
+      "tabelas": [
+        {
+          "nome": "Aparência",
+          "linhas": [
+            "Sombra sem rosto",
+            "Criança sorrindo demais",
+            "Corpo coberto de olhos",
+            "Vulto molhado"
+          ]
+        },
+        {
+          "nome": "Comportamento",
+          "linhas": [
+            "Imita vozes",
+            "Só se move no escuro",
+            "Persegue em silêncio",
+            "Aparece em espelhos"
+          ]
+        },
+        {
+          "nome": "Fraqueza",
+          "linhas": [
+            "Sal",
+            "Luz forte",
+            "Nome verdadeiro",
+            "Fogo",
+            "Nenhuma conhecida"
+          ]
+        }
+      ]
+    }
+  ]
+}

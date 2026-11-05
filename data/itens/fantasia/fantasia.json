@@ -1,0 +1,1016 @@
+{
+  "genero": "Fantasia",
+  "vendedora": {
+    "titulo": "Loja",
+    "nome": "A comerciante",
+    "imagem": "img/itens/fantasia/vendedora.webp",
+    "falas": [
+      "Chegou na hora certa! Acabei de abrir o saco das novidades.",
+      "Dê uma olhada. Mas só encoste no que for comprar.",
+      "Essa espada? Já salvou três vidas. A quarta pode ser a sua.",
+      "Sem fiado. Meu pai fiou uma vez e olha onde ele está agora.",
+      "Pagou, levou. Se morrer, não volte pedindo troco.",
+      "Poção é igual amizade: melhor ter antes de precisar.",
+      "Hihi... você tem cara de quem vai gastar tudo.",
+      "Cuidado lá fora. Os bons clientes sempre voltam.",
+      "Bem-vindo. Se não tem ouro, a porta é serventia da casa.",
+      "Olha só, carne fresca com bolsos cheios... eu espero.",
+      "Entre, entre! O cheiro de sangue não me incomoda, contanto que as moedas estejam limpas.",
+      "Estamos abertos. Se o letreiro caiu de novo, o problema não é meu.",
+      "Sobreviveu à noite? Impressionante. Quer comprar algo para sobreviver à próxima?",
+      "Ah, um herói. Já perdi as contas de quantos de vocês entraram aqui achando que eram invencíveis.",
+      "Dia lindo para gastar as economias de uma vida, não acha?",
+      "Pode entrar, mas deixe a lama lá fora. E os goblins mortos também.",
+      "Se procura milagres, vá ao templo. Se procura algo que funcione, fale comigo.",
+      "Estou vendo essa sua cara de desespero. Custa cinquenta moedas de ouro só para eu ouvir a história.",
+      "O que foi? Achou que eu ia te dar um item mágico de graça por causa dos seus belos olhos?",
+      "Que os deuses te abençoem... mas aqui aceitamos apenas dinheiro vivo.",
+      "Você demorou. Achei que os lobos já tinham feito o jantar.",
+      "Mais um aventureiro... meu fundo de aposentadoria agradece.",
+      "Fique à vontade, mas minhas facas são mais rápidas que a sua mão.",
+      "Espero que sua bolsa seja mais pesada do que sua espada.",
+      "Chegou cedo. As manchas de sangue no chão ainda estão frescas.",
+      "Saudações! Tudo aqui é caro, mas a sua vida também deveria ser.",
+      "Você parece alguém que acabou de herdar uma fortuna. Vamos resolver isso.",
+      "Não adianta sorrir para mim, eu não dou desconto.",
+      "Pode olhar com os olhos. Se olhar com as mãos, vai ficar sem elas.",
+      "Quebrou, pagou. Mesmo que tenha sido só um arranhão.",
+      "Isso aí não é brinquedo. Tira o dedo antes que ele caia.",
+      "Gostou da adaga? Ela também gostou de você, quase cortou sua veia agora pouco.",
+      "Essa armadura pertenceu a um grande cavaleiro. O buraco no peito? Detalhe estético.",
+      "Cheire essa poção. Cheira a morango, não é? Na verdade é sangue de troll filtrado.",
+      "Não bota a boca nisso! Sabe onde isso estava antes de vir pra minha loja?",
+      "Sim, a espada brilha no escuro. Não, ela não toca música.",
+      "Não sacuda o frasco! Quer explodir a gente e metade da rua?",
+      "Esse escudo resiste a fogo de dragão. Como eu sei? O antigo dono morreu torrado, mas o escudo ficou intacto.",
+      "O amuleto não está amaldiçoado. Ele só tem... personalidade.",
+      "Cuidado com esse livro. A última pessoa que leu de trás pra frente virou um sapo.",
+      "Isso é poeira mágica, sim. Não, não cheire. Sério, não faça isso.",
+      "Se a lâmina cortou seu dedo só de encostar, é porque a afiação tá em dia.",
+      "Essas botas te fazem correr mais rápido. Especialmente de cobradores.",
+      "O cajado é torto, mas a magia sai reta. Na maioria das vezes.",
+      "Não me pergunte de que couro isso é feito. A ignorância é uma bênção.",
+      "Aquele ali atrás não está à venda. É meu gato. E ele morde.",
+      "Está sentindo uma aura maligna? É o meu humor, não a espada.",
+      "Parece velho, eu sei. Chamamos isso de 'vintage', custa o dobro.",
+      "Custa cem peças. Não, o preço não abaixa se você fizer beicinho.",
+      "Aceito moedas, gemas e dentes de ouro em bom estado.",
+      "Não, eu não aceito promessas de 'vou te pagar depois da missão'.",
+      "Troco itens, mas o seu lixo não vale meu luxo.",
+      "Uma pechincha! Quase o mesmo preço da sua alma.",
+      "Se você achar mais barato em outro lugar, boa sorte tentando chegar lá vivo.",
+      "O preço é fixo. Assim como a rigidez cadavérica dos que não compram minhas poções.",
+      "Não dou fiado nem pra minha mãe, e ela já é um fantasma.",
+      "Você está pagando pela qualidade. E pela minha paciência.",
+      "Ei, essa moeda é falsa! Ah, não, é só sujeira da sua mão. Pode passar.",
+      "O imposto do rei não está incluso. Mentira, não pago impostos, mas o ouro é meu.",
+      "Dinheiro no balcão, item na mão. Simples assim.",
+      "Claro, posso segurar o item pra você. Por uma taxa diária de dez pratas.",
+      "Se tentar roubar, a porta se tranca e o veneno entra pelas frestas. Quer tentar?",
+      "Excelente escolha. Levando dois, eu não te ofendo pelo resto do dia.",
+      "Feito! O ouro está tão pesado que até me deu dor nas costas.",
+      "Se a moeda tem um buraco no meio, ela vale metade.",
+      "Não tem troco. Leve essa maçã duvidosa pelo resto.",
+      "Muito bem. Você está mais pobre, mas pelo menos continua vivo... por enquanto.",
+      "A garantia expira assim que você pisar fora da loja.",
+      "A maça esmaga crânios perfeitamente. Testa no seu amigo, se quiser.",
+      "Arcos bons exigem braços fortes. Certeza que consegue puxar essa corda, graveto?",
+      "A lança é longa pra manter o monstro longe. Inteligente, não?",
+      "As flechas vêm em dúzias. Porque você sempre erra metade.",
+      "Esse machado já rachou três goblins ao meio de uma vez. Ou assim me disseram.",
+      "A armadura de placas faz barulho. Mas barulho é melhor que sangramento, acredite.",
+      "Elmo de chifres? Péssima ideia nas masmorras baixas. Mas você que sabe, vai ficar estiloso e decapitado.",
+      "Cota de malha leve. Ideal pra quem prefere correr a lutar.",
+      "O escudo tem espinhos. Bate com eles na cara de alguém, é terapêutico.",
+      "A espada bastarda se chama assim porque o pai dela... deixa pra lá.",
+      "Funda não é arma de criança, a pedra entra na testa igual faca quente na manteiga.",
+      "Esse martelo era de um anão. Ele teve que vendê-lo pra pagar bebida.",
+      "As manoplas de ferro são ótimas pra negociações difíceis.",
+      "Uma rapieira elegante, pra um aventureiro que gosta de morrer com classe.",
+      "A balestra está lubrificada. Atira antes de você sequer piscar. Não aponte pra mim.",
+      "Armadura de couro batido. Batido nos orcs que tentaram matar o artesão.",
+      "Sim, o punhal cabe na bota. Não me culpe se ele furar o seu calcanhar.",
+      "Estrela d'alva... brilha de manhã, machuca de noite.",
+      "A alabarda é ótima para manter a distância social de necromantes.",
+      "Grevas de aço. Pra proteger os joelhos de flechas desavisadas.",
+      "A poção vermelha cura. A azul dá magia. A verde te faz ir no banheiro por três dias. Escolha com cuidado.",
+      "Pergaminhos mágicos precisam ser lidos em voz alta. Sotaque caipira estraga a bola de fogo.",
+      "Essa pomada cicatriza qualquer corte. Arde como o inferno, mas não se pode ter tudo.",
+      "Frascos de vidro grosso. Se o líquido não matar o inimigo, o frasco na cabeça resolve.",
+      "Poção de invisibilidade. Útil para espionagem e para escapar dos meus preços.",
+      "Água benta, extraída diretamente de um poço que o padre cuspiu dentro.",
+      "Veneno de aranha-caverna. Duas gotas e o alvo vira adubo.",
+      "O anel de proteção não protege contra coração partido. Isso eu garanto.",
+      "Creme anti-queimadura. Essencial se for lutar com dragões ou cozinhar mal.",
+      "Antídoto genérico. Cobre 80% das toxinas. Reze para que você tenha pego um dos 80.",
+      "A varinha tem três cargas restantes. Use-as ou jogue como um graveto.",
+      "Ervas revigorantes. Mastigue antes da batalha, mas o bafo fica horrível.",
+      "Pó de fada. Não pergunte como eu consegui, a fada não gostou.",
+      "Poção de força. Você vai se sentir um gigante e seu cérebro vai encolher pra combinar.",
+      "Frasco de ácido. Abre fechaduras, derrete caras. Multiuso!",
+      "Esse livro de magias só tem os feitiços que os magos não tiveram vergonha de publicar.",
+      "Cristal de luz. Melhor que tocha e não gasta o oxigênio da caverna.",
+      "Poção do amor. Ilegal em doze reinos, mas aqui só custa trinta de ouro.",
+      "Esse olho empalhado avisa quando há mortos-vivos. Se ele piscar, corra.",
+      "Fumaça engarrafada. Quebre no chão e fuja feito um covarde estratégico.",
+      "Pode ir. Tente não morrer antes de gastar o resto desse ouro comigo.",
+      "Volte sempre! Ou não, a masmorra não perdoa.",
+      "Adeus. Vou preparar o lugar para o seu fantasma se quiser vir me assombrar.",
+      "Se você não voltar em três dias, considero que não precisa da garantia.",
+      "Boa sorte lá fora. Você vai precisar de muita.",
+      "Não deixe os trolls comerem a armadura que acabei de polir, ok?",
+      "Cuidado na floresta. As árvores têm ouvidos e o chão tem fome.",
+      "Quando estiver sangrando no chão, lembre-se: eu te ofereci a poção maior.",
+      "Até a próxima. Que sua espada seja afiada e seus inimigos muito lentos.",
+      "Mande lembranças para a morte, se esbarrar com ela de novo.",
+      "Eu lavo minhas mãos se você explodir a si mesmo com isso.",
+      "Siga pela estrada de terra. A de tijolos amarelos foi roubada.",
+      "Se você voltar sem um braço, dou desconto de 10% nas manoplas.",
+      "Feche a porta quando sair. A corrente de ar atrai banshees.",
+      "Vai logo, antes que eu mude os preços de novo.",
+      "Espero ver sua cara de novo. Vivo, de preferência.",
+      "Lembre-se, correr não é vergonha, é tática de sobrevivência.",
+      "Se achar algum tesouro antigo, passe aqui antes de ir pro bar.",
+      "Vá com os deuses. Eu fico com os lucros.",
+      "Saia rápido. Você me dá sono com essa cara de bravo.",
+      "Hihi... Eu adoro o cheiro de aventureiro assustado pela manhã.",
+      "Tem uma aranha no meu teto que é maior que meu cachorro. Deixe ela em paz.",
+      "Aquele esqueleto no canto não é decoração. Era o último cliente que pediu desconto.",
+      "Minha vó lutou na grande guerra. Ela dizia que espadas não importam se o joelho falhar.",
+      "Sabe qual o item mais vendido? Saco para cadáver. Mas estou em falta hoje.",
+      "Eu costumava ser uma aventureira como você, até descobrir o capitalismo.",
+      "Os impostos da guilda me matam mais do que qualquer monstro te mataria.",
+      "Se você ouvir risadas do porão, ignore. É apenas... mercadoria instável.",
+      "Não ligue para o meu gato em cima do balcão. Ele julga todo mundo igual.",
+      "Já lutei com um basilisco uma vez. Só precisei de um espelho e muita cara de pau.",
+      "O segredo para um bom negócio é sorrir enquanto cobra o dobro do que vale.",
+      "Dizem que a masmorra sul está cheia de ouro. E de idiotas que foram procurar o ouro.",
+      "Eu durmo com uma adaga embaixo do travesseiro. E um porrete debaixo da cama.",
+      "Você é o décimo guerreiro 'escolhido' que entra aqui esta semana.",
+      "A única magia verdadeira neste mundo é fazer o dinheiro sair do seu bolso pro meu.",
+      "Sexta-feira é dia de promoção. Mas hoje é quarta, então pague o preço cheio.",
+      "Quer trabalhar aqui? Mentira. Não contrato quem tem a vida curta.",
+      "A poção tem gosto ruim pra você aprender a não se machucar.",
+      "A vida lá fora é brutal. Aqui dentro, só o preço é brutal.",
+      "Os goblins andam muito bem armados ultimamente. Acha que sou eu quem vende pra eles? Talvez.",
+      "Nunca perca o recibo. Ele não serve pra nada, mas eu gosto de ver vocês guardando.",
+      "A espada está suja de verde? É 'pátina de orc', valoriza a peça.",
+      "Ei, ei! Tire os pés da cadeira! Acha que está numa taverna?",
+      "Se está duvidando da poção, tome na minha frente. Se cair babando, eu enterro.",
+      "Uma vez um bardo entrou aqui cantando. Saiu com um alaúde quebrado na cabeça.",
+      "Essas ataduras já foram usadas? Claro que não. Eu lavei na lagoa... ontem.",
+      "Você parece tenso. Quer comprar um calmante alucinógeno?",
+      "O segredo das minhas flechas é que elas não voam sozinhas. Atire com força.",
+      "Não me chame de 'minha senhora'. Parece que estou velha o suficiente para te adotar.",
+      "Hihi... mais um herói de lenda pronto para virar estampa no chão."
+    ]
+  },
+  "categorias": [
+    {
+      "nome": "Armas",
+      "cards": [
+        {
+          "nome": "Espada comum curta",
+          "imagem": "img/itens/fantasia/espada-comum-curta.webp",
+          "descricao": "Lâmina curta, mas dá conta do recado",
+          "atributos": {
+            "Dano": "1d4",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Versátil",
+              "descricao": "Pode ser usada com uma ou duas mãos."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "35 pratas",
+          "peso": "1,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Versátil (uma ou duas mãos)"
+          ]
+        },
+        {
+          "nome": "Espada comum média",
+          "imagem": "img/itens/fantasia/espada-comum-media.webp",
+          "descricao": "Lâmina média, para combates rápidos e ágeis",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Versátil",
+              "descricao": "Pode ser usada com uma ou duas mãos."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "1 moeda de ouro e 10 pratas",
+          "peso": "2,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Versátil (uma ou duas mãos)"
+          ]
+        },
+        {
+          "nome": "Espada comum longa",
+          "imagem": "img/itens/fantasia/espada-comum-longa.webp",
+          "descricao": "Lâmina longa, boa para combates e lutas, pode ser difícil de manusear em locais fechados",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Golpe pesado",
+              "descricao": "Caso tire um 20 natural, pode decepar algum membro que não seja a cabeça, com isso o alvo leva 1d4 de dano de sangramento por turno. Caso o oponente esteja com menos de 80% da vida, pode decapitar"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros e 25 pratas",
+          "peso": "4 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Nada em especial"
+          ]
+        },
+        {
+          "nome": "Adaga comum",
+          "imagem": "img/itens/fantasia/adaga-comum.webp",
+          "descricao": "Lâmina curta, perfeita para ataques furtivos",
+          "atributos": {
+            "Dano": "1d4",
+            "Bônus": "0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "15 pratas",
+          "peso": "0,5 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Nada em especial"
+          ]
+        },
+        {
+          "nome": "Azagaia",
+          "imagem": "img/itens/fantasia/azagaia.webp",
+          "descricao": "Lança curta, feita para arremessar",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "20 pratas",
+          "peso": "0,5 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Nada em especial"
+          ]
+        },
+        {
+          "nome": "Cajado comum",
+          "imagem": "img/itens/fantasia/cajado-comum.webp",
+          "descricao": "Cajado comum, feito da madeira de uma árvore qualquer",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "45 pratas",
+          "peso": "2,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Pode bater com ele, 1d6 +2",
+            "Pode ser usado para canalizar magias, se você souber usar"
+          ]
+        },
+        {
+          "nome": "Clava grande",
+          "imagem": "img/itens/fantasia/clava-grande.webp",
+          "descricao": "Clava grande, feita de metal e possui espinhos na ponta",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Golpe doloroso",
+              "descricao": "Qualquer golpe que acerta dá +2 de dano de sangramento por 2 turnos"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 moedas de ouro",
+          "peso": "6,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "+2 de sangramento em qualquer ataque por 2 turnos"
+          ]
+        },
+        {
+          "nome": "Foice curta",
+          "imagem": "img/itens/fantasia/foice-curta.webp",
+          "descricao": "Foice curta, para combates rápidos",
+          "atributos": {
+            "Dano": "1d4",
+            "Bônus": "+2"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "20 pratas",
+          "peso": "1,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Lança",
+          "imagem": "img/itens/fantasia/lanca.webp",
+          "descricao": "Lança, utilizada para manter distância do oponente",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Empalamento",
+              "descricao": "Quando tira um 20 natural, a lança perfura o oponente, causando 1d8 de dano a mais"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "1 moeda de ouro e 10 pratas",
+          "peso": "3,0 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Machadinha",
+          "imagem": "img/itens/fantasia/machadinha.webp",
+          "descricao": "Machadinha, pode usar corpo a corpo ou arremessar",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "30 pratas",
+          "peso": "1,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Arco curto",
+          "imagem": "img/itens/fantasia/arco-curto.webp",
+          "descricao": "Arco simples, dispara flechas comuns e outros tipos",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Tiro certeiro",
+              "descricao": "Ao obter um acerto crítico natural (20), o personagem pode escolher atingir uma região vulnerável do alvo, causando 1d8 de dano adicional ou aplicando uma condição de incapacitação, caso seja coerente com o alvo."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "2 moedas de ouro",
+          "peso": "2,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Acerta até 25 metros"
+          ]
+        },
+        {
+          "nome": "Besta leve",
+          "imagem": "img/itens/fantasia/besta-leve.webp",
+          "descricao": "Besta leve, com virotes comuns e outros tipos",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "0"
+          },
+          "habilidades": [
+            {
+              "nome": "Tiro certeiro",
+              "descricao": "Ao obter um acerto crítico natural (20), o personagem pode escolher atingir uma região vulnerável do alvo, causando 1d8 de dano adicional ou aplicando uma condição de incapacitação, caso seja coerente com o alvo."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 moedas de ouro e 30 pratas",
+          "peso": "3,0 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Acerta até 25 metros"
+          ]
+        },
+        {
+          "nome": "Funda",
+          "imagem": "img/itens/fantasia/funda.webp",
+          "descricao": "Funda simples, mas dá conta do recado",
+          "atributos": {
+            "Dano": "1d4",
+            "Bônus": "0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "15 pratas",
+          "peso": "0,8 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Acerta até 20 metros"
+          ]
+        },
+        {
+          "nome": "Machado",
+          "imagem": "img/itens/fantasia/machado.webp",
+          "descricao": "Machado afiado, pode cortar lenha ou cabeças",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "0"
+          },
+          "habilidades": [
+            {
+              "nome": "Brutalidade",
+              "descricao": "Quando tira um 20 natural, pode cravar o machado na cabeça do inimigo, ou clavícula, deixando-o ainda vivo mas incapacitado (dependendo da criatura). 1d8 a mais de dano"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "2 ouros e 40 pratas",
+          "peso": "4,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Mangual",
+          "imagem": "img/itens/fantasia/mangual.webp",
+          "descricao": "Mangual com bola de metal espinhosa, dolorido",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Sanguinário",
+              "descricao": "Quando tira um 20 natural, a bola de espinhos acerta em cheio a face do alvo, causando 1d10 de dano e deixando o rosto desfigurado"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros e 40 pratas",
+          "peso": "5,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Espada de duas mãos (Dragon Slayer)",
+          "imagem": "img/itens/fantasia/espada-duas-maos.webp",
+          "descricao": "Lâmina enorme e afiada, pronta para dilacerar",
+          "atributos": {
+            "Dano": "1d12",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Empalamento",
+              "descricao": "Quando tira um 20 natural, a espada perfura o oponente, causando 1d8 de dano a mais"
+            },
+            {
+              "nome": "Finalizar",
+              "descricao": "Quando o oponente está com menos de 5 pontos de vida, o próximo ataque acertado o finaliza, da forma como o jogador quiser"
+            },
+            {
+              "nome": "Bloquear",
+              "descricao": "Pode deixar de atacar para tentar bloquear o golpe, aumentando a defesa em +5."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "10 ouros",
+          "peso": "5,5 kg",
+          "raridade": "Incomum",
+          "efeitos": []
+        },
+        {
+          "nome": "Lâminas duplas",
+          "imagem": "img/itens/fantasia/laminas-duplas.webp",
+          "descricao": "Lâminas duplas, feitas para combates ágeis",
+          "atributos": {
+            "Dano": "1d6 cada lâmina",
+            "Bônus": "0"
+          },
+          "habilidades": [
+            {
+              "nome": "Perfuração dupla",
+              "descricao": "Quando tira um 20 natural, crava as duas lâminas no oponente, causando 2d6 de dano a mais"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "6 ouros",
+          "peso": "1,5 kg cada",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Rapieira",
+          "imagem": "img/itens/fantasia/rapieira.webp",
+          "descricao": "Lâmina nobre, uma ponta bem afiada",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Perfuração",
+              "descricao": "Quando tira um 20 natural, perfura o alvo causando 1d8 de dano a mais"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros",
+          "peso": "2,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Tridente",
+          "imagem": "img/itens/fantasia/tridente.webp",
+          "descricao": "Tridente comum, pode ser arremessado ou usado corpo a corpo",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Empalamento",
+              "descricao": "Quando tira um 20 natural, perfura o alvo causando 1d12 de dano a mais, podendo prendê-lo em algum lugar, seja chão, árvore, etc."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros e 20 pratas",
+          "peso": "4,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Martelo de guerra",
+          "imagem": "img/itens/fantasia/martelo-de-guerra.webp",
+          "descricao": "Martelo grande e pesado",
+          "atributos": {
+            "Dano": "1d12",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Desnortear",
+              "descricao": "Quando tira um 20 natural, acerta o alvo com muita força, fazendo-o ficar tonto e perder o próximo turno, além de 1d8 de dano a mais."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "5 ouros",
+          "peso": "7,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Chicote de correntes",
+          "imagem": "img/itens/fantasia/chicote.webp",
+          "descricao": "Correntes pesadas, com um metal na ponta e um cabo",
+          "atributos": {
+            "Dano": "1d6",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Capturar",
+              "descricao": "Pode tentar capturar o alvo, que deve fazer um teste de agilidade DT: 14"
+            },
+            {
+              "nome": "Enforcamento",
+              "descricao": "Com 20 natural, seu chicote se enrola no pescoço do alvo, que precisa de um teste de força DT: 18 para escapar. Caso não consiga, perde o ar e desmaia, ou você quebra o pescoço dele. A escolha é do jogador"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "4 ouros e 20 pratas",
+          "peso": "5,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Arco longo",
+          "imagem": "img/itens/fantasia/arco-longo.webp",
+          "descricao": "Diferente do arco curto, alcança distâncias maiores.",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Tiro certeiro",
+              "descricao": "Ao obter um acerto crítico natural (20), o personagem pode escolher atingir uma região vulnerável do alvo, causando 1d8 de dano adicional ou aplicando uma condição de incapacitação, caso seja coerente com o alvo."
+            },
+            {
+              "nome": "Disparo distante",
+              "descricao": "Pode acertar distâncias mais longas, até 50 metros."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros e 40 pratas",
+          "peso": "2,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Katana",
+          "imagem": "img/itens/fantasia/katana.webp",
+          "descricao": "Lâmina afiada e ágil, para combates velozes",
+          "atributos": {
+            "Dano": "1d8",
+            "Bônus": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Decepar",
+              "descricao": "Caso tire um 20 natural, pode decepar algum membro que não seja a cabeça, com isso o alvo leva 1d4 de dano de sangramento por turno. Caso o oponente esteja com menos de 80% da vida, pode decapitar"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "3 ouros e 40 pratas",
+          "peso": "1,5 kg",
+          "raridade": "Comum",
+          "efeitos": [
+            "Seu ataque é d20 + agilidade"
+          ]
+        },
+        {
+          "nome": "Zarabatana",
+          "imagem": "img/itens/fantasia/zarabatana.webp",
+          "descricao": "Uma arma simples, feita para ser discreta e letal. Pode usar dardos tranquilizantes ou envenenados",
+          "atributos": {
+            "Dano": "1d4",
+            "Bônus": "0"
+          },
+          "habilidades": [
+            {
+              "nome": "Precisão",
+              "descricao": "Caso tire um 20 natural, acerta diretamente o pescoço do alvo"
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armas",
+          "valor": "30 pratas",
+          "peso": "0,5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        }
+      ]
+    },
+    {
+      "nome": "Armaduras",
+      "cards": [
+        {
+          "nome": "Gibão acolchoado",
+          "imagem": "img/itens/fantasia/gibao-acolchoado.webp",
+          "descricao": "Armadura simples feita de várias camadas de tecido e couro acolchoado.",
+          "atributos": {
+            "Defesa": "+1",
+            "Agilidade": "-0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "15 pratas",
+          "peso": "5 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Armadura de couro",
+          "imagem": "img/itens/fantasia/armadura-couro.webp",
+          "descricao": "Proteção leve feita de couro tratado, oferecendo mobilidade e resistência básica.",
+          "atributos": {
+            "Defesa": "+1",
+            "Agilidade": "-0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "25 pratas",
+          "peso": "4 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Armadura de couro batido",
+          "imagem": "img/itens/fantasia/couro-batido.webp",
+          "descricao": "Couro endurecido por meio de calor e pressão, proporcionando maior proteção.",
+          "atributos": {
+            "Defesa": "+2",
+            "Agilidade": "-0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "1 ouro",
+          "peso": "6 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Armadura de escamas",
+          "imagem": "img/itens/fantasia/armadura-escamas.webp",
+          "descricao": "Armadura composta por pequenas placas metálicas sobrepostas, semelhantes às escamas de um peixe.",
+          "atributos": {
+            "Defesa": "+2",
+            "Agilidade": "-2"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "2 ouros",
+          "peso": "9 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Cota de malha leve",
+          "imagem": "img/itens/fantasia/cota-malha-leve.webp",
+          "descricao": "Armadura formada por pequenos anéis metálicos entrelaçados, oferecendo proteção sem comprometer tanto a mobilidade.",
+          "atributos": {
+            "Defesa": "+2",
+            "Agilidade": "-1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "2 ouros e 20 pratas",
+          "peso": "10 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Cota de malha",
+          "imagem": "img/itens/fantasia/cota-malha.webp",
+          "descricao": "Armadura de anéis metálicos entrelaçados, cobrindo grande parte do corpo.",
+          "atributos": {
+            "Defesa": "+3",
+            "Agilidade": "-1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "3 ouros",
+          "peso": "15 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Peitoral de aço",
+          "imagem": "img/itens/fantasia/peitoral-aco.webp",
+          "descricao": "Peitoral metálico resistente que protege os órgãos vitais sem cobrir completamente o corpo.",
+          "atributos": {
+            "Defesa": "+3",
+            "Agilidade": "-3"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "3 ouros e 40 pratas",
+          "peso": "12 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Armadura de talas",
+          "imagem": "img/itens/fantasia/armadura-talas.webp",
+          "descricao": "Armadura pesada composta por longas placas metálicas sobrepostas e presas a uma estrutura de couro.",
+          "atributos": {
+            "Defesa": "+4",
+            "Agilidade": "-4"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "5 ouros",
+          "peso": "20 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Armadura completa",
+          "imagem": "img/itens/fantasia/armadura-completa.webp",
+          "descricao": "Armadura de placas metálicas moldadas para proteger praticamente todo o corpo. Oferece excelente proteção, mas exige força para ser utilizada.",
+          "atributos": {
+            "Defesa": "+5",
+            "Agilidade": "-4"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Armaduras",
+          "valor": "8 ouros",
+          "peso": "25 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        }
+      ]
+    },
+
+    {
+  "nome": "Poções",
+  "cards": [
+          {
+            "nome": "Poção de Cura Pequena",
+            "imagem": "img/itens/fantasia/pocao-cura-pequena.webp",
+            "descricao": "Pequeno frasco contendo um líquido avermelhado capaz de recuperar ferimentos leves.",
+            "atributos": {
+              "Cura": "1d4 de vida"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Recupera 1d4 pontos de vida"
+            ]
+          },
+          {
+            "nome": "Poção de Cura Média",
+            "imagem": "img/itens/fantasia/pocao-cura-media.webp",
+            "descricao": "Frasco de tamanho médio com uma mistura alquímica avermelhada, capaz de restaurar ferimentos consideráveis.",
+            "atributos": {
+              "Cura": "2d4 de vida"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "50 pratas",
+            "peso": "0,3 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Recupera 2d4 pontos de vida"
+            ]
+          },
+          {
+            "nome": "Poção de Cura Grande",
+            "imagem": "img/itens/fantasia/pocao-cura-grande.webp",
+            "descricao": "Frasco robusto contendo um líquido vermelho intenso, preparado com ingredientes alquímicos raros para restaurar ferimentos graves.",
+            "atributos": {
+              "Cura": "4d4 de vida"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 ouros",
+            "peso": "0,5 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Recupera 4d4 pontos de vida"
+            ]
+          },
+          {
+            "nome": "Poção de Energia Pequena",
+            "imagem": "img/itens/fantasia/pocao-cura-energia-pequena.webp",
+            "descricao": "Líquido azulado que restaura a energia mágica do usuário, permitindo utilizar mais habilidades.",
+            "atributos": {
+              "Energia": "1d4 pontos"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "40 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Recupera 1d4 pontos de energia"
+            ]
+          },
+
+          {
+            "nome": "Poção de Energia Média",
+            "imagem": "img/itens/fantasia/pocao-cura-energia-media.webp",
+            "descricao": "Líquido azulado que restaura a energia mágica do usuário, permitindo utilizar mais habilidades.",
+            "atributos": {
+              "Energia": "2d4 pontos"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Recupera 2d4 pontos de energia"
+            ]
+          },
+
+          {
+            "nome": "Poção de Energia grande",
+            "imagem": "img/itens/fantasia/pocao-cura-energia-grande.webp",
+            "descricao": "Líquido azulado que restaura a energia mágica do usuário, permitindo utilizar mais habilidades.",
+            "atributos": {
+              "Energia": "4d4 pontos"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 ouros e 30 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Recupera 4d4 pontos de energia"
+            ]
+          },
+
+          {
+            "nome": "Poção de Força",
+            "imagem": "img/itens/fantasia/pocao-forca.webp",
+            "descricao": "Mistura alaranjada e espessa que estimula os músculos e aumenta temporariamente a força física.",
+            "atributos": {
+              "Força": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Concede +2 de Força por 3 turnos"
+            ]
+          },
+          {
+            "nome": "Poção de Agilidade",
+            "imagem": "img/itens/fantasia/pocao-agilidade.webp",
+            "descricao": "Líquido esverdeado que estimula os reflexos e torna os movimentos do usuário mais rápidos.",
+            "atributos": {
+              "Agilidade": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Concede +2 de Agilidade por 3 turnos"
+            ]
+          },
+          {
+            "nome": "Poção de Resistência",
+            "imagem": "img/itens/fantasia/pocao-resistencia.webp",
+            "descricao": "Líquido amarelado de sabor amargo que fortalece temporariamente o corpo contra impactos e ferimentos.",
+            "atributos": {
+              "Resistência": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Reduz em 2 pontos todo dano recebido por 3 turnos"
+            ]
+          },
+          {
+            "nome": "Antídoto",
+            "imagem": "img/itens/fantasia/antidoto.webp",
+            "descricao": "Pequeno frasco contendo uma mistura medicinal amarga, desenvolvida para neutralizar substâncias tóxicas no organismo.",
+            "atributos": {
+              "Efeito": "Remove veneno"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "35 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Remove a condição de envenenamento"
+            ]
+          }
+        ]
+      }
+  ]
+}

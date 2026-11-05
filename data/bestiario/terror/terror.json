@@ -1,0 +1,111 @@
+{
+  "genero": "Terror",
+  "categorias": [
+    {
+      "nome": "Anomalias",
+      "cards": [
+        {
+          "nome": "Garotinha perdida",
+          "imagem": "img/bestiario/terror/garota-monstro.webp",
+          "descricao": "Uma gartoinha perdida, ou melhor, um monstro disfarçado.",
+          "atributos": {
+            "Vida": 60,
+            "Defesa": 12,
+            "Força": 16,
+            "Agilidade": 12,
+            "Inteligência": 8,
+            "Carisma": 2
+          },
+          "habilidades": [
+            {
+              "nome": "Mordida",
+              "descricao": "Transforma sua boca em uma boca enorme, cheia de dentes afiados. 1d4+2 de dano + 1d4 de sangramento por turno."
+            },
+            {
+              "nome": "Garras afiadas",
+              "descricao": "Rasga seu alvo com suas garras, 1d8 cortante."
+            }
+          ],
+          "destaque": true
+        },
+        {
+          "nome": "Garota assasina",
+          "imagem": "img/bestiario/terror/garota-assasina.webp",
+          "descricao": "Uma garota que aparenta ser comum, mas com uma sede de sangue.",
+          "atributos": {
+            "Vida":20,
+            "Defesa": 10,
+            "Força": 3,
+            "Agilidade": 2,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Facada cortante",
+              "descricao": "Ataca com sua faca, causando 1d6 de dano cortante."
+            },
+            {
+              "nome": "Perfuração satisfatória",
+              "descricao": "Perfura o alvo com sua faca causando 1d8, e começa a rodar a faca dentro do alvo enquando ri."
+            }
+          ]
+        },
+        {
+          "nome": "Assombração do corredor",
+          "imagem": "img/bestiario/terror/assombração.webp",
+          "descricao": "Uma assombração que vagueia pelos corredores do prédio.",
+          "atributos": {
+            "Vida":35,
+            "Defesa": 10,
+            "Força": 3,
+            "Agilidade": 2,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Enforcamento",
+              "descricao": "Os cabelos dela se esticam e se enrolam no pescoço do alvo, o alvo deve fazer um teste de resistência. DF:15, d20 + força, se falhar em 3 turnos, morre sem ar"
+            },
+            {
+              "nome": "Sorriso perturbador",
+              "descricao": "Ela lança um olhar perturbador, deve fazer um teste de resistência. DF:15, d20 + carisma, se falhar, fica paralisado por medo, a cada turno deve fazer um teste"
+            },
+            {
+              "nome": "Abertura sangrenta",
+              "descricao": "Ela enfia as garras no peito do alvo, causando 1d8 de dano e começa a forçar o alvo a abrir o peito, causando 1d4 de sangramento por turno. Deve fazer um teste de resistência. DF:15, d20 + força"
+            }
+          ]
+        },
+        {
+          "nome": "Médico louco",
+          "imagem": "img/bestiario/terror/medico-torturador.webp",
+          "descricao": "Um médico que perdeu a sanidade e faz experimentos macabros.",
+          "atributos": {
+            "Vida":25,
+            "Defesa": 14,
+            "Força": 3,
+            "Agilidade": 2,
+            "Inteligência": 6,
+            "Carisma": 1
+          },
+          "habilidades": [
+            {
+              "nome": "Dilacerar",
+              "descricao": "Ataca com sua faca, causando 1d6 de dano cortante."
+            },
+            {
+              "nome": "Quebrar ossos",
+              "descricao": "Agarra os dedos do alvo e quebra-os, causando 1d4 de dano + 1d4 de dano por turno"
+            },
+            {
+              "nome": "Injetar veneno",
+              "descricao": "Injeta veneno no alvo com uma ceringa podre, causando 1d6 de dano + 1d4 de dano por turno"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
