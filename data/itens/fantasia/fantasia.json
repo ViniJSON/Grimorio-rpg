@@ -1009,6 +1009,24 @@
             "efeitos": [
               "Remove a condição de envenenamento"
             ]
+          },
+
+          {
+            "nome": "Poção berserker",
+            "imagem": "img/itens/fantasia/pocao-berserker.webp",
+            "descricao": "Um líquido vermelho que se mexe de forma agressiva dentro do frasco.  Dura 4 turnos, cada turno deverá fazer um teste de resitência d20 + força com DF:15, se falhar perde o controle",
+            "atributos": {
+              "Efeito": "+5 de força e + 5 de agilidade."
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 moeda de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Sinta o poder do berserker."
+            ]
           }
         ]
       }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grimório | Regras</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-secao="regras">
+<nav class="navbar navbar-expand-lg navbar-ca sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">GRIMÓRIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" style="background-color:#444;"><span class="navbar-toggler-icon" style="filter:invert(1);"></span></button>
+    <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="oraculos.html">Oráculos</a></li><li class="nav-item"><a class="nav-link" href="bestiario.html">Bestiário</a></li><li class="nav-item"><a class="nav-link" href="itens.html">Itens</a></li><li class="nav-item"><a class="nav-link" href="npcs.html">NPCs</a></li><li class="nav-item"><a class="nav-link" href="salvos.html">Salvos</a></li><li class="nav-item"><a class="nav-link" href="fichas.html">Fichas</a></li><li class="nav-item"><a class="nav-link" href="campanhas.html">Campanhas</a></li><li class="nav-item"><a class="nav-link" href="regras.html">Regras</a></li></ul></div>
+  </div>
+</nav>
+<div class="faixa-titulo"><h1>Regras</h1><p>Poucas regras. Muitas consequências.</p></div>
+
+<div class="container pb-5">
+<div class="regras">
+
+  <div class="pilulas">
+    <a href="#personagem">Personagem</a>
+    <a href="#derivadas">Estatísticas</a>
+    <a href="#testes">Testes</a>
+    <a href="#criticos">Críticos</a>
+    <a href="#combate">Combate</a>
+    <a href="#dano">Dano</a>
+    <a href="#resistencia">Resistência</a>
+    <a href="#energia">Energia</a>
+    <a href="#descanso">Descanso</a>
+    <a href="#monstros">Monstros</a>
+    <a href="#evolucao">Evolução</a>
+    <a href="#filosofia">Filosofia</a>
+    <a href="#pendentes">Pendentes</a>
+  </div>
+
+  <!-- 1 -->
+  <section class="regra-sec" id="personagem">
+    <h3><span>01</span>Criação de personagem</h3>
+    <p>O personagem possui <b>quatro atributos principais</b>:</p>
+    <div class="regras-grade">
+      <div class="card-dossie"><div class="sigla">FOR</div><div class="nome-agente">Força</div><p>Força física, combate corpo a corpo e capacidade física.</p></div>
+      <div class="card-dossie"><div class="sigla">AGI</div><div class="nome-agente">Agilidade</div><p>Velocidade, reflexos, esquiva e precisão.</p></div>
+      <div class="card-dossie"><div class="sigla">INT</div><div class="nome-agente">Inteligência</div><p>Conhecimento, raciocínio e habilidades intelectuais.</p></div>
+      <div class="card-dossie"><div class="sigla">CAR</div><div class="nome-agente">Carisma</div><p>Persuasão, intimidação, enganação e interação social.</p></div>
+    </div>
+    <div class="info-label mt-4">DISTRIBUIÇÃO INICIAL</div>
+    <ul>
+      <li><b>7 pontos</b> para distribuir entre os atributos.</li>
+      <li><b>Máximo de 4 pontos</b> em cada atributo inicialmente.</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section class="regra-sec" id="derivadas">
+    <h3><span>02</span>Estatísticas derivadas</h3>
+    <div class="tabela-scroll">
+    <table class="tabela-regras">
+      <thead><tr><th>Estatística</th><th>Fórmula</th><th>Para que serve</th></tr></thead>
+      <tbody>
+        <tr><td><b>Vida</b></td><td class="num">10 + (FOR × 2)</td><td>Quanto dano o personagem suporta.</td></tr>
+        <tr><td><b>Defesa</b></td><td class="num">10 + AGI</td><td>Dificuldade para acertá-lo.</td></tr>
+        <tr><td><b>Energia</b></td><td class="num">10 + INT</td><td>Usada para ativar habilidades especiais.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="regra-sec" id="testes">
+    <h3><span>03</span>Testes e dificuldades</h3>
+    <p>Todos os testes utilizam o dado de vinte faces (<b>d20</b>).</p>
+    <div class="formula">1d20 + atributo utilizado ≥ dificuldade</div>
+    <div class="exemplo">
+      <b>Exemplo</b><br>
+      Um personagem com Força 3 tenta arrombar uma porta. Ele tira 12 no dado: 12 + 3 = <b>15</b>. Se a dificuldade for 14, ele consegue.
+    </div>
+    <p>A dificuldade é definida pelo mestre individualmente, considerando o desafio, e <b>deve ser justificada</b>.</p>
+
+    <div class="info-label">ROLAGENS PÚBLICAS DEVEM MOSTRAR</div>
+    <ul>
+      <li>Resultado do dado.</li>
+      <li>Atributo utilizado.</li>
+      <li>Bônus aplicado.</li>
+      <li>Resultado final.</li>
+      <li>Dificuldade.</li>
+    </ul>
+  </section>
+
+  <!-- 4 -->
+  <section class="regra-sec" id="criticos">
+    <h3><span>04</span>Sucessos e falhas críticas</h3>
+    <div class="crit">
+      <div class="card-dossie bom">
+        <h4>20 natural</h4>
+        <ul class="mb-0">
+          <li>Sucesso crítico automático.</li>
+          <li>Em ataques, o <b>dano total é dobrado</b>.</li>
+          <li>Habilidades usadas nesse ataque <b>não consomem Energia</b>.</li>
+        </ul>
+      </div>
+      <div class="card-dossie ruim">
+        <h4>1 natural</h4>
+        <ul class="mb-2">
+          <li>Falha crítica automática.</li>
+        </ul>
+        <span class="tag-pendente">Efeito a definir</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="regra-sec" id="combate">
+    <h3><span>05</span>Combate</h3>
+    <div class="formula">Iniciativa: 1d20 + AGI</div>
+    <ul>
+      <li>Quem obtiver o <b>maior resultado</b> age primeiro.</li>
+      <li>Cada personagem possui <b>uma ação principal</b> por turno.</li>
+      <li>Para acertar um inimigo, o resultado do ataque deve <b>alcançar ou superar a Defesa</b> dele.</li>
+      <li><b>20 natural</b> no ataque: crítico.</li>
+      <li><b>1 natural</b> no ataque: falha crítica automática.</li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section class="regra-sec" id="dano">
+    <h3><span>06</span>Dano e armas</h3>
+    <div class="tabela-scroll">
+    <table class="tabela-regras">
+      <thead><tr><th>Tipo</th><th>Categoria</th><th>Dano</th></tr></thead>
+      <tbody>
+        <tr><td>Arma branca</td><td>Pequena</td><td class="num">1d4 + FOR</td></tr>
+        <tr><td>Arma branca</td><td>Média</td><td class="num">1d6 + FOR</td></tr>
+        <tr><td>Arma branca</td><td>Grande</td><td class="num">1d8 + FOR</td></tr>
+        <tr><td>Arma de fogo</td><td>Pequena</td><td class="num">1d4 + 2</td></tr>
+        <tr><td>Arma de fogo</td><td>Média</td><td class="num">1d6 + 2</td></tr>
+        <tr><td>Arma de fogo</td><td>Grande</td><td class="num">1d8 + 2</td></tr>
+        <tr><td>Arma de fogo</td><td>Pesada</td><td class="num">1d12 + 2</td></tr>
+        <tr><td>Explosivos</td><td>—</td><td class="num">2d12 + 1d6</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Armas corpo a corpo somam o atributo <b>Força</b> ao dano. Equipamentos podem possuir propriedades próprias.</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="regra-sec" id="resistencia">
+    <h3><span>07</span>Resistência física</h3>
+    <p>Usada para suportar efeitos que exigem resistência corporal, como <b>quedas, venenos</b> e outros efeitos físicos prejudiciais.</p>
+    <div class="crit">
+      <div class="card-dossie"><h4>Defesa</h4><p class="mb-0">Serve para <b>evitar ser atingido</b>.</p></div>
+      <div class="card-dossie"><h4>Resistência física</h4><p class="mb-0">Serve para <b>suportar</b> determinados efeitos.</p></div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="regra-sec" id="energia">
+    <h3><span>08</span>Habilidades especiais e Energia</h3>
+    <p>Os personagens podem possuir habilidades especiais coerentes com seus conceitos, poderes e características. A ativação dessas habilidades <b>consome Energia</b>.</p>
+    <div class="tabela-scroll">
+    <table class="tabela-regras">
+      <thead><tr><th>Dado associado à habilidade</th><th>Custo de Energia</th></tr></thead>
+      <tbody>
+        <tr><td>1d4</td><td class="num">2</td></tr>
+        <tr><td>1d6</td><td class="num">4</td></tr>
+        <tr><td>1d8</td><td class="num">8</td></tr>
+        <tr><td>1d10</td><td class="num">9</td></tr>
+        <tr><td>1d12</td><td class="num">10</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Em um ataque com <b>sucesso crítico natural</b>, a habilidade utilizada não consome Energia.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="regra-sec" id="descanso">
+    <h3><span>09</span>Descanso e recuperação</h3>
+    <div class="tabela-scroll">
+    <table class="tabela-regras">
+      <thead><tr><th>Tipo de descanso</th><th>Recuperação</th></tr></thead>
+      <tbody>
+        <tr><td><b>Curto</b></td><td class="num">1d4 de Vida e 1d4 de Energia</td></tr>
+        <tr><td><b>Longo</b></td><td class="num">1d8 de Vida e 1d8 de Energia</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>A recuperação não pode ultrapassar os valores máximos de Vida e Energia.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="regra-sec" id="monstros">
+    <h3><span>10</span>Monstros e NPCs</h3>
+    <p>Monstros são <b>totalmente personalizáveis</b>. Não existe uma lista obrigatória de espécies ou categorias: o mestre pode criar criaturas livremente.</p>
+    <div class="info-label">CADA CRIATURA PODE TER SEUS PRÓPRIOS</div>
+    <ul>
+      <li>Atributos.</li>
+      <li>Vida.</li>
+      <li>Defesa.</li>
+      <li>Ataques.</li>
+      <li>Habilidades.</li>
+    </ul>
+    <p>NPCs também podem ser criados conforme as necessidades do cenário.</p>
+  </section>
+
+  <!-- 11 -->
+  <section class="regra-sec" id="evolucao">
+    <h3><span>11</span>Experiência e evolução</h3>
+    <p>O sistema possui progressão <b>até o nível 10</b>. Monstros, NPCs e missões podem conceder experiência.</p>
+    <span class="tag-pendente">Tabela de experiência e ganhos por nível a definir</span>
+  </section>
+
+  <!-- 12 -->
+  <section class="regra-sec" id="filosofia">
+    <h3><span>12</span>Filosofia do sistema</h3>
+    <p>O sistema mantém regras centrais simples e permite campanhas de <b>qualquer temática</b>.</p>
+    <p>O mestre pode criar monstros, equipamentos, NPCs, habilidades e conteúdos próprios. A proposta é que o mesmo conjunto de regras possa ser usado em diferentes universos, sem ficar preso a um cenário específico.</p>
+  </section>
+
+  <!-- 13 -->
+  <section class="regra-sec" id="pendentes">
+    <h3><span>13</span>Pontos pendentes de definição</h3>
+    <div class="pendente-box">
+      <h4>⚠ Em construção</h4>
+      <ul class="mb-0">
+        <li>Tabela exata de experiência necessária para cada nível.</li>
+        <li>Quantidade de pontos de atributo recebida ao subir de nível.</li>
+        <li>Regras completas de armaduras e seus efeitos.</li>
+        <li>Recuperação ou perda de Energia em situações especiais.</li>
+        <li>Efeitos específicos de falhas críticas.</li>
+        <li>Regras de morte e consequências para o personagem.</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
