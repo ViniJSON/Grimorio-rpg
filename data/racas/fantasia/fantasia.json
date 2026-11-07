@@ -1,0 +1,386 @@
+{
+  "genero": "Fantasia",
+  "categorias": [
+    {
+      "nome": "Raças",
+      "cards": [
+        {
+          "nome": "Humanos",
+          "imagem": "",
+          "descricao": "seres versáteis, adaptáveis e encontrados em praticamente todos os ambientes e sociedades.",
+          "traco": "Versatilidade",
+          "vantagens": [
+            "Recebem +1 em um atributo à escolha.",
+            "Recebem +1 em testes de aprendizado e adaptação.",
+            "Podem aprender habilidades de diferentes áreas com facilidade."
+          ],
+          "desvantagens": [
+            "Não possuem resistência natural a elementos ou condições específicas.",
+            "Não possuem habilidades raciais sobrenaturais."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Elfos",
+          "imagem": "",
+          "descricao": "seres longevos, conhecidos pela elegância, percepção aguçada e afinidade com magia.",
+          "traco": "Percepção aguçada",
+          "vantagens": [
+            "+2 em testes de percepção visual.",
+            "Visão noturna de até 18 metros.",
+            "Resistência a efeitos mágicos de encantamento.",
+            "Não precisam dormir tanto quanto outras raças."
+          ],
+          "desvantagens": [
+            "Constituição física geralmente mais delicada.",
+            "Sensibilidade a ambientes extremamente barulhentos."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Anões",
+          "imagem": "",
+          "descricao": "seres robustos, tradicionalmente associados às montanhas, mineração e metalurgia.",
+          "traco": "Robustez",
+          "vantagens": [
+            "+2 em testes de resistência física contra venenos.",
+            "+2 em testes de fabricação e avaliação de metais.",
+            "Resistência natural a temperaturas baixas.",
+            "Conhecimento natural de mineração e escavação."
+          ],
+          "desvantagens": [
+            "Velocidade de deslocamento reduzida.",
+            "Dificuldade em atividades que exigem agilidade e movimentos acrobáticos."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Orcs",
+          "imagem": "",
+          "descricao": "criaturas de grande força física, frequentemente associadas à resistência e ao combate.",
+          "traco": "Força bruta",
+          "vantagens": [
+            "+2 em testes de força física.",
+            "+2 de dano em ataques corpo a corpo uma vez por combate.",
+            "Capacidade de suportar condições físicas extremas."
+          ],
+          "desvantagens": [
+            "-2 em testes de persuasão em sociedades que discriminam orcs.",
+            "Maior dificuldade em atividades que exigem delicadeza e precisão."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Meio-elfos",
+          "imagem": "",
+          "descricao": "descendentes de humanos e elfos, combinam características das duas linhagens.",
+          "traco": "Adaptabilidade social",
+          "vantagens": [
+            "+1 em CAR.",
+            "+1 em testes de percepção.",
+            "Resistência a encantamentos mágicos.",
+            "Facilidade para estabelecer relações com diferentes povos."
+          ],
+          "desvantagens": [
+            "Podem sofrer preconceito tanto entre humanos quanto entre elfos.",
+            "Não possuem a longevidade completa dos elfos."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Halflings",
+          "imagem": "",
+          "descricao": "pequenos humanoides conhecidos pela agilidade, sorte e habilidade em evitar perigos.",
+          "traco": "Sorte natural",
+          "vantagens": [
+            "+2 em testes para evitar armadilhas.",
+            "+2 em testes de furtividade.",
+            "Uma vez por combate, pode repetir um resultado 1 natural em um teste."
+          ],
+          "desvantagens": [
+            "Dificuldade para utilizar armas muito grandes.",
+            "-2 em testes de força física contra criaturas maiores."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Gnomos",
+          "imagem": "",
+          "descricao": "pequenos seres curiosos, inteligentes e conhecidos por suas invenções e conhecimentos.",
+          "traco": "Intelecto natural",
+          "vantagens": [
+            "+2 em testes de investigação.",
+            "+2 em testes de fabricação e engenharia.",
+            "Resistência a ilusões e encantamentos mágicos."
+          ],
+          "desvantagens": [
+            "Baixa capacidade de força física.",
+            "Dificuldade em utilizar equipamentos grandes."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Draconatos",
+          "imagem": "",
+          "descricao": "humanoides com características dracônicas, como escamas, chifres e habilidades elementais.",
+          "traco": "Sopro elemental",
+          "vantagens": [
+            "Resistência a um elemento à escolha: fogo, gelo, eletricidade, ácido ou veneno.",
+            "Sopro elemental que causa 1d8 de dano em uma pequena área. Custo: 8 Energia.",
+            "+2 em testes de intimidação."
+          ],
+          "desvantagens": [
+            "Aparência incomum pode provocar medo ou desconfiança.",
+            "Resistência elemental não protege contra outros tipos de dano."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Tieflings",
+          "imagem": "",
+          "descricao": "descendentes de linhagens infernais, apresentam chifres, caudas e características sobrenaturais.",
+          "traco": "Herança infernal",
+          "vantagens": [
+            "Resistência natural ao fogo.",
+            "Visão noturna de até 18 metros.",
+            "Podem produzir pequenas chamas nas mãos sem custo de Energia.",
+            "+2 em testes de intimidação."
+          ],
+          "desvantagens": [
+            "Podem sofrer preconceito devido à aparência.",
+            "Vulnerabilidade social em comunidades extremamente religiosas ou supersticiosas."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Goblins",
+          "imagem": "",
+          "descricao": "pequenos humanoides astutos, conhecidos pela esperteza, sobrevivência e criatividade.",
+          "traco": "Astúcia",
+          "vantagens": [
+            "+2 em testes de furtividade.",
+            "+2 em testes para improvisar armadilhas.",
+            "Podem se esconder em espaços muito pequenos.",
+            "+2 em testes para escapar de agarrões."
+          ],
+          "desvantagens": [
+            "-2 em testes de força física.",
+            "Dificuldade para utilizar equipamentos projetados para humanoides maiores."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Meio-orcs",
+          "imagem": "",
+          "descricao": "descendentes de humanos e orcs, possuem grande resistência física e força.",
+          "traco": "Resistência extraordinária",
+          "vantagens": [
+            "+1 em FOR.",
+            "+2 em testes de resistência física.",
+            "Uma vez por descanso longo, quando receber um golpe fatal, permanece com 1 de Vida."
+          ],
+          "desvantagens": [
+            "-2 em testes sociais de persuasão em ambientes hostis à sua linhagem.",
+            "Maior dificuldade em atividades que exigem delicadeza."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Aasimar",
+          "imagem": "",
+          "descricao": "seres com herança celestial, frequentemente associados à luz, proteção e forças divinas.",
+          "traco": "Herança celestial",
+          "vantagens": [
+            "Resistência a dano sagrado.",
+            "Visão noturna de até 18 metros.",
+            "Uma vez por descanso longo, recupera 1d6 de Vida de um aliado. Custo: 4 Energia.",
+            "+2 em testes de resistência contra efeitos de medo."
+          ],
+          "desvantagens": [
+            "Pode ser reconhecido por sua aparência sobrenatural.",
+            "Maior vulnerabilidade narrativa a forças profanas, dependendo do cenário."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Tritões",
+          "imagem": "",
+          "descricao": "humanoides aquáticos adaptados à vida submarina, com grande afinidade com os oceanos.",
+          "traco": "Adaptação aquática",
+          "vantagens": [
+            "Respira debaixo d'água.",
+            "Velocidade de natação igual à velocidade normal de deslocamento.",
+            "+2 em testes de percepção dentro da água.",
+            "Resistência a temperaturas muito baixas."
+          ],
+          "desvantagens": [
+            "Desconforto em ambientes extremamente secos.",
+            "-2 em testes físicos de resistência após longos períodos sem contato com água."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Kobolds",
+          "imagem": "",
+          "descricao": "pequenos humanoides reptilianos com características dracônicas, conhecidos pela astúcia e habilidade em armadilhas.",
+          "traco": "Armadilheiro",
+          "vantagens": [
+            "+2 em testes para criar e identificar armadilhas.",
+            "Visão noturna de até 18 metros.",
+            "+2 em testes de furtividade em cavernas e ambientes subterrâneos.",
+            "Conseguem se espremer em espaços estreitos."
+          ],
+          "desvantagens": [
+            "-2 em testes de força física.",
+            "Dificuldade para enfrentar criaturas muito maiores em combate direto."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Leoninos",
+          "imagem": "",
+          "descricao": "humanoides com características de leões, possuindo força, sentidos aguçados e presença imponente.",
+          "traco": "Instinto predador",
+          "vantagens": [
+            "+2 em testes de percepção auditiva e olfativa.",
+            "Garras naturais que causam 1d4 + FOR de dano.",
+            "+2 em testes de intimidação.",
+            "Podem enxergar bem em ambientes de pouca luminosidade."
+          ],
+          "desvantagens": [
+            "Dificuldade para passar despercebidos em ambientes urbanos.",
+            "-2 em testes de furtividade quando não possuem cobertura adequada."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Kenkus",
+          "imagem": "",
+          "descricao": "humanoides com características de corvos, conhecidos pela imitação de sons e capacidade de observação.",
+          "traco": "Imitação perfeita",
+          "vantagens": [
+            "Conseguem reproduzir vozes e sons já ouvidos.",
+            "+2 em testes de imitação e disfarce sonoro.",
+            "+2 em testes de percepção visual.",
+            "Grande facilidade para reproduzir técnicas e gestos observados."
+          ],
+          "desvantagens": [
+            "Não conseguem produzir naturalmente uma voz própria convencional.",
+            "Dificuldade para voar, apesar das características de ave."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Tabaxis",
+          "imagem": "",
+          "descricao": "humanoides felinos conhecidos pela curiosidade, agilidade e sentidos aguçados.",
+          "traco": "Agilidade felina",
+          "vantagens": [
+            "+2 em testes de equilíbrio e acrobacia.",
+            "Visão noturna de até 18 metros.",
+            "Velocidade de deslocamento dobrada durante uma ação por combate.",
+            "Garras naturais que causam 1d4 + FOR de dano."
+          ],
+          "desvantagens": [
+            "Curiosidade excessiva pode provocar situações perigosas.",
+            "-2 em testes de resistência contra efeitos que exigem concentração quando distraídos."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Yuan-ti",
+          "imagem": "",
+          "descricao": "humanoides com herança serpentina, apresentando escamas, olhos de réptil e características de serpentes.",
+          "traco": "Resistência a venenos",
+          "vantagens": [
+            "Resistência natural a venenos.",
+            "+2 em testes para resistir a doenças.",
+            "+2 em testes de intimidação.",
+            "Conseguem identificar odores e substâncias químicas com facilidade."
+          ],
+          "desvantagens": [
+            "Sensibilidade a temperaturas extremamente baixas.",
+            "Podem provocar desconfiança em sociedades que temem criaturas serpentinas."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Centauros",
+          "imagem": "",
+          "descricao": "criaturas com torso humanoide e corpo de cavalo, conhecidas pela velocidade e força física.",
+          "traco": "Mobilidade superior",
+          "vantagens": [
+            "Velocidade de deslocamento aumentada.",
+            "+2 em testes de corrida e resistência física.",
+            "Cascos naturais que causam 1d6 + FOR de dano.",
+            "Conseguem carregar mais peso que humanoides comuns."
+          ],
+          "desvantagens": [
+            "Dificuldade para atravessar escadas, corredores estreitos e estruturas pequenas.",
+            "Não conseguem utilizar montarias convencionais.",
+            "Equipamentos e armaduras precisam ser adaptados ao corpo."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        },
+        {
+          "nome": "Vampiros",
+          "imagem": "",
+          "descricao": "seres sobrenaturais que sobrevivem por meio do consumo de sangue e possuem capacidades físicas extraordinárias.",
+          "traco": "Predador noturno",
+          "vantagens": [
+            "Visão noturna de até 24 metros.",
+            "+2 em testes de percepção e furtividade durante a noite.",
+            "Mordida que causa 1d6 de dano e recupera metade do dano causado em Vida. Custo: 4 Energia.",
+            "+2 em testes de intimidação."
+          ],
+          "desvantagens": [
+            "Vulnerabilidade à luz solar direta: recebe 1d6 de dano por turno de exposição prolongada.",
+            "Necessita consumir sangue periodicamente.",
+            "Símbolos sagrados podem provocar desconforto ou dificultar determinadas ações, conforme o cenário."
+          ],
+          "rotulo_atributos": "",
+          "atributos": {},
+          "habilidades": []
+        }
+      ]
+    }
+  ]
+}

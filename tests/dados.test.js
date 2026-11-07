@@ -31,6 +31,7 @@ function aparelho(srv, usuario = { id: 'u1', email: 'a@b.c' }) {
 }
 const PIXEL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wAALCAABAAEBAREA/8QAFAABAAAAAAAAAAAAAAAAAAAAAP/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAD8AKp//2Q==';
 
+const esperar = () => new Promise(r => setTimeout(r, 5));   // carimbos de tempo distintos entre passos
 (async () => {
   const srv = servidorFalso();
   const A = aparelho(srv), B = aparelho(srv);
@@ -56,20 +57,20 @@ const PIXEL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP////////
   assert.strictEqual(A.obter('personagens', 'p1').nome, 'Kael, o Velho');
 
   // 4) versão local mais ANTIGA nunca sobrescreve a do servidor
-  A.importar('personagens', JSON.stringify([{ id: 'p1', nome: 'VELHO', atualizado: 1 }]));
+  await esperar(); A.importar('personagens', JSON.stringify([{ id: 'p1', nome: 'VELHO', atualizado: 1 }]));
   assert.strictEqual(A.obter('personagens', 'p1').nome, 'Kael, o Velho');
 
   // 5) exclusão propaga (lápide) e apaga a imagem
-  A.excluir('personagens', 'p1');
+  await esperar(); A.excluir('personagens', 'p1');
   await A.sincronizar(); assert.strictEqual(srv.tabelas.personagens.get('p1').excluido, true);
   assert.strictEqual(srv.arquivos.size, 0, 'imagem apagada do storage');
   await B.sincronizar(); assert.strictEqual(B.obter('personagens', 'p1'), undefined);
   assert.strictEqual(B.listar('personagens').length, 0);
 
   // 6) remover a imagem apaga o arquivo antigo
-  A.salvar('campanhas', { id: 'c1', nome: 'X', imagem: PIXEL, sessoes: [] }); await A.sincronizar();
+  await esperar(); A.salvar('campanhas', { id: 'c1', nome: 'X', imagem: PIXEL, sessoes: [] }); await A.sincronizar();
   assert.strictEqual(srv.arquivos.size, 1);
-  const c = A.obter('campanhas', 'c1'); c.imagem = ''; A.salvar('campanhas', c); await A.sincronizar();
+  await esperar(); const c = A.obter('campanhas', 'c1'); c.imagem = ''; A.salvar('campanhas', c); await A.sincronizar();
   assert.strictEqual(srv.arquivos.size, 0); assert.strictEqual(srv.tabelas.campanhas.get('c1').dados.imagemCaminho, undefined);
 
   // 7) listar/obter devolvem cópias

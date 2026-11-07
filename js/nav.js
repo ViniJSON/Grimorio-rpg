@@ -1,11 +1,11 @@
 // Barra de navegação única (antes copiada em cada HTML) + botão de conta/sincronização.
 (() => {
-  const LINKS = [['oraculos', 'Oráculos'], ['bestiario', 'Bestiário'], ['itens', 'Itens'], ['npcs', 'NPCs'], ['salvos', 'Salvos'], ['fichas', 'Fichas'], ['campanhas', 'Campanhas'], ['regras', 'Regras']];
+  const LINKS = [['oraculos', 'Oráculos'], ['bestiario', 'Bestiário'], ['itens', 'Itens'], ['npcs', 'NPCs'], ['racas', 'Raças'], ['classes', 'Classes'], ['salvos', 'Salvos'], ['fichas', 'Fichas'], ['campanhas', 'Campanhas'], ['regras', 'Regras']];
   const nuvem = typeof Dados !== 'undefined' && Dados.estado.nuvem;
 
   function montar() {
     const alvo = document.getElementById('nav'); if (!alvo) return;
-    alvo.outerHTML = `<nav class="navbar navbar-expand-lg navbar-ca sticky-top"><div class="container">
+    alvo.outerHTML = `<nav class="navbar navbar-expand-xl navbar-ca sticky-top"><div class="container">
       <a class="navbar-brand" href="index.html">GRIMÓRIO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" style="background-color:#444;"><span class="navbar-toggler-icon" style="filter:invert(1);"></span></button>
       <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto">

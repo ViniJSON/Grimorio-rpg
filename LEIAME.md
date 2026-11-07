@@ -71,6 +71,25 @@ não têm regra fechada. Fichas antigas são migradas sem mudar nenhum valor (a 
 20 natural = sucesso crítico, 1 natural = falha crítica), iniciativa, expressões como `1d6+FOR`, habilidades com dado e custo de Energia
 (d4=2, d6=4, d8=8, d10=9, d12=10; "Usar (20 natural)" não gasta Energia e dobra o dano) e descanso curto (1d4) / longo (1d8).
 
+## Raças e classes
+Páginas `racas.html` e `classes.html`, iguais às outras: o conteúdo fica em `data/racas/<gênero>/<gênero>.json` e `data/classes/<gênero>/<gênero>.json`
+(e o gênero precisa estar listado em `data/manifest.json`, chaves `racas` e `classes`). Para adicionar uma, é só copiar um card e editar. Campos:
+- **Classe:** `nome`, `descricao`, `especialidade`, `limitacoes`, `atributos` (`"Atributo principal"` e **`"Dado de vida"`**, por exemplo `"1d12"`) e `habilidades`
+  (um item por nível, com `nome` começando em `"Nível N — ..."`: a ficha usa isso para listar os poderes até o nível do personagem).
+- **Raça:** `nome`, `descricao`, `traco` (nome do traço principal), `vantagens` e `desvantagens` (listas de texto).
+- **Imagem:** `imagem` com o caminho (ex.: `img/classes/fantasia/barbaro.webp`); vazio usa a imagem padrão.
+
+Na criação do personagem, os campos Raça e Classe listam esses cards (agrupados por gênero), com a opção "Outra (digitar)" para algo fora da lista.
+Os efeitos de raça e classe **não** são aplicados automaticamente na ficha: ficam como referência (e o dado de vida da classe é usado ao subir de nível).
+
+## Progressão e carga
+- **XP e níveis (1–10):** na ficha, "Dar XP" soma experiência e, quando ela alcança o próximo nível (1.200, 2.400, 3.800, 4.900, 7.500, 9.000, 12.000, 17.000, 20.400),
+  aparece o botão "Subir de nível". Ele rola os ganhos: **Vida** com o dado de vida da classe (no lugar do dado-base do nível), **Energia** (1d4 ou 1d8 conforme o nível)
+  e +2 pontos de atributo nos níveis 3, 6 e 9. Os ganhos entram nos máximos e ficam no histórico da ficha. A tabela está em `js/regras.js` (`PROGRESSAO`) e em `regras.html`.
+- **Pontos de atributo:** orçamento = 7 + os pontos ganhos por nível. A ficha avisa (sem bloquear) quando sobra ou falta.
+- **Carga:** 15 kg para todos (mais o "Ajuste de carga" na edição). Soma peso × quantidade dos itens e entende `kg` e `g` (`500 g` = 0,5 kg). Itens sem peso não entram na soma e a ficha avisa.
+  O que acontece ao passar do limite ainda não está nas regras: a ficha só mostra o aviso.
+
 ## Nuvem (Supabase, opcional)
 Sem configurar nada, o site funciona só no navegador. Para sincronizar entre aparelhos:
 1. Crie um projeto grátis em supabase.com.

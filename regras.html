@@ -57,9 +57,11 @@
         <tr><td><b>Vida</b></td><td class="num">10 + (FOR × 2)</td><td>Quanto dano o personagem suporta.</td></tr>
         <tr><td><b>Defesa</b></td><td class="num">10 + AGI</td><td>Dificuldade para acertá-lo.</td></tr>
         <tr><td><b>Energia</b></td><td class="num">10 + INT</td><td>Usada para ativar habilidades especiais.</td></tr>
+        <tr><td><b>Carga</b></td><td class="num">15 kg</td><td>Peso que o personagem carrega no início. Soma o peso de cada item × quantidade.</td></tr>
       </tbody>
     </table>
     </div>
+    <p class="mt-3">Ganhos de nível somam à Vida e à Energia máximas (veja a seção 11). Os efeitos de carregar além do limite ainda não foram definidos.</p>
   </section>
 
   <!-- 3 -->
@@ -202,7 +204,25 @@
   <section class="regra-sec" id="evolucao">
     <h3><span>11</span>Experiência e evolução</h3>
     <p>O sistema possui progressão <b>até o nível 10</b>. Monstros, NPCs e missões podem conceder experiência.</p>
-    <span class="tag-pendente">Tabela de experiência e ganhos por nível a definir</span>
+    <p><b>Raças e classes</b> estão nas páginas <a href="racas.html" style="color:#ff3333;">Raças</a> e <a href="classes.html" style="color:#ff3333;">Classes</a>. A classe define o <b>dado de vida</b> do personagem.</p>
+    <div class="tabela-scroll">
+    <table class="tabela-regras">
+      <thead><tr><th>Nível</th><th>XP</th><th>Vida</th><th>Energia</th><th>Atributos</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b></td><td class="num">0</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><b>2</b></td><td class="num">1.200</td><td>1d4*</td><td>1d4</td><td>—</td></tr>
+        <tr><td><b>3</b></td><td class="num">2.400</td><td>1d4*</td><td>—</td><td>+2 pontos</td></tr>
+        <tr><td><b>4</b></td><td class="num">3.800</td><td>1d6*</td><td>1d4</td><td>—</td></tr>
+        <tr><td><b>5</b></td><td class="num">4.900</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><b>6</b></td><td class="num">7.500</td><td>1d6*</td><td>—</td><td>+2 pontos</td></tr>
+        <tr><td><b>7</b></td><td class="num">9.000</td><td>1d8*</td><td>—</td><td>—</td></tr>
+        <tr><td><b>8</b></td><td class="num">12.000</td><td>—</td><td>1d4</td><td>—</td></tr>
+        <tr><td><b>9</b></td><td class="num">17.000</td><td>—</td><td>—</td><td>+2 pontos</td></tr>
+        <tr><td><b>10</b></td><td class="num">20.400</td><td>1d8*</td><td>1d8</td><td>—</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="mt-2"><b>*</b> O dado de Vida da tabela é o dado-base: cada classe o <b>substitui</b> pelo próprio dado de vida (por exemplo, o Bárbaro rola 1d12 em todos esses níveis). Sem classe definida, vale o dado-base.</p>
   </section>
 
   <!-- 12 -->
@@ -218,12 +238,11 @@
     <div class="pendente-box">
       <h4>⚠ Em construção</h4>
       <ul class="mb-0">
-        <li>Tabela exata de experiência necessária para cada nível.</li>
-        <li>Quantidade de pontos de atributo recebida ao subir de nível.</li>
         <li>Regras completas de armaduras e seus efeitos.</li>
         <li>Recuperação ou perda de Energia em situações especiais.</li>
         <li>Efeitos específicos de falhas críticas.</li>
         <li>Regras de morte e consequências para o personagem.</li>
+        <li>Efeitos de carregar mais do que o limite de carga.</li>
       </ul>
     </div>
   </section>

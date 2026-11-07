@@ -1,6 +1,22 @@
 // Página de fichas: lista, ficha (rolador, recursos, inventário) e edição.
 // Dados em js/personagens.js (sobre js/dados.js). Regras do sistema em js/regras.js.
-const pesoNum = s => { const m = String(s ?? '').replace(',', '.').match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : 0; };
+const fmtKg = n => String(n).replace('.', ',');
+const igual = (a, b) => String(a ?? '').trim().toLowerCase() === String(b ?? '').trim().toLowerCase();
+
+// Raças e classes vêm dos JSONs (data/racas, data/classes): para criar uma nova, é só adicionar o card lá.
+const REFS = { racas: [], classes: [] };
+async function carregarRefs() {
+  try {
+    const man = await lerJson('data/manifest.json');
+    for (const sec of ['racas', 'classes']) {
+      const gens = await Promise.all((man[sec] || []).map(id => lerJson(`data/${sec}/${id}/${id}.json`).then(d => ({ id, ...d })).catch(() => null)));
+      REFS[sec] = gens.filter(Boolean).flatMap(g => g.categorias.flatMap(c => c.cards.map(card => ({ ...card, genero: g.genero }))));
+    }
+  } catch { /* sem listas: os campos viram texto livre */ }
+}
+const racaDe = p => REFS.racas.find(x => igual(x.nome, p.raca));
+const classeDe = p => REFS.classes.find(x => igual(x.nome, p.classe));
+const nivelDoPoder = h => { const m = /Nível (\d+)/.exec(h.nome || ''); return m ? +m[1] : 0; };
 
 let tela = 'lista';       // 'lista' | 'ficha' | 'editar'
 let atual = null;         // personagem aberto (cópia de trabalho)
@@ -96,9 +112,43 @@ function habItem(h, i) {
     <button type="button" class="btn-fantasma" data-acao="usar-hab" data-i="${i}" data-c="1" title="Crítico natural: dano dobrado e sem gasto de Energia">Usar (20 natural)</button></div>` : ''}</li>`;
 }
 
+function xpHtml(p) {
+  const prox = Regras.xpProximo(p), base = Regras.xpDoNivel(p.nivel);
+  const pct = prox === null ? 100 : Math.max(0, Math.min(100, ((p.xp - base) / (prox - base)) * 100));
+  const v = Regras.validarCriacao(p), hist = (p.progressao?.historico || []).slice(-3).reverse();
+  return `<div class="info-label">EXPERIÊNCIA:</div>
+    <div class="info-texto">XP <b>${esc(p.xp)}</b>${prox === null ? ' — nível máximo' : ` / ${prox} para o nível ${p.nivel + 1}`}</div>
+    <div class="barra"><i style="width:${pct}%"></i></div>
+    <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+      <input class="campo" id="xp-add" type="number" min="0" placeholder="+ XP" style="max-width:110px;">
+      <button type="button" class="btn-fantasma" data-acao="dar-xp">Dar XP</button>
+      ${Regras.podeSubir(p) ? `<button type="button" class="btn-rolar" data-acao="subir-nivel">⬆ Subir para o nível ${p.nivel + 1}</button>` : ''}
+    </div>
+    ${hist.length ? `<div class="info-texto mt-2"><small>${hist.map(h => `Nv ${h.nivel}: ${[h.vida && `+${h.vida} Vida (${h.dadoVida})`, h.energia && `+${h.energia} Energia`, h.pontos && `+${h.pontos} pontos`].filter(Boolean).join(', ') || 'sem ganhos'}`).join(' · ')}</small></div>` : ''}
+    ${v.avisos.length ? `<div class="info-texto mt-2" style="color:#ffcc00;">⚠ ${v.avisos.map(esc).join(' ')} <small>(Editar ficha)</small></div>` : ''}`;
+}
+
+function cargaHtml(p) {
+  const c = Regras.carga(p), pct = c.capacidade > 0 ? Math.min(100, (c.total / c.capacidade) * 100) : 100;
+  return `<div class="carga"><div class="info-texto">Carga: <b${c.excedeu ? ' style="color:#ff3333;"' : ''}>${fmtKg(c.total)}</b> / ${fmtKg(c.capacidade)} kg
+      ${c.excedeu ? '— <b style="color:#ff3333;">acima do limite</b>' : `(livre: ${fmtKg(c.livre)} kg)`}</div>
+    <div class="barra"><i style="width:${pct}%;${c.excedeu ? 'background:#ff3333;' : ''}"></i></div>
+    ${c.semPeso ? `<small class="text-muted">${c.semPeso} item(ns) sem peso informado não entram na soma.</small>` : ''}</div>`;
+}
+
+// Resumo da raça e dos poderes da classe até o nível atual (só consulta: nada disso altera a ficha)
+function referenciaHtml(p) {
+  const r = racaDe(p), c = classeDe(p); if (!r && !c) return '';
+  const lista = a => `<ul class="habilidades">${(a || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  const poderes = c ? (c.habilidades || []).filter(h => nivelDoPoder(h) <= p.nivel) : [];
+  return `<details class="gerador mt-3"><summary>Raça e classe (referência)</summary><div class="gerador-corpo">
+    ${r ? `<div class="info-label">${esc(r.nome.toUpperCase())} — ${esc(r.traco || '')}</div>${r.vantagens?.length ? `<div class="info-label">VANTAGENS:</div>${lista(r.vantagens)}` : ''}${r.desvantagens?.length ? `<div class="info-label">DESVANTAGENS:</div>${lista(r.desvantagens)}` : ''}` : ''}
+    ${c ? `<div class="info-label">${esc(c.nome.toUpperCase())} — PODERES ATÉ O NÍVEL ${p.nivel}:</div><ul class="habilidades">${poderes.map(h => `<li><b>${esc(h.nome)}:</b> ${esc(h.descricao)}</li>`).join('')}</ul>${c.limitacoes ? `<div class="info-label">LIMITAÇÕES:</div><div class="info-texto">${esc(c.limitacoes)}</div>` : ''}` : ''}
+  </div></details>`;
+}
+
 function telaFicha() {
   const p = atual;
-  const peso = p.inventario.reduce((t, i) => t + pesoNum(i.peso) * i.qtd, 0);
   raiz.innerHTML = `
     <div class="d-flex flex-wrap gap-2 mt-4 mb-3">
       <button class="btn-fantasma" data-acao="voltar">← Personagens</button>
@@ -114,6 +164,7 @@ function telaFicha() {
         <div class="col-12 col-md-6">${blocoRecurso('vida', 'VIDA')}</div>
         <div class="col-12 col-md-6">${blocoRecurso('energia', 'ENERGIA')}</div>
       </div></div></div>
+      ${xpHtml(p)}
       <div class="info-label">ATRIBUTOS: <small style="color:#888;text-transform:none;letter-spacing:0;">(clique para testar: d20 + atributo)</small></div>
       <div class="atributos atributos-5">${Regras.ATRIBUTOS.map(([k, s, l]) => `<button type="button" data-acao="testar" data-k="${k}" title="Testar ${esc(l)}"><span>${s}</span>${esc(p[k])}</button>`).join('')}<div title="10 + AGI + ajustes"><span>DEFESA</span>${esc(p.defesa)}</div></div>
 
@@ -130,11 +181,12 @@ function telaFicha() {
         <div class="rol-hist" id="hist">${histHtml()}</div></div>
 
       ${(p.habilidades || []).length ? `<div class="info-label">HABILIDADES:</div><ul class="habilidades">${p.habilidades.map(habItem).join('')}</ul>` : ''}
+      ${referenciaHtml(p)}
       ${p.aparencia ? `<div class="info-label">APARÊNCIA:</div><div class="info-texto texto-livre">${esc(p.aparencia)}</div>` : ''}
       ${p.historia ? `<div class="info-label">HISTÓRIA:</div><div class="info-texto texto-livre">${esc(p.historia)}</div>` : ''}
       <div class="info-label">INVENTÁRIO (${p.inventario.length}):</div>
+      ${cargaHtml(p)}
       <div class="inventario">${p.inventario.map(linhaItem).join('') || '<div class="info-texto text-muted">Vazio.</div>'}</div>
-      ${peso ? `<div class="info-texto mt-2">Peso total: <b>${String(Math.round(peso * 100) / 100).replace('.', ',')}</b> (soma dos pesos × quantidade)</div>` : ''}
       <div class="d-flex flex-wrap gap-2 mt-3">
         <button class="btn-rolar" data-acao="painel" data-p="catalogo">＋ Item do catálogo</button>
         <button class="btn-fantasma" data-acao="painel" data-p="custom">＋ Item personalizado</button>
@@ -193,6 +245,13 @@ const linhaHab = h => `<div class="hab-linha"><div class="row g-2 align-items-st
     <div class="col-12 col-sm-6 col-md-4"><select class="campo" data-hab="dado" aria-label="Dado da habilidade"><option value="">Sem dado (passiva)</option>${DADOS_HAB.map(([l, c]) => `<option value="1d${l}" ${String(Regras.ladosDe(h.dado)) === l ? 'selected' : ''}>d${l} · custa ${c} Energia</option>`).join('')}</select></div>
     <div class="col-12 col-sm-6 col-md-4"><input class="campo" data-hab="extra" placeholder="Bônus no dano (opcional): +FOR ou +2" value="${esc(h.extra || '')}"></div></div></div>`;
 
+function campoRef(nome, rotulo, lista, valor) {
+  if (!lista.length) return `<label class="rotulo">${rotulo}<input class="campo" name="${nome}_txt" value="${esc(valor)}"></label>`;
+  const fora = valor && !lista.some(x => igual(x.nome, valor)), gens = [...new Set(lista.map(x => x.genero))];
+  const grupos = gens.map(g => `<optgroup label="${esc(g)}">${lista.filter(x => x.genero === g).map(x => `<option value="${esc(x.nome)}" ${igual(x.nome, valor) ? 'selected' : ''}>${esc(x.nome)}</option>`).join('')}</optgroup>`).join('');
+  return `<label class="rotulo">${rotulo}<select class="campo" name="${nome}_sel"><option value="">— escolher —</option>${grupos}${fora ? `<option value="${esc(valor)}" selected>${esc(valor)} (atual)</option>` : ''}<option value="__outra__">Outra (digitar)…</option></select></label>
+    <input class="campo mt-1" name="${nome}_txt" placeholder="Digite" hidden>`;
+}
 const campoTxt = (n, l, v, ph = '') => `<label class="rotulo">${l}<input class="campo" name="${n}" value="${esc(v)}" placeholder="${esc(ph)}"></label>`;
 const campoNum = (n, l, v, extra = '') => `<label class="rotulo">${l}<input class="campo" type="number" name="${n}" value="${esc(v)}" ${extra}></label>`;
 
@@ -203,9 +262,10 @@ function telaEditar() {
       <h2 class="nome-agente mb-3">${ehNovo ? 'Novo personagem' : 'Editar ficha'}</h2>
       <div class="row g-3">
         <div class="col-12 col-md-6">${campoTxt('nome', 'Nome', p.nome)}</div>
-        <div class="col-12 col-md-3">${campoTxt('raca', 'Raça', p.raca)}</div>
-        <div class="col-6 col-md-3">${campoTxt('classe', 'Classe', p.classe)}</div>
-        <div class="col-6 col-md-2">${campoNum('nivel', 'Nível (1–10)', p.nivel, `min="1" max="${Regras.NIVEL_MAX}"`)}</div>
+        <div class="col-6 col-md-3">${campoNum('xp', 'XP', p.xp, 'min="0"')}</div>
+        <div class="col-6 col-md-3"><div class="rotulo">Nível</div><div class="info-texto" style="padding-top:6px;">${esc(p.nivel)}<small class="text-muted"> (sobe pela ficha, com XP)</small></div></div>
+        <div class="col-12 col-md-6">${campoRef('raca', 'Raça', REFS.racas, p.raca)}</div>
+        <div class="col-12 col-md-6">${campoRef('classe', 'Classe', REFS.classes, p.classe)}</div>
       </div>
       <div class="info-label">IMAGEM:</div>
       <div class="d-flex gap-3 align-items-end flex-wrap">
@@ -220,11 +280,12 @@ function telaEditar() {
       <div class="info-label">DERIVADOS (calculados pelas regras):</div>
       <div id="previa" class="info-texto"></div>
       <div class="row g-3 mt-1">
-        <div class="col-4">${campoNum('ajuste_vida', 'Ajuste de Vida', a.vida)}</div>
-        <div class="col-4">${campoNum('ajuste_energia', 'Ajuste de Energia', a.energia)}</div>
-        <div class="col-4">${campoNum('ajuste_defesa', 'Ajuste de Defesa', a.defesa)}</div>
+        <div class="col-6 col-md-3">${campoNum('ajuste_vida', 'Ajuste de Vida', a.vida)}</div>
+        <div class="col-6 col-md-3">${campoNum('ajuste_energia', 'Ajuste de Energia', a.energia)}</div>
+        <div class="col-6 col-md-3">${campoNum('ajuste_defesa', 'Ajuste de Defesa', a.defesa)}</div>
+        <div class="col-6 col-md-3">${campoNum('ajuste_carga', 'Ajuste de carga (kg)', a.carga)}</div>
       </div>
-      <div class="info-texto text-muted mt-1"><small>Os ajustes somam ao valor das fórmulas (itens, nível, bônus do mestre). Armaduras e níveis ainda não têm regra fechada, então use aqui por enquanto.</small></div>
+      <div class="info-texto text-muted mt-1"><small>Os ajustes somam ao valor das fórmulas (itens, bônus do mestre). Os ganhos de nível entram sozinhos, e a carga base é de 15 kg. Armaduras ainda não têm regra fechada, então use aqui por enquanto.</small></div>
       ${ehNovo ? '' : `<div class="row g-3 mt-1">
         <div class="col-6 col-md-3">${campoNum('vida_atual', 'Vida atual', p.vida.atual)}</div>
         <div class="col-6 col-md-3">${campoNum('energia_atual', 'Energia atual', p.energia.atual)}</div></div>`}
@@ -245,22 +306,21 @@ function telaEditar() {
 function previa() {
   const f = document.getElementById('form-ficha'); if (!f) return;
   const g = k => num(f.elements[k]?.value);
-  const t = { nivel: g('nivel') || 1, ajustes: { vida: g('ajuste_vida'), energia: g('ajuste_energia'), defesa: g('ajuste_defesa') } };
+  const t = { nivel: atual.nivel, progressao: atual.progressao, ajustes: { vida: g('ajuste_vida'), energia: g('ajuste_energia'), defesa: g('ajuste_defesa'), carga: g('ajuste_carga') } };
   Regras.ATRIBUTOS.forEach(([k]) => t[k] = g(k));
   const d = Regras.derivados(t), v = Regras.validarCriacao(t);
-  document.getElementById('previa').innerHTML = `Vida máx. <b>${d.vida}</b> (10 + FOR×2) · Energia máx. <b>${d.energia}</b> (10 + INT) · Defesa <b>${d.defesa}</b> (10 + AGI)`;
-  document.getElementById('pontos').innerHTML = t.nivel <= 1
-    ? `Pontos distribuídos: <b>${v.gastos}</b>/${Regras.PONTOS_INICIAIS} (máx. ${Regras.MAX_INICIAL} por atributo) ${v.avisos.length ? `<br><span style="color:#ffcc00;">⚠ ${v.avisos.map(esc).join(' ')}</span>` : '✔'}`
-    : '<span class="text-muted">Acima do nível 1, os pontos extras por nível ainda não têm regra definida: distribua como o mestre combinar.</span>';
+  document.getElementById('previa').innerHTML = `Vida máx. <b>${d.vida}</b> (10 + FOR×2${t.progressao?.vida ? ` + ${t.progressao.vida} de nível` : ''}) · Energia máx. <b>${d.energia}</b> (10 + INT${t.progressao?.energia ? ` + ${t.progressao.energia} de nível` : ''}) · Defesa <b>${d.defesa}</b> (10 + AGI)`;
+  document.getElementById('pontos').innerHTML = `Pontos distribuídos: <b>${v.gastos}</b>/${v.orcamento}${t.nivel <= 1 ? ` (máx. ${Regras.MAX_INICIAL} por atributo)` : ''} ${v.avisos.length ? `<br><span style="color:#ffcc00;">⚠ ${v.avisos.map(esc).join(' ')}</span>` : '✔'}`;
 }
 
 function lerForm() {
   const f = new FormData(document.getElementById('form-ficha')), g = k => String(f.get(k) ?? '').trim();
   const p = atual;
-  p.nome = g('nome'); p.raca = g('raca'); p.classe = g('classe'); p.nivel = Math.min(Regras.NIVEL_MAX, Math.max(1, num(g('nivel'), 1)));
+  const ref = n => (f.has(n + '_sel') ? g(n + '_sel') : '__outra__') === '__outra__' ? g(n + '_txt') : g(n + '_sel');
+  p.nome = g('nome'); p.raca = ref('raca'); p.classe = ref('classe'); p.xp = Math.max(0, num(g('xp')));
   p.aparencia = String(f.get('aparencia') ?? ''); p.historia = String(f.get('historia') ?? '');
   Regras.ATRIBUTOS.forEach(([k]) => p[k] = num(g(k)));
-  p.ajustes = { vida: num(g('ajuste_vida')), energia: num(g('ajuste_energia')), defesa: num(g('ajuste_defesa')) };
+  p.ajustes = { vida: num(g('ajuste_vida')), energia: num(g('ajuste_energia')), defesa: num(g('ajuste_defesa')), carga: num(g('ajuste_carga')) };
   if (!ehNovo) { p.vida.atual = num(g('vida_atual')); p.energia.atual = num(g('energia_atual')); }
   p.habilidades = [...document.querySelectorAll('.hab-linha')].map(l => ({
     nome: l.querySelector('[data-hab=nome]').value.trim(), descricao: l.querySelector('[data-hab=descricao]').value.trim(),
@@ -288,7 +348,7 @@ function gravarAtual(msg) { Personagens.salvar(atual); if (msg) aviso(msg); }
 function addItem(item, qtd = 1) {
   const ja = atual.inventario.find(i => i.nome === item.nome);
   if (ja) ja.qtd += qtd; else atual.inventario.push({ id: uid(), qtd, ...item });
-  gravarAtual(item.nome + ' adicionado');
+  gravarAtual(item.nome + ' adicionado' + (Regras.carga(atual).excedeu ? ' — carga acima do limite!' : ''));
   desenhar();
 }
 
@@ -348,6 +408,21 @@ const acoes = {
     registrar(`${h.nome}${crit ? ' (crítico)' : ''}`, `${r.rolagem.texto} = ${r.rolagem.total}${crit ? ` ×2 = ${r.total}` : ''} · ${r.custo ? `−${r.custo} Energia` : 'sem gasto de Energia'}`, crit ? 'critico' : '');
     desenhar();
   },
+  'dar-xp'() {
+    const v = num(document.getElementById('xp-add')?.value);
+    if (v <= 0) return aviso('Digite quantos XP dar');
+    atual.xp += v; gravarAtual(); registrar('XP', `+${v} (total ${atual.xp})`);
+    desenhar();
+  },
+  'subir-nivel'() {
+    const cls = classeDe(atual), r = Regras.subirNivel(atual, cls?.atributos?.['Dado de vida']);
+    if (!r.ok) return aviso(r.motivo, 3600);
+    gravarAtual();
+    const partes = [r.vida && `+${r.vida.valor} Vida (${r.vida.dado}${cls ? ', dado de ' + cls.nome : ', dado-base: sem classe definida'})`, r.energia && `+${r.energia.valor} Energia (${r.energia.dado})`, r.pontos && `+${r.pontos} pontos de atributo`].filter(Boolean);
+    registrar(`Nível ${r.nivel}!`, partes.join(' · ') || 'sem ganhos neste nível', 'critico');
+    desenhar();
+    if (r.pontos) aviso(`Você ganhou ${r.pontos} pontos de atributo: distribua em Editar ficha.`, 4200);
+  },
   // ----- inventário -----
   'qtd+'(el) { const i = itemDe(el); i.qtd++; gravarAtual(); desenhar(); },
   'qtd-'(el) { const i = itemDe(el); if (i.qtd > 1) { i.qtd--; gravarAtual(); desenhar(); } else aviso('Use ✕ para remover o item'); },
@@ -399,6 +474,11 @@ raiz.addEventListener('input', e => {
   else if (t.form && t.form.id === 'form-ficha') previa();
 });
 raiz.addEventListener('change', async e => {
+  if (e.target.name && e.target.name.endsWith('_sel')) {
+    const txt = e.target.form.elements[e.target.name.replace('_sel', '_txt')];
+    txt.hidden = e.target.value !== '__outra__'; if (!txt.hidden) txt.focus();
+    return;
+  }
   if (e.target.id === 'arq-imagem' && e.target.files[0]) {
     try { atual.imagem = await reduzir(e.target.files[0]); document.querySelector('.preview-ficha').innerHTML = miniatura(atual); }
     catch (err) { aviso(err.message); }
@@ -420,7 +500,7 @@ ArquivoJson.aoEstado = () => { if (tela === 'lista') desenhar(); };
 Dados.ouvir('sync', cols => { if (cols.includes('personagens') && tela === 'lista' && !abrirDaUrl()) desenhar(); });
 (async () => {
   try {
-    await Personagens.semear();
+    await Promise.all([Personagens.semear(), carregarRefs()]);
     await ArquivoJson.iniciar();
     if (!abrirDaUrl()) desenhar();
   } catch (e) {

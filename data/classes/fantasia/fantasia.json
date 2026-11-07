@@ -1,0 +1,712 @@
+{
+  "genero": "Fantasia",
+  "categorias": [
+    {
+      "nome": "Classes",
+      "cards": [
+        {
+          "nome": "Bárbaro",
+          "imagem": "",
+          "descricao": "Bárbaros são combatentes selvagens que utilizam a própria fúria para superar ferimentos, intimidar adversários e causar grandes quantidades de dano.",
+          "especialidade": "força bruta e resistência física.",
+          "limitacoes": "pouca capacidade de combate à distância, dependência de força física e menor eficiência em atividades intelectuais.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "FOR",
+            "Dado de vida": "1d12"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Fúria",
+              "descricao": "ativa um estado de fúria, recebendo +2 de dano em ataques físicos durante 3 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 2 — Resistência selvagem",
+              "descricao": "reduz em 2 o dano recebido durante 2 turnos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Golpe brutal",
+              "descricao": "realiza um ataque adicional de 1d8 de dano. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Fúria passa a conceder +3 de dano."
+            },
+            {
+              "nome": "Nível 5 — Grito aterrorizante",
+              "descricao": "inimigos próximos precisam superar dificuldade 14 em teste de CAR ou ficam intimidados por 2 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Resistência selvagem passa a reduzir 4 de dano."
+            },
+            {
+              "nome": "Nível 7 — Frenesi",
+              "descricao": "realiza um ataque de 1d12 + FOR. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Fúria dura 5 turnos."
+            },
+            {
+              "nome": "Nível 9 — Sobrevivente",
+              "descricao": "uma vez por combate, quando receber um golpe fatal, permanece com 1 de Vida. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Fúria indomável",
+              "descricao": "durante 3 turnos, recebe +4 de dano físico e reduz pela metade o dano físico recebido. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Bardo",
+          "imagem": "",
+          "descricao": "Bardos utilizam música, palavras e expressões artísticas para influenciar pessoas e alterar o rumo dos confrontos.",
+          "especialidade": "suporte, manipulação e inspiração.",
+          "limitacoes": "menor resistência física e dependência de concentração, voz ou instrumentos para determinadas habilidades.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "CAR",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Inspiração",
+              "descricao": "concede +2 em um teste de um aliado. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Palavras debilitantes",
+              "descricao": "um inimigo recebe -2 no próximo teste. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Melodia restauradora",
+              "descricao": "recupera 1d6 de Vida de um aliado. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Inspiração concede +3 no teste."
+            },
+            {
+              "nome": "Nível 5 — Canção de coragem",
+              "descricao": "até dois aliados recebem +2 em testes de resistência durante 3 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Melodia restauradora recupera 1d8 de Vida."
+            },
+            {
+              "nome": "Nível 7 — Encanto musical",
+              "descricao": "tenta encantar um alvo por 2 turnos. Teste resistido de CAR. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Inspiração pode beneficiar dois aliados."
+            },
+            {
+              "nome": "Nível 9 — Versatilidade",
+              "descricao": "recebe +2 em testes sociais de persuasão e enganação. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Sinfonia heroica",
+              "descricao": "todos os aliados próximos recuperam 1d8 de Vida e recebem +3 em seus próximos testes. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Clérigo",
+          "imagem": "",
+          "descricao": "Clérigos canalizam forças sagradas para proteger aliados, combater criaturas sobrenaturais e restaurar a Vida.",
+          "especialidade": "cura, proteção e poderes divinos.",
+          "limitacoes": "depende de Energia para utilizar seus poderes sobrenaturais e possui menor mobilidade que classes especializadas em agilidade.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "INT",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Cura divina",
+              "descricao": "recupera 1d6 de Vida de um alvo. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 2 — Proteção sagrada",
+              "descricao": "concede +2 de Defesa a um aliado durante 2 turnos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Luz purificadora",
+              "descricao": "causa 1d8 de dano sagrado a um inimigo. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Cura divina recupera 1d8 de Vida."
+            },
+            {
+              "nome": "Nível 5 — Purificação",
+              "descricao": "remove um efeito negativo simples, como veneno ou paralisia. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Proteção sagrada concede +3 de Defesa."
+            },
+            {
+              "nome": "Nível 7 — Barreira divina",
+              "descricao": "protege um aliado, absorvendo 1d10 de dano. Custo: 9 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Cura divina recupera 1d10 de Vida."
+            },
+            {
+              "nome": "Nível 9 — Presença sagrada",
+              "descricao": "recebe +2 em testes para resistir a efeitos sobrenaturais. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Milagre divino",
+              "descricao": "todos os aliados próximos recuperam 1d12 de Vida. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Druida",
+          "imagem": "",
+          "descricao": "Druidas dominam forças naturais, manipulam vegetação e podem assumir formas de animais.",
+          "especialidade": "natureza, transformação e controle ambiental.",
+          "limitacoes": "habilidades dependem frequentemente do ambiente natural. Transformações não permitem utilizar normalmente equipamentos e armas.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "INT",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Chicote de espinhos",
+              "descricao": "ataca um inimigo com raízes, causando 1d6 de dano. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 2 — Pele de casca",
+              "descricao": "reduz em 2 o dano recebido durante 2 turnos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Forma animal",
+              "descricao": "transforma-se em um animal pequeno, como lobo, raposa ou corvo. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Chicote de espinhos causa 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Enraizamento",
+              "descricao": "prende um inimigo no local por até 2 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Forma animal permite assumir animais de porte médio com capacidades físicas próprias."
+            },
+            {
+              "nome": "Nível 7 — Tempestade natural",
+              "descricao": "causa 1d10 de dano em uma área pequena. Custo: 9 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Pele de casca reduz 4 de dano."
+            },
+            {
+              "nome": "Nível 9 — Comunhão natural",
+              "descricao": "consegue comunicar-se com animais e identificar sinais naturais. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Avatar da natureza",
+              "descricao": "transforma-se em uma criatura natural poderosa durante 3 turnos, recebendo +4 FOR e +20 Vida temporária. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Guerreiro",
+          "imagem": "",
+          "descricao": "Guerreiros são especialistas em técnicas de combate, utilizando armas, armaduras e treinamento para dominar confrontos.",
+          "especialidade": "combate armado e versatilidade.",
+          "limitacoes": "não possui poderes sobrenaturais naturalmente e depende de treinamento, armas e equipamentos para atingir seu potencial.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributos principais": "FOR / AGI",
+            "Dado de vida": "1d10"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Ataque preciso",
+              "descricao": "recebe +2 no teste de ataque. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Aparar",
+              "descricao": "reduz em 1d6 o dano de um ataque recebido. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 3 — Golpe duplo",
+              "descricao": "realiza dois ataques consecutivos com sua arma. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Ataque preciso concede +3 no teste."
+            },
+            {
+              "nome": "Nível 5 — Postura defensiva",
+              "descricao": "recebe +3 de Defesa durante 2 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Aparar reduz 1d8 de dano."
+            },
+            {
+              "nome": "Nível 7 — Investida",
+              "descricao": "avança contra um inimigo e causa 1d10 + FOR de dano. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Golpe duplo recebe +2 de dano em cada ataque."
+            },
+            {
+              "nome": "Nível 9 — Veterano de batalha",
+              "descricao": "recebe +2 em testes relacionados a armas e técnicas de combate. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Mestre das armas",
+              "descricao": "durante 3 turnos, recebe +3 nos ataques e pode realizar um ataque adicional por turno. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Monge",
+          "imagem": "",
+          "descricao": "Monges aperfeiçoam o próprio corpo e espírito, utilizando movimentos precisos e técnicas de combate desarmado.",
+          "especialidade": "artes marciais, velocidade e concentração.",
+          "limitacoes": "depende de combate desarmado ou armas específicas de monge e possui menor eficiência com armaduras pesadas.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "AGI",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Punho concentrado",
+              "descricao": "causa 1d6 + AGI de dano desarmado. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Passo veloz",
+              "descricao": "recebe +3 em testes de esquiva durante 2 turnos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Rajada de golpes",
+              "descricao": "realiza três ataques desarmados, cada um causando 1d4 de dano. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Punho concentrado passa a causar 1d8 + AGI."
+            },
+            {
+              "nome": "Nível 5 — Deflexão",
+              "descricao": "reduz em 1d8 o dano de um ataque recebido. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Passo veloz concede +4 em testes de esquiva."
+            },
+            {
+              "nome": "Nível 7 — Golpe paralisante",
+              "descricao": "um inimigo precisa superar dificuldade 16 em teste de FOR ou fica paralisado por 1 turno. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Rajada de golpes passa a causar 1d6 por ataque."
+            },
+            {
+              "nome": "Nível 9 — Corpo disciplinado",
+              "descricao": "recebe +2 em testes para resistir a venenos e efeitos físicos prejudiciais. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Punho transcendental",
+              "descricao": "realiza um golpe concentrado que causa 2d12 + AGI de dano. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Paladino",
+          "imagem": "",
+          "descricao": "Paladinos são guerreiros guiados por juramentos, capazes de combinar técnicas marciais com poderes sagrados.",
+          "especialidade": "combate, proteção e energia sagrada.",
+          "limitacoes": "seus poderes dependem de Energia e seus juramentos podem impor restrições de comportamento, conforme a interpretação da classe.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributos principais": "FOR / CAR",
+            "Dado de vida": "1d10"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Golpe sagrado",
+              "descricao": "adiciona 1d6 de dano sagrado a um ataque. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 2 — Toque restaurador",
+              "descricao": "recupera 1d6 de Vida própria ou de um aliado. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 3 — Escudo da fé",
+              "descricao": "concede +3 de Defesa a um aliado por 2 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Golpe sagrado adiciona 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Aura de coragem",
+              "descricao": "aliados próximos recebem +2 em testes contra medo. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Toque restaurador recupera 1d8 de Vida."
+            },
+            {
+              "nome": "Nível 7 — Julgamento divino",
+              "descricao": "causa 1d10 de dano sagrado a um inimigo. Custo: 9 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Escudo da fé concede +4 de Defesa."
+            },
+            {
+              "nome": "Nível 9 — Presença protetora",
+              "descricao": "aliados próximos recebem +1 de Defesa. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Execução celestial",
+              "descricao": "um ataque recebe +2d12 de dano sagrado. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Patrulheiro",
+          "imagem": "",
+          "descricao": "Patrulheiros são exploradores experientes, especialistas em sobrevivência, rastreamento e eliminação de alvos.",
+          "especialidade": "caça, rastreamento e combate à distância.",
+          "limitacoes": "depende de munição para determinadas habilidades e possui menor eficiência em espaços muito fechados.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributos principais": "AGI / INT",
+            "Dado de vida": "1d10"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Mira precisa",
+              "descricao": "recebe +2 no próximo ataque à distância. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Rastreador",
+              "descricao": "identifica rastros, pegadas e sinais de passagem de criaturas. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Disparo perfurante",
+              "descricao": "causa 1d8 de dano e ignora 2 pontos de Defesa do alvo. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Mira precisa concede +3 no ataque."
+            },
+            {
+              "nome": "Nível 5 — Armadilha natural",
+              "descricao": "prepara uma armadilha que causa 1d8 de dano e prende o alvo. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Disparo perfurante causa 1d10 de dano."
+            },
+            {
+              "nome": "Nível 7 — Marca do caçador",
+              "descricao": "marca um inimigo, causando +2 de dano contra ele durante 3 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Armadilha natural causa 1d10 de dano."
+            },
+            {
+              "nome": "Nível 9 — Sobrevivência experiente",
+              "descricao": "recebe +2 em testes de rastreamento, orientação e sobrevivência. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Chuva de flechas",
+              "descricao": "realiza uma sequência de disparos que causa 3d8 de dano distribuído entre inimigos em uma área. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Ladino",
+          "imagem": "",
+          "descricao": "Ladinos utilizam astúcia, velocidade e técnicas sorrateiras para surpreender inimigos e superar obstáculos.",
+          "especialidade": "furtividade, precisão e infiltração.",
+          "limitacoes": "possui baixa resistência física e depende de posicionamento, surpresa e oportunidades para aproveitar seu potencial ofensivo.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "AGI",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Ataque furtivo",
+              "descricao": "causa +1d6 de dano quando ataca um inimigo desprevenido. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Passo silencioso",
+              "descricao": "recebe +3 em testes de furtividade durante uma ação. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Golpe nas sombras",
+              "descricao": "causa 1d8 de dano adicional contra um alvo que não percebeu sua presença. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Ataque furtivo recebe +1d8 de dano adicional."
+            },
+            {
+              "nome": "Nível 5 — Evasão",
+              "descricao": "reduz pela metade o dano de um ataque que conseguiu perceber. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Passo silencioso concede +4 em furtividade."
+            },
+            {
+              "nome": "Nível 7 — Lâmina envenenada",
+              "descricao": "adiciona 1d8 de dano de veneno ao próximo ataque. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Ataque furtivo recebe +1d10 de dano adicional."
+            },
+            {
+              "nome": "Nível 9 — Especialista em armadilhas",
+              "descricao": "recebe +2 em testes para identificar, desarmar e preparar armadilhas. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Assassinato perfeito",
+              "descricao": "contra um alvo desprevenido, realiza um ataque com +2d12 de dano adicional. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Feiticeiro",
+          "imagem": "",
+          "descricao": "Feiticeiros nascem com poderes mágicos, podendo manifestar fenômenos sobrenaturais sem depender de estudos arcanos.",
+          "especialidade": "magia inata e manipulação de energia.",
+          "limitacoes": "possui pouca resistência física, depende de Energia e pode ter dificuldade para controlar poderes muito intensos.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "CAR",
+            "Dado de vida": "1d6"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Rajada arcana",
+              "descricao": "dispara energia mágica, causando 1d6 de dano. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Escudo mágico",
+              "descricao": "recebe uma barreira que absorve 1d6 de dano. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 3 — Explosão elemental",
+              "descricao": "causa 1d8 de dano em uma pequena área. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Rajada arcana causa 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Manipulação mágica",
+              "descricao": "altera a aparência, temperatura ou pequenas propriedades de objetos e ambientes. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Escudo mágico absorve 1d10 de dano."
+            },
+            {
+              "nome": "Nível 7 — Teletransporte curto",
+              "descricao": "desloca-se instantaneamente para um ponto visível próximo. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Explosão elemental causa 1d10 de dano."
+            },
+            {
+              "nome": "Nível 9 — Afinidade mágica",
+              "descricao": "recebe +2 em testes relacionados à manipulação e ao controle de magia. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Cataclismo arcano",
+              "descricao": "libera uma grande explosão mágica que causa 2d12 de dano em uma área. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Bruxo",
+          "imagem": "",
+          "descricao": "Bruxos obtêm poderes por meio de pactos com entidades misteriosas, recebendo habilidades que muitas vezes possuem consequências.",
+          "especialidade": "pactos, maldições e magia sobrenatural.",
+          "limitacoes": "seus poderes estão ligados à entidade do pacto, que pode exigir favores, impor condições ou cobrar consequências narrativas.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "CAR",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Raio profano",
+              "descricao": "dispara energia sobrenatural, causando 1d6 de dano. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Maldição",
+              "descricao": "um inimigo recebe -2 em testes durante 2 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 3 — Drenar essência",
+              "descricao": "causa 1d8 de dano e recupera metade do dano causado em Vida. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Raio profano causa 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Olhos do oculto",
+              "descricao": "enxerga criaturas e manifestações sobrenaturais ocultas por meios mágicos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Maldição também reduz em 2 a Defesa do alvo."
+            },
+            {
+              "nome": "Nível 7 — Correntes sombrias",
+              "descricao": "prende um inimigo com correntes sobrenaturais por até 2 turnos. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Drenar essência causa 1d10 de dano."
+            },
+            {
+              "nome": "Nível 9 — Vínculo profano",
+              "descricao": "recebe +2 em testes para identificar entidades, maldições e fenômenos sobrenaturais. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Manifestação do pacto",
+              "descricao": "manifesta temporariamente o poder de sua entidade, causando 2d12 de dano sobrenatural em um alvo. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Mago",
+          "imagem": "",
+          "descricao": "Magos estudam as artes arcanas e utilizam conhecimentos adquiridos para manipular diferentes formas de magia.",
+          "especialidade": "conhecimento, feitiços e versatilidade mágica.",
+          "limitacoes": "baixa resistência física, dependência de Energia e necessidade de conhecimento para utilizar adequadamente suas magias mais complexas.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "INT",
+            "Dado de vida": "1d6"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Projétil mágico",
+              "descricao": "dispara um projétil arcano que causa 1d6 de dano. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 2 — Detectar magia",
+              "descricao": "identifica objetos, criaturas e efeitos mágicos próximos. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Explosão arcana",
+              "descricao": "causa 1d8 de dano em uma pequena área. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Projétil mágico causa 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Barreira arcana",
+              "descricao": "cria uma proteção que absorve 1d8 de dano. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Explosão arcana causa 1d10 de dano."
+            },
+            {
+              "nome": "Nível 7 — Portal dimensional",
+              "descricao": "cria uma passagem mágica entre dois pontos próximos conhecidos. Custo: 9 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Barreira arcana absorve 1d12 de dano."
+            },
+            {
+              "nome": "Nível 9 — Erudito arcano",
+              "descricao": "recebe +2 em testes de conhecimento, investigação e identificação mágica. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Domínio arcano",
+              "descricao": "libera uma sequência de energia mágica que causa 2d12 de dano. Custo: 10 Energia."
+            }
+          ]
+        },
+        {
+          "nome": "Artífice",
+          "imagem": "",
+          "descricao": "Artífices combinam conhecimento técnico, criatividade e magia para criar dispositivos, ferramentas e equipamentos especiais.",
+          "especialidade": "invenções, alquimia e tecnologia mágica.",
+          "limitacoes": "depende de materiais, ferramentas e tempo para fabricar dispositivos. Algumas invenções podem ser inutilizadas por danos ou falta de manutenção.",
+          "rotulo_atributos": "BASE",
+          "atributos": {
+            "Atributo principal": "INT",
+            "Dado de vida": "1d8"
+          },
+          "habilidades": [
+            {
+              "nome": "Nível 1 — Dispositivo explosivo",
+              "descricao": "lança um pequeno explosivo que causa 1d6 de dano. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 2 — Reparo improvisado",
+              "descricao": "restaura 1d6 de Vida de um construto ou equipamento danificado. Custo: 2 Energia."
+            },
+            {
+              "nome": "Nível 3 — Torreta automática",
+              "descricao": "constrói uma pequena torreta que causa 1d6 de dano por turno durante 2 turnos. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 4 — Aprimoramento",
+              "descricao": "Dispositivo explosivo causa 1d8 de dano."
+            },
+            {
+              "nome": "Nível 5 — Armadura modificada",
+              "descricao": "recebe +2 de Defesa durante 3 turnos. Custo: 4 Energia."
+            },
+            {
+              "nome": "Nível 6 — Aprimoramento",
+              "descricao": "Torreta automática causa 1d8 de dano por turno."
+            },
+            {
+              "nome": "Nível 7 — Arma experimental",
+              "descricao": "modifica uma arma para adicionar 1d8 de dano durante 3 ataques. Custo: 8 Energia."
+            },
+            {
+              "nome": "Nível 8 — Aprimoramento",
+              "descricao": "Armadura modificada concede +3 de Defesa."
+            },
+            {
+              "nome": "Nível 9 — Inventor experiente",
+              "descricao": "recebe +2 em testes de fabricação, reparação e identificação de mecanismos. Passiva."
+            },
+            {
+              "nome": "Nível 10 — Autômato de combate",
+              "descricao": "constrói um autômato temporário que causa 1d12 de dano por turno durante 3 turnos. Custo: 10 Energia."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

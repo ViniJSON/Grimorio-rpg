@@ -16,5 +16,11 @@
   "npcs": [
     "fantasia",
     "mundo-moderno"
+  ],
+  "racas": [
+    "fantasia"
+  ],
+  "classes": [
+    "fantasia"
   ]
 }

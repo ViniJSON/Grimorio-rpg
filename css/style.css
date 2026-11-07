@@ -447,3 +447,5 @@ input[type="date"].campo { color-scheme:dark; }
 .hab-uso small { color:#ffcc00; }
 .hab-uso button { padding:2px 10px; }
 .conta-link { white-space:nowrap; }
+.carga { margin-bottom:10px; }
+.carga small { display:block; margin-top:4px; }

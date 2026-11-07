@@ -1,18 +1,26 @@
 // Lê data/manifest.json e os JSONs de cada gênero, e desenha a página (bestiário, itens e NPCs).
 const SECAO = document.body.dataset.secao;
 
-// Campos extras de cada seção: [chave no JSON, rótulo, aparece também no card pequeno?]
+// Campos extras de cada seção: [chave no JSON, rótulo, aparece também no card pequeno?, mostrar lista em tópicos?]
 // Valores podem ser texto ou lista (["a","b"]). Campo ausente/vazio não aparece.
 const CAMPOS = {
   bestiario: [['ameaca', 'Nível de ameaça', true], ['fraquezas', 'Fraquezas'], ['resistencias', 'Resistências'], ['recompensas', 'Recompensas'], ['personalidade', 'Personalidade']],
   npcs: [['ocupacao', 'Ocupação', true], ['personalidade', 'Personalidade'], ['objetivos', 'Objetivos'], ['relacoes', 'Relações']],
+  classes: [['especialidade', 'Especialidade', true], ['limitacoes', 'Limitações']],
+  racas: [['traco', 'Traço principal', true], ['vantagens', 'Vantagens', false, true], ['desvantagens', 'Desvantagens', false, true]],
   itens: [['categoria', 'Categoria', true], ['raridade', 'Raridade', true], ['valor', 'Valor', true], ['peso', 'Peso'], ['efeitos', 'Efeitos']]
 };
 const preenchido = v => Array.isArray(v) ? v.length > 0 : v != null && v !== '';
 const campos = c => (CAMPOS[SECAO] || []).filter(([k]) => preenchido(c[k]));
 const fmt = v => Array.isArray(v) ? v.join(', ') : v;
 const camposMini = c => campos(c).filter(f => f[2]).map(([k, l]) => `<div class="campo-mini"><b>${esc(l)}:</b> ${esc(fmt(c[k]))}</div>`).join('');
-const camposFull = c => campos(c).map(([k, l]) => `<div class="info-label">${esc(l.toUpperCase())}:</div><div class="info-texto">${esc(fmt(c[k]))}</div>`).join('');
+const camposFull = c => campos(c).map(([k, l, , lista]) => `<div class="info-label">${esc(l.toUpperCase())}:</div>` +
+  (lista && Array.isArray(c[k]) ? `<ul class="habilidades">${c[k].map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : `<div class="info-texto">${esc(fmt(c[k]))}</div>`)).join('');
+// Blocos de atributos e habilidades (só aparecem se o card tiver conteúdo)
+const blocoAtributos = c => Object.keys(c.atributos || {}).length ? `<div class="info-label">${esc(c.rotulo_atributos || 'ATRIBUTOS')}:</div>
+    <div class="atributos">${Object.entries(c.atributos).map(([k, v]) => `<div><span>${esc(k.toUpperCase())}</span>${esc(v)}</div>`).join('')}</div>` : '';
+const blocoHabilidades = c => (c.habilidades || []).length ? `<div class="info-label">HABILIDADES:</div>
+    <ul class="habilidades">${c.habilidades.map(h => `<li><b>${esc(h.nome)}:</b> ${esc(h.descricao)}</li>`).join('')}</ul>` : '';
 const btnAdd = SECAO === 'itens' ? '<button type="button" class="btn-rolar btn-add-inv w-100 mt-3">＋ Adicionar à ficha</button>' : '';
 
 // Guarda os dados de cada card desenhado, para a ficha ampliada poder reabri-los pelo índice
@@ -26,10 +34,8 @@ const card = c => `
     <hr style="border-color:#444;margin:10px 0;">
     ${camposMini(c)}
     <div class="info-label">DESCRIÇÃO:</div><div class="info-texto">${esc(c.descricao)}</div>
-    <div class="info-label">${esc(c.rotulo_atributos || 'ATRIBUTOS')}:</div>
-    <div class="atributos">${Object.entries(c.atributos || {}).map(([k, v]) => `<div><span>${esc(k.toUpperCase())}</span>${esc(v)}</div>`).join('')}</div>
-    <div class="info-label">HABILIDADES:</div>
-    <ul class="habilidades">${(c.habilidades || []).map(h => `<li><b>${esc(h.nome)}:</b> ${esc(h.descricao)}</li>`).join('')}</ul>
+    ${blocoAtributos(c)}
+    ${blocoHabilidades(c)}
     ${btnAdd}
   </div>
 </div></div>`;
@@ -117,10 +123,8 @@ function abrirFicha(c, origem) {
     <hr style="border-color:#444;margin:12px 0;">
     <div class="info-label">DESCRIÇÃO:</div><div class="info-texto">${esc(c.descricao)}</div>
     ${camposFull(c)}
-    <div class="info-label">${esc(c.rotulo_atributos || 'ATRIBUTOS')}:</div>
-    <div class="atributos">${Object.entries(c.atributos || {}).map(([k, v]) => `<div><span>${esc(k.toUpperCase())}</span>${esc(v)}</div>`).join('')}</div>
-    <div class="info-label">HABILIDADES:</div>
-    <ul class="habilidades">${(c.habilidades || []).map(h => `<li><b>${esc(h.nome)}:</b> ${esc(h.descricao)}</li>`).join('')}</ul>${btnAdd}`;
+    ${blocoAtributos(c)}
+    ${blocoHabilidades(c)}${btnAdd}`;
   fichaEl.dataset.atual = registro.indexOf(c);
   fichaEl.querySelector('.ficha-info').scrollTop = 0;
   fichaEl.hidden = false;

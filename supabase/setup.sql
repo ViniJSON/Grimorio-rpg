@@ -1,3 +1,6 @@
+-- Grimório: tabelas, segurança (RLS) e bucket de imagens para o Supabase.
+-- Como usar: Supabase > SQL Editor > New query > cole tudo > Run. Pode rodar mais de uma vez sem problema.
+-- Cada pessoa só enxerga e altera as próprias linhas (user_id = auth.uid()).
 
 do $$
 declare t text;

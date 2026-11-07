@@ -48,18 +48,7 @@
             "Enorme (1,96 a 2,05 M)"
           ]
         },
-        {
-          "nome": "Idade",
-          "dado": 6,
-          "linhas": [
-            "Criança (entre 6 aos 14)",
-            "Adolescente (entre 15 aos 17)",
-            "Jovem adulto (entre 18 aos 21)",
-            "Adulto (entre 22 aos 59)",
-            "Idoso  (entre 60 aos 100)",
-            "Muito velho ( de 100 para frente)"
-          ]
-        },
+        
         {
           "nome": "Raça",
           "linhas": [

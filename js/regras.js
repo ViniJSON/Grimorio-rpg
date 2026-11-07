@@ -6,12 +6,28 @@ const Regras = (() => {
   const PONTOS_INICIAIS = 7, MAX_INICIAL = 4, NIVEL_MAX = 10;
   const CUSTO_ENERGIA = { 4: 2, 6: 4, 8: 8, 10: 9, 12: 10 };   // dado da habilidade -> custo de Energia
   const DESCANSO = { curto: 4, longo: 8 };                      // dado de recuperação (Vida e Energia)
+  const CARGA_BASE = 15;                                        // kg que qualquer personagem carrega no início
+
+  // Progressão base. "vida" é o dado-base daquele nível: a classe do personagem o SUBSTITUI pelo próprio dado de vida
+  // (ver "Dado de vida" no card da classe). "energia" é fixa. "pontos" = pontos de atributo a distribuir.
+  const PROGRESSAO = {
+    1: { xp: 0 },
+    2: { xp: 1200, vida: '1d4', energia: '1d4' },
+    3: { xp: 2400, vida: '1d4', pontos: 2 },
+    4: { xp: 3800, vida: '1d6', energia: '1d4' },
+    5: { xp: 4900 },
+    6: { xp: 7500, vida: '1d6', pontos: 2 },
+    7: { xp: 9000, vida: '1d8' },
+    8: { xp: 12000, energia: '1d4' },
+    9: { xp: 17000, pontos: 2 },
+    10: { xp: 20400, vida: '1d8', energia: '1d8' }
+  };
 
   // ---------- Estatísticas derivadas ----------
   const base = p => ({ vida: 10 + n(p.forca) * 2, defesa: 10 + n(p.agilidade), energia: 10 + n(p.inteligencia) });
   const derivados = p => {
-    const b = base(p), a = p.ajustes || {};
-    return { vida: b.vida + n(a.vida), defesa: b.defesa + n(a.defesa), energia: b.energia + n(a.energia) };
+    const b = base(p), a = p.ajustes || {}, g = p.progressao || {};
+    return { vida: b.vida + n(g.vida) + n(a.vida), defesa: b.defesa + n(a.defesa), energia: b.energia + n(g.energia) + n(a.energia) };
   };
 
   // Fichas antigas tinham Vida/Energia máximas e Defesa digitadas. Guardamos a diferença em "ajustes"
@@ -24,6 +40,13 @@ const Regras = (() => {
       const b = base(p);
       p.ajustes = { vida: p.vida.max - b.vida, energia: p.energia.max - b.energia, defesa: (p.defesa ?? b.defesa) - b.defesa };
     }
+    p.ajustes.carga = n(p.ajustes.carga);
+    p.nivel = Math.min(NIVEL_MAX, Math.max(1, n(p.nivel) || 1));
+    if (!p.progressao) {   // ficha de antes da progressão: o que já estava digitado vira ponto de partida
+      const gastos = ATRIBUTOS.reduce((s, [k]) => s + p[k], 0);
+      p.progressao = { vida: 0, energia: 0, pontos: p.nivel > 1 ? Math.max(0, gastos - PONTOS_INICIAIS) : 0, historico: [] };
+    }
+    p.xp = Math.max(n(p.xp), PROGRESSAO[p.nivel].xp);
     return aplicar(p);
   }
 
@@ -37,15 +60,17 @@ const Regras = (() => {
     return p;
   }
 
-  // Distribuição inicial: 7 pontos, no máximo 4 por atributo (só vale no nível 1). Devolve avisos, não bloqueia.
+  // Pontos de atributo: 7 no início + 2 em cada marco de nível (3, 6 e 9). Máximo de 4 por atributo só no nível 1.
+  // Devolve avisos; não bloqueia (o mestre manda).
   function validarCriacao(p) {
-    const gastos = ATRIBUTOS.reduce((t, [k]) => t + n(p[k]), 0), avisos = [];
-    if (n(p.nivel) <= 1) {
-      if (gastos > PONTOS_INICIAIS) avisos.push(`Pontos demais: ${gastos} de ${PONTOS_INICIAIS}.`);
-      if (gastos < PONTOS_INICIAIS) avisos.push(`Ainda restam ${PONTOS_INICIAIS - gastos} ponto(s) para distribuir.`);
-      ATRIBUTOS.forEach(([k, , nome]) => { if (n(p[k]) > MAX_INICIAL) avisos.push(`${nome} passa de ${MAX_INICIAL} no início.`); if (n(p[k]) < 0) avisos.push(`${nome} está negativo.`); });
-    }
-    return { gastos, restantes: PONTOS_INICIAIS - gastos, avisos };
+    const gastos = ATRIBUTOS.reduce((t, [k]) => t + n(p[k]), 0), orcamento = PONTOS_INICIAIS + n(p.progressao?.pontos), avisos = [];
+    if (gastos > orcamento) avisos.push(`Pontos demais: ${gastos} de ${orcamento}.`);
+    if (gastos < orcamento) avisos.push(`Ainda restam ${orcamento - gastos} ponto(s) para distribuir.`);
+    ATRIBUTOS.forEach(([k, , nome]) => {
+      if (n(p.nivel) <= 1 && n(p[k]) > MAX_INICIAL) avisos.push(`${nome} passa de ${MAX_INICIAL} no início.`);
+      if (n(p[k]) < 0) avisos.push(`${nome} está negativo.`);
+    });
+    return { gastos, orcamento, restantes: orcamento - gastos, avisos };
   }
 
   // ---------- Dados ----------
@@ -115,6 +140,44 @@ const Regras = (() => {
     return { lados, rolagemVida: rv, rolagemEnergia: re, ganhoVida: p.vida.atual - v0, ganhoEnergia: p.energia.atual - e0 };
   }
 
-  return { ATRIBUTOS, PONTOS_INICIAIS, MAX_INICIAL, NIVEL_MAX, CUSTO_ENERGIA, base, derivados, migrar, aplicar, validarCriacao, rolarDado, rolar, teste, iniciativa, ladosDe, custoEnergia, usarHabilidade, descansar };
+  // ---------- Experiência e níveis ----------
+  const xpDoNivel = nv => PROGRESSAO[nv]?.xp ?? null;
+  const xpProximo = p => xpDoNivel(n(p.nivel) + 1);
+  const podeSubir = p => n(p.nivel) < NIVEL_MAX && n(p.xp) >= xpProximo(p);
+  const dadoValido = d => { const m = String(d ?? '').trim().match(/^(\d+)d(\d+)$/i); return m && +m[1] >= 1 && +m[2] >= 2 ? `${+m[1]}d${+m[2]}` : null; };
+
+  // Sobe UM nível: rola Vida (dado da classe no lugar do dado-base) e Energia, soma os pontos de atributo e registra o histórico.
+  // Os ganhos entram nos máximos e também na Vida/Energia atuais. Altera p.
+  function subirNivel(p, dadoClasse, rng = Math.random) {
+    if (!podeSubir(p)) return { ok: false, motivo: n(p.nivel) >= NIVEL_MAX ? 'Já está no nível máximo.' : `Faltam ${xpProximo(p) - n(p.xp)} XP para o nível ${n(p.nivel) + 1}.` };
+    const nv = n(p.nivel) + 1, g = PROGRESSAO[nv], r = { ok: true, nivel: nv, pontos: g.pontos || 0 };
+    if (g.vida) { const dado = dadoValido(dadoClasse) || g.vida; r.vida = { dado, usouClasse: dado !== g.vida || !!dadoValido(dadoClasse), valor: rolar(dado, p, rng).total }; }
+    if (g.energia) r.energia = { dado: g.energia, valor: rolar(g.energia, p, rng).total };
+    p.progressao ||= { vida: 0, energia: 0, pontos: 0, historico: [] };
+    p.progressao.vida += r.vida?.valor || 0; p.progressao.energia += r.energia?.valor || 0; p.progressao.pontos += r.pontos;
+    p.progressao.historico = [...(p.progressao.historico || []), { nivel: nv, vida: r.vida?.valor || 0, dadoVida: r.vida?.dado || '', energia: r.energia?.valor || 0, pontos: r.pontos }];
+    p.nivel = nv;
+    p.vida.atual = n(p.vida.atual) + (r.vida?.valor || 0); p.energia.atual = n(p.energia.atual) + (r.energia?.valor || 0);
+    aplicar(p);
+    return r;
+  }
+
+  // ---------- Carga do inventário ----------
+  // "1,5 kg", "4 kg", "500 g", "1,5 kg cada": devolve kg, ou null se não houver número. Sem unidade = kg.
+  function pesoKg(txt) {
+    const m = String(txt ?? '').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)?/i);
+    if (!m) return null;
+    const v = parseFloat(m[1].replace(',', '.'));
+    return m[2] && m[2].toLowerCase() === 'g' ? v / 1000 : v;
+  }
+  function carga(p) {
+    let total = 0, semPeso = 0;
+    (p.inventario || []).forEach(i => { const kg = pesoKg(i.peso); if (kg === null) semPeso++; else total += kg * Math.max(1, n(i.qtd)); });
+    total = Math.round(total * 100) / 100;
+    const capacidade = CARGA_BASE + n(p.ajustes?.carga);
+    return { total, capacidade, semPeso, excedeu: total > capacidade, livre: Math.round((capacidade - total) * 100) / 100 };
+  }
+
+  return { PROGRESSAO, CARGA_BASE, xpDoNivel, xpProximo, podeSubir, subirNivel, pesoKg, carga, ATRIBUTOS, PONTOS_INICIAIS, MAX_INICIAL, NIVEL_MAX, CUSTO_ENERGIA, base, derivados, migrar, aplicar, validarCriacao, rolarDado, rolar, teste, iniciativa, ladosDe, custoEnergia, usarHabilidade, descansar };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Regras;
