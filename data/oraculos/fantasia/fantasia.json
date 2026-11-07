@@ -7,16 +7,6 @@
       "tabelas": [
         {
           "nome": "Gênero",
-          "linhas": [
-            "Masculino",
-            "Feminino",
-            "Masculino",
-            "Feminimo",
-            "Não binário"
-          ]
-        },
-        {
-          "nome": "Identidade de gênero",
           "dado": 8,
           "linhas": [
             "Homem cisgênero",
@@ -106,31 +96,6 @@
             "Obeso",
             "Levemente Músculoso",
             "Muito Músculoso"
-          ]
-        },
-        {
-          "nome": "Classe social",
-          "linhas": [
-            "Nobreza real",
-            "Alta nobreza",
-            "Baixa nobreza",
-            "Cavaleiro",
-            "Clero",
-            "Alta burguesia",
-            "Burguesia",
-            "Mercador",
-            "Artesão",
-            "Comerciante ambulante",
-            "Proprietário de terras",
-            "Camponês",
-            "Trabalhador rural",
-            "Trabalhador urbano",
-            "Soldado",
-            "Miserável",
-            "Servo",
-            "Escravo",
-            "Mendigo",
-            "Pária social"
           ]
         },
         {

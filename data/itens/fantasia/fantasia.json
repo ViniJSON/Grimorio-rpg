@@ -1021,14 +1021,2014 @@
             "habilidades": [],
             "rotulo_atributos": "PROPRIEDADES",
             "categoria": "Poções",
-            "valor": "1 moeda de ouro",
+            "valor": "2 moedas de ouro e 20 pratas",
             "peso": "0,2 kg",
             "raridade": "Comum",
             "efeitos": [
               "Sinta o poder do berserker."
             ]
+          },
+          {
+            "nome": "Poção de Invisibilidade",
+            "imagem": "img/itens/fantasia/pocao-invisibilidade.webp",
+            "descricao": "Um liquido branco, quase transparente",
+            "atributos": {
+              "Efeito": "Invisibilidade por 2 turnos"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "3 moedas de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Torna o usuário invisível por 2 turnos. Ataques encerram o efeito."
+            ]
+          },
+
+          {
+            "nome": "Poção de Visão Noturna",
+            "imagem": "img/itens/fantasia/pocao-visao-noturna.webp",
+            "descricao": "Um liquido roxo escuro meio azulado",
+            "atributos": {
+              "Efeito": "Visão noturna"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "40 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Permite enxergar no escuro por 10 minutos."
+            ]
+          },
+          {
+            "nome": "Poção de Respiração Aquática",
+            "imagem": "img/itens/fantasia/pocao-respiracao-aquatica.webp",
+            "descricao": "Um liquido esverdeado",
+            "atributos": {
+              "Efeito": "Respiração aquática"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Permite respirar debaixo d'água por 10 minutos."
+            ]
+          },
+          {
+            "nome": "Poção de Salto",
+            "imagem": "img/itens/fantasia/pocao-salto.webp",
+            "descricao": "Um liquido bem alaranjado",
+            "atributos": {
+              "Efeito": "Salto aprimorado"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 moeda de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Permite realizar saltos de até 8 metros por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Resistência ao Fogo",
+            "imagem": "img/itens/fantasia/pocao-resistencia-fogo.webp",
+            "descricao": "Líquido avermelhado e quente que envolve o corpo com uma proteção mágica contra altas temperaturas.",
+            "atributos": {
+              "Resistência": "Fogo"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Reduz em 5 pontos o dano de fogo recebido por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Resistência ao Gelo",
+            "imagem": "img/itens/fantasia/pocao-resistencia-gelo.webp",
+            "descricao": "Líquido azul-claro extremamente gelado que protege o organismo contra temperaturas congelantes.",
+            "atributos": {
+              "Resistência": "Gelo"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Reduz em 5 pontos o dano de gelo recebido por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Resistência Elétrica",
+            "imagem": "img/itens/fantasia/pocao-resistencia-eletrica.webp",
+            "descricao": "Líquido violeta que libera pequenas faíscas e protege o corpo contra descargas elétricas.",
+            "atributos": {
+              "Resistência": "Eletricidade"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Reduz em 5 pontos o dano elétrico recebido por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Regeneração",
+            "imagem": "img/itens/fantasia/pocao-regeneracao.webp",
+            "descricao": "Líquido vermelho intenso que estimula a regeneração natural do organismo.",
+            "atributos": {
+              "Cura": "3 pontos por turno"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 ouros e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Recupera 3 pontos de vida ao final de cada turno durante 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Concentração",
+            "imagem": "img/itens/fantasia/pocao-concentracao.webp",
+            "descricao": "Líquido prateado que estimula a mente e aprimora temporariamente a capacidade de raciocínio.",
+            "atributos": {
+              "Inteligência": "+3"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 moedas de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Concede +3 de Inteligência por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Coragem",
+            "imagem": "img/itens/fantasia/pocao-coragem.webp",
+            "descricao": "Líquido dourado que aquece o peito e elimina temporariamente a sensação de medo.",
+            "atributos": {
+              "Efeito": "Imunidade ao medo"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 moeda de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Torna o usuário imune ao medo e à intimidação por 5 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Purificação",
+            "imagem": "img/itens/fantasia/pocao-purificacao.webp",
+            "descricao": "Líquido branco e levemente luminoso, utilizado para eliminar impurezas e enfermidades do organismo.",
+            "atributos": {
+              "Efeito": "Remove doenças e infecções"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Remove doenças, infecções e efeitos negativos de origem natural."
+            ]
+          },
+          {
+            "nome": "Poção de Silêncio",
+            "imagem": "img/itens/fantasia/pocao-silencio.webp",
+            "descricao": "Líquido escuro e sem cheiro que envolve o usuário com uma aura capaz de abafar qualquer som produzido por ele.",
+            "atributos": {
+              "Efeito": "Silêncio"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 moeda de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Impede que o usuário produza sons por 3 turnos, facilitando a furtividade."
+            ]
+          },
+          {
+            "nome": "Poção de Mira",
+            "imagem": "img/itens/fantasia/pocao-mira.webp",
+            "descricao": "Líquido verde-claro que aguça temporariamente a visão e a precisão dos movimentos.",
+            "atributos": {
+              "Ataque à distância": "+3"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Concede +3 nos testes de ataque à distância por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Reflexos",
+            "imagem": "img/itens/fantasia/pocao-reflexos.webp",
+            "descricao": "Líquido roxo que acelera a percepção do usuário, permitindo reagir rapidamente aos perigos (cada turno rola um d20 + agilidade >= valor do ataque do oponente).",
+            "atributos": {
+              "Efeito": "Esquiva adicional"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 moedas de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Permite realizar uma esquiva adicional, por turno durante 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Encolhimento",
+            "imagem": "img/itens/fantasia/pocao-encolhimento.webp",
+            "descricao": "Líquido azul-esverdeado que altera temporariamente o tamanho do corpo.",
+            "atributos": {
+              "Efeito": "Reduz o tamanho pela metade"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 30 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Reduz o tamanho do usuário pela metade durante 5 minutos."
+            ]
+          },
+          {
+            "nome": "Poção de Gigantismo",
+            "imagem": "img/itens/fantasia/pocao-gigantismo.webp",
+            "descricao": "Líquido vermelho-escuro que provoca um crescimento mágico e temporário do corpo.",
+            "atributos": {
+              "Força": "+3"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "5 moedas de ouro",
+            "peso": "0,2 kg",
+            "raridade": "Rara",
+            "efeitos": [
+              "Dobra o tamanho do usuário e concede +5 de Força por 3 turnos."
+            ]
+          },
+          {
+            "nome": "Poção de Sorte",
+            "imagem": "img/itens/fantasia/pocao-sorte.webp",
+            "descricao": "Líquido dourado com pequenas partículas brilhantes que parecem mudar de posição constantemente.",
+            "atributos": {
+              "Efeito": "Repetir rolagem"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "3 ouros e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Rara",
+            "efeitos": [
+              "Permite repetir uma rolagem de dado por 3 turnos, mantendo o melhor resultado."
+            ]
+          },
+          {
+            "nome": "Poção de Sono",
+            "imagem": "img/itens/fantasia/pocao-sono.webp",
+            "descricao": "Líquido lilás que libera um aroma adocicado capaz de provocar sonolência intensa.",
+            "atributos": {
+              "Efeito": "Provoca sono profundo"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "1 ouro e 50 pratas",
+            "peso": "0,2 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Uma criatura atingida deve realizar um teste de resistência DT 15. Caso falhe, entra em sono profundo."
+            ]
+          },
+          {
+            "nome": "Poção de Explosão",
+            "imagem": "img/itens/fantasia/pocao-explosao.webp",
+            "descricao": "Frasco contendo um líquido instável e incandescente, que explode violentamente ao entrar em contato com uma superfície.",
+            "atributos": {
+              "Dano": "2d8"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Poções",
+            "valor": "2 moedas de ouro",
+            "peso": "0,3 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Ao ser arremessada, explode causando 2d8 de dano em uma pequena área."
+            ]
           }
         ]
+      },
+
+      {
+          "nome": "Munições",
+          "cards": [
+            {
+              "nome": "Flecha comum",
+              "imagem": "img/itens/fantasia/flecha-comum.webp",
+              "descricao": "Flecha simples de madeira com ponta de metal, utilizada em arcos convencionais.",
+              "atributos": {
+                "Dano": "1d6",
+                "Quantidade": "10 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "10 pratas",
+              "peso": "1 kg",
+              "raridade": "Comum",
+              "efeitos": []
+            },
+            {
+              "nome": "Flecha envenenada",
+              "imagem": "img/itens/fantasia/flecha-envenenada.webp",
+              "descricao": "Flecha com a ponta revestida por uma substância venenosa capaz de enfraquecer suas vítimas.",
+              "atributos": {
+                "Dano": "1d6, + 2 de veneno por 3 turnos",
+                "Efeito": "Envenenamento",
+                "Quantidade": "5 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "35 pratas",
+              "peso": "0,5 kg",
+              "raridade": "Incomum",
+              "efeitos": [
+                "A vítima atingida sofre envenenamento."
+              ]
+            },
+            {
+              "nome": "Flecha incendiária",
+              "imagem": "img/itens/fantasia/flecha-incendiaria.webp",
+              "descricao": "Flecha preparada com materiais inflamáveis na ponta, capaz de incendiar alvos e objetos atingidos.",
+              "atributos": {
+                "Dano": "1d6 + 2 queimadura por 2 turnos",
+                "Efeito": "Incêndio",
+                "Quantidade": "5 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "1 ouro e 5 pratas",
+              "peso": "0,5 kg",
+              "raridade": "Incomum",
+              "efeitos": [
+                "Pode incendiar objetos inflamáveis atingidos."
+              ]
+            },
+            {
+              "nome": "Dardos comuns",
+              "imagem": "img/itens/fantasia/dardo-comum.webp",
+              "descricao": "Pequenos projéteis metálicos utilizados em zarabatanas e outros equipamentos de arremesso.",
+              "atributos": {
+                "Dano": "1d4",
+                "Quantidade": "10 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "5 pratas",
+              "peso": "0,2 kg",
+              "raridade": "Comum",
+              "efeitos": []
+            },
+            {
+              "nome": "Dardos com veneno",
+              "imagem": "img/itens/fantasia/dardo-envenenado.webp",
+              "descricao": "Pequenos dardos com pontas contaminadas por veneno, utilizados para incapacitar alvos discretamente.",
+              "atributos": {
+                "Dano": "1d4 + 2 de veneno por 3 turnos",
+                "Efeito": "Envenenamento",
+                "Quantidade": "5 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "40 pratas",
+              "peso": "0,2 kg",
+              "raridade": "Incomum",
+              "efeitos": [
+                "A vítima atingida sofre envenenamento."
+              ]
+            },
+            {
+              "nome": "Virotes de besta",
+              "imagem": "img/itens/fantasia/virotes.webp",
+              "descricao": "Projéteis curtos e resistentes, desenvolvidos especialmente para serem utilizados em bestas.",
+              "atributos": {
+                "Dano": "1d8",
+                "Quantidade": "10 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "15 pratas",
+              "peso": "1 kg",
+              "raridade": "Comum",
+              "efeitos": []
+            },
+            {
+              "nome": "Virotes explosivos",
+              "imagem": "img/itens/fantasia/virotes-explosivos.webp",
+              "descricao": "Virotes especiais equipados com pequenas cargas explosivas, capazes de causar danos adicionais no impacto.",
+              "atributos": {
+                "Dano": "1d8",
+                "Dano explosivo": "1d6",
+                "Quantidade": "3 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "1 ouro",
+              "peso": "0,6 kg",
+              "raridade": "Rara",
+              "efeitos": [
+                "A explosão pode atingir criaturas próximas ao alvo."
+              ]
+            },
+            {
+              "nome": "Pedras de funda",
+              "imagem": "img/itens/fantasia/pedra.webp",
+              "descricao": "Pedras selecionadas e preparadas para serem lançadas com o auxílio de uma funda.",
+              "atributos": {
+                "Dano": "1d4",
+                "Quantidade": "20 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "2 pratas",
+              "peso": "1 kg",
+              "raridade": "Comum",
+              "efeitos": []
+            },
+            {
+              "nome": "Facas de arremesso",
+              "imagem": "img/itens/fantasia/faca-arremesso.webp",
+              "descricao": "Pequenas facas equilibradas para serem lançadas contra inimigos com precisão.",
+              "atributos": {
+                "Dano": "1d6",
+                "Quantidade": "3 unidades"
+              },
+              "habilidades": [],
+              "rotulo_atributos": "PROPRIEDADES",
+              "categoria": "Munições",
+              "valor": "25 pratas",
+              "peso": "0,6 kg",
+              "raridade": "Comum",
+              "efeitos": []
+         }
+      ]
+    },
+
+    {
+      "nome": "Escudos",
+      "cards": [
+              {
+          "nome": "Broquel de madeira",
+          "imagem": "img/itens/fantasia/broquel-de-madeira.webp",
+          "descricao": "Pequeno escudo circular feito de madeira reforçada, leve e fácil de manejar. Se receber um ataque com 20 natural, o escudo é destruido",
+          "atributos": {
+            "Defesa": "+1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "30 moedas de cobre",
+          "peso": "1 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo de madeira reforçado",
+          "imagem": "img/itens/fantasia/escudo-madeira-reforcado.webp",
+          "descricao": "Escudo construído com tábuas resistentes e reforços metálicos nas bordas.",
+          "atributos": {
+            "Defesa": "+2",
+            "Agilidade": "-0"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "20 pratas",
+          "peso": "3 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Broquel de ferro",
+          "imagem": "img/itens/fantasia/broquel-ferro.webp",
+          "descricao": "Escudo circular feito de ferro, ideal para aparar golpes rápidos.",
+          "atributos": {
+            "Defesa": "+3",
+            "Agilidade": "-1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "45 pratas",
+          "peso": "2 kg",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+
+        {
+          "nome": "Escudo de aço",
+          "imagem": "img/itens/fantasia/escudo-aco.webp",
+          "descricao": "Escudo resistente forjado em aço, capaz de suportar golpes poderosos.",
+          "atributos": {
+            "Defesa": "+4",
+            "Agilidade": "-2"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "1 moeda de ouro",
+          "peso": "5 kg",
+          "raridade": "Incomum",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo torre",
+          "imagem": "img/itens/fantasia/escudo-torre.webp",
+          "descricao": "Escudo enorme que cobre grande parte do corpo. Muito utilizado por soldados que precisam resistir a ataques constantes.",
+          "atributos": {
+            "Defesa": "+4",
+            "Agilidade": "-4"
+          },
+          "habilidades": [
+            {
+              "nome": "Muralha defensiva",
+              "descricao": "Pode ser fincado no chão para oferecer proteção enquanto o usuário permanece atrás dele."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "1 moedas de ouro e 40 de pratas",
+          "peso": "9 kg",
+          "raridade": "Incomum",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo com espinhos",
+          "imagem": "img/itens/fantasia/escudo-espinhos.webp",
+          "descricao": "Escudo de madeira equipado com espinhos na superfície, capaz de ferir inimigos durante bloqueios e investidas.",
+          "atributos": {
+            "Defesa": "+1",
+            "Dano": "1d4"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "30 moedas de prata",
+          "peso": "6 kg",
+          "raridade": "Incomum",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo de escamas",
+          "imagem": "img/itens/fantasia/escudo-escamas.webp",
+          "descricao": "Escudo construído com escamas resistentes de uma criatura monstruosa, formando uma superfície naturalmente protetora.",
+          "atributos": {
+            "Defesa": "+3",
+            "Agilidade": "-2"
+          },
+          "habilidades": [
+            {
+              "nome": "Resistência natural",
+              "descricao": "Oferece proteção contra ataques elementais de acordo com a criatura de origem."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "1 moeda de ouro e 5 pratas",
+          "peso": "4 kg",
+          "raridade": "Raro",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo do guardião",
+          "imagem": "img/itens/fantasia/escudo-guardiao.webp",
+          "descricao": "Escudo ornamentado com símbolos de proteção, tradicionalmente utilizado por guardiões de templos e fortalezas.",
+          "atributos": {
+            "Defesa": "+4",
+            "Agilidade": "-3"
+          },
+          "habilidades": [
+            {
+              "nome": "Proteção aliada",
+              "descricao": "Uma vez por combate, pode interceptar um ataque direcionado a um aliado próximo."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "2 moedas de ouro",
+          "peso": "6 kg",
+          "raridade": "Raro",
+          "efeitos": []
+        },
+        {
+          "nome": "Escudo de cristal",
+          "imagem": "img/itens/fantasia/escudo-cristal.webp",
+          "descricao": "Escudo formado por um cristal mágico extremamente resistente, que brilha suavemente quando recebe impactos.",
+          "atributos": {
+            "Defesa": "+3",
+            "Energia": "+2",
+            "Agilidade": "-3"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Escudos",
+          "valor": "3 moedas de ouro",
+          "peso": "3 kg",
+          "raridade": "Muito raro",
+          "efeitos": []
+        }
+      ]
+    },
+
+    {
+    "nome": "Itens de exploração",
+    "cards": [
+      {
+        "nome": "Corda de cânhamo",
+        "imagem": "img/itens/fantasia/corda-canhamo.webp",
+        "descricao": "Corda resistente feita de fibras vegetais trançadas, utilizada para escalar, amarrar objetos e atravessar terrenos difíceis. 10 metros",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "8 bronzes",
+        "peso": "3 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Tocha de madeira",
+        "imagem": "img/itens/fantasia/tocha-madeira.webp",
+        "descricao": "Pedaço de madeira revestido com tecido e resina inflamável, utilizado para iluminar cavernas e locais escuros.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "2 bronzes",
+        "peso": "500 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Pederneira",
+        "imagem": "img/itens/fantasia/pederneira.webp",
+        "descricao": "Pequeno conjunto de pedra e metal utilizado para produzir faíscas e acender fogueiras.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "5 bronzes",
+        "peso": "100 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Cantil de couro",
+        "imagem": "img/itens/fantasia/cantil-couro.webp",
+        "descricao": "Recipiente revestido de couro utilizado para transportar água durante viagens. Possui capacidade para aproximadamente um litro.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "1 moeda de prata",
+        "peso": "500 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Mochila de viajante",
+        "imagem": "img/itens/fantasia/mochila-tecido.webp",
+        "descricao": "Mochila resistente de tecido grosso e couro, equipada com compartimentos para transportar equipamentos e suprimentos. Capacidade 8 kg",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "5 moedas de prata",
+        "peso": "1,5 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Bússola antiga",
+        "imagem": "img/itens/fantasia/bussola.webp",
+        "descricao": "Instrumento metálico com uma agulha magnética que aponta para o norte, auxiliando viajantes na orientação.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "5 moedas de prata",
+        "peso": "200 g",
+        "raridade": "Incomum",
+        "efeitos": []
+      },
+      {
+        "nome": "Gancho de escalada",
+        "imagem": "img/itens/fantasia/gancho.webp",
+        "descricao": "Gancho de ferro com pontas afiadas, utilizado para prender cordas em superfícies elevadas e facilitar escaladas.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "10 moedas de prata",
+        "peso": "1 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Lanterna mágica",
+        "imagem": "img/itens/fantasia/lanterna-magica.webp",
+        "descricao": "Lanterna encantada que produz uma luz constante sem precisar de óleo ou chama, sendo muito útil em explorações prolongadas.",
+        "atributos": {},
+        "habilidades": [
+          {
+            "nome": "Luz eterna",
+            "descricao": "Produz iluminação constante enquanto possuir energia mágica armazenada."
+          }
+        ],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Itens de exploração",
+        "valor": "2 moedas de ouro",
+        "peso": "800 g",
+        "raridade": "Raro",
+        "efeitos": []
       }
+    ]
+  },
+  {
+    "nome": "Comidas e bebidas",
+    "cards": [
+      {
+        "nome": "Pão simples",
+        "imagem": "img/itens/fantasia/pao.webp",
+        "descricao": "Pão artesanal feito com farinha, água e fermento. Alimento básico encontrado em praticamente qualquer vila.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "2 bronzes",
+        "peso": "200 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Carne seca",
+        "imagem": "img/itens/fantasia/carne-seca.webp",
+        "descricao": "Carne salgada e desidratada para aumentar sua durabilidade, muito utilizada por aventureiros durante viagens.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "5 bronzes",
+        "peso": "300 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Queijo artesanal",
+        "imagem": "img/itens/fantasia/queijo-artesanal.webp",
+        "descricao": "Queijo produzido a partir de leite fresco, com textura firme e sabor característico.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "5 bronzes",
+        "peso": "250 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Maçã fresca",
+        "imagem": "img/itens/fantasia/maca.webp",
+        "descricao": "Fruta doce e suculenta, frequentemente comercializada em feiras e mercados.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "1 bronze",
+        "peso": "150 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Ração de viagem",
+        "imagem": "img/itens/fantasia/racao-viagem.webp",
+        "descricao": "Pacote de alimentos secos composto por pão duro, carne seca e frutas desidratadas. Preparado para alimentar uma pessoa durante um dia.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "1 moeda de prata",
+        "peso": "700 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Sopa de legumes",
+        "imagem": "img/itens/fantasia/sopa-legumes.webp",
+        "descricao": "Refeição quente preparada com vegetais, raízes e temperos. Muito servida em tavernas e estalagens.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "5 bronzes",
+        "peso": "400 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Vinho tinto",
+        "imagem": "img/itens/fantasia/vinho-tinto.webp",
+        "descricao": "Bebida alcoólica produzida a partir de uvas fermentadas, armazenada em uma pequena garrafa de vidro.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "8 moedas de prata",
+        "peso": "1 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Cerveja artesanal",
+        "imagem": "img/itens/fantasia/cerveja.webp",
+        "descricao": "Bebida fermentada produzida em pequenas cervejarias, bastante popular entre viajantes e trabalhadores.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "4 bronzes",
+        "peso": "500 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Elixir revigorante",
+        "imagem": "img/itens/fantasia/elixir.webp",
+        "descricao": "Bebida especial preparada com frutas e ervas medicinais, conhecida por ajudar a recuperar as forças após longas jornadas.",
+        "atributos": {
+          "Energia": "+2"
+        },
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "30 moedas de prata",
+        "peso": "300 g",
+        "raridade": "Incomum",
+        "efeitos": []
+      },
+      {
+        "nome": "Néctar feérico",
+        "imagem": "img/itens/fantasia/nectar-feerico.webp",
+        "descricao": "Bebida dourada produzida a partir do néctar de flores mágicas. Seu aroma suave é conhecido por despertar uma sensação de vitalidade sobrenatural.",
+        "atributos": {
+          "Vida": "+3",
+          "Energia": "+3"
+        },
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Comidas e bebidas",
+        "valor": "45 moedas de prata",
+        "peso": "250 g",
+        "raridade": "Raro",
+        "efeitos": []
+      }
+    ]
+  },
+  {
+    "nome": "Materiais",
+    "cards": [
+      {
+        "nome": "Madeira comum",
+        "imagem": "img/itens/fantasia/madeira.webp",
+        "descricao": "Pedaços de madeira extraídos de árvores comuns, utilizados na fabricação de ferramentas, móveis e equipamentos.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "3 bronzes",
+        "peso": "1 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Minério de ferro",
+        "imagem": "img/itens/fantasia/minerio-ferro.webp",
+        "descricao": "Fragmento de rocha contendo ferro em sua composição, utilizado por ferreiros na produção de armas e armaduras.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "8 bronzes",
+        "peso": "2 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Minério de cobre",
+        "imagem": "img/itens/fantasia/minerio-cobre.webp",
+        "descricao": "Rocha rica em cobre, utilizada na fabricação de utensílios, ferramentas e componentes metálicos.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "6 bronzes",
+        "peso": "2 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Couro curtido",
+        "imagem": "img/itens/fantasia/couro.webp",
+        "descricao": "Pele animal tratada por meio de processos de curtimento, tornando-se resistente e adequada para produzir armaduras, bolsas e equipamentos.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "1 moeda de prata",
+        "peso": "1 kg",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Tecido resistente",
+        "imagem": "img/itens/fantasia/tecido.webp",
+        "descricao": "Tecido grosso produzido com fibras reforçadas, utilizado na confecção de roupas, mantos e equipamentos de proteção.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "8 bronzes",
+        "peso": "500 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Ervas medicinais",
+        "imagem": "img/itens/fantasia/ervas-medicinais.webp",
+        "descricao": "Conjunto de plantas e folhas utilizadas na preparação de remédios, cataplasmas e poções de cura.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "1 moeda de prata e 5 bronzes",
+        "peso": "200 g",
+        "raridade": "Comum",
+        "efeitos": []
+      },
+      {
+        "nome": "Osso de criatura monstruosa",
+        "imagem": "img/itens/fantasia/osso.webp",
+        "descricao": "Osso extraído de uma criatura monstruosa, conhecido por sua resistência incomum e utilizado na fabricação de armas e equipamentos especiais.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "2 moedas de prata",
+        "peso": "1 kg",
+        "raridade": "Incomum",
+        "efeitos": []
+      },
+      {
+        "nome": "Escama de dragão",
+        "imagem": "img/itens/fantasia/escama-dragao.webp",
+        "descricao": "Escama extremamente resistente retirada do corpo de um dragão. É um material valioso utilizado na fabricação de armaduras e artefatos lendários.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "3 moedas de ouro",
+        "peso": "500 g",
+        "raridade": "Muito raro",
+        "efeitos": []
+      },
+      {
+        "nome": "Cristal arcano",
+        "imagem": "img/itens/fantasia/cristal-arcano.webp",
+        "descricao": "Fragmento de cristal que concentra energia mágica em seu interior. Utilizado na criação de artefatos, encantamentos e equipamentos mágicos.",
+        "atributos": {},
+        "habilidades": [],
+        "rotulo_atributos": "PROPRIEDADES",
+        "categoria": "Materiais",
+        "valor": "5 moedas de ouro",
+        "peso": "300 g",
+        "raridade": "Raro",
+        "efeitos": []
+      }
+    ]
+  },
+      {
+        "nome": "Acessórios",
+        "cards": [
+          {
+            "nome": "Anel de cobre",
+            "imagem": "img/itens/fantasia/anel-cobre.webp",
+            "descricao": "Anel simples de cobre polido, sem qualquer encantamento. Popular entre camponeses e mercadores.",
+            "atributos": {},
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "5 bronzes",
+            "peso": "50 g",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Anel de proteção",
+            "imagem": "img/itens/fantasia/anel-prata.webp",
+            "descricao": "Anel de prata com uma pequena runa gravada, que cria uma leve barreira mágica ao redor de quem o usa.",
+            "atributos": {
+              "Defesa": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "50 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Anel da força",
+            "imagem": "img/itens/fantasia/anel-ferro.webp",
+            "descricao": "Anel de ferro escuro que pulsa levemente, fortalecendo os músculos de quem o usa.",
+            "atributos": {
+              "Força": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "2 ouros",
+            "peso": "50 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Anel da agilidade",
+            "imagem": "img/itens/fantasia/anel-agilidade.webp",
+            "descricao": "Anel esguio de prata verde-clara que deixa os movimentos do usuário mais leves e rápidos.",
+            "atributos": {
+              "Agilidade": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "2 ouros",
+            "peso": "50 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Anel do vigor",
+            "imagem": "img/itens/fantasia/anel-vigor.webp",
+            "descricao": "Anel dourado com uma gema rubi no centro, que fortalece o corpo de quem o usa.",
+            "atributos": {
+              "Vida": "+3"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "4 ouros",
+            "peso": "50 g",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Colar de dentes",
+            "imagem": "img/itens/fantasia/colar-dentes.webp",
+            "descricao": "Colar feito com dentes de lobo e cordão de couro. Dizem que intimida quem o vê.",
+            "atributos": {
+              "Intimidação": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "25 pratas",
+            "peso": "100 g",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Colar de pérola",
+            "imagem": "img/itens/fantasia/colar-perola.webp",
+            "descricao": "Colar elegante de pérolas legítimas, usado por nobres e mercadores que querem causar boa impressão.",
+            "atributos": {
+              "Persuasão": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "3 ouros",
+            "peso": "80 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Amuleto de ervas",
+            "imagem": "img/itens/fantasia/amuleto-ervas.webp",
+            "descricao": "Pequeno amuleto de madeira com ervas aromáticas seladas dentro, usado por herbalistas para se proteger de toxinas.",
+            "atributos": {
+              "Resistência a veneno": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "1 ouro",
+            "peso": "100 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Amuleto da sorte",
+            "imagem": "img/itens/fantasia/amuleto-sorte.webp",
+            "descricao": "Trevo de quatro folhas preservado em resina e preso a uma corrente fina de ouro.",
+            "atributos": {},
+            "habilidades": [
+              {
+                "nome": "Golpe de sorte",
+                "descricao": "Uma vez por dia, pode repetir uma rolagem de dado e ficar com o melhor resultado."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "4 ouros",
+            "peso": "60 g",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Amuleto do guardião",
+            "imagem": "img/itens/fantasia/medalhao-aco.webp",
+            "descricao": "Medalhão de aço com o símbolo de um escudo, abençoado por sacerdotes de um templo antigo.",
+            "atributos": {
+              "Defesa": "+1"
+            },
+            "habilidades": [
+              {
+                "nome": "Barreira sagrada",
+                "descricao": "Uma vez por combate, absorve até 5 pontos de dano de um único ataque."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "6 ouros",
+            "peso": "150 g",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Bracelete de couro",
+            "imagem": "img/itens/fantasia/bracelete-couro.webp",
+            "descricao": "Bracelete resistente de couro trançado com tira de proteção para o antebraço, muito usado por arqueiros.",
+            "atributos": {
+              "Ataque à distância": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "25 pratas",
+            "peso": "100 g",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Bracelete rúnico",
+            "imagem": "img/itens/fantasia/bracelete-runico.webp",
+            "descricao": "Bracelete de prata com runas arcanas gravadas, que guarda energia mágica para o seu portador.",
+            "atributos": {
+              "Energia": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Acessórios",
+            "valor": "3 ouros e 20 pratas",
+            "peso": "150 g",
+            "raridade": "Incomum",
+            "efeitos": []
+          }
+        ]
+      },
+      {
+        "nome": "Equipamentos",
+        "cards": [
+          {
+            "nome": "Capuz de couro",
+            "imagem": "img/itens/fantasia/capuz-couro.webp",
+            "descricao": "Capuz simples de couro curtido que protege cabeça e pescoço sem atrapalhar a visão.",
+            "atributos": {
+              "Defesa": "+1",
+              "Agilidade": "-0"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "15 pratas",
+            "peso": "0,5 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Elmo de ferro",
+            "imagem": "img/itens/fantasia/elmo-ferro.webp",
+            "descricao": "Elmo aberto de ferro, oferece boa proteção ao crânio.",
+            "atributos": {
+              "Defesa": "+1",
+              "Agilidade": "-1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "1 ouro e 10 pratas",
+            "peso": "2 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Elmo de chifres",
+            "imagem": "img/itens/fantasia/elmo-chifres.webp",
+            "descricao": "Elmo de ferro com um par de chifres de boi, popular entre guerreiros bárbaros. Mais estiloso do que prático.",
+            "atributos": {
+              "Defesa": "+1",
+              "Agilidade": "-1",
+              "Intimidação": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "2 ouros",
+            "peso": "2,5 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Elmo fechado de aço",
+            "imagem": "img/itens/fantasia/elmo-aco-viseira.webp",
+            "descricao": "Elmo completo de aço com viseira articulada, cobrindo toda a cabeça.",
+            "atributos": {
+              "Defesa": "+2",
+              "Agilidade": "-2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "3 ouros",
+            "peso": "3,5 kg",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Botas de viajante",
+            "imagem": "img/itens/fantasia/botas-couro.webp",
+            "descricao": "Botas de couro macio feitas para longas caminhadas por qualquer terreno.",
+            "atributos": {
+              "Agilidade": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "20 pratas",
+            "peso": "1 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Botas de ferro",
+            "imagem": "img/itens/fantasia/botas-ferro.webp",
+            "descricao": "Botas reforçadas com placas de ferro, ótimas contra golpes baixos e pisões.",
+            "atributos": {
+              "Defesa": "+1",
+              "Agilidade": "-1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "1 ouro",
+            "peso": "3 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Botas silenciosas",
+            "imagem": "img/itens/fantasia/botas-couro-silenciosa.webp",
+            "descricao": "Botas de couro com solas encantadas que abafam completamente o som dos passos.",
+            "atributos": {
+              "Agilidade": "+1",
+              "Furtividade": "+2"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "3 ouros",
+            "peso": "1 kg",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Luvas de couro reforçado",
+            "imagem": "img/itens/fantasia/luvas-couro.webp",
+            "descricao": "Luvas resistentes com reforços nos nós dos dedos.",
+            "atributos": {
+              "Defesa": "+1",
+              "Agilidade": "-0"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "18 pratas",
+            "peso": "0,3 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Manoplas de aço",
+            "imagem": "img/itens/fantasia/manopla-aco.webp",
+            "descricao": "Luvas articuladas de aço que protegem as mãos e permitem socos devastadores.",
+            "atributos": {
+              "Defesa": "+1",
+              "Dano": "1d4",
+              "Agilidade": "-1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "1 ouro e 20 pratas",
+            "peso": "2 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Luvas de arqueiro",
+            "imagem": "img/itens/fantasia/luva-arqueiro.webp",
+            "descricao": "Luvas finas de couro com os dedos reforçados, para proteger quem puxa a corda do arco.",
+            "atributos": {
+              "Ataque à distância": "+1"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "1 ouro",
+            "peso": "0,2 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Manto de viajante",
+            "imagem": "img/itens/fantasia/manto-viajante.webp",
+            "descricao": "Manto grosso de lã que protege contra chuva, vento e frio leve.",
+            "atributos": {
+              "Defesa": "+0"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "20 pratas",
+            "peso": "1 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Protege contra clima ruim e frio leve"
+            ]
+          },
+          {
+            "nome": "Manto de peles",
+            "imagem": "img/itens/fantasia/manto-peles.webp",
+            "descricao": "Manto pesado feito com peles de lobo e urso, usado por caçadores de regiões geladas.",
+            "atributos": {
+              "Defesa": "+1",
+              "Resistência ao Gelo": "-2 de dano"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "1 ouro e 25 pratas",
+            "peso": "3 kg",
+            "raridade": "Incomum",
+            "efeitos": []
+          },
+          {
+            "nome": "Manto élfico",
+            "imagem": "img/itens/fantasia/manto-elfico.webp",
+            "descricao": "Manto leve de tecido prateado que muda de cor conforme o ambiente ao redor.",
+            "atributos": {
+              "Agilidade": "+2",
+              "Furtividade": "+2"
+            },
+            "habilidades": [
+              {
+                "nome": "Camuflagem",
+                "descricao": "Em ambientes naturais, inimigos têm desvantagem para perceber o usuário quando ele está parado."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Equipamentos",
+            "valor": "6 ouros",
+            "peso": "0,5 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          }
+        ]
+      },
+      {
+        "nome": "Ferramentas",
+        "cards": [
+          {
+            "nome": "Martelo de ferreiro",
+            "imagem": "img/itens/fantasia/martelo-ferreiro.webp",
+            "descricao": "Martelo pesado de cabo curto, usado para forjar e consertar peças de metal. Também serve como arma improvisada.",
+            "atributos": {
+              "Dano": "1d6"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "40 pratas",
+            "peso": "2 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Pá de ferro",
+            "imagem": "img/itens/fantasia/pa-ferro.webp",
+            "descricao": "Pá robusta com cabo de madeira, ótima para cavar buracos, trincheiras e covas.",
+            "atributos": {
+              "Dano": "1d4"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "15 pratas",
+            "peso": "2 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Picareta",
+            "imagem": "img/itens/fantasia/picareta.webp",
+            "descricao": "Ferramenta de mineração com ponta de ferro, capaz de quebrar pedras e extrair minérios.",
+            "atributos": {
+              "Dano": "1d6"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "35 pratas",
+            "peso": "3 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Necessária para extrair minérios"
+            ]
+          },
+          {
+            "nome": "Alicate de ferreiro",
+            "imagem": "img/itens/fantasia/alicate-ferreiro.webp",
+            "descricao": "Alicate grande de ferro, usado para segurar metal quente e dobrar arames.",
+            "atributos": {},
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "12 pratas",
+            "peso": "0,6 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Kit de reparo",
+            "imagem": "img/itens/fantasia/kit-reparo.webp",
+            "descricao": "Conjunto com pregos, linha, cola de resina e pequenas peças de metal para consertar equipamentos em campo.",
+            "atributos": {
+              "Usos": "5"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "1 ouro e 10 pratas",
+            "peso": "1,5 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "Repara equipamento danificado durante uma pausa de 10 minutos"
+            ]
+          },
+          {
+            "nome": "Serra manual",
+            "imagem": "img/itens/fantasia/cerrote.webp",
+            "descricao": "Serra de lâmina dentada para cortar madeira e outros materiais.",
+            "atributos": {},
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "20 pratas",
+            "peso": "1 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Machado de lenhador",
+            "imagem": "img/itens/fantasia/machado-lenhador.webp",
+            "descricao": "Machado de cabo longo, ideal para derrubar árvores. Também pode ser usado em combate.",
+            "atributos": {
+              "Dano": "1d8"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "1 ouro e 5 pratas",
+            "peso": "3,5 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          },
+          {
+            "nome": "Pé de cabra",
+            "imagem": "img/itens/fantasia/pe-de-cabra.webp",
+            "descricao": "Barra de ferro curva, usada para forçar portas, caixas e tampas.",
+            "atributos": {
+              "Dano": "1d4"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "18 pratas",
+            "peso": "2 kg",
+            "raridade": "Comum",
+            "efeitos": [
+              "+2 em testes de força para arrombar portas e baús"
+            ]
+          },
+          {
+            "nome": "Kit de arrombamento",
+            "imagem": "img/itens/fantasia/kit-arrombamento.webp",
+            "descricao": "Conjunto de gazuas e pequenas chaves de metal para abrir fechaduras.",
+            "atributos": {
+              "Usos": "10"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "2 ouros",
+            "peso": "0,3 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "+2 em testes para abrir fechaduras"
+            ]
+          },
+          {
+            "nome": "Kit de alquimia",
+            "imagem": "img/itens/fantasia/kit-alquimia.webp",
+            "descricao": "Pilão, almofariz e frascos de vidro usados para preparar poções e misturas alquímicas.",
+            "atributos": {},
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "3 ouros",
+            "peso": "2,5 kg",
+            "raridade": "Incomum",
+            "efeitos": [
+              "Necessário para criar poções"
+            ]
+          },
+          {
+            "nome": "Kit de pesca",
+            "imagem": "img/itens/fantasia/kit-pesca.webp",
+            "descricao": "Vara de bambu, anzóis de osso, linha trançada e iscas.",
+            "atributos": {},
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Ferramentas",
+            "valor": "10 pratas",
+            "peso": "1 kg",
+            "raridade": "Comum",
+            "efeitos": []
+          }
+        ]
+      },
+      {
+        "nome": "Artefatos mágicos",
+        "cards": [
+          {
+            "nome": "Orbe de luz",
+            "imagem": "img/itens/fantasia/orbe-luz.webp",
+            "descricao": "Esfera de cristal que flutua sobre a mão do usuário e ilumina o ambiente com uma luz branca e suave.",
+            "atributos": {
+              "Alcance da luz": "10 metros"
+            },
+            "habilidades": [
+              {
+                "nome": "Brilho ofuscante",
+                "descricao": "Uma vez por dia, pode emitir um clarão que deixa criaturas próximas cegas por 1 turno (teste DT 14)."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "6 ouros",
+            "peso": "0,5 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Bolsa dimensional",
+            "imagem": "img/itens/fantasia/bolsa-dimensional.webp",
+            "descricao": "Bolsa de couro com o interior ligado a um espaço mágico, guardando muito mais do que aparenta.",
+            "atributos": {
+              "Capacidade": "30 kg"
+            },
+            "habilidades": [
+              {
+                "nome": "Peso reduzido",
+                "descricao": "O conteúdo da bolsa não pesa nada para o portador."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "15 ouros",
+            "peso": "0,5 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Cajado das chamas",
+            "imagem": "img/itens/fantasia/cajado-chamas.webp",
+            "descricao": "Cajado de carvalho negro com uma gema de fogo na ponta, que lança rajadas flamejantes.",
+            "atributos": {
+              "Dano": "2d6 de fogo",
+              "Cargas": "5"
+            },
+            "habilidades": [
+              {
+                "nome": "Rajada de fogo",
+                "descricao": "Gasta 1 carga para lançar uma rajada em um alvo a até 15 metros. Pode incendiar objetos inflamáveis."
+              },
+              {
+                "nome": "Recarga",
+                "descricao": "Recupera 1 carga a cada dia."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "12 ouros",
+            "peso": "2 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Varinha de gelo",
+            "imagem": "img/itens/fantasia/varinha-gelo.webp",
+            "descricao": "Varinha branca coberta por uma fina camada de geada, que dispara estilhaços de gelo.",
+            "atributos": {
+              "Dano": "1d8 de gelo",
+              "Cargas": "4"
+            },
+            "habilidades": [
+              {
+                "nome": "Congelar",
+                "descricao": "Alvo atingido deve passar em um teste de agilidade DT 13 ou perde o próximo movimento. Consumo 1 de cargas. Recupera 1 carga por dia"
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "10 ouros",
+            "peso": "0,3 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Espelho da verdade",
+            "imagem": "img/itens/fantasia/espelho-magico.webp",
+            "descricao": "Pequeno espelho de mão com moldura de prata, que revela a aparência real de quem se reflete nele.",
+            "atributos": {},
+            "habilidades": [
+              {
+                "nome": "Revelação",
+                "descricao": "Revela ilusões, disfarces e criaturas metamorfas que se refletirem nele."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "12 ouros",
+            "peso": "0,8 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Chave esqueleto arcana",
+            "imagem": "img/itens/fantasia/chave-esqueleto.webp",
+            "descricao": "Chave de ferro negro com símbolos mágicos que se molda à fechadura em que é inserida.",
+            "atributos": {
+              "Usos por dia": "1"
+            },
+            "habilidades": [
+              {
+                "nome": "Abertura mágica",
+                "descricao": "Abre qualquer fechadura não mágica sem precisar de teste.Para fechaduras mágicas dt:17, d20 puro"
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "15 ouros",
+            "peso": "0,1 kg",
+            "raridade": "Raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Sino do chamado",
+            "imagem": "img/itens/fantasia/sino-chamado.webp",
+            "descricao": "Sino de bronze que, ao ser tocado, convoca um espírito protetor para ajudar o seu dono.",
+            "atributos": {
+              "Usos por dia": "1"
+            },
+            "habilidades": [
+              {
+                "nome": "Espírito guardião",
+                "descricao": "Invoca um espírito que luta ao lado do usuário por 3 turnos, causando 1d8 de dano por turno. Espírito com 20 de vida e defesa: 16"
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "25 ouros",
+            "peso": "0,6 kg",
+            "raridade": "Muito raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Cálice da vida",
+            "imagem": "img/itens/fantasia/calice-da-vida.webp",
+            "descricao": "Cálice de ouro branco gravado com símbolos de cura. Qualquer líquido posto nele ganha poder restaurador.",
+            "atributos": {
+              "Cura": "3d4 de vida"
+            },
+            "habilidades": [
+              {
+                "nome": "Bênção líquida",
+                "descricao": "Uma vez por dia, transforma água em uma poção que recupera 3d4 pontos de vida."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "30 ouros",
+            "peso": "1 kg",
+            "raridade": "Muito raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Capa das sombras",
+            "imagem": "img/itens/fantasia/capa-sombras.webp",
+            "descricao": "Capa escura tecida com fios de sombra, que faz o usuário desaparecer na escuridão.",
+            "atributos": {
+              "Furtividade": "+4"
+            },
+            "habilidades": [
+              {
+                "nome": "Passo sombrio",
+                "descricao": "Uma vez por dia, pode se teleportar até 10 metros para qualquer ponto que esteja na sombra."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "28 ouros",
+            "peso": "0,5 kg",
+            "raridade": "Muito raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Coroa do sábio",
+            "imagem": "img/itens/fantasia/coroa-safira.webp",
+            "descricao": "Coroa de prata cravejada de safiras, que expande a mente de quem a veste.",
+            "atributos": {
+              "Inteligência": "+3",
+              "Energia": "+3"
+            },
+            "habilidades": [],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "35 ouros",
+            "peso": "0,8 kg",
+            "raridade": "Muito raro",
+            "efeitos": []
+          },
+          {
+            "nome": "Ampulheta temporal",
+            "imagem": "img/itens/fantasia/ampulheta-temporal.webp",
+            "descricao": "Ampulheta de cristal com areia dourada que se move de forma estranha e distorce o fluxo do tempo.",
+            "atributos": {
+              "Usos por semana": "1"
+            },
+            "habilidades": [
+              {
+                "nome": "Parar o tempo",
+                "descricao": "O usuário age duas vezes seguidas em um mesmo turno uma vez, e depois a ampulheta fica inutilizável por 5 dias."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "60 ouros",
+            "peso": "0,7 kg",
+            "raridade": "Lendário",
+            "efeitos": []
+          },
+          {
+            "nome": "Olho do vidente",
+            "imagem": "img/itens/fantasia/olho-vidente.webp",
+            "descricao": "Gema esférica semelhante a um olho humano, que mostra imagens de lugares distantes e eventos futuros. Uma vez por dia",
+            "atributos": {
+              "Alcance": "1 km"
+            },
+            "habilidades": [
+              {
+                "nome": "Visão distante",
+                "descricao": "Permite enxergar qualquer lugar a até 1 km de distância, mesmo através de paredes."
+              }
+            ],
+            "rotulo_atributos": "PROPRIEDADES",
+            "categoria": "Artefatos mágicos",
+            "valor": "80 ouros",
+            "peso": "0,4 kg",
+            "raridade": "Lendário",
+            "efeitos": []
+          }
+        ]
+      },
+
+      {
+  "nome": "Livros e pergaminhos",
+  "cards": [
+        {
+          "nome": "Pergaminho em branco",
+          "imagem": "img/itens/fantasia/pergaminho-branco.webp",
+          "descricao": "Folha de pergaminho de boa qualidade, pronta para receber anotações, mapas ou feitiços.",
+          "atributos": {},
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "1 prata",
+          "peso": "50 g",
+          "raridade": "Comum",
+          "efeitos": []
+        },
+        {
+          "nome": "Mapa da região",
+          "imagem": "img/itens/fantasia/mapa-regiao.webp",
+          "descricao": "Mapa desenhado à mão com estradas, vilas, rios e algumas masmorras conhecidas.",
+          "atributos": {},
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "8 pratas",
+          "peso": "100 g",
+          "raridade": "Comum",
+          "efeitos": [
+            "+2 em testes de orientação na região"
+          ]
+        },
+        {
+          "nome": "Livro de receitas alquímicas",
+          "imagem": "img/itens/fantasia/livro-receitas-alquimicas.webp",
+          "descricao": "Caderno com fórmulas básicas de poções, escrito por um alquimista aposentado.",
+          "atributos": {},
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "1 ouro e 20 pratas",
+          "peso": "1 kg",
+          "raridade": "Incomum",
+          "efeitos": [
+            "+2 em testes para criar poções comuns"
+          ]
+        },
+        {
+          "nome": "Pergaminho de Bola de Fogo",
+          "imagem": "img/itens/fantasia/pergaminho-feitico.webp",
+          "descricao": "Pergaminho com um feitiço de fogo selado. Deve ser lido em voz alta, e sotaque caipira estraga o efeito.",
+          "atributos": {
+            "Dano": "2d8 de fogo",
+            "Usos": "1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "3 ouros",
+          "peso": "100 g",
+          "raridade": "Incomum",
+          "efeitos": [
+            "Explode em uma pequena área a até 15 metros",
+            "O pergaminho se desfaz após o uso"
+          ]
+        },
+        {
+          "nome": "Pergaminho de Cura",
+          "imagem": "img/itens/fantasia/pergaminho-feitico.webp",
+          "descricao": "Pergaminho com um feitiço de cura, que brilha em dourado quando lido.",
+          "atributos": {
+            "Cura": "3d4 de vida",
+            "Usos": "1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "2 ouros e 20 pratas",
+          "peso": "100 g",
+          "raridade": "Incomum",
+          "efeitos": [
+            "Recupera 3d4 pontos de vida de quem for tocado",
+            "O pergaminho se desfaz após o uso"
+          ]
+        },
+        {
+          "nome": "Pergaminho de Proteção",
+          "imagem": "img/itens/fantasia/pergaminho-feitico.webp",
+          "descricao": "Pergaminho com um círculo rúnico que cria uma barreira mágica ao redor do leitor.",
+          "atributos": {
+            "Defesa": "+3",
+            "Usos": "1"
+          },
+          "habilidades": [],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "2 ouros",
+          "peso": "100 g",
+          "raridade": "Incomum",
+          "efeitos": [
+            "Concede +3 de Defesa por 3 turnos, uma vez por dia",
+            "O pergaminho se desfaz após o uso"
+          ]
+        },
+        {
+          "nome": "Bestiário do aventureiro",
+          "imagem": "img/itens/fantasia/bestiario.webp",
+          "descricao": "Livro ilustrado com anotações sobre monstros comuns, seus pontos fracos e hábitos.",
+          "atributos": {},
+          "habilidades": [
+            {
+              "nome": "Conhecimento monstruoso",
+              "descricao": "+2 em testes para identificar criaturas e descobrir suas fraquezas."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "2 ouros",
+          "peso": "1,5 kg",
+          "raridade": "Incomum",
+          "efeitos": []
+        },
+        {
+          "nome": "Grimório do aprendiz",
+          "imagem": "img/itens/fantasia/grimorio-aprendiz.webp",
+          "descricao": "Livro de magias simples com feitiços básicos, usado por jovens magos em treinamento.",
+          "atributos": {
+            "Energia": "+2"
+          },
+          "habilidades": [
+            {
+              "nome": "Canalizar",
+              "descricao": "Permite lançar feitiços sem precisar de um cajado."
+            }
+          ],
+          "rotulo_atributos": "PROPRIEDADES",
+          "categoria": "Livros e pergaminhos",
+          "valor": "4 ouros",
+          "peso": "1,2 kg",
+          "raridade": "Raro",
+          "efeitos": []
+        }
+      ]
+    }
   ]
 }
