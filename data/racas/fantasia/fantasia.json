@@ -6,7 +6,7 @@
       "cards": [
         {
           "nome": "Humanos",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/humano.webp",
           "descricao": "seres versáteis, adaptáveis e encontrados em praticamente todos os ambientes e sociedades.",
           "traco": "Versatilidade",
           "vantagens": [
@@ -24,7 +24,7 @@
         },
         {
           "nome": "Elfos",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/elfo.webp",
           "descricao": "seres longevos, conhecidos pela elegância, percepção aguçada e afinidade com magia.",
           "traco": "Percepção aguçada",
           "vantagens": [
@@ -43,7 +43,7 @@
         },
         {
           "nome": "Anões",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/anao.webp",
           "descricao": "seres robustos, tradicionalmente associados às montanhas, mineração e metalurgia.",
           "traco": "Robustez",
           "vantagens": [
@@ -62,7 +62,7 @@
         },
         {
           "nome": "Orcs",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/orc.webp",
           "descricao": "criaturas de grande força física, frequentemente associadas à resistência e ao combate.",
           "traco": "Força bruta",
           "vantagens": [
@@ -80,7 +80,7 @@
         },
         {
           "nome": "Meio-elfos",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/meio-elfo.webp",
           "descricao": "descendentes de humanos e elfos, combinam características das duas linhagens.",
           "traco": "Adaptabilidade social",
           "vantagens": [
@@ -99,7 +99,7 @@
         },
         {
           "nome": "Halflings",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/halflings.webp",
           "descricao": "pequenos humanoides conhecidos pela agilidade, sorte e habilidade em evitar perigos.",
           "traco": "Sorte natural",
           "vantagens": [
@@ -117,7 +117,7 @@
         },
         {
           "nome": "Gnomos",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/gnomos.webp",
           "descricao": "pequenos seres curiosos, inteligentes e conhecidos por suas invenções e conhecimentos.",
           "traco": "Intelecto natural",
           "vantagens": [
@@ -135,7 +135,7 @@
         },
         {
           "nome": "Draconatos",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/draconato.webp",
           "descricao": "humanoides com características dracônicas, como escamas, chifres e habilidades elementais.",
           "traco": "Sopro elemental",
           "vantagens": [
@@ -153,7 +153,7 @@
         },
         {
           "nome": "Tieflings",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/tieflings.webp",
           "descricao": "descendentes de linhagens infernais, apresentam chifres, caudas e características sobrenaturais.",
           "traco": "Herança infernal",
           "vantagens": [
@@ -172,7 +172,7 @@
         },
         {
           "nome": "Goblins",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/goblin.webp",
           "descricao": "pequenos humanoides astutos, conhecidos pela esperteza, sobrevivência e criatividade.",
           "traco": "Astúcia",
           "vantagens": [
@@ -191,7 +191,7 @@
         },
         {
           "nome": "Meio-orcs",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/meio-orc.webp",
           "descricao": "descendentes de humanos e orcs, possuem grande resistência física e força.",
           "traco": "Resistência extraordinária",
           "vantagens": [
@@ -209,7 +209,7 @@
         },
         {
           "nome": "Aasimar",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/aasimar.webp",
           "descricao": "seres com herança celestial, frequentemente associados à luz, proteção e forças divinas.",
           "traco": "Herança celestial",
           "vantagens": [
@@ -228,7 +228,7 @@
         },
         {
           "nome": "Tritões",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/tritao.webp",
           "descricao": "humanoides aquáticos adaptados à vida submarina, com grande afinidade com os oceanos.",
           "traco": "Adaptação aquática",
           "vantagens": [
@@ -247,7 +247,7 @@
         },
         {
           "nome": "Kobolds",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/kobold.webp",
           "descricao": "pequenos humanoides reptilianos com características dracônicas, conhecidos pela astúcia e habilidade em armadilhas.",
           "traco": "Armadilheiro",
           "vantagens": [
@@ -265,46 +265,8 @@
           "habilidades": []
         },
         {
-          "nome": "Leoninos",
-          "imagem": "",
-          "descricao": "humanoides com características de leões, possuindo força, sentidos aguçados e presença imponente.",
-          "traco": "Instinto predador",
-          "vantagens": [
-            "+2 em testes de percepção auditiva e olfativa.",
-            "Garras naturais que causam 1d4 + FOR de dano.",
-            "+2 em testes de intimidação.",
-            "Podem enxergar bem em ambientes de pouca luminosidade."
-          ],
-          "desvantagens": [
-            "Dificuldade para passar despercebidos em ambientes urbanos.",
-            "-2 em testes de furtividade quando não possuem cobertura adequada."
-          ],
-          "rotulo_atributos": "",
-          "atributos": {},
-          "habilidades": []
-        },
-        {
-          "nome": "Kenkus",
-          "imagem": "",
-          "descricao": "humanoides com características de corvos, conhecidos pela imitação de sons e capacidade de observação.",
-          "traco": "Imitação perfeita",
-          "vantagens": [
-            "Conseguem reproduzir vozes e sons já ouvidos.",
-            "+2 em testes de imitação e disfarce sonoro.",
-            "+2 em testes de percepção visual.",
-            "Grande facilidade para reproduzir técnicas e gestos observados."
-          ],
-          "desvantagens": [
-            "Não conseguem produzir naturalmente uma voz própria convencional.",
-            "Dificuldade para voar, apesar das características de ave."
-          ],
-          "rotulo_atributos": "",
-          "atributos": {},
-          "habilidades": []
-        },
-        {
           "nome": "Tabaxis",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/tabaxis.webp",
           "descricao": "humanoides felinos conhecidos pela curiosidade, agilidade e sentidos aguçados.",
           "traco": "Agilidade felina",
           "vantagens": [
@@ -323,7 +285,7 @@
         },
         {
           "nome": "Yuan-ti",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/yuan-ti.webp",
           "descricao": "humanoides com herança serpentina, apresentando escamas, olhos de réptil e características de serpentes.",
           "traco": "Resistência a venenos",
           "vantagens": [
@@ -341,9 +303,9 @@
           "habilidades": []
         },
         {
-          "nome": "Centauros",
-          "imagem": "",
-          "descricao": "criaturas com torso humanoide e corpo de cavalo, conhecidas pela velocidade e força física.",
+          "nome": "Sátiro",
+          "imagem": "img/racas/fantasia/satiro.webp",
+          "descricao": "criaturas com torso humanoide e pernass de cavalo, bode, cervo, ou veado, conhecidas pela velocidade e força física.",
           "traco": "Mobilidade superior",
           "vantagens": [
             "Velocidade de deslocamento aumentada.",
@@ -352,9 +314,8 @@
             "Conseguem carregar mais peso que humanoides comuns."
           ],
           "desvantagens": [
-            "Dificuldade para atravessar escadas, corredores estreitos e estruturas pequenas.",
             "Não conseguem utilizar montarias convencionais.",
-            "Equipamentos e armaduras precisam ser adaptados ao corpo."
+            "Equipamentos e armaduras precisam ser adaptados as pernas."
           ],
           "rotulo_atributos": "",
           "atributos": {},
@@ -362,7 +323,7 @@
         },
         {
           "nome": "Vampiros",
-          "imagem": "",
+          "imagem": "img/racas/fantasia/vampiro.webp",
           "descricao": "seres sobrenaturais que sobrevivem por meio do consumo de sangue e possuem capacidades físicas extraordinárias.",
           "traco": "Predador noturno",
           "vantagens": [

@@ -6,7 +6,7 @@
       "cards": [
         {
           "nome": "Bárbaro",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/barbaro.webp",
           "descricao": "Bárbaros são combatentes selvagens que utilizam a própria fúria para superar ferimentos, intimidar adversários e causar grandes quantidades de dano.",
           "especialidade": "força bruta e resistência física.",
           "limitacoes": "pouca capacidade de combate à distância, dependência de força física e menor eficiência em atividades intelectuais.",
@@ -60,7 +60,7 @@
         },
         {
           "nome": "Bardo",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/bardo.webp",
           "descricao": "Bardos utilizam música, palavras e expressões artísticas para influenciar pessoas e alterar o rumo dos confrontos.",
           "especialidade": "suporte, manipulação e inspiração.",
           "limitacoes": "menor resistência física e dependência de concentração, voz ou instrumentos para determinadas habilidades.",
@@ -114,7 +114,7 @@
         },
         {
           "nome": "Clérigo",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/clerigo.webp",
           "descricao": "Clérigos canalizam forças sagradas para proteger aliados, combater criaturas sobrenaturais e restaurar a Vida.",
           "especialidade": "cura, proteção e poderes divinos.",
           "limitacoes": "depende de Energia para utilizar seus poderes sobrenaturais e possui menor mobilidade que classes especializadas em agilidade.",
@@ -168,7 +168,7 @@
         },
         {
           "nome": "Druida",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/druida.webp",
           "descricao": "Druidas dominam forças naturais, manipulam vegetação e podem assumir formas de animais.",
           "especialidade": "natureza, transformação e controle ambiental.",
           "limitacoes": "habilidades dependem frequentemente do ambiente natural. Transformações não permitem utilizar normalmente equipamentos e armas.",
@@ -222,7 +222,7 @@
         },
         {
           "nome": "Guerreiro",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/guerreiro.webp",
           "descricao": "Guerreiros são especialistas em técnicas de combate, utilizando armas, armaduras e treinamento para dominar confrontos.",
           "especialidade": "combate armado e versatilidade.",
           "limitacoes": "não possui poderes sobrenaturais naturalmente e depende de treinamento, armas e equipamentos para atingir seu potencial.",
@@ -276,7 +276,7 @@
         },
         {
           "nome": "Monge",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/monge.webp",
           "descricao": "Monges aperfeiçoam o próprio corpo e espírito, utilizando movimentos precisos e técnicas de combate desarmado.",
           "especialidade": "artes marciais, velocidade e concentração.",
           "limitacoes": "depende de combate desarmado ou armas específicas de monge e possui menor eficiência com armaduras pesadas.",
@@ -330,7 +330,7 @@
         },
         {
           "nome": "Paladino",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/paladino.webp",
           "descricao": "Paladinos são guerreiros guiados por juramentos, capazes de combinar técnicas marciais com poderes sagrados.",
           "especialidade": "combate, proteção e energia sagrada.",
           "limitacoes": "seus poderes dependem de Energia e seus juramentos podem impor restrições de comportamento, conforme a interpretação da classe.",
@@ -384,7 +384,7 @@
         },
         {
           "nome": "Patrulheiro",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/patrulheiro.webp",
           "descricao": "Patrulheiros são exploradores experientes, especialistas em sobrevivência, rastreamento e eliminação de alvos.",
           "especialidade": "caça, rastreamento e combate à distância.",
           "limitacoes": "depende de munição para determinadas habilidades e possui menor eficiência em espaços muito fechados.",
@@ -438,7 +438,7 @@
         },
         {
           "nome": "Ladino",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/ladino.webp",
           "descricao": "Ladinos utilizam astúcia, velocidade e técnicas sorrateiras para surpreender inimigos e superar obstáculos.",
           "especialidade": "furtividade, precisão e infiltração.",
           "limitacoes": "possui baixa resistência física e depende de posicionamento, surpresa e oportunidades para aproveitar seu potencial ofensivo.",
@@ -492,7 +492,7 @@
         },
         {
           "nome": "Feiticeiro",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/feiticeiro.webp",
           "descricao": "Feiticeiros nascem com poderes mágicos, podendo manifestar fenômenos sobrenaturais sem depender de estudos arcanos.",
           "especialidade": "magia inata e manipulação de energia.",
           "limitacoes": "possui pouca resistência física, depende de Energia e pode ter dificuldade para controlar poderes muito intensos.",
@@ -546,7 +546,7 @@
         },
         {
           "nome": "Bruxo",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/bruxo.webp",
           "descricao": "Bruxos obtêm poderes por meio de pactos com entidades misteriosas, recebendo habilidades que muitas vezes possuem consequências.",
           "especialidade": "pactos, maldições e magia sobrenatural.",
           "limitacoes": "seus poderes estão ligados à entidade do pacto, que pode exigir favores, impor condições ou cobrar consequências narrativas.",
@@ -600,7 +600,7 @@
         },
         {
           "nome": "Mago",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/mago.webp",
           "descricao": "Magos estudam as artes arcanas e utilizam conhecimentos adquiridos para manipular diferentes formas de magia.",
           "especialidade": "conhecimento, feitiços e versatilidade mágica.",
           "limitacoes": "baixa resistência física, dependência de Energia e necessidade de conhecimento para utilizar adequadamente suas magias mais complexas.",
@@ -654,7 +654,7 @@
         },
         {
           "nome": "Artífice",
-          "imagem": "",
+          "imagem": "img/classes/fantasia/artifice.webp",
           "descricao": "Artífices combinam conhecimento técnico, criatividade e magia para criar dispositivos, ferramentas e equipamentos especiais.",
           "especialidade": "invenções, alquimia e tecnologia mágica.",
           "limitacoes": "depende de materiais, ferramentas e tempo para fabricar dispositivos. Algumas invenções podem ser inutilizadas por danos ou falta de manutenção.",
