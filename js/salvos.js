@@ -1,26 +1,9 @@
 // Página Salvos: resultados dos oráculos que você guardou. Dá para renomear, anotar, pôr imagem e excluir.
-const raiz = document.getElementById('conteudo');
-const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const PLACEHOLDER = 'img/placeholder.webp';
-
-function aviso(msg) {
-  let t = document.querySelector('.toast-ca');
-  if (!t) { t = document.createElement('div'); t.className = 'toast-ca'; document.body.appendChild(t); }
-  t.textContent = msg; t.classList.add('on');
-  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('on'), 2400);
-}
-
 let LISTA = [];
 let filtro = '';          // nome do gerador, '' = todos
 let busca = '';
 let imgAlvo = null;       // id do registro que vai receber a imagem
 let editando = null;      // registro aberto na edição
-
-const baixar = (nome, texto) => {
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([texto], { type: 'application/json' }));
-  a.download = nome; a.click(); URL.revokeObjectURL(a.href);
-};
 
 const cardHtml = r => `
 <div class="col-12 col-md-6 col-lg-4"><div class="card card-dossie h-100" data-id="${esc(r.id)}">
@@ -62,7 +45,7 @@ function desenhar() {
       <input class="campo mb-4" style="max-width:360px;margin:0 auto;" type="search" id="busca" placeholder="Buscar nos salvos..." value="${esc(busca)}">`
       : ''}
     <div class="row g-4">${vis.map(cardHtml).join('') || `<p class="text-center text-muted mt-4">${LISTA.length ? 'Nada encontrado.' : 'Nada salvo ainda. Em <a href="oraculos.html" style="color:#ff3333;">Oráculos</a>, use “Rolar tudo” e depois “Salvar este resultado”.'}</p>`}</div>
-    <div class="painel-arquivo">Os salvos ficam <b>neste navegador</b> (neste aparelho). Limpar os dados do site ou trocar de aparelho apaga/esconde tudo, então use <b>Exportar backup</b> de vez em quando (as imagens vão junto) e <b>Importar backup</b> para trazer de volta.</div>`;
+    <div class="painel-arquivo">${Dados.estado.usuario ? 'Seus salvos estão <b>sincronizados com a sua conta</b> e também guardados neste aparelho.' : 'Os salvos ficam <b>neste navegador</b>. Entre na sua conta (menu) para sincronizar entre aparelhos.'} Use <b>Exportar backup</b> de vez em quando e <b>Importar backup</b> para trazer de volta.</div>`;
 }
 
 async function recarregar() { LISTA = await Salvos.listar(); desenhar(); }
@@ -122,7 +105,7 @@ const acoes = {
   },
   async exportar() {
     if (!LISTA.length) return aviso('Não há nada para exportar');
-    baixar('grimorio-salvos.json', await Salvos.exportar());
+    baixarTexto('grimorio-salvos.json', await Salvos.exportar());
   },
   importar() { document.getElementById('arq-backup').click(); }
 };
@@ -144,7 +127,7 @@ raiz.addEventListener('change', async e => {
   try {
     if (e.target.id === 'arq-imagem') {
       const r = LISTA.find(x => x.id === imgAlvo);
-      if (r) { r.imagem = await Salvos.reduzir(f); await Salvos.salvar(r); aviso('Imagem salva'); desenhar(); }
+      if (r) { r.imagem = await reduzir(f); await Salvos.salvar(r); aviso('Imagem salva'); desenhar(); }
     } else if (e.target.id === 'arq-backup') {
       const n = await Salvos.importar(await f.text());
       aviso(n + ' item(ns) importado(s)'); recarregar();
@@ -153,6 +136,7 @@ raiz.addEventListener('change', async e => {
   e.target.value = '';
 });
 
+Dados.ouvir('sync', cols => { if (cols.includes('salvos') && !document.getElementById('edicao')) recarregar(); });
 recarregar().catch(err => {
   raiz.innerHTML = `<div class="alert alert-danger mt-5 rounded-0">Não consegui abrir os salvos: ${esc(err.message)}.</div>`;
 });

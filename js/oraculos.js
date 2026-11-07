@@ -1,16 +1,6 @@
 // Oráculos: lê os geradores de data/oraculos/<genero>/<genero>.json e rola os dados.
 // Para criar ou mudar um oráculo, edite o JSON (veja o README). Nada é gravado no navegador por esta página,
 // exceto os resultados que você escolhe salvar (botão "Salvar", veja salvos-db.js).
-const raiz = document.getElementById('conteudo');
-const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const num = (v, pad = 0) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : pad; };
-
-function aviso(msg) {
-  let t = document.querySelector('.toast-ca');
-  if (!t) { t = document.createElement('div'); t.className = 'toast-ca'; document.body.appendChild(t); }
-  t.textContent = msg; t.classList.add('on');
-  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('on'), 2400);
-}
 
 // ---------- Tabelas ----------
 // Aceita { nome, linhas: [...] }  |  { nome, dado, linhas }  |  { nome, dado, faixas: [{ de, ate, texto }] }
@@ -155,11 +145,10 @@ raiz.addEventListener('click', e => {
 // ---------- Início ----------
 (async () => {
   try {
-    const ler = async url => { const r = await fetch(url); if (!r.ok) throw new Error(url + ' (' + r.status + ')'); return r.json(); };
-    const man = await ler('data/manifest.json');
+    const man = await lerJson('data/manifest.json');
     ORDEM = man.oraculos || [];
     await Promise.all(ORDEM.map(async id => {
-      const d = await ler(`data/oraculos/${id}/${id}.json`);
+      const d = await lerJson(`data/oraculos/${id}/${id}.json`);
       GEN[id] = { label: d.genero || id, geradores: (d.geradores || []).map(g => ({ ...g, tabelas: (g.tabelas || []).map(normTabela) })) };
     }));
     genAtual = ORDEM.includes(location.hash.slice(1)) ? location.hash.slice(1) : ORDEM[0];

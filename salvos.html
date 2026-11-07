@@ -8,19 +8,17 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-secao="salvos">
-<nav class="navbar navbar-expand-lg navbar-ca sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">GRIMÓRIO</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" style="background-color:#444;"><span class="navbar-toggler-icon" style="filter:invert(1);"></span></button>
-    <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="oraculos.html">Oráculos</a></li><li class="nav-item"><a class="nav-link" href="bestiario.html">Bestiário</a></li><li class="nav-item"><a class="nav-link" href="itens.html">Itens</a></li><li class="nav-item"><a class="nav-link" href="npcs.html">NPCs</a></li><li class="nav-item"><a class="nav-link" href="salvos.html">Salvos</a></li><li class="nav-item"><a class="nav-link" href="fichas.html">Fichas</a></li><li class="nav-item"><a class="nav-link" href="campanhas.html">Campanhas</a></li><li class="nav-item"><a class="nav-link" href="regras.html">Regras</a></li></ul></div>
-  </div>
-</nav>
+<div id="nav"></div>
 <div class="faixa-titulo"><h1>Salvos</h1><p>O que o destino te deu, guardado.</p></div>
 <div class="container pb-5">
 <main id="conteudo"><p class="text-center text-muted mt-5">Carregando...</p></main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/dados.js"></script>
 <script src="js/salvos-db.js"></script>
+<script src="js/nav.js"></script>
 <script src="js/salvos.js"></script>
 </body>
 </html>

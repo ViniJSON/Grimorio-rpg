@@ -1,0 +1,6 @@
+Como aplicar: copie o conteúdo desta pasta por cima do seu projeto (mantenha img/ e data/ como estão).
+
+APAGUE do projeto:  js/rolar.js   (não era usado por nenhuma página)
+
+Para ligar a nuvem: veja a seção "Nuvem (Supabase)" no LEIAME.md.
+Sem configurar, tudo funciona como antes (só no navegador), já com as regras na ficha.

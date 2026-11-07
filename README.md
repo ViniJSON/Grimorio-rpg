@@ -11,5 +11,5 @@ Cada tabela aceita um destes formatos:
 
 ## Salvos
 Depois de "Rolar tudo", o botão "Salvar este resultado" guarda o resultado na página Salvos (salvos.html):
-dá para renomear, anotar, adicionar/trocar imagem e excluir. Ficam no navegador (IndexedDB), então use
+dá para renomear, anotar, adicionar/trocar imagem e excluir. Ficam no navegador (IndexedDB) e, se você entrar na conta, também na nuvem. Use
 "Exportar backup" (inclui as imagens) de vez em quando e "Importar backup" para restaurar.

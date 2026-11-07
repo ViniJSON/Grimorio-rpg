@@ -1,46 +1,4 @@
-// Página de campanhas: lista, campanha (com sessões) e edição. Dados no localStorage do navegador.
-const raiz = document.getElementById('conteudo');
-const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const num = (v, pad = 0) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : pad; };
-
-// ---------- Armazenamento ----------
-const Campanhas = (() => {
-  const KEY = 'grimorio.campanhas.v1';
-  const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-  const listar = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch { return []; } };
-  const gravar = l => localStorage.setItem(KEY, JSON.stringify(l));
-  const obter = id => listar().find(c => c.id === id);
-  const novo = () => ({ id: uid(), nome: '', genero: 'fantasia', descricao: '', imagem: '', sessoes: [], criado: Date.now(), atualizado: Date.now() });
-  const novaSessao = c => ({
-    id: uid(), numero: Math.max(0, ...c.sessoes.map(s => s.numero || 0)) + 1,
-    titulo: '', data: '', acontecimentos: '', ganchos: '', criado: Date.now()
-  });
-  function salvar(c) {
-    const l = listar(), i = l.findIndex(x => x.id === c.id);
-    c.atualizado = Date.now();
-    if (i >= 0) l[i] = c; else l.push(c);
-    gravar(l);
-    return c;
-  }
-  const excluir = id => gravar(listar().filter(c => c.id !== id));
-  const exportar = () => JSON.stringify({ grimorio: 1, campanhas: listar() }, null, 2);
-  // Importa um backup: com id igual, vence o que foi alterado por último; os demais são adicionados
-  function importar(texto) {
-    const d = JSON.parse(texto);
-    const novos = Array.isArray(d) ? d : d.campanhas;
-    if (!Array.isArray(novos)) throw new Error('arquivo não parece um backup de campanhas do Grimório');
-    const l = listar();
-    novos.forEach(c => {
-      if (!c || !c.id) return;
-      c.sessoes = Array.isArray(c.sessoes) ? c.sessoes : [];
-      const i = l.findIndex(x => x.id === c.id);
-      if (i < 0) l.push(c); else if ((c.atualizado || 0) >= (l[i].atualizado || 0)) l[i] = c;
-    });
-    gravar(l);
-    return novos.length;
-  }
-  return { listar, obter, novo, novaSessao, salvar, excluir, exportar, importar };
-})();
+// Página de campanhas: lista, campanha (com sessões) e edição. Dados em js/campanhas-db.js
 
 // ---------- Utilidades ----------
 let GENEROS = [['fantasia', 'Fantasia'], ['terror', 'Terror'], ['mundo-moderno', 'Mundo moderno']];
@@ -59,31 +17,6 @@ async function carregarGeneros() {
   GENEROS = GENEROS.filter(([k]) => k !== 'outro').concat([['outro', 'Outro']]);
 }
 
-const hoje = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
-const dataBR = s => s ? s.split('-').reverse().join('/') : '';
-const pad2 = n => String(n).padStart(2, '0');
-
-function aviso(msg) {
-  let t = document.querySelector('.toast-ca');
-  if (!t) { t = document.createElement('div'); t.className = 'toast-ca'; document.body.appendChild(t); }
-  t.textContent = msg; t.classList.add('on');
-  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('on'), 2200);
-}
-
-// Reduz a imagem (lado maior 900px, JPEG) para caber no armazenamento do navegador
-function reduzir(file, max = 900) {
-  return new Promise((ok, err) => {
-    const img = new Image(), url = URL.createObjectURL(file);
-    img.onload = () => {
-      const k = Math.min(1, max / Math.max(img.width, img.height)), c = document.createElement('canvas');
-      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
-      const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(img, 0, 0, c.width, c.height);
-      URL.revokeObjectURL(url); ok(c.toDataURL('image/jpeg', 0.85));
-    };
-    img.onerror = () => { URL.revokeObjectURL(url); err(new Error('não consegui ler essa imagem')); };
-    img.src = url;
-  });
-}
 const miniatura = c => c.imagem ? `<img src="${esc(c.imagem)}" alt="">` : '<span>sem imagem</span>';
 
 // ---------- Estado ----------
@@ -128,7 +61,7 @@ function telaLista() {
         </div></div></div>`;
     }).join('')}</div>`
       : `<p class="text-center text-muted mt-5">${todas.length ? 'Nenhuma campanha desse gênero.' : 'Nenhuma campanha ainda. Crie a primeira!'}</p>`}
-    <div class="painel-arquivo">As campanhas ficam salvas <b>neste navegador</b>. Para levar para outro computador ou guardar uma cópia de segurança, use <b>Exportar backup</b>.</div>`;
+    <div class="painel-arquivo">${Dados.estado.usuario ? 'Suas campanhas estão <b>sincronizadas com a sua conta</b> e também guardadas neste aparelho.' : 'As campanhas ficam salvas <b>neste navegador</b>. Entre na sua conta (menu) para sincronizar entre aparelhos.'} Para guardar uma cópia de segurança, use <b>Exportar backup</b>.</div>`;
 }
 
 // ---------- Campanha (visualização + sessões) ----------
@@ -263,9 +196,7 @@ const acoes = {
   'img-remover'() { atual.imagem = ''; document.querySelector('.preview-capa').innerHTML = miniatura(atual); },
   filtro(el) { filtro = el.dataset.g; desenhar(); },
   exportar() {
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([Campanhas.exportar()], { type: 'application/json' }));
-    a.download = 'grimorio-campanhas.json'; a.click(); URL.revokeObjectURL(a.href);
+    baixarTexto('grimorio-campanhas.json', Campanhas.exportar());
   },
   importar() { document.getElementById('arquivo-backup').click(); }
 };
@@ -306,7 +237,7 @@ raiz.addEventListener('submit', e => {
 
 raiz.addEventListener('change', async e => {
   if (e.target.id === 'arq-imagem' && e.target.files[0]) {
-    try { atual.imagem = await reduzir(e.target.files[0]); document.querySelector('.preview-capa').innerHTML = miniatura(atual); }
+    try { atual.imagem = await reduzir(e.target.files[0], 900); document.querySelector('.preview-capa').innerHTML = miniatura(atual); }
     catch (err) { aviso(err.message); }
     e.target.value = ''; return;
   }
@@ -320,9 +251,10 @@ raiz.addEventListener('change', async e => {
 });
 
 // Início: carrega os gêneros do manifest e abre direto se a URL tiver #id
+Dados.ouvir('sync', cols => { if (cols.includes('campanhas') && tela === 'lista') desenhar(); });
 (async () => {
   try {
-    await carregarGeneros();
+    await Promise.all([carregarGeneros(), Dados.pronto]);
     const id = location.hash.slice(1);
     if (id && Campanhas.obter(id)) return abrir(id);
     desenhar();

@@ -429,3 +429,21 @@ input[type="date"].campo { color-scheme:dark; }
 .salvo-foto { width:100%; aspect-ratio:4 / 3; background:#121212; border-bottom:2px solid #333; display:flex; align-items:center; justify-content:center; color:#666; font-size:.75rem; letter-spacing:2px; text-transform:uppercase; cursor:pointer; overflow:hidden; }
 .salvo-foto img { width:100%; height:100%; object-fit:cover; object-position:top center; }
 .salvo-foto:hover { color:#ff3333; }
+
+/* ---------- v2: rolador da ficha, atributos clicáveis, conta ---------- */
+.atributos button { background:#121212; border:1px solid #333; text-align:center; padding:4px 2px; font-size:1rem; font-weight:bold; color:#fff; border-radius:0; cursor:pointer; }
+.atributos button:hover { border-color:#ff3333; background:#1c1c1c; }
+.atributos button span { display:block; font-size:.6rem; letter-spacing:1px; color:#ff3333; }
+.rolador { border:1px solid #333; background:#121212; padding:12px; }
+.rol-hist { margin-top:10px; max-height:220px; overflow:auto; }
+.rol { padding:4px 8px; border-left:3px solid #444; margin-bottom:4px; font-size:.9rem; color:#ddd; }
+.rol b { color:#fff; }
+.rol span { color:#bbb; }
+.rol.critico { border-left-color:#ffcc00; background:rgba(255,204,0,.08); }
+.rol.falha-critica { border-left-color:#ff3333; background:rgba(255,51,51,.1); }
+.rol.sucesso { border-left-color:#3fa34d; }
+.rol.falha { border-left-color:#8b0000; }
+.hab-uso { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:6px; }
+.hab-uso small { color:#ffcc00; }
+.hab-uso button { padding:2px 10px; }
+.conta-link { white-space:nowrap; }

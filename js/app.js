@@ -1,14 +1,5 @@
-// Lê data/manifest.json e os JSONs de cada gênero, e desenha a página.
+// Lê data/manifest.json e os JSONs de cada gênero, e desenha a página (bestiário, itens e NPCs).
 const SECAO = document.body.dataset.secao;
-const raiz = document.getElementById('conteudo');
-const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const PLACEHOLDER = 'img/placeholder.webp';
-
-async function ler(url) {
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(url + ' (' + r.status + ')');
-  return r.json();
-}
 
 // Campos extras de cada seção: [chave no JSON, rótulo, aparece também no card pequeno?]
 // Valores podem ser texto ou lista (["a","b"]). Campo ausente/vazio não aparece.
@@ -91,35 +82,6 @@ function ligarLoja() {
 const genCards = g => `<section class="genero" id="${esc(g.id)}"><h3>${esc(g.genero)}</h3>` + (SECAO === 'itens' ? lojaHtml(g) : '') +
   g.categorias.map(c => `<h4 class="categoria">${esc(c.nome)}</h4><div class="row g-4">${c.cards.map(x => card(SECAO === 'itens' && !x.categoria ? { ...x, categoria: c.nome } : x)).join('')}</div>`).join('') + '</section>';
 
-const genOraculo = g => `<section class="genero" id="${esc(g.id)}"><h3>${esc(g.genero)}</h3>` +
-  g.geradores.map(x => `<details class="gerador"><summary>${esc(x.nome)}</summary><div class="gerador-corpo"><p>${esc(x.descricao)}</p>` +
-    x.tabelas.map(t => `<div class="tabela-oraculo"><h6>${esc(t.nome)}</h6><table>${t.linhas.map((l, i) => `<tr><td>${i + 1}</td><td>${esc(l)}</td></tr>`).join('')}</table></div>`).join('') +
-    `<button class="btn-rolar rolar-tudo">Rolar tudo</button><div class="resultado-geral"></div></div></details>`).join('') + '</section>';
-
-function sorteia(tab) {
-  const ls = [...tab.querySelectorAll('tr')];
-  ls.forEach(l => l.classList.remove('sorteado'));
-  const l = ls[Math.floor(Math.random() * ls.length)];
-  l.classList.add('sorteado');
-  return l.cells[1].textContent;
-}
-function ligarDados() {
-  document.querySelectorAll('.tabela-oraculo').forEach(t => {
-    const h = t.querySelector('h6'), nome = h.textContent;
-    h.textContent = nome + ' (d' + t.querySelectorAll('tr').length + ')';
-    h.dataset.nome = nome;
-    const b = document.createElement('button');
-    b.className = 'btn-rolar ms-2'; b.textContent = 'Rolar';
-    b.onclick = () => sorteia(t); h.appendChild(b);
-  });
-  document.querySelectorAll('.gerador').forEach(g => {
-    g.querySelector('.rolar-tudo').onclick = () => {
-      g.querySelector('.resultado-geral').textContent =
-        [...g.querySelectorAll('.tabela-oraculo')].map(t => t.querySelector('h6').dataset.nome + ': ' + sorteia(t)).join(' · ');
-    };
-  });
-}
-
 // ---------- Ficha ampliada (clique no card) ----------
 let fichaEl, fichaOrigem;
 
@@ -173,7 +135,8 @@ function fecharFicha() {
 }
 
 // ---------- Adicionar item à ficha de um personagem ----------
-function escolherPersonagem(c) {
+async function escolherPersonagem(c) {
+  await Dados.pronto;
   const ps = Personagens.listar();
   const fundo = document.createElement('div');
   fundo.className = 'ficha-fundo'; fundo.style.zIndex = 2100;
@@ -210,12 +173,12 @@ function ligarFichas() {
 
 (async () => {
   try {
-    const man = await ler('data/manifest.json');
-    if (SECAO === 'itens') VENDEDORAS = await ler('data/vendedoras.json').catch(() => ({}));
-    const gens = await Promise.all((man[SECAO] || []).map(id => ler(`data/${SECAO}/${id}/${id}.json`).then(d => ({ id, ...d }))));
+    const man = await lerJson('data/manifest.json');
+    if (SECAO === 'itens') VENDEDORAS = await lerJson('data/vendedoras.json').catch(() => ({}));
+    const gens = await Promise.all((man[SECAO] || []).map(id => lerJson(`data/${SECAO}/${id}/${id}.json`).then(d => ({ id, ...d }))));
     raiz.innerHTML = `<div class="pilulas mt-4">${gens.map(g => `<a href="#${esc(g.id)}">${esc(g.genero)}</a>`).join('')}</div>` +
-      gens.map(SECAO === 'oraculos' ? genOraculo : genCards).join('');
-    if (SECAO === 'oraculos') ligarDados(); else ligarFichas();
+      gens.map(genCards).join('');
+    ligarFichas();
     if (SECAO === 'itens') ligarLoja();
     // Abas de gênero: mostra só um por vez
     const mostrar = id => {
