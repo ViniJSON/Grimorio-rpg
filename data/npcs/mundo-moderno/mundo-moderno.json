@@ -1,10 +1,22 @@
 {
-  "genero": "mundo-moderno",
+  "genero": "Mundo-moderno",
   "categorias": [
     {
-      "nome": "Humanos",
+      "nome": "Profissões",
       "cards": [
-        
+        {
+          "nome": "Teste - em manutenção",
+          "imagem": "",
+          "descricao": "Responsável por administrar uma taverna, hospedaria ou estabelecimento onde viajantes e moradores se encontram.",
+          "pode_conter": [
+            "Rumores locais",
+            "Informações sobre viajantes",
+            "Quartos disponíveis",
+            "Missões e trabalhos",
+            "Dívidas de clientes",
+            "Segredos ou acontecimentos recentes"
+          ]
+        }
       ]
     }
   ]

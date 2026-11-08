@@ -2,9 +2,1204 @@
   "genero": "Fantasia",
   "categorias": [
     {
-      "nome": "Comuns",
+      "nome": "Profissões",
       "cards": [
-        
+        {
+          "nome": "Taverneiro",
+          "imagem": "",
+          "descricao": "Responsável por administrar uma taverna, hospedaria ou estabelecimento onde viajantes e moradores se encontram.",
+          "pode_conter": [
+            "Rumores locais",
+            "Informações sobre viajantes",
+            "Quartos disponíveis",
+            "Missões e trabalhos",
+            "Dívidas de clientes",
+            "Segredos ou acontecimentos recentes"
+          ]
+        },
+        {
+          "nome": "Ferreiro",
+          "imagem": "",
+          "descricao": "Artesão especializado na fabricação, manutenção e reparação de objetos metálicos, especialmente armas e ferramentas.",
+          "pode_conter": [
+            "Venda de armas",
+            "Reparação de equipamentos",
+            "Encomendas especiais",
+            "Conhecimento sobre metais",
+            "Clientes importantes",
+            "Materiais raros"
+          ]
+        },
+        {
+          "nome": "Mercador",
+          "imagem": "",
+          "descricao": "Comerciante itinerante ou estabelecido que negocia produtos, mercadorias e objetos de diferentes regiões.",
+          "pode_conter": [
+            "Mercadorias variadas",
+            "Rotas comerciais",
+            "Informações de outras regiões",
+            "Produtos raros",
+            "Oportunidades de negociação",
+            "Dívidas e contatos"
+          ]
+        },
+        {
+          "nome": "Camponês",
+          "imagem": "",
+          "descricao": "Trabalhador rural que vive da agricultura, criação de animais ou outras atividades relacionadas à terra.",
+          "pode_conter": [
+            "Conhecimento da região",
+            "Problemas com colheitas",
+            "Relatos de criaturas",
+            "Pedidos de ajuda",
+            "Tradições locais",
+            "Informações sobre propriedades"
+          ]
+        },
+        {
+          "nome": "Guarda da cidade",
+          "imagem": "",
+          "descricao": "Responsável por patrulhar ruas, proteger habitantes e manter a ordem dentro de uma cidade ou vila.",
+          "pode_conter": [
+            "Leis locais",
+            "Informações sobre criminosos",
+            "Recompensas por procurados",
+            "Acesso a áreas restritas",
+            "Relatórios de ocorrências",
+            "Ordens de superiores"
+          ]
+        },
+        {
+          "nome": "Estalajadeiro",
+          "imagem": "",
+          "descricao": "Proprietário ou administrador de uma estalagem que oferece hospedagem e serviços para viajantes.",
+          "pode_conter": [
+            "Hospedagem",
+            "Informações sobre estradas",
+            "Relatos de viajantes",
+            "Clientes desaparecidos",
+            "Serviços de alimentação",
+            "Conhecimento sobre a região"
+          ]
+        },
+        {
+          "nome": "Padeiro",
+          "imagem": "",
+          "descricao": "Profissional responsável pela produção e venda de pães, bolos e outros alimentos preparados.",
+          "pode_conter": [
+            "Venda de alimentos",
+            "Receitas tradicionais",
+            "Encomendas",
+            "Problemas com fornecedores",
+            "Conhecimento dos moradores",
+            "Ingredientes especiais"
+          ]
+        },
+        {
+          "nome": "Açougueiro",
+          "imagem": "",
+          "descricao": "Comerciante especializado no preparo e na venda de carnes provenientes de animais domésticos ou selvagens.",
+          "pode_conter": [
+            "Venda de carnes",
+            "Conhecimento sobre animais",
+            "Ingredientes incomuns",
+            "Pedidos de caça",
+            "Informações sobre criadores",
+            "Métodos de conservação"
+          ]
+        },
+        {
+          "nome": "Costureiro",
+          "imagem": "",
+          "descricao": "Artesão que confecciona, ajusta e conserta roupas, tecidos e vestimentas de diferentes estilos.",
+          "pode_conter": [
+            "Roupas sob medida",
+            "Uniformes",
+            "Disfarces",
+            "Tecidos raros",
+            "Identificação de vestimentas",
+            "Encomendas de nobres"
+          ]
+        },
+        {
+          "nome": "Sapateiro",
+          "imagem": "",
+          "descricao": "Profissional responsável pela fabricação e reparação de calçados utilizados por habitantes e viajantes.",
+          "pode_conter": [
+            "Calçados especiais",
+            "Reparação de botas",
+            "Encomendas",
+            "Conhecimento sobre materiais",
+            "Clientes frequentes",
+            "Objetos esquecidos"
+          ]
+        },
+        {
+          "nome": "Lenhador",
+          "imagem": "",
+          "descricao": "Trabalhador que vive da extração de madeira em florestas e regiões arborizadas.",
+          "pode_conter": [
+            "Caminhos pela floresta",
+            "Relatos de criaturas",
+            "Árvores incomuns",
+            "Locais perigosos",
+            "Conhecimento sobre plantas",
+            "Pedidos de escolta"
+          ]
+        },
+        {
+          "nome": "Pescador",
+          "imagem": "",
+          "descricao": "Habitante que sobrevive da pesca em rios, lagos ou mares, conhecendo bem as águas da região.",
+          "pode_conter": [
+            "Rotas aquáticas",
+            "Locais de pesca",
+            "Criaturas aquáticas",
+            "Relatos de naufrágios",
+            "Objetos encontrados",
+            "Lendas marítimas"
+          ]
+        },
+        {
+          "nome": "Carroceiro",
+          "imagem": "",
+          "descricao": "Profissional que transporta pessoas e mercadorias utilizando carroças, cavalos ou outros animais de tração.",
+          "pode_conter": [
+            "Transporte",
+            "Rotas comerciais",
+            "Informações sobre estradas",
+            "Fretes",
+            "Relatos de assaltos",
+            "Contatos em outras cidades"
+          ]
+        },
+        {
+          "nome": "Mensageiro",
+          "imagem": "",
+          "descricao": "Pessoa encarregada de transportar cartas, documentos e comunicados entre indivíduos ou localidades.",
+          "pode_conter": [
+            "Mensagens confidenciais",
+            "Correspondências",
+            "Informações políticas",
+            "Encomendas",
+            "Rotas secretas",
+            "Pedidos de entrega"
+          ]
+        },
+        {
+          "nome": "Coveiro",
+          "imagem": "",
+          "descricao": "Responsável pela manutenção de cemitérios e realização de sepultamentos, conhecendo histórias antigas da comunidade.",
+          "pode_conter": [
+            "Histórias de falecidos",
+            "Túmulos antigos",
+            "Lendas locais",
+            "Sepulturas misteriosas",
+            "Desaparecimentos",
+            "Informações sobre famílias"
+          ]
+        },
+        {
+          "nome": "Bardo",
+          "imagem": "",
+          "descricao": "Artista viajante que utiliza música, poesia e histórias para entreter pessoas e transmitir acontecimentos.",
+          "pode_conter": [
+            "Lendas",
+            "Canções antigas",
+            "Rumores",
+            "Histórias de heróis",
+            "Informações de outras regiões",
+            "Conhecimento sobre acontecimentos históricos"
+          ]
+        },
+        {
+          "nome": "Médico",
+          "imagem": "",
+          "descricao": "Profissional dedicado ao tratamento de doenças, ferimentos e enfermidades por meio de conhecimentos medicinais.",
+          "pode_conter": [
+            "Tratamentos",
+            "Diagnósticos",
+            "Medicamentos",
+            "Doenças incomuns",
+            "Conhecimento anatômico",
+            "Pedidos de ingredientes raros"
+          ]
+        },
+        {
+          "nome": "Herbalista",
+          "imagem": "",
+          "descricao": "Especialista no reconhecimento e utilização de plantas, ervas e ingredientes naturais para fins medicinais ou práticos.",
+          "pode_conter": [
+            "Ervas medicinais",
+            "Receitas naturais",
+            "Plantas venenosas",
+            "Ingredientes raros",
+            "Localização de plantas",
+            "Conhecimento sobre alquimia"
+          ]
+        },
+        {
+          "nome": "Alquimista",
+          "imagem": "",
+          "descricao": "Pesquisador que estuda substâncias, reações e misturas para produzir poções, compostos e experimentos extraordinários.",
+          "pode_conter": [
+            "Fórmulas de poções",
+            "Experimentos",
+            "Ingredientes incomuns",
+            "Pesquisa proibida",
+            "Produtos alquímicos",
+            "Encomendas especiais"
+          ]
+        },
+        {
+          "nome": "Bibliotecário",
+          "imagem": "",
+          "descricao": "Responsável pela organização e preservação de livros, pergaminhos e documentos históricos.",
+          "pode_conter": [
+            "Conhecimento histórico",
+            "Livros raros",
+            "Documentos antigos",
+            "Mapas",
+            "Registros genealógicos",
+            "Informações sobre magia"
+          ]
+        },
+        {
+          "nome": "Escriba",
+          "imagem": "",
+          "descricao": "Profissional especializado na escrita, cópia e elaboração de documentos, contratos e registros oficiais.",
+          "pode_conter": [
+            "Documentos oficiais",
+            "Contratos",
+            "Registros históricos",
+            "Traduções",
+            "Caligrafias antigas",
+            "Informações burocráticas"
+          ]
+        },
+        {
+          "nome": "Joalheiro",
+          "imagem": "",
+          "descricao": "Artesão que trabalha com metais preciosos, pedras ornamentais e fabricação de joias.",
+          "pode_conter": [
+            "Joias",
+            "Pedras preciosas",
+            "Avaliação de artefatos",
+            "Encomendas nobres",
+            "Identificação de gemas",
+            "Relatos sobre objetos valiosos"
+          ]
+        },
+        {
+          "nome": "Minerador",
+          "imagem": "",
+          "descricao": "Trabalhador responsável pela extração de minérios, pedras preciosas e outros recursos subterrâneos.",
+          "pode_conter": [
+            "Localização de minas",
+            "Veios minerais",
+            "Desabamentos",
+            "Criaturas subterrâneas",
+            "Materiais raros",
+            "Informações sobre cavernas"
+          ]
+        },
+        {
+          "nome": "Pastor",
+          "imagem": "",
+          "descricao": "Trabalhador rural responsável por conduzir e proteger rebanhos de animais em campos e regiões afastadas.",
+          "pode_conter": [
+            "Conhecimento de campos",
+            "Relatos de predadores",
+            "Rotas rurais",
+            "Animais desaparecidos",
+            "Lendas regionais",
+            "Informações sobre propriedades"
+          ]
+        },
+        {
+          "nome": "Lavadeira",
+          "imagem": "",
+          "descricao": "Trabalhadora que realiza a lavagem e manutenção de roupas, frequentemente circulando entre diferentes famílias.",
+          "pode_conter": [
+            "Rumores domésticos",
+            "Informações sobre moradores",
+            "Objetos encontrados",
+            "Segredos de famílias",
+            "Encomendas",
+            "Conhecimento sobre a rotina local"
+          ]
+        },
+        {
+          "nome": "Cozinheiro",
+          "imagem": "",
+          "descricao": "Profissional responsável pelo preparo de refeições, banquetes e pratos tradicionais.",
+          "pode_conter": [
+            "Receitas especiais",
+            "Venda de refeições",
+            "Ingredientes raros",
+            "Encomendas",
+            "Conhecimento sobre alimentos",
+            "Informações de clientes"
+          ]
+        },
+        {
+          "nome": "Carpinteiro",
+          "imagem": "",
+          "descricao": "Artesão especializado no trabalho com madeira, construindo móveis, estruturas e ferramentas.",
+          "pode_conter": [
+            "Construções",
+            "Reparos",
+            "Móveis sob encomenda",
+            "Tipos de madeira",
+            "Projetos arquitetônicos",
+            "Conhecimento sobre estruturas"
+          ]
+        },
+        {
+          "nome": "Caçador",
+          "imagem": "",
+          "descricao": "Pessoa habilidosa na perseguição e captura de animais selvagens, conhecendo trilhas e ambientes naturais.",
+          "pode_conter": [
+            "Rastros de criaturas",
+            "Localização de animais",
+            "Contratos de caça",
+            "Peles e materiais",
+            "Rotas pela natureza",
+            "Relatos de monstros"
+          ]
+        },
+        {
+          "nome": "Barbeiro",
+          "imagem": "",
+          "descricao": "Profissional que cuida da aparência de seus clientes, realizando cortes de cabelo, barba e outros serviços.",
+          "pode_conter": [
+            "Rumores da cidade",
+            "Informações sobre clientes",
+            "Mudanças de aparência",
+            "Serviços estéticos",
+            "Conversas privadas",
+            "Identificação de visitantes"
+          ]
+        },
+        {
+          "nome": "Domador de animais",
+          "imagem": "",
+          "descricao": "Especialista no treinamento, cuidado e manejo de animais domésticos, selvagens ou utilizados em montarias.",
+          "pode_conter": [
+            "Treinamento de animais",
+            "Venda de montarias",
+            "Criaturas raras",
+            "Técnicas de domesticação",
+            "Informações sobre comportamento animal",
+            "Encomendas especiais"
+          ]
+        },
+        {
+          "nome": "Estudioso",
+          "imagem": "",
+          "descricao": "Indivíduo dedicado à pesquisa e ao estudo de assuntos específicos, podendo possuir conhecimentos pouco comuns.",
+          "pode_conter": [
+            "Teorias",
+            "Pesquisas",
+            "Conhecimento especializado",
+            "Descobertas antigas",
+            "Documentos",
+            "Pedidos de investigação"
+          ]
+        },
+        {
+          "nome": "Pintor",
+          "imagem": "",
+          "descricao": "Artista que produz retratos, pinturas decorativas e registros visuais de pessoas e acontecimentos.",
+          "pode_conter": [
+            "Retratos",
+            "Obras de arte",
+            "Informações sobre nobres",
+            "Encomendas",
+            "Representações históricas",
+            "Detalhes de pessoas desaparecidas"
+          ]
+        },
+        {
+          "nome": "Escultor",
+          "imagem": "",
+          "descricao": "Artista que transforma pedra, madeira, metal ou outros materiais em esculturas e peças decorativas.",
+          "pode_conter": [
+            "Esculturas",
+            "Monumentos",
+            "Encomendas",
+            "Símbolos antigos",
+            "Técnicas artísticas",
+            "Histórias de construções"
+          ]
+        },
+        {
+          "nome": "Cocheiro",
+          "imagem": "",
+          "descricao": "Condutor de carruagens que transporta passageiros, autoridades e mercadorias entre diferentes localidades.",
+          "pode_conter": [
+            "Transporte particular",
+            "Rotas de viagem",
+            "Informações sobre passageiros",
+            "Serviços de escolta",
+            "Relatos de estradas",
+            "Contatos comerciais"
+          ]
+        },
+        {
+          "nome": "Guardião de ponte",
+          "imagem": "",
+          "descricao": "Responsável por controlar a passagem de pessoas e mercadorias em uma ponte ou travessia estratégica.",
+          "pode_conter": [
+            "Taxas de passagem",
+            "Controle de viajantes",
+            "Informações sobre movimentações",
+            "Relatos de invasões",
+            "Restrições de acesso",
+            "Ordens locais"
+          ]
+        },
+        {
+          "nome": "Faroleiro",
+          "imagem": "",
+          "descricao": "Responsável pela manutenção de um farol ou torre de sinalização que orienta embarcações e viajantes.",
+          "pode_conter": [
+            "Relatos marítimos",
+            "Naufrágios",
+            "Sinais misteriosos",
+            "Informações sobre embarcações",
+            "Rotas costeiras",
+            "Ocorrências noturnas"
+          ]
+        },
+        {
+          "nome": "Carcereiro",
+          "imagem": "",
+          "descricao": "Funcionário encarregado de vigiar prisioneiros e controlar o funcionamento de uma prisão ou masmorra.",
+          "pode_conter": [
+            "Informações sobre prisioneiros",
+            "Rotina da prisão",
+            "Acesso a celas",
+            "Relatos de fugas",
+            "Segredos dos detentos",
+            "Ordens de execução"
+          ]
+        },
+        {
+          "nome": "Cobrador de impostos",
+          "imagem": "",
+          "descricao": "Agente responsável por arrecadar tributos, taxas e pagamentos determinados pelas autoridades locais.",
+          "pode_conter": [
+            "Dívidas",
+            "Registros financeiros",
+            "Informações sobre propriedades",
+            "Irregularidades",
+            "Ordens da administração",
+            "Conflitos com comerciantes"
+          ]
+        },
+        {
+          "nome": "Arauto",
+          "imagem": "",
+          "descricao": "Representante encarregado de anunciar decretos, proclamações e comunicados de autoridades e famílias nobres.",
+          "pode_conter": [
+            "Decretos",
+            "Anúncios oficiais",
+            "Convocações",
+            "Notícias políticas",
+            "Recompensas públicas",
+            "Informações diplomáticas"
+          ]
+        },
+        {
+          "nome": "Sacerdote",
+          "imagem": "",
+          "descricao": "Representante religioso que conduz cerimônias, aconselha fiéis e preserva os ensinamentos de sua divindade.",
+          "pode_conter": [
+            "Ensinamentos religiosos",
+            "Rituais",
+            "Relíquias sagradas",
+            "Profecias",
+            "Missões religiosas",
+            "Conhecimento sobre entidades"
+          ]
+        },
+        {
+          "nome": "Monge",
+          "imagem": "",
+          "descricao": "Indivíduo dedicado à disciplina espiritual, contemplação e preservação de tradições em templos ou mosteiros.",
+          "pode_conter": [
+            "Filosofias",
+            "Técnicas de combate",
+            "Conhecimento espiritual",
+            "Textos antigos",
+            "Rituais",
+            "Segredos do mosteiro"
+          ]
+        },
+        {
+          "nome": "Acólito",
+          "imagem": "",
+          "descricao": "Aprendiz ou auxiliar de uma instituição religiosa, responsável por tarefas e cerimônias sob orientação de superiores.",
+          "pode_conter": [
+            "Informações do templo",
+            "Conhecimento religioso básico",
+            "Tarefas e pedidos",
+            "Relíquias menores",
+            "Segredos de superiores",
+            "Histórias de fiéis"
+          ]
+        },
+        {
+          "nome": "Nobre",
+          "imagem": "",
+          "descricao": "Membro de uma família aristocrática que possui influência social, propriedades e relações com o poder político.",
+          "pode_conter": [
+            "Intrigas políticas",
+            "Alianças familiares",
+            "Convites",
+            "Disputas territoriais",
+            "Recursos financeiros",
+            "Segredos da aristocracia"
+          ]
+        },
+        {
+          "nome": "Administrador",
+          "imagem": "",
+          "descricao": "Responsável pela organização de propriedades, recursos e atividades administrativas de uma instituição ou autoridade.",
+          "pode_conter": [
+            "Registros financeiros",
+            "Ordens administrativas",
+            "Informações sobre funcionários",
+            "Problemas de gestão",
+            "Contratos",
+            "Documentos confidenciais"
+          ]
+        },
+        {
+          "nome": "Diplomata",
+          "imagem": "",
+          "descricao": "Representante encarregado de negociar acordos, estabelecer relações e resolver conflitos entre diferentes grupos ou territórios.",
+          "pode_conter": [
+            "Tratados",
+            "Alianças",
+            "Informações políticas",
+            "Negociações",
+            "Conflitos diplomáticos",
+            "Propostas secretas"
+          ]
+        },
+        {
+          "nome": "Capitão de navio",
+          "imagem": "",
+          "descricao": "Comandante de uma embarcação responsável por sua tripulação, navegação e transporte de passageiros ou cargas.",
+          "pode_conter": [
+            "Rotas marítimas",
+            "Contratos de viagem",
+            "Informações sobre portos",
+            "Relatos de piratas",
+            "Tesouros naufragados",
+            "Missões de transporte"
+          ]
+        },
+        {
+          "nome": "Marinheiro",
+          "imagem": "",
+          "descricao": "Tripulante experiente que trabalha em embarcações e conhece os perigos e costumes da vida no mar.",
+          "pode_conter": [
+            "Histórias marítimas",
+            "Informações sobre piratas",
+            "Criaturas oceânicas",
+            "Rotas desconhecidas",
+            "Rumores de portos",
+            "Experiências de viagem"
+          ]
+        },
+        {
+          "nome": "Ladrão",
+          "imagem": "",
+          "descricao": "Indivíduo que sobrevive por meio de furtos, golpes e atividades ilegais, geralmente conhecendo os pontos vulneráveis de uma comunidade.",
+          "pode_conter": [
+            "Contatos clandestinos",
+            "Informações sobre alvos",
+            "Rotas de fuga",
+            "Mercado ilegal",
+            "Segredos de moradores",
+            "Serviços criminosos"
+          ]
+        },
+        {
+          "nome": "Contrabandista",
+          "imagem": "",
+          "descricao": "Comerciante ilegal especializado no transporte e na distribuição de mercadorias proibidas ou não declaradas.",
+          "pode_conter": [
+            "Mercadorias proibidas",
+            "Rotas clandestinas",
+            "Contatos criminosos",
+            "Produtos raros",
+            "Esconderijos",
+            "Informações sobre fiscalização"
+          ]
+        },
+        {
+          "nome": "Receptador",
+          "imagem": "",
+          "descricao": "Indivíduo que compra, troca ou revende objetos roubados, geralmente mantendo relações com criminosos e comerciantes clandestinos.",
+          "pode_conter": [
+            "Objetos roubados",
+            "Mercado negro",
+            "Identificação de itens",
+            "Contatos criminosos",
+            "Preços clandestinos",
+            "Informações sobre roubos"
+          ]
+        },
+        {
+          "nome": "Caçador de recompensas",
+          "imagem": "",
+          "descricao": "Profissional que rastreia e captura indivíduos procurados em troca de pagamentos oferecidos por autoridades ou contratantes.",
+          "pode_conter": [
+            "Cartazes de procurados",
+            "Informações sobre fugitivos",
+            "Contratos",
+            "Rastros e pistas",
+            "Recompensas",
+            "Contatos de autoridades"
+          ]
+        },
+        {
+          "nome": "Aventureiro aposentado",
+          "imagem": "",
+          "descricao": "Antigo explorador ou combatente que abandonou a vida de aventuras, mas preserva experiências e conhecimentos adquiridos durante suas viagens.",
+          "pode_conter": [
+            "Histórias de expedições",
+            "Mapas antigos",
+            "Equipamentos raros",
+            "Conhecimento sobre monstros",
+            "Tesouros esquecidos",
+            "Conselhos para aventureiros"
+          ]
+        },
+        {
+          "nome": "Explorador",
+          "imagem": "",
+          "descricao": "Indivíduo que percorre territórios desconhecidos em busca de descobertas, caminhos e lugares ainda não registrados.",
+          "pode_conter": [
+            "Mapas incompletos",
+            "Localização de ruínas",
+            "Rotas desconhecidas",
+            "Descobertas geográficas",
+            "Relatos de expedições",
+            "Pedidos de exploração"
+          ]
+        },
+        {
+          "nome": "Guia de viagem",
+          "imagem": "",
+          "descricao": "Conhecedor dos caminhos e particularidades de uma região, contratado para orientar viajantes em seus deslocamentos.",
+          "pode_conter": [
+            "Rotas seguras",
+            "Caminhos alternativos",
+            "Pontos de descanso",
+            "Perigos regionais",
+            "Serviços de orientação",
+            "Informações geográficas"
+          ]
+        },
+        {
+          "nome": "Mercenário",
+          "imagem": "",
+          "descricao": "Combatente profissional que oferece seus serviços mediante pagamento, sem necessariamente possuir lealdade a um reino ou organização.",
+          "pode_conter": [
+            "Contratos de combate",
+            "Serviços de escolta",
+            "Informações militares",
+            "Recrutamento",
+            "Rivalidades",
+            "Histórico de batalhas"
+          ]
+        },
+        {
+          "nome": "Veterano de guerra",
+          "imagem": "",
+          "descricao": "Antigo soldado que participou de conflitos e carrega experiências, conhecimentos e lembranças de batalhas passadas.",
+          "pode_conter": [
+            "Informações militares",
+            "Histórias de guerra",
+            "Táticas de combate",
+            "Localização de campos de batalha",
+            "Antigos companheiros",
+            "Traumas e segredos"
+          ]
+        },
+        {
+          "nome": "Instrutor de combate",
+          "imagem": "",
+          "descricao": "Especialista no treinamento de indivíduos em técnicas de luta, manejo de armas e disciplina física.",
+          "pode_conter": [
+            "Treinamento",
+            "Técnicas de combate",
+            "Desafios",
+            "Avaliações",
+            "Ensinamentos marciais",
+            "Equipamentos de prática"
+          ]
+        },
+        {
+          "nome": "Armeiro",
+          "imagem": "",
+          "descricao": "Especialista na manutenção, conservação e avaliação de armamentos utilizados por soldados e aventureiros.",
+          "pode_conter": [
+            "Avaliação de armas",
+            "Reparos especializados",
+            "Armas raras",
+            "Encomendas militares",
+            "História de armamentos",
+            "Materiais especiais"
+          ]
+        },
+        {
+          "nome": "Arqueólogo",
+          "imagem": "",
+          "descricao": "Pesquisador que investiga civilizações antigas por meio da exploração de ruínas, túmulos e artefatos históricos.",
+          "pode_conter": [
+            "Artefatos antigos",
+            "Inscrições esquecidas",
+            "Localização de ruínas",
+            "Civilizações perdidas",
+            "Relíquias",
+            "Expedições arqueológicas"
+          ]
+        },
+        {
+          "nome": "Cartógrafo",
+          "imagem": "",
+          "descricao": "Profissional especializado na criação e atualização de mapas, registrando territórios, estradas e pontos de interesse.",
+          "pode_conter": [
+            "Mapas regionais",
+            "Mapas secretos",
+            "Localização de territórios",
+            "Rotas comerciais",
+            "Registros geográficos",
+            "Encomendas de mapas"
+          ]
+        },
+        {
+          "nome": "Astrólogo",
+          "imagem": "",
+          "descricao": "Estudioso dos astros e movimentos celestes que interpreta fenômenos do céu segundo tradições e conhecimentos próprios.",
+          "pode_conter": [
+            "Previsões astrológicas",
+            "Calendários",
+            "Fenômenos celestes",
+            "Profecias",
+            "Conhecimento sobre constelações",
+            "Rituais relacionados aos astros"
+          ]
+        },
+        {
+          "nome": "Oráculo",
+          "imagem": "",
+          "descricao": "Indivíduo conhecido por oferecer visões, presságios ou interpretações sobre acontecimentos presentes e futuros.",
+          "pode_conter": [
+            "Visões",
+            "Profecias",
+            "Presságios",
+            "Mensagens enigmáticas",
+            "Rituais de consulta",
+            "Informações sobrenaturais"
+          ]
+        },
+        {
+          "nome": "Mago",
+          "imagem": "",
+          "descricao": "Praticante de artes arcanas que estuda e manipula forças mágicas por meio de conhecimento, estudo ou talento natural.",
+          "pode_conter": [
+            "Feitiços",
+            "Conhecimento arcano",
+            "Artefatos mágicos",
+            "Experimentos",
+            "Rituais",
+            "Missões envolvendo magia"
+          ]
+        },
+        {
+          "nome": "Aprendiz de magia",
+          "imagem": "",
+          "descricao": "Estudante iniciante das artes arcanas que ainda desenvolve suas habilidades e aprende os fundamentos da magia.",
+          "pode_conter": [
+            "Magias iniciais",
+            "Experimentos instáveis",
+            "Tarefas de estudo",
+            "Informações sobre mestres",
+            "Ingredientes mágicos",
+            "Problemas causados por feitiços"
+          ]
+        },
+        {
+          "nome": "Encantador",
+          "imagem": "",
+          "descricao": "Especialista em imbuir objetos com propriedades mágicas, criando equipamentos e acessórios sobrenaturais.",
+          "pode_conter": [
+            "Encantamentos",
+            "Melhorias de equipamentos",
+            "Runas",
+            "Componentes mágicos",
+            "Encomendas especiais",
+            "Conhecimento sobre artefatos"
+          ]
+        },
+        {
+          "nome": "Invocador",
+          "imagem": "",
+          "descricao": "Praticante de magia especializado em estabelecer vínculos e convocar criaturas ou entidades de outros planos.",
+          "pode_conter": [
+            "Rituais de invocação",
+            "Entidades conhecidas",
+            "Contratos sobrenaturais",
+            "Componentes raros",
+            "Conhecimento dimensional",
+            "Invocações perigosas"
+          ]
+        },
+        {
+          "nome": "Necromante",
+          "imagem": "",
+          "descricao": "Praticante de artes proibidas que estuda a morte, os mortos e a manipulação de energias relacionadas à vida e à decomposição.",
+          "pode_conter": [
+            "Rituais funerários",
+            "Conhecimento sobre mortos-vivos",
+            "Magias proibidas",
+            "Relíquias sombrias",
+            "Experimentos",
+            "Segredos sobre a morte"
+          ]
+        },
+        {
+          "nome": "Ferreiro rúnico",
+          "imagem": "",
+          "descricao": "Artesão que combina metalurgia e conhecimentos místicos para produzir equipamentos marcados com símbolos mágicos.",
+          "pode_conter": [
+            "Armas rúnicas",
+            "Inscrições mágicas",
+            "Materiais encantados",
+            "Técnicas ancestrais",
+            "Encomendas especiais",
+            "Conhecimento sobre símbolos"
+          ]
+        },
+        {
+          "nome": "Guardião de santuário",
+          "imagem": "",
+          "descricao": "Protetor de um local sagrado, relíquia ou espaço de importância espiritual, responsável por preservar sua integridade.",
+          "pode_conter": [
+            "Segredos sagrados",
+            "Relíquias protegidas",
+            "Provações",
+            "Rituais de acesso",
+            "Lendas antigas",
+            "Missões de proteção"
+          ]
+        },
+        {
+          "nome": "Druida",
+          "imagem": "",
+          "descricao": "Praticante de tradições naturais que mantém uma ligação espiritual ou mágica com florestas, animais e forças da natureza.",
+          "pode_conter": [
+            "Conhecimento natural",
+            "Rituais da natureza",
+            "Criaturas mágicas",
+            "Locais sagrados",
+            "Ervas raras",
+            "Missões de preservação"
+          ]
+        },
+        {
+          "nome": "Curandeiro",
+          "imagem": "",
+          "descricao": "Pessoa que utiliza conhecimentos tradicionais, práticas espirituais e métodos naturais para aliviar enfermidades e ferimentos.",
+          "pode_conter": [
+            "Tratamentos alternativos",
+            "Remédios naturais",
+            "Rituais de cura",
+            "Conhecimento popular",
+            "Ingredientes raros",
+            "Pedidos de auxílio"
+          ]
+        },
+        {
+          "nome": "Líder de guilda",
+          "imagem": "",
+          "descricao": "Responsável por administrar uma organização de profissionais, aventureiros ou trabalhadores que compartilham interesses e objetivos.",
+          "pode_conter": [
+            "Missões",
+            "Contratos",
+            "Recrutamento",
+            "Regras da guilda",
+            "Recompensas",
+            "Informações sobre membros"
+          ]
+        },
+        {
+          "nome": "Informante",
+          "imagem": "",
+          "descricao": "Indivíduo que coleta e comercializa informações, mantendo contatos em diferentes círculos sociais e organizações.",
+          "pode_conter": [
+            "Segredos",
+            "Rumores",
+            "Informações confidenciais",
+            "Identidades desconhecidas",
+            "Contatos secretos",
+            "Pistas sobre acontecimentos"
+          ]
+        },
+        {
+          "nome": "Espião",
+          "imagem": "",
+          "descricao": "Agente especializado em infiltração, observação e obtenção de informações sem revelar sua verdadeira identidade.",
+          "pode_conter": [
+            "Identidades falsas",
+            "Informações militares",
+            "Segredos políticos",
+            "Rotas de infiltração",
+            "Mensagens codificadas",
+            "Missões clandestinas"
+          ]
+        },
+        {
+          "nome": "Líder de culto",
+          "imagem": "",
+          "descricao": "Figura de influência responsável por conduzir um grupo religioso, místico ou ideológico que segue crenças particulares.",
+          "pode_conter": [
+            "Doutrinas",
+            "Rituais secretos",
+            "Seguidores",
+            "Profecias",
+            "Objetivos ocultos",
+            "Informações sobre entidades"
+          ]
+        },
+        {
+          "nome": "Chefe de vila",
+          "imagem": "",
+          "descricao": "Líder comunitário responsável por representar os habitantes e organizar os assuntos cotidianos de uma pequena localidade.",
+          "pode_conter": [
+            "Problemas da comunidade",
+            "Pedidos de ajuda",
+            "Disputas locais",
+            "Recursos da vila",
+            "Decisões coletivas",
+            "Informações regionais"
+          ]
+        },
+        {
+          "nome": "Juiz",
+          "imagem": "",
+          "descricao": "Autoridade responsável por analisar conflitos, interpretar leis e determinar sentenças em questões jurídicas.",
+          "pode_conter": [
+            "Processos judiciais",
+            "Leis locais",
+            "Acusações",
+            "Testemunhas",
+            "Sentenças",
+            "Informações sobre criminosos"
+          ]
+        },
+        {
+          "nome": "Diplomata itinerante",
+          "imagem": "",
+          "descricao": "Representante que viaja entre diferentes territórios para negociar acordos e preservar relações entre autoridades.",
+          "pode_conter": [
+            "Propostas diplomáticas",
+            "Tratados",
+            "Informações estrangeiras",
+            "Alianças",
+            "Conflitos territoriais",
+            "Convites oficiais"
+          ]
+        },
+        {
+          "nome": "Prisioneiro",
+          "imagem": "",
+          "descricao": "Indivíduo mantido sob custódia por autoridades ou organizações, podendo conhecer informações valiosas ou perigosas.",
+          "pode_conter": [
+            "Segredos",
+            "Informações sobre crimes",
+            "Pedidos de liberdade",
+            "Conhecimento sobre outros prisioneiros",
+            "Pistas",
+            "Histórico pessoal"
+          ]
+        },
+        {
+          "nome": "Refugiado",
+          "imagem": "",
+          "descricao": "Indivíduo que abandonou sua terra natal devido a guerras, perseguições, desastres ou outras ameaças.",
+          "pode_conter": [
+            "Histórias de origem",
+            "Informações sobre conflitos",
+            "Pedidos de abrigo",
+            "Conhecimento de outras regiões",
+            "Familiares desaparecidos",
+            "Relatos de invasões"
+          ]
+        },
+        {
+          "nome": "Mensageiro real",
+          "imagem": "",
+          "descricao": "Agente encarregado de transportar comunicados e documentos importantes em nome da família real ou do governo.",
+          "pode_conter": [
+            "Ordens reais",
+            "Documentos sigilosos",
+            "Convocações",
+            "Informações políticas",
+            "Rotas protegidas",
+            "Correspondências oficiais"
+          ]
+        },
+        {
+          "nome": "Príncipe ou princesa",
+          "imagem": "",
+          "descricao": "Membro da família real que possui influência política e pode estar envolvido em disputas sucessórias ou alianças.",
+          "pode_conter": [
+            "Intrigas da corte",
+            "Disputas pelo trono",
+            "Alianças matrimoniais",
+            "Informações reais",
+            "Pedidos secretos",
+            "Conflitos familiares"
+          ]
+        },
+        {
+          "nome": "Rei ou rainha",
+          "imagem": "",
+          "descricao": "Soberano responsável por governar um reino, administrar territórios e tomar decisões de grande impacto político e militar.",
+          "pode_conter": [
+            "Decretos reais",
+            "Missões importantes",
+            "Informações estratégicas",
+            "Conflitos políticos",
+            "Recompensas",
+            "Decisões sobre o reino"
+          ]
+        },
+        {
+          "nome": "General",
+          "imagem": "",
+          "descricao": "Comandante militar de alta patente que coordena tropas, estratégias e operações de guerra.",
+          "pode_conter": [
+            "Estratégias militares",
+            "Ordens de batalha",
+            "Informações sobre inimigos",
+            "Recrutamento",
+            "Relatórios de guerra",
+            "Missões militares"
+          ]
+        },
+        {
+          "nome": "Emissário",
+          "imagem": "",
+          "descricao": "Representante enviado por uma autoridade ou organização para transmitir mensagens e cumprir objetivos em outros territórios.",
+          "pode_conter": [
+            "Mensagens oficiais",
+            "Propostas",
+            "Ordens confidenciais",
+            "Informações políticas",
+            "Convites",
+            "Missões diplomáticas"
+          ]
+        },
+        {
+          "nome": "Artesão de bonecos",
+          "imagem": "",
+          "descricao": "Criador de bonecos, marionetes e pequenas figuras artesanais, podendo produzir peças decorativas ou mecanismos elaborados.",
+          "pode_conter": [
+            "Bonecos especiais",
+            "Mecanismos simples",
+            "Encomendas",
+            "Lendas locais",
+            "Objetos incomuns",
+            "Conhecimento artesanal"
+          ]
+        },
+        {
+          "nome": "Inventor",
+          "imagem": "",
+          "descricao": "Criador que desenvolve mecanismos, ferramentas e dispositivos experimentais utilizando conhecimentos técnicos e criatividade.",
+          "pode_conter": [
+            "Protótipos",
+            "Projetos mecânicos",
+            "Experimentos",
+            "Materiais incomuns",
+            "Encomendas",
+            "Invenções perigosas"
+          ]
+        },
+        {
+          "nome": "Funileiro",
+          "imagem": "",
+          "descricao": "Artesão que trabalha com pequenos objetos metálicos, utensílios e mecanismos simples, realizando consertos e fabricação.",
+          "pode_conter": [
+            "Utensílios",
+            "Peças de reposição",
+            "Consertos",
+            "Ferramentas",
+            "Materiais reciclados",
+            "Pequenos mecanismos"
+          ]
+        },
+        {
+          "nome": "Apicultor",
+          "imagem": "",
+          "descricao": "Trabalhador responsável pela criação de abelhas e produção de mel, cera e outros derivados das colmeias.",
+          "pode_conter": [
+            "Mel",
+            "Cera",
+            "Produtos naturais",
+            "Conhecimento sobre plantas",
+            "Localização de colmeias",
+            "Encomendas"
+          ]
+        },
+        {
+          "nome": "Criador de cavalos",
+          "imagem": "",
+          "descricao": "Profissional dedicado à criação, reprodução e comercialização de cavalos e outras montarias.",
+          "pode_conter": [
+            "Venda de montarias",
+            "Pedigrees",
+            "Treinamento",
+            "Informações sobre raças",
+            "Competições",
+            "Cuidados veterinários"
+          ]
+        },
+        {
+          "nome": "Vendedor de relíquias",
+          "imagem": "",
+          "descricao": "Comerciante especializado em objetos antigos, peças históricas e itens de origem misteriosa ou desconhecida.",
+          "pode_conter": [
+            "Relíquias",
+            "Artefatos",
+            "Histórias de origem",
+            "Objetos amaldiçoados",
+            "Avaliações",
+            "Contatos de colecionadores"
+          ]
+        },
+        {
+          "nome": "Artista de rua",
+          "imagem": "",
+          "descricao": "Entretenedor que realiza apresentações públicas utilizando habilidades artísticas, acrobacias ou truques.",
+          "pode_conter": [
+            "Apresentações",
+            "Rumores",
+            "Contatos populares",
+            "Informações sobre eventos",
+            "Truques",
+            "Convites para apresentações"
+          ]
+        }
       ]
     }
   ]
