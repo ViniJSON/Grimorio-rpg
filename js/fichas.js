@@ -185,6 +185,7 @@ function telaFicha() {
       ${p.aparencia ? `<div class="info-label">APARÊNCIA:</div><div class="info-texto texto-livre">${esc(p.aparencia)}</div>` : ''}
       ${p.historia ? `<div class="info-label">HISTÓRIA:</div><div class="info-texto texto-livre">${esc(p.historia)}</div>` : ''}
       <div class="info-label">INVENTÁRIO (${p.inventario.length}):</div>
+      <div class="info-texto mb-1">💰 <b>${esc(Regras.formatarMoedas(p.dinheiro))}</b></div>
       ${cargaHtml(p)}
       <div class="inventario">${p.inventario.map(linhaItem).join('') || '<div class="info-texto text-muted">Vazio.</div>'}</div>
       <div class="d-flex flex-wrap gap-2 mt-3">
@@ -285,6 +286,7 @@ function telaEditar() {
         <div class="col-6 col-md-3">${campoNum('ajuste_defesa', 'Ajuste de Defesa', a.defesa)}</div>
         <div class="col-6 col-md-3">${campoNum('ajuste_carga', 'Ajuste de carga (kg)', a.carga)}</div>
       </div>
+      <div class="row g-3 mt-1"><div class="col-12 col-md-6">${campoTxt('dinheiro', 'Dinheiro', p.dinheiro ? Regras.formatarMoedas(p.dinheiro) : '', 'Ex.: 2 ouros e 5 pratas')}</div></div>
       <div class="info-texto text-muted mt-1"><small>Os ajustes somam ao valor das fórmulas (itens, bônus do mestre). Os ganhos de nível entram sozinhos, e a carga base é de 15 kg. Armaduras ainda não têm regra fechada, então use aqui por enquanto.</small></div>
       ${ehNovo ? '' : `<div class="row g-3 mt-1">
         <div class="col-6 col-md-3">${campoNum('vida_atual', 'Vida atual', p.vida.atual)}</div>
@@ -326,6 +328,9 @@ function lerForm() {
     nome: l.querySelector('[data-hab=nome]').value.trim(), descricao: l.querySelector('[data-hab=descricao]').value.trim(),
     dado: l.querySelector('[data-hab=dado]').value, extra: l.querySelector('[data-hab=extra]').value.trim()
   })).filter(h => h.nome || h.descricao);
+  const din = g('dinheiro');
+  if (!din) p.dinheiro = 0;
+  else { const v = Regras.precoBronzes(din); if (v === null) aviso('Não entendi o dinheiro: mantive o valor anterior. Use, por exemplo, "2 ouros e 5 pratas".', 4200); else p.dinheiro = v; }
   Regras.aplicar(p);                                   // recalcula máximos e limita os valores atuais
   if (ehNovo) { p.vida.atual = p.vida.max; p.energia.atual = p.energia.max; }
 }

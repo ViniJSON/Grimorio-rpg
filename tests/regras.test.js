@@ -95,3 +95,16 @@ let cg = R.carga(inv); assert.deepStrictEqual([cg.total, cg.capacidade, cg.semPe
 inv.inventario.push({ peso: '5 kg', qtd: 1 }); cg = R.carga(inv); assert.ok(cg.excedeu && cg.total === 15.5);
 inv.ajustes.carga = 5; assert.ok(!R.carga(inv).excedeu); assert.strictEqual(R.carga(inv).capacidade, 20);
 console.log('progressão e carga: tudo certo');
+
+// ---------- moedas ----------
+assert.strictEqual(R.precoBronzes('8 bronzes'), 8); assert.strictEqual(R.precoBronzes('35 pratas'), 350); assert.strictEqual(R.precoBronzes('10 ouros'), 10000);
+assert.strictEqual(R.precoBronzes('1 ouro e 20 pratas'), 1200); assert.strictEqual(R.precoBronzes('3 ouros e 25 pratas'), 3250);
+assert.strictEqual(R.precoBronzes('1 moedas de ouro e 40 de pratas'), 1400); assert.strictEqual(R.precoBronzes('30 moedas de cobre'), 30);
+assert.strictEqual(R.precoBronzes('2 moeda de ouro'), 2000); assert.strictEqual(R.precoBronzes('3 moedas de ouro e 30 pratas'), 3300);
+assert.strictEqual(R.precoBronzes('15'), 15); assert.strictEqual(R.precoBronzes(''), null); assert.strictEqual(R.precoBronzes('inestimável'), null);
+assert.strictEqual(R.formatarMoedas(3250), '3 ouros e 25 pratas'); assert.strictEqual(R.formatarMoedas(1025), '1 ouro, 2 pratas e 5 bronzes'); assert.strictEqual(R.formatarMoedas(0), 'sem moedas'); assert.strictEqual(R.formatarMoedas(1), '1 bronze');
+let bolsa = { dinheiro: 2000 };
+assert.deepStrictEqual(R.pagar(bolsa, 350, 2), { ok: true, total: 700 }); assert.strictEqual(bolsa.dinheiro, 1300);
+assert.ok(!R.pagar(bolsa, 5000).ok); assert.strictEqual(bolsa.dinheiro, 1300, 'compra recusada não cobra'); assert.ok(!R.pagar(bolsa, NaN).ok);
+
+console.log('moedas: tudo certo');

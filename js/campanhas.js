@@ -67,7 +67,6 @@ function telaLista() {
 // ---------- Campanha (visualização + sessões) ----------
 function telaCampanha() {
   const c = atual;
-  const ss = [...c.sessoes].sort((a, b) => (b.numero || 0) - (a.numero || 0));
   const ultima = c.sessoes.map(s => s.data).filter(Boolean).sort().pop();
   raiz.innerHTML = `
     <div class="d-flex flex-wrap gap-2 mt-4 mb-3">
@@ -81,12 +80,24 @@ function telaCampanha() {
         <div class="col">
           <h2 class="nome-agente">${esc(c.nome || 'Sem nome')}</h2>
           <div class="id-matricula">${esc(rotuloGenero(c.genero).toUpperCase())} · ${c.sessoes.length} ${c.sessoes.length === 1 ? 'SESSÃO' : 'SESSÕES'}${ultima ? ' · ÚLTIMA EM ' + dataBR(ultima) : ''}</div>
+          ${fichaDaCampanha() ? `<div class="info-texto mt-1">🧙 Personagem: <b>${esc(fichaDaCampanha().nome)}</b></div>` : ''}
           ${c.descricao ? `<hr style="border-color:#444;"><div class="info-texto texto-livre">${esc(c.descricao)}</div>` : ''}
         </div>
       </div>
     </div></div>
 
-    <div class="d-flex flex-wrap align-items-center gap-2 mt-4">
+    <div class="abas-camp pilulas">${ABAS.map(([k, n]) => `<a href="#" data-acao="aba-camp" data-a="${k}" class="${k === aba ? 'ativo' : ''}">${n}</a>`).join('')}</div>
+    <div class="corpo-aba" id="corpo-aba"></div>`;
+  montarAba();
+}
+
+// ---------- Abas da campanha ----------
+const ABAS = [['diario', 'Diário'], ['personagem', 'Personagem'], ['oraculos', 'Oráculos'], ['salvos', 'Salvos'], ['loja', 'Loja'], ['combate', 'Combate']];
+let aba = 'diario';
+
+function diarioHtml() {
+  const c = atual, ss = [...c.sessoes].sort((a, b) => (b.numero || 0) - (a.numero || 0));
+  return `    <div class="d-flex flex-wrap align-items-center gap-2 mt-4">
       <h3 class="categoria m-0 flex-grow-1">Sessões</h3>
       <button class="btn-rolar" data-acao="nova-sessao">＋ Nova sessão</button>
     </div>
@@ -106,6 +117,51 @@ function telaCampanha() {
         : '<p class="text-center text-muted mt-4">Nenhuma sessão registrada. Crie a primeira para começar o diário da campanha.</p>'}
     </div>`;
 }
+
+const fichaDaCampanha = () => atual.personagemId ? Personagens.obter(atual.personagemId) : null;
+
+function personagemHtml() {
+  const fichas = Personagens.listar().sort((a, b) => (a.nome || '').localeCompare(b.nome || '', 'pt-BR')), p = fichaDaCampanha();
+  const barra = (a, m, cor) => `<div class="barra"><i style="width:${m ? Math.max(0, Math.min(100, a / m * 100)) : 0}%;${cor ? 'background:' + cor + ';' : ''}"></i></div>`;
+  const ajuste = (k, rotulo, r, cor) => `<div class="mb-2"><div class="info-texto"><b>${rotulo}</b> ${r.atual}/${r.max}</div>${barra(r.atual, r.max, cor)}
+      <div class="d-flex flex-wrap gap-1 mt-1">${[-5, -1, 1, 5].map(d => `<button type="button" class="btn-fantasma" style="padding:2px 10px;" data-acao="rec" data-k="${k}" data-d="${d}">${d > 0 ? '+' : '−'}${Math.abs(d)}</button>`).join('')}</div></div>`;
+  const cg = p ? Regras.carga(p) : null;
+  return `<div class="card card-dossie"><div class="card-body p-3">
+    <label class="rotulo">Personagem desta campanha
+      <select class="campo" id="sel-personagem"><option value="">— nenhum —</option>${fichas.map(f => `<option value="${esc(f.id)}" ${f.id === atual.personagemId ? 'selected' : ''}>${esc(f.nome || 'Sem nome')}${f.classe ? ' — ' + esc(f.classe) : ''} (nível ${f.nivel})</option>`).join('')}</select></label>
+    ${fichas.length ? '' : '<p class="info-texto text-muted mt-2">Você ainda não tem fichas. Crie uma em <a href="fichas.html" style="color:#ff3333;">Fichas</a>.</p>'}
+    ${p ? `<hr style="border-color:#444;"><div class="d-flex flex-wrap align-items-baseline gap-2"><h5 class="nome-agente m-0">${esc(p.nome)}</h5>
+        <span class="id-matricula">${esc([p.raca, p.classe].filter(Boolean).join(' · ') || '—')} · NÍVEL ${p.nivel}</span>
+        <a href="fichas.html#${esc(p.id)}" class="ms-auto" style="color:#ff3333;">Abrir ficha completa →</a></div>
+      <div class="row g-3 mt-1"><div class="col-12 col-md-6">${ajuste('vida', 'Vida', p.vida)}${ajuste('energia', 'Energia', p.energia, '#2a5bd7')}</div>
+        <div class="col-12 col-md-6"><div class="atributos atributos-5">${Regras.ATRIBUTOS.map(([k, s]) => `<div><span>${s}</span>${esc(p[k])}</div>`).join('')}<div><span>DEFESA</span>${esc(p.defesa)}</div></div>
+          <div class="info-texto mt-2">💰 ${esc(Regras.formatarMoedas(p.dinheiro))}</div>
+          <div class="info-texto">Carga: <b${cg.excedeu ? ' style="color:#ff3333;"' : ''}>${String(cg.total).replace('.', ',')}</b> / ${String(cg.capacidade).replace('.', ',')} kg</div></div></div>` : ''}
+  </div></div>`;
+}
+
+let abasVivas = 0;   // evita que uma aba que demorou a carregar apareça por cima de outra
+function montarAba() {
+  const corpo = document.getElementById('corpo-aba'); if (!corpo) return;
+  const el = document.createElement('div'), minha = ++abasVivas;
+  corpo.replaceChildren(el);
+  const falha = e => { if (minha === abasVivas) el.innerHTML = `<div class="alert alert-danger mt-3 rounded-0">Não consegui carregar esta aba: ${esc(e.message)}</div>`; };
+  const salvar = () => Campanhas.salvar(atual);
+  try {
+    if (aba === 'diario') el.innerHTML = diarioHtml();
+    else if (aba === 'personagem') el.innerHTML = personagemHtml();
+    else if (aba === 'oraculos') Oraculos.montar(el, { campanhaId: atual.id, irSalvos: () => irAba('salvos') }).catch(falha);
+    else if (aba === 'salvos') SalvosView.montar(el, { campanhaId: atual.id }).catch(falha);
+    else if (aba === 'loja') Loja.montar(el, { campanha: atual }).catch(falha);
+    else if (aba === 'combate') Combate.montar(el, { campanha: atual, salvar }).catch(falha);
+  } catch (e) { falha(e); }
+}
+function irAba(k) {
+  aba = k; Rolador.visivel(k !== 'combate');
+  document.querySelectorAll('.abas-camp a').forEach(a => a.classList.toggle('ativo', a.dataset.a === k));
+  montarAba();
+}
+
 
 // ---------- Edição da campanha ----------
 const campoTxt = (n, l, v, ph = '') => `<label class="rotulo">${l}<input class="campo" name="${n}" value="${esc(v)}" placeholder="${esc(ph)}"></label>`;
@@ -158,12 +214,17 @@ function telaSessao() {
 }
 
 // ---------- Controle ----------
-function desenhar() { ({ lista: telaLista, campanha: telaCampanha, editar: telaEditar, sessao: telaSessao })[tela](); window.scrollTo(0, 0); }
+function desenhar() {
+  ({ lista: telaLista, campanha: telaCampanha, editar: telaEditar, sessao: telaSessao })[tela]();
+  if (tela === 'campanha') { Rolador.abrir(); Rolador.visivel(aba !== 'combate'); } else Rolador.fechar();   // no combate a barra de dados já está na tela
+  window.scrollTo(0, 0);
+}
 
 function abrir(id, sid = '') {
   atual = Campanhas.obter(id);
   if (!atual) return irLista();
   tela = 'campanha'; ehNovo = false; abrirId = sid;
+  if (sid) aba = 'diario';
   history.replaceState(null, '', '#' + id);
   desenhar();
 }
@@ -174,6 +235,12 @@ const sessaoDe = el => atual.sessoes.find(s => s.id === el.closest('[data-sessao
 const acoes = {
   'nova-camp'() { atual = Campanhas.novo(); ehNovo = true; tela = 'editar'; desenhar(); },
   voltar: irLista,
+  'aba-camp'(b) { irAba(b.dataset.a); },
+  rec(b) {   // ajuste rápido de Vida/Energia do personagem da campanha
+    const p = fichaDaCampanha(); if (!p) return;
+    const r = p[b.dataset.k]; r.atual = Math.max(0, Math.min(r.max, r.atual + num(b.dataset.d)));
+    Personagens.salvar(p); montarAba();
+  },
   'editar-camp'() { tela = 'editar'; ehNovo = false; desenhar(); },
   'cancelar-camp'() { ehNovo ? irLista() : abrir(atual.id); },
   'excluir-camp'() {
@@ -236,6 +303,11 @@ raiz.addEventListener('submit', e => {
 });
 
 raiz.addEventListener('change', async e => {
+  if (e.target.id === 'sel-personagem') {
+    atual.personagemId = e.target.value; Campanhas.salvar(atual);
+    aviso(atual.personagemId ? 'Personagem da campanha escolhido' : 'Nenhum personagem na campanha');
+    return montarAba();
+  }
   if (e.target.id === 'arq-imagem' && e.target.files[0]) {
     try { atual.imagem = await reduzir(e.target.files[0], 900); document.querySelector('.preview-capa').innerHTML = miniatura(atual); }
     catch (err) { aviso(err.message); }

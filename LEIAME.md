@@ -64,6 +64,7 @@ Habilidades do personagem: na edição da ficha, "＋ Habilidade" (nome + descri
 - `regras.js`: regras do sistema (derivados, testes, dados, Energia, descanso). Sem DOM; testável no Node.
 - `dados.js`: camada de dados única (memória + IndexedDB + sincronização). `personagens.js`, `campanhas-db.js` e `salvos-db.js` são fachadas finas sobre ela.
 - `arquivo-json.js`: arquivo .json vinculado às fichas (Chrome/Edge no computador), opcional.
+- `oraculos-core.js`, `salvos-view.js`, `rolador.js`, `loja.js`, `combate.js`: blocos usados dentro da campanha (e, no caso de oráculos e salvos, também nas páginas próprias).
 
 ## Regras na ficha
 Vida máx. = 10 + FOR×2, Defesa = 10 + AGI, Energia máx. = 10 + INT, mais os **ajustes** (campo na edição) para bônus de itens/nível, que ainda
@@ -89,6 +90,22 @@ Os efeitos de raça e classe **não** são aplicados automaticamente na ficha: f
 - **Pontos de atributo:** orçamento = 7 + os pontos ganhos por nível. A ficha avisa (sem bloquear) quando sobra ou falta.
 - **Carga:** 15 kg para todos (mais o "Ajuste de carga" na edição). Soma peso × quantidade dos itens e entende `kg` e `g` (`500 g` = 0,5 kg). Itens sem peso não entram na soma e a ficha avisa.
   O que acontece ao passar do limite ainda não está nas regras: a ficha só mostra o aviso.
+
+## Dentro da campanha
+Abrindo uma campanha, as abas reúnem as ferramentas de mesa (o menu 🎲 de dados puros fica flutuante, menos na aba Combate, que tem a própria barra de dados):
+- **Diário:** as sessões, como antes.
+- **Personagem:** escolha qual ficha você usa nessa campanha (fica gravado na campanha). Mostra Vida, Energia, atributos, dinheiro e carga, com ajustes rápidos de Vida/Energia.
+- **Oráculos:** os mesmos geradores da página Oráculos. "Salvar" guarda o resultado já ligado a essa campanha.
+- **Salvos:** só os salvos dela, divididos por grupo (NPCs, Masmorras, Anomalias...). Dá para trazer salvos antigos que estavam sem campanha. A página **Salvos** mostra todos, também por grupo, com filtro por campanha (dá para ligar um salvo a uma campanha em "Editar").
+- **Loja:** compra itens do catálogo com o dinheiro do personagem (o item vai para o inventário e o preço é descontado). Também dá para "Receber" e "Gastar" dinheiro à mão (ex.: `2 ouros e 5 pratas`).
+- **Combate (100% manual):** o site não rola ataque, não calcula dano e não decide nada sozinho. Você escolhe o inimigo do bestiário **e a quantidade** (cada um vira "Goblins 1, 2, 3...") e inicia.
+  A mesa mostra a **ficha completa de cada inimigo** (imagem, descrição, atributos, habilidades, fraquezas e resistências) e a **sua ficha** (imagem, Vida e Energia com barras, atributos,
+  poderes da sua classe até o seu nível e as habilidades que você criou). Vida e Energia mudam pelos botões (−5, −1, +1, +5) ou digitando um valor e clicando Dano/Cura (ou Gastar/Recuperar):
+  a Vida do personagem fica gravada na ficha. A iniciativa é digitada em cada combatente; "Próximo turno" só avança o destaque na ordem. Há uma barra de **dados puros** (d4 a d100,
+  quantidade e bônus positivo ou negativo) e um **registro** com as rolagens, os ajustes de Vida/Energia e as anotações que você escrever. Encerrar o combate apaga os inimigos e o registro.
+
+## Dinheiro
+Cada ficha tem **Dinheiro**, guardado em bronzes. A conversão está em `Regras.MOEDAS` (js/regras.js) e é uma **suposição**: 1 prata = 10 bronzes e 1 ouro = 100 pratas. Se as regras da sua mesa forem outras, mude só essa tabela. Os preços dos itens ("1 ouro e 20 pratas", "30 moedas de cobre"...) são lidos desse texto.
 
 ## Nuvem (Supabase, opcional)
 Sem configurar nada, o site funciona só no navegador. Para sincronizar entre aparelhos:

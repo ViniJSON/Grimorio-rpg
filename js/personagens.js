@@ -33,6 +33,17 @@ const Personagens = (() => {
     return salvar(p);
   }
 
+  // Compra: desconta o preço (em bronzes) do dinheiro da ficha e põe o item no inventário. Devolve { ok, motivo?, total?, excedeu? }.
+  function comprar(pid, card, qtd = 1) {
+    const p = obter(pid); if (!p) return { ok: false, motivo: 'Personagem não encontrado.' };
+    const preco = Regras.precoBronzes(card.valor), r = Regras.pagar(p, preco === null ? NaN : preco, qtd);
+    if (!r.ok) return r;
+    const item = itemDeCard(card), ja = p.inventario.find(i => i.nome === item.nome);
+    if (ja) ja.qtd += qtd; else p.inventario.push({ id: uid(), qtd, ...item });
+    salvar(p);
+    return { ok: true, total: r.total, excedeu: Regras.carga(p).excedeu, dinheiro: p.dinheiro };
+  }
+
   const exportar = () => Dados.exportar(COL);
   const importar = texto => Dados.importar(COL, texto);
 
@@ -45,7 +56,7 @@ const Personagens = (() => {
     try { const r = await fetch('data/personagens/personagens.json'); if (r.ok) importar(await r.text()); } catch { /* sem ponto de partida */ }
   }
 
-  const api = { listar, obter, novo, salvar, excluir, itemDeCard, adicionarItem, exportar, importar, uid, semear, aoMudar: null };
+  const api = { listar, obter, novo, salvar, excluir, itemDeCard, adicionarItem, comprar, exportar, importar, uid, semear, aoMudar: null };
   Dados.ouvir('mudou:' + COL, () => api.aoMudar?.());   // o arquivo vinculado grava a cada mudança (local ou vinda da nuvem)
   return api;
 })();

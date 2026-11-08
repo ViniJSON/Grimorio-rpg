@@ -1,9 +1,8 @@
 Como aplicar: copie o conteúdo desta pasta por cima do seu projeto (mantenha img/ e o resto de data/ como estão).
 
-ATENÇÃO: data/manifest.json foi atualizado (ganhou "racas" e "classes"). Se você tiver mexido nele, junte as duas chaves à mão.
-Se você já tinha a atualização anterior (nuvem), esta substitui os mesmos arquivos e acrescenta os novos.
+Seu js/supabase-config.js (com a URL e a chave) NÃO está neste pacote de propósito: mantenha o seu.
+Apague, se ainda existir: js/rolar.js
 
-APAGUE do projeto (se ainda existir):  js/rolar.js
-
-Novos: racas.html, classes.html, data/racas/, data/classes/.
-Seu supabase-config.js (com a URL e a chave) NÃO está neste pacote de propósito: mantenha o seu.
+Mudou nesta versão: js/combate.js (combate manual), js/rolador.js (dados puros), js/regras.js (sem o combate automático),
+js/campanhas.js, css/style.css, tests/regras.test.js, LEIAME.md.
+Combates iniciados na versão anterior são descartados ao abrir (o formato mudou).

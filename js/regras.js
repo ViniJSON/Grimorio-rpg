@@ -41,6 +41,7 @@ const Regras = (() => {
       p.ajustes = { vida: p.vida.max - b.vida, energia: p.energia.max - b.energia, defesa: (p.defesa ?? b.defesa) - b.defesa };
     }
     p.ajustes.carga = n(p.ajustes.carga);
+    p.dinheiro = Math.max(0, n(p.dinheiro));
     p.nivel = Math.min(NIVEL_MAX, Math.max(1, n(p.nivel) || 1));
     if (!p.progressao) {   // ficha de antes da progressão: o que já estava digitado vira ponto de partida
       const gastos = ATRIBUTOS.reduce((s, [k]) => s + p[k], 0);
@@ -97,7 +98,7 @@ const Regras = (() => {
         const v = n(p[SIGLAS[corpo]]); total += sinal * v; partes.push({ tipo: 'attr', rotulo: corpo, valor: sinal * v });
       } else throw new Error('Não entendi "' + corpo.toLowerCase() + '". Use dados (1d6), números e FOR/AGI/INT/CAR.');
     }
-    const detalhe = partes.map((x, i) => (i && x.valor >= 0 ? '+' : '') + (x.tipo === 'dado' ? `${x.rotulo}[${x.rolagens.join(',')}]` : `${x.rotulo}(${x.valor})`)).join(' ');
+    const detalhe = partes.map((x, i) => (i && x.valor >= 0 ? '+' : '') + (x.tipo === 'dado' ? `${x.rotulo}[${x.rolagens.join(',')}]` : x.tipo === 'num' ? `${x.valor}` : `${x.rotulo}(${x.valor})`)).join(' ');
     return { total, partes, texto: detalhe };
   }
 
@@ -178,6 +179,35 @@ const Regras = (() => {
     return { total, capacidade, semPeso, excedeu: total > capacidade, livre: Math.round((capacidade - total) * 100) / 100 };
   }
 
-  return { PROGRESSAO, CARGA_BASE, xpDoNivel, xpProximo, podeSubir, subirNivel, pesoKg, carga, ATRIBUTOS, PONTOS_INICIAIS, MAX_INICIAL, NIVEL_MAX, CUSTO_ENERGIA, base, derivados, migrar, aplicar, validarCriacao, rolarDado, rolar, teste, iniciativa, ladosDe, custoEnergia, usarHabilidade, descansar };
+  // ---------- Moedas e compras ----------
+  // As regras ainda não definem a conversão: valores assumidos (1 prata = 10 bronzes; 1 ouro = 100 pratas). Guardamos tudo em bronzes.
+  // "cobre" é tratado como bronze. Para mudar a conversão, altere só esta tabela.
+  const MOEDAS = { ouro: 1000, prata: 10, bronze: 1 };
+  // "1 ouro e 20 pratas", "3 moedas de ouro", "30 moedas de cobre", "8 bronzes" -> bronzes. Número solto = bronzes. Sem preço -> null.
+  function precoBronzes(txt) {
+    const s = String(txt ?? '').toLowerCase().trim(); let total = 0, achou = false;
+    for (const m of s.matchAll(/(\d+(?:[.,]\d+)?)\s*(?:moedas?\s+)?(?:de\s+)?(ouros?|pratas?|bronzes?|cobres?)/g)) {
+      const u = m[2].startsWith('ouro') ? 'ouro' : m[2].startsWith('prata') ? 'prata' : 'bronze';
+      total += parseFloat(m[1].replace(',', '.')) * MOEDAS[u]; achou = true;
+    }
+    if (achou) return Math.round(total);
+    return /^\d+$/.test(s) ? parseInt(s, 10) : null;
+  }
+  function formatarMoedas(bronzes) {
+    const b = Math.max(0, Math.round(n(bronzes))); if (!b) return 'sem moedas';
+    const o = Math.floor(b / MOEDAS.ouro), pr = Math.floor((b % MOEDAS.ouro) / MOEDAS.prata), br = b % MOEDAS.prata, p = [];
+    if (o) p.push(`${o} ${o === 1 ? 'ouro' : 'ouros'}`); if (pr) p.push(`${pr} ${pr === 1 ? 'prata' : 'pratas'}`); if (br) p.push(`${br} ${br === 1 ? 'bronze' : 'bronzes'}`);
+    return p.length > 1 ? p.slice(0, -1).join(', ') + ' e ' + p[p.length - 1] : p[0];
+  }
+  // Desconta preço × quantidade do dinheiro da ficha (altera p). Não mexe no inventário.
+  function pagar(p, preco, qtd = 1) {
+    if (!Number.isFinite(preco)) return { ok: false, motivo: 'Esse item não tem preço definido.' };
+    const total = Math.round(preco * Math.max(1, n(qtd)));
+    if (n(p.dinheiro) < total) return { ok: false, motivo: `Dinheiro insuficiente: custa ${formatarMoedas(total)} e você tem ${formatarMoedas(p.dinheiro)}.` };
+    p.dinheiro = n(p.dinheiro) - total;
+    return { ok: true, total };
+  }
+
+  return { MOEDAS, precoBronzes, formatarMoedas, pagar, PROGRESSAO, CARGA_BASE, xpDoNivel, xpProximo, podeSubir, subirNivel, pesoKg, carga, ATRIBUTOS, PONTOS_INICIAIS, MAX_INICIAL, NIVEL_MAX, CUSTO_ENERGIA, base, derivados, migrar, aplicar, validarCriacao, rolarDado, rolar, teste, iniciativa, ladosDe, custoEnergia, usarHabilidade, descansar };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = Regras;

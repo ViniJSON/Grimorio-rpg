@@ -449,3 +449,33 @@ input[type="date"].campo { color-scheme:dark; }
 .conta-link { white-space:nowrap; }
 .carga { margin-bottom:10px; }
 .carga small { display:block; margin-top:4px; }
+
+/* ---------- v4: dados flutuantes, abas da campanha, loja e combate ---------- */
+.rolador-flut { position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom, 0px)); z-index:1500; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+.rolador-fab { width:52px; height:52px; border-radius:50%; background:#8b0000; border:2px solid #ff3333; color:#fff; font-size:1.5rem; cursor:pointer; box-shadow:0 4px 12px rgba(0,0,0,.6); }
+.rolador-fab:hover { background:#a00000; }
+.rolador-painel { width:min(340px, calc(100vw - 28px)); max-height:70vh; overflow:auto; background:#0f0f0f; border:1px solid #8b0000; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,.7); }
+.rolador-dados { display:grid; grid-template-columns:repeat(4, 1fr); gap:6px; }
+.rolador-dados button { padding:8px 0; }
+.rolador-ajustes { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+.stepper { display:flex; }
+.stepper button { background:#1a1a1a; border:1px solid #333; color:#fff; width:34px; cursor:pointer; }
+.stepper input { width:100%; min-width:0; text-align:center; background:#121212; border:1px solid #333; color:#fff; }
+.rolador-hist { margin-top:10px; max-height:200px; overflow:auto; }
+.rolador-hist .rol { display:flex; flex-wrap:wrap; gap:6px; align-items:baseline; }
+.rol-total { margin-left:auto; color:#ffcc00; font-size:1.1rem; }
+.abas-camp { margin-top:18px; }
+.corpo-aba { margin-top:8px; }
+.ini-ordem { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.ini-ordem span { padding:4px 10px; border:1px solid #333; background:#121212; font-size:.85rem; }
+.ini-ordem span.vez { border-color:#ffcc00; color:#ffcc00; background:rgba(255,204,0,.08); }
+.ini-ordem span.morto { text-decoration:line-through; color:#666; }
+.combatente { border:1px solid #333; background:#121212; padding:10px; height:100%; }
+.combatente.vez { border-color:#ffcc00; }
+.combatente.morto { opacity:.45; }
+.combatente h6 { margin:0 0 4px; letter-spacing:1px; text-transform:uppercase; }
+.combate-log { max-height:260px; overflow:auto; }
+.loja-item { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:8px 10px; border:1px solid #333; background:#121212; margin-bottom:6px; }
+.loja-item .loja-nome { flex:1 1 220px; }
+.loja-item small { color:#aaa; }
+.vez-card { border-color:#ffcc00 !important; box-shadow:0 0 0 1px #ffcc00; }
